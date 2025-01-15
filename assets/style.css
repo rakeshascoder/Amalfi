@@ -762,3 +762,117 @@ footer {
 }
 
 /* ==============================  css for harish end here ================================= */
+
+
+/* ----------------------------------------css of amit-------------------------- */
+.whyAmalfi_bg {
+  background-image: url(./image/png/whyamalfibg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.h_full {
+  height: 100%;
+}
+.text_white {
+  color: white;
+}
+.max_w_640 {
+  max-width: 640px;
+}
+.opacity{
+  opacity: 0.75;
+}
+.bg-scrim.gradient-bottom-up {
+  background-color: #0003;
+  background-image: linear-gradient(#0000, #000000c2 75%, #000);
+}
+.bg-scrim {
+  z-index: 1;
+  background-color: #00000080;
+  position: absolute;
+  inset: 0%;
+}
+.z_2{
+  z-index: 10;
+}
+.easy_Booking_bg_1{
+  background-image: url(./image/png//easyBookingimage1.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.bg_black{
+  background-color: black;
+}
+.h_927{
+  height: 927px;
+}
+/* ------------responsive ----------------*/
+@media (max-width: 576px) {
+  :root {
+    --fs_xsm: 12px;
+    --fs_sm: 13px;
+    --fs_base: 14px;
+    --fs_md: 15px;
+    --fs_lg: 16px;
+    --fs_xl: 33px;
+    --fs_2xl: 41px;
+  }
+}
+@media (min-width: 576px) {
+  :root {
+    --fs_xsm: 12px;
+    --fs_sm: 13px;
+    --fs_base: 14px;
+    --fs_md: 15px;
+    --fs_lg: 16px;
+    --fs_xl: 33px;
+    --fs_2xl: 53px;
+  }
+}
+@media (min-width: 768px) {
+  :root {
+    --fs_xsm: 12px;
+    --fs_sm: 13px;
+    --fs_base: 14px;
+    --fs_md: 15px;
+    --fs_lg: 16px;
+    --fs_xl: 33px;
+    --fs_2xl: 68px;
+  }
+}
+@media (min-width: 992px) {
+  :root {
+    --fs_xsm: 12px;
+    --fs_sm: 13px;
+    --fs_base: 14px;
+    --fs_md: 15px;
+    --fs_lg: 16px;
+    --fs_xl: 33px;
+    --fs_2xl: 68px;
+  }
+}
+@media (min-width: 1200px) {
+  :root {
+    --fs_xsm: 12px;
+    --fs_sm: 13px;
+    --fs_base: 14px;
+    --fs_md: 15px;
+    --fs_lg: 16px;
+    --fs_xl: 33px;
+    --fs_2xl: 68px;
+  }
+}
+@media (min-width: 1400px) {
+  :root {
+    --fs_xsm: 12px;
+    --fs_sm: 13px;
+    --fs_base: 14px;
+    --fs_md: 15px;
+    --fs_lg: 16px;
+    --fs_xl: 33px;
+    --fs_2xl: 68px;
+  }
+}
+/* ----------------------------css of amit end here------------------------- */
