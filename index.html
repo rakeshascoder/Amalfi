@@ -1,717 +1,1215 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/responsivehome.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="./assets/style.css" />
-  <link rel="stylesheet" href="./assets/responsive.css">
-</head>
+    <!--------slick-theme-min.css ------------>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- slick.min.css  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body>
-  <nav class="d_flex absolute z_1 justify_space_between w_100">
-    <div class="d_flex align_center">
-      <ul class="d_flex gap_40">
-
-
-        <li class="h_67 ms_4 d_flex justify_content_center align_center">
-          <a href="#"><img height="25" width="25" src="./assets/png/hamburger-removebg-preview.png" class="text_white"
-              alt="" /></a>
-        </li>
-        <li class="d_flex justify_content_center align_center h_67">
-          <a class="text_uppercase text_white fw_normal fs_xsm" href="#">program</a>
-        </li>
-        <li class="d_flex justify_content_center align_center h_67">
-          <a class="text_uppercase text_white fw_normal fs_xsm" href="./jets.html">aircraft</a>
-        </li>
-        <li class="d_flex justify_content_center align_center h_67">
-          <a class="text_uppercase text_white fw_normal fs_xsm" href="#">why amalfi</a>
-        </li>
-      </ul>
-    </div>
-    <div class="d_flex align_center">
-      <img class="h_50" src="./assets/png/logo.png" alt="" />
-    </div>
-    <div class="d_flex align_center gap_40 me_3">
-      <a class="text_white" href="#">+1 (877) 6-AMALFI</a>
-      <a href="#" class="explore_btn fs_base px_15 py_10 text_uppercase d_inline_block text_black fw_normal">request a
-        charter</a>
-    </div>
-  </nav>
-  <div class="slider_container">
-    <div class="image_container">
-      <div class="relative">
-        <img class="w_100 h_100vh object_fit" src="./assets/png/1.jpeg" alt="" />
-        <div class="absolute top_50 left_50 translate_50_50">
-          <h1 class="letter_spacing_08 fs_2xl text_white fw_normal">
-            Amalfi enterprise
-          </h1>
-          <div class="text_align_center">
+  <body>
+    <div class="sticky top_0 z_1">
+      <nav class="d_flex absolute z_1 justify_space_between w_100">
+        <div class="d_flex align_center">
+          <li
+            class="h_67 ms_4 me_5 d_flex justify_content_center align_center hamburger_menu"
+          >
             <a href="#"
-              class="explore_btn fs_base px_12 py_18 text_uppercase d_inline_block text_black fw_normal">Explore
-              Program</a>
+              ><img
+                height="25"
+                width="25"
+                src="./assets/png/hamburger-removebg-preview.png"
+                class="bg_white"
+                alt=""
+            /></a>
+          </li>
+          <ul class="d_flex gap_40 d_none d_lg_flex">
+            <li class="d_flex justify_content_center align_center h_67">
+              <a class="text_uppercase text_white fw_normal fs_xsm" href="#"
+                >program</a
+              >
+            </li>
+            <li class="d_flex justify_content_center align_center h_67">
+              <a class="text_uppercase text_white fw_normal fs_xsm" href="#"
+                >aircraft</a
+              >
+            </li>
+            <li class="d_flex justify_content_center align_center h_67">
+              <a class="text_uppercase text_white fw_normal fs_xsm" href="#"
+                >why amalfi</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="d_flex align_center">
+          <img class="h_50" src="./assets/png/logo.png" alt="" />
+        </div>
+        <div class="d_flex align_center gap_40 me_3">
+          <a class="text_white d_none d_lg_flex" href="#">+1 (877) 6-AMALFI</a>
+          <a
+            href="#"
+            class="explore_btn d_none d_lg_block fs_base px_15 py_10 text_uppercase text_black fw_normal"
+            >request a charter</a
+          >
+          <a
+            href="#"
+            class="explore_btn d_block d_lg_none fs_base px_15 py_10 text_uppercase d_inline_block text_black fw_normal"
+            >fly</a
+          >
+        </div>
+      </nav>
+    </div>
+    <!-- overlay -->
+    <div class="menu_overlay">
+      <div class="menu_content w_100">
+        <button class="close_menu">Close X</button>
+        <div class="d_flex flex_column gap_10">
+          <a
+            class="text_uppercase text_white fw_normal fs_xsm p_3 fs_base d_flex w_100"
+            href="#"
+            >program</a
+          >
+          <a
+            class="text_uppercase text_white fw_normal fs_xsm p_3 fs_base d_flex w_100"
+            href="#"
+            >aircraft</a
+          >
+          <a
+            class="text_uppercase text_white fw_normal fs_xsm p_3 fs_base d_flex w_100"
+            href="#"
+            >why amalfi</a
+          >
+          <a
+            class="text_uppercase text_white fw_normal fs_xsm p_3 fs_base d_flex w_100"
+            href="/form.html"
+            >Contact Us</a
+          >
+          <div>
+            <a
+              href="#"
+              class="ms_3 explore_btn fs_base px_15 py_10 text_uppercase d_inline_block text_black fw_normal"
+              >request a charter</a
+            >
           </div>
         </div>
       </div>
     </div>
-    <div class="image_container d_none">
-      <div class="relative">
-        <img class="w_100 h_100vh object_fit" src="./assets/png/2.jpeg" alt="" />
-        <div class="absolute top_50 left_50 translate_50_50">
-          <h1 class="letter_spacing_08 fs_2xl text_white fw_normal">
-            Amalfi enterprise
-          </h1>
-          <div class="text_align_center">
-            <a href="#"
-              class="explore_btn fs_base px_12 py_18 text_uppercase d_inline_block text_black fw_normal">Explore
-              Program</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="image_container d_none">
-      <div class="relative">
-        <img class="w_100 h_100vh object_fit" src="./assets/png/3.jpeg" alt="" />
-        <div class="absolute top_50 left_50 translate_50_50">
-          <h1 class="letter_spacing_08 fs_2xl text_white fw_normal">
-            Amalfi enterprise
-          </h1>
-          <div class="text_align_center">
-            <a href="#"
-              class="explore_btn fs_base px_12 py_18 text_uppercase d_inline_block text_black fw_normal">Explore
-              Program</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--  book a flight  -->
-
-  <div class="padding_67">
-    <div class="narror_container">
-      <div class="d_flex flex_column gap_24">
-        <h2 class="fs_xl fw_normal">Book a flight</h2>
-        <p class="fw_normal fs_lg text_gray">
-          Please fill out the form to be connected with our sales team.
-          Private jet charter costs are subject to various factors and start
-          at <strong>$5,000 per hour.</strong>
-        </p>
-      </div>
-      <!-- round trip here -->
-      <div class="mb_2 mt_32">
-       
-          <select class="text_uppercase border_none" name="one_way_or_roundtrip" id="type-field">
-            <option value="Round Trip">Round Trip</option>
-            <option value="One-way">Round Trip</option>
-          </select>
-       
-      </div>
-      <!-- form -->
-      <div class="d_flex align_center gap_3 mb_32">
-        <div class="form_top_bar_main">
+    <!-- hero section -->
+    <div class="slider_container slider_wrapper">
+      <div id="slider" class="slider">
+        <div id="slider_1" class="image_container">
           <div class="relative">
-            <input class="form_field" type="text" placeholder="From" required />
-            <svg width="100%" height="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
-              class="form_icon">
-              <path
-                d="M 25.71875 4.78125 C 25.332031 4.816406 24.957031 4.929688 24.59375 5.125 L 19.875 7.625 L 13.5 6.0625 L 13.125 5.96875 L 12.75 6.15625 L 10.59375 7.40625 L 9.3125 8.15625 L 10.5 9.0625 L 13.21875 11.125 L 9.8125 12.9375 L 6.15625 11.28125 L 5.71875 11.09375 L 5.28125 11.3125 L 3.53125 12.25 L 2.375 12.875 L 3.25 13.8125 L 8.65625 19.625 L 9.15625 20.21875 L 9.84375 19.84375 L 15 17.09375 L 13.96875 22.78125 L 13.625 24.59375 L 15.34375 23.875 L 17.90625 22.78125 L 18.28125 22.625 L 18.4375 22.25 L 22.15625 13.21875 L 27.40625 10.40625 C 28.851563 9.628906 29.433594 7.789063 28.65625 6.34375 C 28.269531 5.621094 27.609375 5.128906 26.875 4.90625 C 26.507813 4.796875 26.105469 4.746094 25.71875 4.78125 Z M 25.90625 6.78125 C 26.03125 6.773438 26.160156 6.777344 26.28125 6.8125 C 26.523438 6.886719 26.742188 7.035156 26.875 7.28125 C 27.140625 7.777344 26.964844 8.359375 26.46875 8.625 L 20.875 11.65625 L 20.5625 11.8125 L 20.4375 12.15625 L 16.71875 21.09375 L 16.28125 21.28125 L 17.34375 15.375 L 17.71875 13.34375 L 15.90625 14.3125 L 9.59375 17.71875 L 5.625 13.40625 L 5.78125 13.3125 L 9.4375 14.9375 L 9.90625 15.15625 L 10.3125 14.90625 L 25.53125 6.875 C 25.65625 6.808594 25.78125 6.789063 25.90625 6.78125 Z M 13.375 8.09375 L 17.21875 9.03125 L 15.15625 10.09375 L 12.90625 8.375 Z M 3 26 L 3 28 L 29 28 L 29 26 Z"
-                fill="currentColor"></path>
-            </svg>
+            <img
+              class="w_100vw h_100vh object_fit"
+              src="./assets/png/1.jpeg"
+              alt=""
+            />
+            <div class="absolute top_50 left_50 translate_50_50">
+              <h1
+                class="letter_spacing_08 fs_2xl text_white fw_normal text_align_center"
+              >
+                Amalfi enterprise
+              </h1>
+              <div class="text_align_center">
+                <a
+                  href="#"
+                  class="explore_btn fs_base px_12 py_xsm_10 py_sm_10 py_18 text_uppercase d_inline_block text_black fw_normal"
+                  >Explore Program</a
+                >
+              </div>
+            </div>
           </div>
+        </div>
+        <div id="slider_2" class="image_container">
           <div class="relative">
-            <input class="form_field" type="text" placeholder="To" required />
-            <svg width="100%" height="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
-              class="form_icon">
-              <path
-                d="M 3.40625 3.96875 L 3.34375 5.25 L 3 14.03125 L 2.96875 14.8125 L 3.71875 15.03125 L 10.125 16.96875 L 4.6875 20.75 L 3.15625 21.8125 L 4.875 22.5 L 7.71875 23.625 L 8.09375 23.78125 L 8.46875 23.625 L 18.46875 19.46875 L 24.875 21.40625 C 26.5625 21.914063 28.367188 20.933594 28.875 19.25 C 29.382813 17.5625 28.402344 15.757813 26.71875 15.25 L 21.03125 13.5 L 17.25 7.25 L 17.03125 6.90625 L 16.65625 6.78125 L 14 6.0625 L 12.53125 5.6875 L 12.75 7.1875 L 13.28125 11.09375 L 9.03125 9.78125 L 7.40625 5.59375 L 7.21875 5.125 L 6.75 4.96875 L 4.625 4.34375 Z M 5.28125 6.625 L 5.71875 6.75 L 7.3125 10.9375 L 7.46875 11.40625 L 7.9375 11.53125 L 26.125 17.15625 C 26.777344 17.351563 27.132813 18.007813 26.9375 18.65625 C 26.742188 19.308594 26.085938 19.664063 25.4375 19.46875 L 18.6875 17.4375 L 18.34375 17.34375 L 18.03125 17.46875 L 8.09375 21.625 L 7.34375 21.3125 L 12.96875 17.4375 L 14.6875 16.25 L 12.6875 15.65625 L 5.03125 13.34375 Z M 14.90625 8.40625 L 15.71875 8.625 L 18.15625 12.59375 L 15.34375 11.75 Z M 20.5 21 C 19.671875 21 19 21.671875 19 22.5 C 19 23.328125 19.671875 24 20.5 24 C 21.328125 24 22 23.328125 22 22.5 C 22 21.671875 21.328125 21 20.5 21 Z M 3 26 L 3 28 L 29 28 L 29 26 Z"
-                fill="currentColor"></path>
-            </svg>
+            <img
+              class="w_100vw h_100vh object_fit"
+              src="./assets/png/2.jpeg"
+              alt=""
+            />
+            <div class="absolute top_50 left_50 translate_50_50">
+              <h1
+                class="letter_spacing_08 fs_2xl text_white fw_normal text_align_center"
+              >
+                Setting a Standard for Safety
+              </h1>
+              <div class="text_align_center">
+                <a
+                  href="#"
+                  class="explore_btn fs_base px_12 py_xsm_10 py_sm_10 py_18 text_uppercase d_inline_block text_black fw_normal"
+                  >Explore Program</a
+                >
+              </div>
+            </div>
           </div>
+        </div>
+        <div id="slider_3" class="image_container">
           <div class="relative">
-            <input class="form_field" type="text" placeholder="Depart" required />
-            <svg width="100%" height="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
-              class="form_icon">
-              <path
-                d="M 9 4 L 9 5 L 5 5 L 5 27 L 27 27 L 27 5 L 23 5 L 23 4 L 21 4 L 21 5 L 11 5 L 11 4 Z M 7 7 L 9 7 L 9 8 L 11 8 L 11 7 L 21 7 L 21 8 L 23 8 L 23 7 L 25 7 L 25 9 L 7 9 Z M 7 11 L 25 11 L 25 25 L 7 25 Z M 13 13 L 13 15 L 15 15 L 15 13 Z M 17 13 L 17 15 L 19 15 L 19 13 Z M 21 13 L 21 15 L 23 15 L 23 13 Z M 9 17 L 9 19 L 11 19 L 11 17 Z M 13 17 L 13 19 L 15 19 L 15 17 Z M 17 17 L 17 19 L 19 19 L 19 17 Z M 21 17 L 21 19 L 23 19 L 23 17 Z M 9 21 L 9 23 L 11 23 L 11 21 Z M 13 21 L 13 23 L 15 23 L 15 21 Z M 17 21 L 17 23 L 19 23 L 19 21 Z"
-                fill="currentColor"></path>
-            </svg>
-          </div>
-          <div class="relative">
-            <input class="form_field" type="text" placeholder="Return" required />
-            <svg width="100%" height="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
-              class="form_icon">
-              <path
-                d="M 9 4 L 9 5 L 5 5 L 5 27 L 27 27 L 27 5 L 23 5 L 23 4 L 21 4 L 21 5 L 11 5 L 11 4 Z M 7 7 L 9 7 L 9 8 L 11 8 L 11 7 L 21 7 L 21 8 L 23 8 L 23 7 L 25 7 L 25 9 L 7 9 Z M 7 11 L 25 11 L 25 25 L 7 25 Z M 13 13 L 13 15 L 15 15 L 15 13 Z M 17 13 L 17 15 L 19 15 L 19 13 Z M 21 13 L 21 15 L 23 15 L 23 13 Z M 9 17 L 9 19 L 11 19 L 11 17 Z M 13 17 L 13 19 L 15 19 L 15 17 Z M 17 17 L 17 19 L 19 19 L 19 17 Z M 21 17 L 21 19 L 23 19 L 23 17 Z M 9 21 L 9 23 L 11 23 L 11 21 Z M 13 21 L 13 23 L 15 23 L 15 21 Z M 17 21 L 17 23 L 19 23 L 19 21 Z"
-                fill="currentColor"></path>
-            </svg>
-          </div>
-          <div class="relative">
-            <div class="d_flex me_3">
-              <a class="minus_btn" href="#">-</a>
-              <input class="border_none outline_none passenger_input" type="text" placeholder="1" />
-              <div class="me_3 text_gray">Passenger</div>
-              <a class="minus_btn" href="#">+</a>
+            <img
+              class="w_100vw h_100vh object_fit"
+              src="./assets/png/3.jpeg"
+              alt=""
+            />
+            <div class="absolute top_50 left_50 translate_50_50">
+              <h1
+                class="letter_spacing_08 fs_2xl text_white fw_normal text_align_center"
+              >
+                Join the Amalfi Reserve
+              </h1>
+              <div class="text_align_center">
+                <a
+                  href="#"
+                  class="explore_btn fs_base px_12 py_xsm_10 py_sm_10 py_18 text_uppercase d_inline_block text_black fw_normal"
+                  >Explore Program</a
+                >
+              </div>
             </div>
           </div>
         </div>
-        <div class="search_btn">
-          <p class="text_white">Search</p>
-        </div>
+      </div>
+      <div class="slider_nav">
+        <a href="#slider_1"></a>
+        <a href="#slider_2"></a>
+        <a href="#slider_3"></a>
       </div>
     </div>
-  </div>
 
-  <!-- Exploring world with you -->
-  <div class="padding_67">
-    <div class="custom_container">
-      <div class="row">
-        <div class="col_6">
-          <img class="w_100" src="./assets/png/explore word with you image.avif" alt="image" />
-        </div>
-        <div class="col_6">
-          <h2 class="fs_xl text_uppercase mb_41 fw_normal line_height_20">
-            exploring the world with you
-          </h2>
-          <div>
-            <img class="w_100" src="./assets/png/explore word 2nd.avif" alt="image" />
-          </div>
-          <p class="fs_lg line_height_25 mt_4 mb_4">
-            Amalfi Jets sets the standard for global access, high quality
-            aircraft, competitive pricing, and flexible products that adapt to
-            your travel style. Enjoy clear consistency on each and every
-            flight, a dedicated one to one Account Management Team that
-            understands your specific needs and tastes. Seamlessly book
-            private jet flights anywhere in the world, all with one company
-            and one high standard.
-          </p>
-          <a class="text_uppercase flight_btn" href=""> Book a flight </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- JetCard Program -->
+    <!--  book a flight  -->
 
-  <div class="relative">
-    <div class="padding_67 w_100 bg_jetCard">
-      <div class="max_width_45ch text_align_center m_auto pt_5 pb_5">
-        <p class="fs_sm fw_normal text_white text">
-          THE INDUSTRY LEADING JET CARD PROGRAM
-        </p>
-        <h1 class="mt_3 mb_3 text_white fw_normal">
-          THE AMALFI ONE JETCARD PROGRAM
-        </h1>
-        <p class="text_white fs_lg mb_5 fw_normal">
-          For the private flier that appreciates global access, favorable
-          economics, and high quality aircraft.
-        </p>
-        <a class="discover_btn text_uppercase" href="#">DISCOVER THE JET CARD</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Empty leg flight  -->
-
-  <div class="padding_67">
-    <div>
-      <div class="d_flex flex_column align_center m_auto max_width_60ch">
-        <p class="text_uppercase text_gray fw_normal">
-          exclusively for members on the amalfi app
-        </p>
-        <h2 class="fs_sm fw_normal fs_xl mt_4 mb_4 letter_spacing2 text_uppercase">
-          Empty Leg Flights
-        </h2>
-        <p class="fs_lg fw_normal text_align_center opacity_60 letter_spacing3 mb_5 pb_1">
-          Discover our handpicked selection of discounted empty leg flights
-          across the world. Explore featured flights on our app to elevate
-          your travel experience.
-        </p>
-      </div>
-
-      <div class="d_none">
-        <div class="flight_card relative">
-          <div class="absolute text_white d_flex align_center flight_card_content">
-            <div>
-              <div class="mb_1">Embraer Praetor 600</div>
-              <div class="d_flex gap_4">
-                <div class="fw_normal fs_lg">Montreal</div>
-                <div>
-                  <svg width="100%" height="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
-                    class="flight_card_icon">
-                    <path
-                      d="M 3.40625 3.96875 L 3.34375 5.25 L 3 14.03125 L 2.96875 14.8125 L 3.71875 15.03125 L 10.125 16.96875 L 4.6875 20.75 L 3.15625 21.8125 L 4.875 22.5 L 7.71875 23.625 L 8.09375 23.78125 L 8.46875 23.625 L 18.46875 19.46875 L 24.875 21.40625 C 26.5625 21.914063 28.367188 20.933594 28.875 19.25 C 29.382813 17.5625 28.402344 15.757813 26.71875 15.25 L 21.03125 13.5 L 17.25 7.25 L 17.03125 6.90625 L 16.65625 6.78125 L 14 6.0625 L 12.53125 5.6875 L 12.75 7.1875 L 13.28125 11.09375 L 9.03125 9.78125 L 7.40625 5.59375 L 7.21875 5.125 L 6.75 4.96875 L 4.625 4.34375 Z M 5.28125 6.625 L 5.71875 6.75 L 7.3125 10.9375 L 7.46875 11.40625 L 7.9375 11.53125 L 26.125 17.15625 C 26.777344 17.351563 27.132813 18.007813 26.9375 18.65625 C 26.742188 19.308594 26.085938 19.664063 25.4375 19.46875 L 18.6875 17.4375 L 18.34375 17.34375 L 18.03125 17.46875 L 8.09375 21.625 L 7.34375 21.3125 L 12.96875 17.4375 L 14.6875 16.25 L 12.6875 15.65625 L 5.03125 13.34375 Z M 14.90625 8.40625 L 15.71875 8.625 L 18.15625 12.59375 L 15.34375 11.75 Z M 20.5 21 C 19.671875 21 19 21.671875 19 22.5 C 19 23.328125 19.671875 24 20.5 24 C 21.328125 24 22 23.328125 22 22.5 C 22 21.671875 21.328125 21 20.5 21 Z M 3 26 L 3 28 L 29 28 L 29 26 Z"
-                      fill="currentColor"></path>
-                  </svg>
-                </div>
-                <div class="fw_normal fs_lg">Antigua and Barbuda</div>
-              </div>
-            </div>
-            <div>
-              <p class="fs_sm fw_normal">January 24, 2025</p>
-              <p class="fs_sm fw_normal">$16,800</p>
-            </div>
-          </div>
-          <div>
-            <img class="w_100 brs_10" src="./assets/png/mountain.jpg" alt="" />
-          </div>
-        </div>
-        <div class="flight_card relative">
-          <div class="absolute text_white d_flex align_center flight_card_content">
-            <div>
-              <div class="mb_1">Embraer Praetor 600</div>
-              <div class="d_flex gap_4">
-                <div class="fw_normal fs_lg">Montreal</div>
-                <div>
-                  <svg width="100%" height="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
-                    class="flight_card_icon">
-                    <path
-                      d="M 3.40625 3.96875 L 3.34375 5.25 L 3 14.03125 L 2.96875 14.8125 L 3.71875 15.03125 L 10.125 16.96875 L 4.6875 20.75 L 3.15625 21.8125 L 4.875 22.5 L 7.71875 23.625 L 8.09375 23.78125 L 8.46875 23.625 L 18.46875 19.46875 L 24.875 21.40625 C 26.5625 21.914063 28.367188 20.933594 28.875 19.25 C 29.382813 17.5625 28.402344 15.757813 26.71875 15.25 L 21.03125 13.5 L 17.25 7.25 L 17.03125 6.90625 L 16.65625 6.78125 L 14 6.0625 L 12.53125 5.6875 L 12.75 7.1875 L 13.28125 11.09375 L 9.03125 9.78125 L 7.40625 5.59375 L 7.21875 5.125 L 6.75 4.96875 L 4.625 4.34375 Z M 5.28125 6.625 L 5.71875 6.75 L 7.3125 10.9375 L 7.46875 11.40625 L 7.9375 11.53125 L 26.125 17.15625 C 26.777344 17.351563 27.132813 18.007813 26.9375 18.65625 C 26.742188 19.308594 26.085938 19.664063 25.4375 19.46875 L 18.6875 17.4375 L 18.34375 17.34375 L 18.03125 17.46875 L 8.09375 21.625 L 7.34375 21.3125 L 12.96875 17.4375 L 14.6875 16.25 L 12.6875 15.65625 L 5.03125 13.34375 Z M 14.90625 8.40625 L 15.71875 8.625 L 18.15625 12.59375 L 15.34375 11.75 Z M 20.5 21 C 19.671875 21 19 21.671875 19 22.5 C 19 23.328125 19.671875 24 20.5 24 C 21.328125 24 22 23.328125 22 22.5 C 22 21.671875 21.328125 21 20.5 21 Z M 3 26 L 3 28 L 29 28 L 29 26 Z"
-                      fill="currentColor"></path>
-                  </svg>
-                </div>
-                <div class="fw_normal fs_lg">Antigua and Barbuda</div>
-              </div>
-            </div>
-            <div>
-              <p class="fs_sm fw_normal">January 24, 2025</p>
-              <p class="fs_sm fw_normal">$16,800</p>
-            </div>
-          </div>
-          <div>
-            <img class="w_100 brs_10" src="./assets/png/mountain.jpg" alt="" />
-          </div>
-        </div>
-        <div class="flight_card relative">
-          <div class="absolute text_white d_flex align_center flight_card_content">
-            <div>
-              <div class="mb_1">Embraer Praetor 600</div>
-              <div class="d_flex gap_4">
-                <div class="fw_normal fs_lg">Montreal</div>
-                <div>
-                  <svg width="100%" height="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
-                    class="flight_card_icon">
-                    <path
-                      d="M 3.40625 3.96875 L 3.34375 5.25 L 3 14.03125 L 2.96875 14.8125 L 3.71875 15.03125 L 10.125 16.96875 L 4.6875 20.75 L 3.15625 21.8125 L 4.875 22.5 L 7.71875 23.625 L 8.09375 23.78125 L 8.46875 23.625 L 18.46875 19.46875 L 24.875 21.40625 C 26.5625 21.914063 28.367188 20.933594 28.875 19.25 C 29.382813 17.5625 28.402344 15.757813 26.71875 15.25 L 21.03125 13.5 L 17.25 7.25 L 17.03125 6.90625 L 16.65625 6.78125 L 14 6.0625 L 12.53125 5.6875 L 12.75 7.1875 L 13.28125 11.09375 L 9.03125 9.78125 L 7.40625 5.59375 L 7.21875 5.125 L 6.75 4.96875 L 4.625 4.34375 Z M 5.28125 6.625 L 5.71875 6.75 L 7.3125 10.9375 L 7.46875 11.40625 L 7.9375 11.53125 L 26.125 17.15625 C 26.777344 17.351563 27.132813 18.007813 26.9375 18.65625 C 26.742188 19.308594 26.085938 19.664063 25.4375 19.46875 L 18.6875 17.4375 L 18.34375 17.34375 L 18.03125 17.46875 L 8.09375 21.625 L 7.34375 21.3125 L 12.96875 17.4375 L 14.6875 16.25 L 12.6875 15.65625 L 5.03125 13.34375 Z M 14.90625 8.40625 L 15.71875 8.625 L 18.15625 12.59375 L 15.34375 11.75 Z M 20.5 21 C 19.671875 21 19 21.671875 19 22.5 C 19 23.328125 19.671875 24 20.5 24 C 21.328125 24 22 23.328125 22 22.5 C 22 21.671875 21.328125 21 20.5 21 Z M 3 26 L 3 28 L 29 28 L 29 26 Z"
-                      fill="currentColor"></path>
-                  </svg>
-                </div>
-                <div class="fw_normal fs_lg">Antigua and Barbuda</div>
-              </div>
-            </div>
-            <div>
-              <p class="fs_sm fw_normal">January 24, 2025</p>
-              <p class="fs_sm fw_normal">$16,800</p>
-            </div>
-          </div>
-          <div>
-            <img class="w_100 brs_10" src="./assets/png/mountain.jpg" alt="" />
-          </div>
-        </div>
-        <div class="flight_card relative">
-          <div class="absolute text_white d_flex align_center flight_card_content">
-            <div>
-              <div class="mb_1">Embraer Praetor 600</div>
-              <div class="d_flex gap_4">
-                <div class="fw_normal fs_lg">Montreal</div>
-                <div>
-                  <svg width="100%" height="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
-                    class="flight_card_icon">
-                    <path
-                      d="M 3.40625 3.96875 L 3.34375 5.25 L 3 14.03125 L 2.96875 14.8125 L 3.71875 15.03125 L 10.125 16.96875 L 4.6875 20.75 L 3.15625 21.8125 L 4.875 22.5 L 7.71875 23.625 L 8.09375 23.78125 L 8.46875 23.625 L 18.46875 19.46875 L 24.875 21.40625 C 26.5625 21.914063 28.367188 20.933594 28.875 19.25 C 29.382813 17.5625 28.402344 15.757813 26.71875 15.25 L 21.03125 13.5 L 17.25 7.25 L 17.03125 6.90625 L 16.65625 6.78125 L 14 6.0625 L 12.53125 5.6875 L 12.75 7.1875 L 13.28125 11.09375 L 9.03125 9.78125 L 7.40625 5.59375 L 7.21875 5.125 L 6.75 4.96875 L 4.625 4.34375 Z M 5.28125 6.625 L 5.71875 6.75 L 7.3125 10.9375 L 7.46875 11.40625 L 7.9375 11.53125 L 26.125 17.15625 C 26.777344 17.351563 27.132813 18.007813 26.9375 18.65625 C 26.742188 19.308594 26.085938 19.664063 25.4375 19.46875 L 18.6875 17.4375 L 18.34375 17.34375 L 18.03125 17.46875 L 8.09375 21.625 L 7.34375 21.3125 L 12.96875 17.4375 L 14.6875 16.25 L 12.6875 15.65625 L 5.03125 13.34375 Z M 14.90625 8.40625 L 15.71875 8.625 L 18.15625 12.59375 L 15.34375 11.75 Z M 20.5 21 C 19.671875 21 19 21.671875 19 22.5 C 19 23.328125 19.671875 24 20.5 24 C 21.328125 24 22 23.328125 22 22.5 C 22 21.671875 21.328125 21 20.5 21 Z M 3 26 L 3 28 L 29 28 L 29 26 Z"
-                      fill="currentColor"></path>
-                  </svg>
-                </div>
-                <div class="fw_normal fs_lg">Antigua and Barbuda</div>
-              </div>
-            </div>
-            <div>
-              <p class="fs_sm fw_normal">January 24, 2025</p>
-              <p class="fs_sm fw_normal">$16,800</p>
-            </div>
-          </div>
-          <div>
-            <img class="w_100 brs_10" src="./assets/png/mountain.jpg" alt="" />
-          </div>
-        </div>
-        <div class="flight_card relative">
-          <div class="absolute text_white d_flex align_center flight_card_content">
-            <div>
-              <div class="mb_1">Embraer Praetor 600</div>
-              <div class="d_flex gap_4">
-                <div class="fw_normal fs_lg">Montreal</div>
-                <div>
-                  <svg width="100%" height="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
-                    class="flight_card_icon">
-                    <path
-                      d="M 3.40625 3.96875 L 3.34375 5.25 L 3 14.03125 L 2.96875 14.8125 L 3.71875 15.03125 L 10.125 16.96875 L 4.6875 20.75 L 3.15625 21.8125 L 4.875 22.5 L 7.71875 23.625 L 8.09375 23.78125 L 8.46875 23.625 L 18.46875 19.46875 L 24.875 21.40625 C 26.5625 21.914063 28.367188 20.933594 28.875 19.25 C 29.382813 17.5625 28.402344 15.757813 26.71875 15.25 L 21.03125 13.5 L 17.25 7.25 L 17.03125 6.90625 L 16.65625 6.78125 L 14 6.0625 L 12.53125 5.6875 L 12.75 7.1875 L 13.28125 11.09375 L 9.03125 9.78125 L 7.40625 5.59375 L 7.21875 5.125 L 6.75 4.96875 L 4.625 4.34375 Z M 5.28125 6.625 L 5.71875 6.75 L 7.3125 10.9375 L 7.46875 11.40625 L 7.9375 11.53125 L 26.125 17.15625 C 26.777344 17.351563 27.132813 18.007813 26.9375 18.65625 C 26.742188 19.308594 26.085938 19.664063 25.4375 19.46875 L 18.6875 17.4375 L 18.34375 17.34375 L 18.03125 17.46875 L 8.09375 21.625 L 7.34375 21.3125 L 12.96875 17.4375 L 14.6875 16.25 L 12.6875 15.65625 L 5.03125 13.34375 Z M 14.90625 8.40625 L 15.71875 8.625 L 18.15625 12.59375 L 15.34375 11.75 Z M 20.5 21 C 19.671875 21 19 21.671875 19 22.5 C 19 23.328125 19.671875 24 20.5 24 C 21.328125 24 22 23.328125 22 22.5 C 22 21.671875 21.328125 21 20.5 21 Z M 3 26 L 3 28 L 29 28 L 29 26 Z"
-                      fill="currentColor"></path>
-                  </svg>
-                </div>
-                <div class="fw_normal fs_lg">Antigua and Barbuda</div>
-              </div>
-            </div>
-            <div>
-              <p class="fs_sm fw_normal">January 24, 2025</p>
-              <p class="fs_sm fw_normal">$16,800</p>
-            </div>
-          </div>
-          <div>
-            <img class="w_100 brs_10" src="./assets/png/mountain.jpg" alt="" />
-          </div>
-        </div>
-        <div class="flight_card relative">
-          <div class="absolute text_white d_flex align_center flight_card_content">
-            <div>
-              <div class="mb_1">Embraer Praetor 600</div>
-              <div class="d_flex gap_4">
-                <div class="fw_normal fs_lg">Montreal</div>
-                <div>
-                  <svg width="100%" height="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
-                    class="flight_card_icon">
-                    <path
-                      d="M 3.40625 3.96875 L 3.34375 5.25 L 3 14.03125 L 2.96875 14.8125 L 3.71875 15.03125 L 10.125 16.96875 L 4.6875 20.75 L 3.15625 21.8125 L 4.875 22.5 L 7.71875 23.625 L 8.09375 23.78125 L 8.46875 23.625 L 18.46875 19.46875 L 24.875 21.40625 C 26.5625 21.914063 28.367188 20.933594 28.875 19.25 C 29.382813 17.5625 28.402344 15.757813 26.71875 15.25 L 21.03125 13.5 L 17.25 7.25 L 17.03125 6.90625 L 16.65625 6.78125 L 14 6.0625 L 12.53125 5.6875 L 12.75 7.1875 L 13.28125 11.09375 L 9.03125 9.78125 L 7.40625 5.59375 L 7.21875 5.125 L 6.75 4.96875 L 4.625 4.34375 Z M 5.28125 6.625 L 5.71875 6.75 L 7.3125 10.9375 L 7.46875 11.40625 L 7.9375 11.53125 L 26.125 17.15625 C 26.777344 17.351563 27.132813 18.007813 26.9375 18.65625 C 26.742188 19.308594 26.085938 19.664063 25.4375 19.46875 L 18.6875 17.4375 L 18.34375 17.34375 L 18.03125 17.46875 L 8.09375 21.625 L 7.34375 21.3125 L 12.96875 17.4375 L 14.6875 16.25 L 12.6875 15.65625 L 5.03125 13.34375 Z M 14.90625 8.40625 L 15.71875 8.625 L 18.15625 12.59375 L 15.34375 11.75 Z M 20.5 21 C 19.671875 21 19 21.671875 19 22.5 C 19 23.328125 19.671875 24 20.5 24 C 21.328125 24 22 23.328125 22 22.5 C 22 21.671875 21.328125 21 20.5 21 Z M 3 26 L 3 28 L 29 28 L 29 26 Z"
-                      fill="currentColor"></path>
-                  </svg>
-                </div>
-                <div class="fw_normal fs_lg">Antigua and Barbuda</div>
-              </div>
-            </div>
-            <div>
-              <p class="fs_sm fw_normal">January 24, 2025</p>
-              <p class="fs_sm fw_normal">$16,800</p>
-            </div>
-          </div>
-          <div>
-            <img class="w_100 brs_10" src="./assets/png/mountain.jpg" alt="" />
-          </div>
-        </div>
-        <div class="flight_card relative">
-          <div class="absolute text_white d_flex align_center flight_card_content">
-            <div>
-              <div class="mb_1">Embraer Praetor 600</div>
-              <div class="d_flex gap_4">
-                <div class="fw_normal fs_lg">Montreal</div>
-                <div>
-                  <svg width="100%" height="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
-                    class="flight_card_icon">
-                    <path
-                      d="M 3.40625 3.96875 L 3.34375 5.25 L 3 14.03125 L 2.96875 14.8125 L 3.71875 15.03125 L 10.125 16.96875 L 4.6875 20.75 L 3.15625 21.8125 L 4.875 22.5 L 7.71875 23.625 L 8.09375 23.78125 L 8.46875 23.625 L 18.46875 19.46875 L 24.875 21.40625 C 26.5625 21.914063 28.367188 20.933594 28.875 19.25 C 29.382813 17.5625 28.402344 15.757813 26.71875 15.25 L 21.03125 13.5 L 17.25 7.25 L 17.03125 6.90625 L 16.65625 6.78125 L 14 6.0625 L 12.53125 5.6875 L 12.75 7.1875 L 13.28125 11.09375 L 9.03125 9.78125 L 7.40625 5.59375 L 7.21875 5.125 L 6.75 4.96875 L 4.625 4.34375 Z M 5.28125 6.625 L 5.71875 6.75 L 7.3125 10.9375 L 7.46875 11.40625 L 7.9375 11.53125 L 26.125 17.15625 C 26.777344 17.351563 27.132813 18.007813 26.9375 18.65625 C 26.742188 19.308594 26.085938 19.664063 25.4375 19.46875 L 18.6875 17.4375 L 18.34375 17.34375 L 18.03125 17.46875 L 8.09375 21.625 L 7.34375 21.3125 L 12.96875 17.4375 L 14.6875 16.25 L 12.6875 15.65625 L 5.03125 13.34375 Z M 14.90625 8.40625 L 15.71875 8.625 L 18.15625 12.59375 L 15.34375 11.75 Z M 20.5 21 C 19.671875 21 19 21.671875 19 22.5 C 19 23.328125 19.671875 24 20.5 24 C 21.328125 24 22 23.328125 22 22.5 C 22 21.671875 21.328125 21 20.5 21 Z M 3 26 L 3 28 L 29 28 L 29 26 Z"
-                      fill="currentColor"></path>
-                  </svg>
-                </div>
-                <div class="fw_normal fs_lg">Antigua and Barbuda</div>
-              </div>
-            </div>
-            <div>
-              <p class="fs_sm fw_normal">January 24, 2025</p>
-              <p class="fs_sm fw_normal">$16,800</p>
-            </div>
-          </div>
-          <div>
-            <img class="w_100 brs_10" src="./assets/png/mountain.jpg" alt="" />
-          </div>
-        </div>
-        <div class="flight_card relative">
-          <div class="absolute text_white d_flex align_center flight_card_content">
-            <div>
-              <div class="mb_1">Embraer Praetor 600</div>
-              <div class="d_flex gap_4">
-                <div class="fw_normal fs_lg">Montreal</div>
-                <div>
-                  <svg width="100%" height="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
-                    class="flight_card_icon">
-                    <path
-                      d="M 3.40625 3.96875 L 3.34375 5.25 L 3 14.03125 L 2.96875 14.8125 L 3.71875 15.03125 L 10.125 16.96875 L 4.6875 20.75 L 3.15625 21.8125 L 4.875 22.5 L 7.71875 23.625 L 8.09375 23.78125 L 8.46875 23.625 L 18.46875 19.46875 L 24.875 21.40625 C 26.5625 21.914063 28.367188 20.933594 28.875 19.25 C 29.382813 17.5625 28.402344 15.757813 26.71875 15.25 L 21.03125 13.5 L 17.25 7.25 L 17.03125 6.90625 L 16.65625 6.78125 L 14 6.0625 L 12.53125 5.6875 L 12.75 7.1875 L 13.28125 11.09375 L 9.03125 9.78125 L 7.40625 5.59375 L 7.21875 5.125 L 6.75 4.96875 L 4.625 4.34375 Z M 5.28125 6.625 L 5.71875 6.75 L 7.3125 10.9375 L 7.46875 11.40625 L 7.9375 11.53125 L 26.125 17.15625 C 26.777344 17.351563 27.132813 18.007813 26.9375 18.65625 C 26.742188 19.308594 26.085938 19.664063 25.4375 19.46875 L 18.6875 17.4375 L 18.34375 17.34375 L 18.03125 17.46875 L 8.09375 21.625 L 7.34375 21.3125 L 12.96875 17.4375 L 14.6875 16.25 L 12.6875 15.65625 L 5.03125 13.34375 Z M 14.90625 8.40625 L 15.71875 8.625 L 18.15625 12.59375 L 15.34375 11.75 Z M 20.5 21 C 19.671875 21 19 21.671875 19 22.5 C 19 23.328125 19.671875 24 20.5 24 C 21.328125 24 22 23.328125 22 22.5 C 22 21.671875 21.328125 21 20.5 21 Z M 3 26 L 3 28 L 29 28 L 29 26 Z"
-                      fill="currentColor"></path>
-                  </svg>
-                </div>
-                <div class="fw_normal fs_lg">Antigua and Barbuda</div>
-              </div>
-            </div>
-            <div>
-              <p class="fs_sm fw_normal">January 24, 2025</p>
-              <p class="fs_sm fw_normal">$16,800</p>
-            </div>
-          </div>
-          <div>
-            <img class="w_100 brs_10" src="./assets/png/mountain.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- global private jet -->
-
-  <div class="padding_67">
-    <div class="row align_center justify_space_between">
-      <div class="col_6 max_width_45ch">
-        <h2 class="mt_4 mb_4 fs_xl fw_normal text_uppercase letter_spacing2">
-          experts in global private jet charters
-        </h2>
-        <p class="letter_spacing3 opacity_60 fs_lg fw_normal mb_5">
-          Flying with Amalfi, combines global access with consistent flight
-          quality. Enjoy premium cabins, personalized service, and a plethora
-          of experience from our team.
-        </p>
-        <a class="book_flight_btn" href="#"> book a flight </a>
-      </div>
-      <div class="col_6">
-        <img class="w_100" src="./assets/png/professor.avif" alt="" />
-      </div>
-    </div>
-  </div>
-
-  <!-- Reserve card -->
-
-  <div class="relative">
-    <div class="padding_67 w_100 bg_reserve_Card">
+    <div class="p_25 padding_67">
       <div class="narror_container">
-        <div class="max_width_45ch pt_5 pb_5">
+        <div class="d_flex flex_column gap_24">
+          <h2 class="fs_xl fw_normal">Book a flight</h2>
+          <p class="fw_normal fs_lg text_gray">
+            Please fill out the form to be connected with our sales team.
+            Private jet charter costs are subject to various factors and start
+            at <strong>$5,000 per hour.</strong>
+          </p>
+        </div>
+        <!-- round trip here -->
+        <div class="mb_2 mt_32">
+          <select
+            class="text_uppercase border_none outline_none"
+            name="one_way_or_roundtrip"
+            id="type-field"
+          >
+            <option value="Round Trip">Round Trip</option>
+            <option value="One-way">One-way</option>
+          </select>
+        </div>
+        <!-- form -->
+        <div class="d_flex flex_column flex_lg_row align_center gap_3 mb_32">
+          <div class="form_top_bar_main d_flex flex_wrap">
+            <div class="relative border_xsm_bottom">
+              <input
+                class="form_field"
+                type="text"
+                placeholder="From"
+                required
+              />
+              <svg
+                width="100%"
+                height="100%"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="form_icon"
+              >
+                <path
+                  d="M 25.71875 4.78125 C 25.332031 4.816406 24.957031 4.929688 24.59375 5.125 L 19.875 7.625 L 13.5 6.0625 L 13.125 5.96875 L 12.75 6.15625 L 10.59375 7.40625 L 9.3125 8.15625 L 10.5 9.0625 L 13.21875 11.125 L 9.8125 12.9375 L 6.15625 11.28125 L 5.71875 11.09375 L 5.28125 11.3125 L 3.53125 12.25 L 2.375 12.875 L 3.25 13.8125 L 8.65625 19.625 L 9.15625 20.21875 L 9.84375 19.84375 L 15 17.09375 L 13.96875 22.78125 L 13.625 24.59375 L 15.34375 23.875 L 17.90625 22.78125 L 18.28125 22.625 L 18.4375 22.25 L 22.15625 13.21875 L 27.40625 10.40625 C 28.851563 9.628906 29.433594 7.789063 28.65625 6.34375 C 28.269531 5.621094 27.609375 5.128906 26.875 4.90625 C 26.507813 4.796875 26.105469 4.746094 25.71875 4.78125 Z M 25.90625 6.78125 C 26.03125 6.773438 26.160156 6.777344 26.28125 6.8125 C 26.523438 6.886719 26.742188 7.035156 26.875 7.28125 C 27.140625 7.777344 26.964844 8.359375 26.46875 8.625 L 20.875 11.65625 L 20.5625 11.8125 L 20.4375 12.15625 L 16.71875 21.09375 L 16.28125 21.28125 L 17.34375 15.375 L 17.71875 13.34375 L 15.90625 14.3125 L 9.59375 17.71875 L 5.625 13.40625 L 5.78125 13.3125 L 9.4375 14.9375 L 9.90625 15.15625 L 10.3125 14.90625 L 25.53125 6.875 C 25.65625 6.808594 25.78125 6.789063 25.90625 6.78125 Z M 13.375 8.09375 L 17.21875 9.03125 L 15.15625 10.09375 L 12.90625 8.375 Z M 3 26 L 3 28 L 29 28 L 29 26 Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <div class="relative border_xsm_bottom">
+              <input class="form_field" type="text" placeholder="To" required />
+              <svg
+                width="100%"
+                height="100%"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="form_icon"
+              >
+                <path
+                  d="M 3.40625 3.96875 L 3.34375 5.25 L 3 14.03125 L 2.96875 14.8125 L 3.71875 15.03125 L 10.125 16.96875 L 4.6875 20.75 L 3.15625 21.8125 L 4.875 22.5 L 7.71875 23.625 L 8.09375 23.78125 L 8.46875 23.625 L 18.46875 19.46875 L 24.875 21.40625 C 26.5625 21.914063 28.367188 20.933594 28.875 19.25 C 29.382813 17.5625 28.402344 15.757813 26.71875 15.25 L 21.03125 13.5 L 17.25 7.25 L 17.03125 6.90625 L 16.65625 6.78125 L 14 6.0625 L 12.53125 5.6875 L 12.75 7.1875 L 13.28125 11.09375 L 9.03125 9.78125 L 7.40625 5.59375 L 7.21875 5.125 L 6.75 4.96875 L 4.625 4.34375 Z M 5.28125 6.625 L 5.71875 6.75 L 7.3125 10.9375 L 7.46875 11.40625 L 7.9375 11.53125 L 26.125 17.15625 C 26.777344 17.351563 27.132813 18.007813 26.9375 18.65625 C 26.742188 19.308594 26.085938 19.664063 25.4375 19.46875 L 18.6875 17.4375 L 18.34375 17.34375 L 18.03125 17.46875 L 8.09375 21.625 L 7.34375 21.3125 L 12.96875 17.4375 L 14.6875 16.25 L 12.6875 15.65625 L 5.03125 13.34375 Z M 14.90625 8.40625 L 15.71875 8.625 L 18.15625 12.59375 L 15.34375 11.75 Z M 20.5 21 C 19.671875 21 19 21.671875 19 22.5 C 19 23.328125 19.671875 24 20.5 24 C 21.328125 24 22 23.328125 22 22.5 C 22 21.671875 21.328125 21 20.5 21 Z M 3 26 L 3 28 L 29 28 L 29 26 Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <div class="relative border_xsm_bottom">
+              <input
+                class="form_field"
+                type="text"
+                placeholder="Depart"
+                required
+              />
+              <svg
+                width="100%"
+                height="100%"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="form_icon"
+              >
+                <path
+                  d="M 9 4 L 9 5 L 5 5 L 5 27 L 27 27 L 27 5 L 23 5 L 23 4 L 21 4 L 21 5 L 11 5 L 11 4 Z M 7 7 L 9 7 L 9 8 L 11 8 L 11 7 L 21 7 L 21 8 L 23 8 L 23 7 L 25 7 L 25 9 L 7 9 Z M 7 11 L 25 11 L 25 25 L 7 25 Z M 13 13 L 13 15 L 15 15 L 15 13 Z M 17 13 L 17 15 L 19 15 L 19 13 Z M 21 13 L 21 15 L 23 15 L 23 13 Z M 9 17 L 9 19 L 11 19 L 11 17 Z M 13 17 L 13 19 L 15 19 L 15 17 Z M 17 17 L 17 19 L 19 19 L 19 17 Z M 21 17 L 21 19 L 23 19 L 23 17 Z M 9 21 L 9 23 L 11 23 L 11 21 Z M 13 21 L 13 23 L 15 23 L 15 21 Z M 17 21 L 17 23 L 19 23 L 19 21 Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <div class="relative border_xsm_bottom">
+              <input
+                class="form_field"
+                type="text"
+                placeholder="Return"
+                required
+              />
+              <svg
+                width="100%"
+                height="100%"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="form_icon"
+              >
+                <path
+                  d="M 9 4 L 9 5 L 5 5 L 5 27 L 27 27 L 27 5 L 23 5 L 23 4 L 21 4 L 21 5 L 11 5 L 11 4 Z M 7 7 L 9 7 L 9 8 L 11 8 L 11 7 L 21 7 L 21 8 L 23 8 L 23 7 L 25 7 L 25 9 L 7 9 Z M 7 11 L 25 11 L 25 25 L 7 25 Z M 13 13 L 13 15 L 15 15 L 15 13 Z M 17 13 L 17 15 L 19 15 L 19 13 Z M 21 13 L 21 15 L 23 15 L 23 13 Z M 9 17 L 9 19 L 11 19 L 11 17 Z M 13 17 L 13 19 L 15 19 L 15 17 Z M 17 17 L 17 19 L 19 19 L 19 17 Z M 21 17 L 21 19 L 23 19 L 23 17 Z M 9 21 L 9 23 L 11 23 L 11 21 Z M 13 21 L 13 23 L 15 23 L 15 21 Z M 17 21 L 17 23 L 19 23 L 19 21 Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <div class="relative border_xsm_bottom">
+              <input
+                class="form_field"
+                type="text"
+                placeholder="Depart"
+                required
+              />
+              <svg
+                width="100%"
+                height="100%"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="form_icon"
+              >
+                <path
+                  d="M 9 4 L 9 5 L 5 5 L 5 27 L 27 27 L 27 5 L 23 5 L 23 4 L 21 4 L 21 5 L 11 5 L 11 4 Z M 7 7 L 9 7 L 9 8 L 11 8 L 11 7 L 21 7 L 21 8 L 23 8 L 23 7 L 25 7 L 25 9 L 7 9 Z M 7 11 L 25 11 L 25 25 L 7 25 Z M 13 13 L 13 15 L 15 15 L 15 13 Z M 17 13 L 17 15 L 19 15 L 19 13 Z M 21 13 L 21 15 L 23 15 L 23 13 Z M 9 17 L 9 19 L 11 19 L 11 17 Z M 13 17 L 13 19 L 15 19 L 15 17 Z M 17 17 L 17 19 L 19 19 L 19 17 Z M 21 17 L 21 19 L 23 19 L 23 17 Z M 9 21 L 9 23 L 11 23 L 11 21 Z M 13 21 L 13 23 L 15 23 L 15 21 Z M 17 21 L 17 23 L 19 23 L 19 21 Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div class="search_btn w_xsm_100">
+            <p class="text_white">Search</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exploring world with you -->
+    <div class="p_25 padding_67">
+      <div class="custom_container">
+        <div class="row">
+          <div class="col_6">
+            <img
+              class="w_100 d_none d_lg_block"
+              src="./assets/png/explore word with you image.avif"
+              alt="image"
+            />
+          </div>
+          <div class="col_12 col_md_6">
+            <h2 class="fs_xl text_uppercase mb_5 fw_normal">
+              exploring the world with you
+            </h2>
+            <div>
+              <img
+                class="w_100"
+                src="./assets/png/explore word 2nd.avif"
+                alt="image"
+              />
+            </div>
+            <p class="fs_lg line_height_25 mx_4">
+              Amalfi Jets sets the standard for global access, high quality
+              aircraft, competitive pricing, and flexible products that adapt to
+              your travel style. Enjoy clear consistency on each and every
+              flight, a dedicated one to one Account Management Team that
+              understands your specific needs and tastes. Seamlessly book
+              private jet flights anywhere in the world, all with one company
+              and one high standard.
+            </p>
+            <a class="text_uppercase flight_btn w_xsm_100" href="">
+              Book a flight
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JetCard Program -->
+
+    <div class="relative">
+      <div class="padding_67 w_100 bg_jetCard">
+        <div class="max_width_45ch text_align_center m_auto pt_5 pb_5">
           <p class="fs_sm fw_normal text_white text">
-            Join The Amalfi reserve membership
+            THE INDUSTRY LEADING JET CARD PROGRAM
           </p>
           <h1 class="mt_3 mb_3 text_white fw_normal">
-            Reserve Membership for Only $99 USD Per Month
+            THE AMALFI ONE JETCARD PROGRAM
           </h1>
           <p class="text_white fs_lg mb_5 fw_normal">
-            Exclusively on the Amalfi Jets App, enjoy a lifestyle concierge
-            team, VIP status at our partners, and more.
+            For the private flier that appreciates global access, favorable
+            economics, and high quality aircraft.
           </p>
-          <a class="discover_btn text_uppercase" href="#">download the app</a>
+          <a class="discover_btn text_uppercase" href="#"
+            >DISCOVER THE JET CARD</a
+          >
         </div>
       </div>
     </div>
-  </div>
-  <!-- Leading industry -->
 
-  <div class="padding_67">
-    <div class="row align_center justify_space_between">
-      <div class="col_6">
-        <img class="w_100" src="./assets/png/aeroplane.avif" alt="" />
-      </div>
-      <div class="col_6 max_width_45ch">
-        <p class="letter_spacing3 opacity_60 fs_lg fw_normal mb_5">
-          CURATED. OPTIMIZED. EXCLUSIVE.
-        </p>
-        <h2 class="mt_4 mb_4 fs_xl fw_normal text_uppercase letter_spacing2">
-          Leading the industry
-        </h2>
-        <p class="letter_spacing3 opacity_60 fs_lg fw_normal mb_5">
-          FFlying with Amalfi Jets provides unparalleled access to the highest
-          quality aircraft, leading safety standards, and a newfound one to
-          one, personalized approach.
-        </p>
-        <a class="book_flight_btn" href="#"> book a flight </a>
-      </div>
-    </div>
-  </div>
-  <!-- our programs -->
-  <div class="padding_67">
-    <div>
-      <h2 class="fw_normal fs_xl text_align_center mt_3 mb_4">
-        our programs
-      </h2>
-    </div>
+    <!-- Empty leg flight  -->
 
-    <div class="row">
-      <div class="col_3">
-        <img class="w_100 h_265" src="./assets/png/amal.avif" alt="" />
-        <h3 class="fw_normal mt_3 fs_sm opacity_60 text_gray">
-          Ad Hoc Charter Flights, Globally
-        </h3>
-        <p class="fw_normal fs_lg letter_spacing3">On-Demand Charter</p>
-      </div>
-      <div class="col_3">
-        <img class="w_100 h_265" src="./assets/png/amalficard.avif" alt="" />
-        <h3 class="fw_normal mt_3 fs_sm opacity_60 text_gray">
-          Flexible & Economically Favorable Jet Card Program
-        </h3>
-        <p class="fw_normal fs_lg letter_spacing3">Amalfi One Jet Card</p>
-      </div>
-      <div class="col_3">
-        <img class="w_100 h_265" src="./assets/png/amalfi aero.avif" alt="" />
-        <h3 class="fw_normal mt_3 fs_sm opacity_60 text_gray">
-          A Flexible Jet Card Program for Companies
-        </h3>
-        <p class="fw_normal fs_lg letter_spacing3">
-          Amalfi Enterprise Program
-        </p>
-      </div>
-      <div class="col_3">
-        <img class="w_100 h_265" src="./assets/png/amalfi island.avif" alt="" />
-        <h3 class="fw_normal mt_3 fs_sm opacity_60 text_gray">
-          A Premier Social Membership on the Amalfi App
-        </h3>
-        <p class="fw_normal fs_lg letter_spacing3">
-          Amalfi Reserve Membership
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <!-- footer -->
-
-  <div class="custom_container">
-    <footer class="padding_67">
-      <div class="row justify_space_between">
-        <div class="col_4">
-          <img width="177" src="./assets/png/footerlogo.png" alt="" />
+    <div class="p_25 padding_67">
+      <div>
+        <div class="d_flex flex_column align_center m_auto max_width_60ch">
+          <p class="text_uppercase text_gray fw_normal">
+            exclusively for members on the amalfi app
+          </p>
+          <h2
+            class="fs_sm fw_normal fs_xl mt_4 mb_4 letter_spacing2 text_uppercase"
+          >
+            Empty Leg Flights
+          </h2>
+          <p
+            class="fs_lg fw_normal text_align_center opacity_60 letter_spacing3 mb_5 pb_1"
+          >
+            Discover our handpicked selection of discounted empty leg flights
+            across the world. Explore featured flights on our app to elevate
+            your travel experience.
+          </p>
         </div>
 
-        <div class="col_7">
-          <div class="row justify_space_between">
-            <div class="col_3">
-              <p class="text_gray_darker fs_xsm fw_normal">Call</p>
-              <p class="fs_lg fw_normal mt_4">+1 (877) 6-AMALFI</p>
+        <div class="responsive">
+          <div>
+            <div class="flight_card relative">
+              <div
+                class="absolute text_white d_flex align_center flight_card_content"
+              >
+                <div>
+                  <div class="mb_1">Embraer Praetor 600</div>
+                  <div class="d_flex gap_4">
+                    <div class="fw_normal fs_lg">Montreal</div>
+                    <div>
+                      <svg
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="flight_card_icon"
+                      >
+                        <path
+                          d="M 3.40625 3.96875 L 3.34375 5.25 L 3 14.03125 L 2.96875 14.8125 L 3.71875 15.03125 L 10.125 16.96875 L 4.6875 20.75 L 3.15625 21.8125 L 4.875 22.5 L 7.71875 23.625 L 8.09375 23.78125 L 8.46875 23.625 L 18.46875 19.46875 L 24.875 21.40625 C 26.5625 21.914063 28.367188 20.933594 28.875 19.25 C 29.382813 17.5625 28.402344 15.757813 26.71875 15.25 L 21.03125 13.5 L 17.25 7.25 L 17.03125 6.90625 L 16.65625 6.78125 L 14 6.0625 L 12.53125 5.6875 L 12.75 7.1875 L 13.28125 11.09375 L 9.03125 9.78125 L 7.40625 5.59375 L 7.21875 5.125 L 6.75 4.96875 L 4.625 4.34375 Z M 5.28125 6.625 L 5.71875 6.75 L 7.3125 10.9375 L 7.46875 11.40625 L 7.9375 11.53125 L 26.125 17.15625 C 26.777344 17.351563 27.132813 18.007813 26.9375 18.65625 C 26.742188 19.308594 26.085938 19.664063 25.4375 19.46875 L 18.6875 17.4375 L 18.34375 17.34375 L 18.03125 17.46875 L 8.09375 21.625 L 7.34375 21.3125 L 12.96875 17.4375 L 14.6875 16.25 L 12.6875 15.65625 L 5.03125 13.34375 Z M 14.90625 8.40625 L 15.71875 8.625 L 18.15625 12.59375 L 15.34375 11.75 Z M 20.5 21 C 19.671875 21 19 21.671875 19 22.5 C 19 23.328125 19.671875 24 20.5 24 C 21.328125 24 22 23.328125 22 22.5 C 22 21.671875 21.328125 21 20.5 21 Z M 3 26 L 3 28 L 29 28 L 29 26 Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="fw_normal fs_lg">Antigua and Barbuda</div>
+                  </div>
+                </div>
+                <div>
+                  <p class="fs_sm fw_normal">January 24, 2025</p>
+                  <p class="fs_sm fw_normal">$16,800</p>
+                </div>
+              </div>
+              <div>
+                <img
+                  class="w_100 brs_10"
+                  src="./assets/png/mountain.jpg"
+                  alt=""
+                />
+              </div>
             </div>
-
-            <div class="col_3">
-              <p class="text_gray_darker fs_xsm fw_normal">Email</p>
-              <p class="fs_lg fw_normal mt_4 text_uppercase">
-                enquiry@amalfijets.com
-              </p>
+          </div>
+          <div>
+            <div class="flight_card relative">
+              <div
+                class="absolute text_white d_flex align_center flight_card_content"
+              >
+                <div>
+                  <div class="mb_1">Embraer Praetor 600</div>
+                  <div class="d_flex gap_4">
+                    <div class="fw_normal fs_lg">Montreal</div>
+                    <div>
+                      <svg
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="flight_card_icon"
+                      >
+                        <path
+                          d="M 3.40625 3.96875 L 3.34375 5.25 L 3 14.03125 L 2.96875 14.8125 L 3.71875 15.03125 L 10.125 16.96875 L 4.6875 20.75 L 3.15625 21.8125 L 4.875 22.5 L 7.71875 23.625 L 8.09375 23.78125 L 8.46875 23.625 L 18.46875 19.46875 L 24.875 21.40625 C 26.5625 21.914063 28.367188 20.933594 28.875 19.25 C 29.382813 17.5625 28.402344 15.757813 26.71875 15.25 L 21.03125 13.5 L 17.25 7.25 L 17.03125 6.90625 L 16.65625 6.78125 L 14 6.0625 L 12.53125 5.6875 L 12.75 7.1875 L 13.28125 11.09375 L 9.03125 9.78125 L 7.40625 5.59375 L 7.21875 5.125 L 6.75 4.96875 L 4.625 4.34375 Z M 5.28125 6.625 L 5.71875 6.75 L 7.3125 10.9375 L 7.46875 11.40625 L 7.9375 11.53125 L 26.125 17.15625 C 26.777344 17.351563 27.132813 18.007813 26.9375 18.65625 C 26.742188 19.308594 26.085938 19.664063 25.4375 19.46875 L 18.6875 17.4375 L 18.34375 17.34375 L 18.03125 17.46875 L 8.09375 21.625 L 7.34375 21.3125 L 12.96875 17.4375 L 14.6875 16.25 L 12.6875 15.65625 L 5.03125 13.34375 Z M 14.90625 8.40625 L 15.71875 8.625 L 18.15625 12.59375 L 15.34375 11.75 Z M 20.5 21 C 19.671875 21 19 21.671875 19 22.5 C 19 23.328125 19.671875 24 20.5 24 C 21.328125 24 22 23.328125 22 22.5 C 22 21.671875 21.328125 21 20.5 21 Z M 3 26 L 3 28 L 29 28 L 29 26 Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="fw_normal fs_lg">Antigua and Barbuda</div>
+                  </div>
+                </div>
+                <div>
+                  <p class="fs_sm fw_normal">January 24, 2025</p>
+                  <p class="fs_sm fw_normal">$16,800</p>
+                </div>
+              </div>
+              <div>
+                <img
+                  class="w_100 brs_10"
+                  src="./assets/png/mountain.jpg"
+                  alt=""
+                />
+              </div>
             </div>
-            <div class="col_3">
-              <p class="text_gray_darker fs_xsm fw_normal">Social</p>
-              <div class="d_flex gap_10 mt_4">
-                <img width="16" height="18" class="bg_white" src="./assets/png/tiktok.svg" alt="" />
-                <img width="16" height="18" class="bg_white" src="./assets/png/linkedin.svg" alt="" />
-                <img width="16" height="18" class="bg_white" src="./assets/png/insta.svg" alt="" />
-                <img width="16" height="18" class="bg_white" src="./assets/png/twitter.svg" alt="" />
+          </div>
+          <div>
+            <div class="flight_card relative">
+              <div
+                class="absolute text_white d_flex align_center flight_card_content"
+              >
+                <div>
+                  <div class="mb_1">Embraer Praetor 600</div>
+                  <div class="d_flex gap_4">
+                    <div class="fw_normal fs_lg">Montreal</div>
+                    <div>
+                      <svg
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="flight_card_icon"
+                      >
+                        <path
+                          d="M 3.40625 3.96875 L 3.34375 5.25 L 3 14.03125 L 2.96875 14.8125 L 3.71875 15.03125 L 10.125 16.96875 L 4.6875 20.75 L 3.15625 21.8125 L 4.875 22.5 L 7.71875 23.625 L 8.09375 23.78125 L 8.46875 23.625 L 18.46875 19.46875 L 24.875 21.40625 C 26.5625 21.914063 28.367188 20.933594 28.875 19.25 C 29.382813 17.5625 28.402344 15.757813 26.71875 15.25 L 21.03125 13.5 L 17.25 7.25 L 17.03125 6.90625 L 16.65625 6.78125 L 14 6.0625 L 12.53125 5.6875 L 12.75 7.1875 L 13.28125 11.09375 L 9.03125 9.78125 L 7.40625 5.59375 L 7.21875 5.125 L 6.75 4.96875 L 4.625 4.34375 Z M 5.28125 6.625 L 5.71875 6.75 L 7.3125 10.9375 L 7.46875 11.40625 L 7.9375 11.53125 L 26.125 17.15625 C 26.777344 17.351563 27.132813 18.007813 26.9375 18.65625 C 26.742188 19.308594 26.085938 19.664063 25.4375 19.46875 L 18.6875 17.4375 L 18.34375 17.34375 L 18.03125 17.46875 L 8.09375 21.625 L 7.34375 21.3125 L 12.96875 17.4375 L 14.6875 16.25 L 12.6875 15.65625 L 5.03125 13.34375 Z M 14.90625 8.40625 L 15.71875 8.625 L 18.15625 12.59375 L 15.34375 11.75 Z M 20.5 21 C 19.671875 21 19 21.671875 19 22.5 C 19 23.328125 19.671875 24 20.5 24 C 21.328125 24 22 23.328125 22 22.5 C 22 21.671875 21.328125 21 20.5 21 Z M 3 26 L 3 28 L 29 28 L 29 26 Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="fw_normal fs_lg">Antigua and Barbuda</div>
+                  </div>
+                </div>
+                <div>
+                  <p class="fs_sm fw_normal">January 24, 2025</p>
+                  <p class="fs_sm fw_normal">$16,800</p>
+                </div>
+              </div>
+              <div>
+                <img
+                  class="w_100 brs_10"
+                  src="./assets/png/mountain.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="flight_card relative">
+              <div
+                class="absolute text_white d_flex align_center flight_card_content"
+              >
+                <div>
+                  <div class="mb_1">Embraer Praetor 600</div>
+                  <div class="d_flex gap_4">
+                    <div class="fw_normal fs_lg">Montreal</div>
+                    <div>
+                      <svg
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="flight_card_icon"
+                      >
+                        <path
+                          d="M 3.40625 3.96875 L 3.34375 5.25 L 3 14.03125 L 2.96875 14.8125 L 3.71875 15.03125 L 10.125 16.96875 L 4.6875 20.75 L 3.15625 21.8125 L 4.875 22.5 L 7.71875 23.625 L 8.09375 23.78125 L 8.46875 23.625 L 18.46875 19.46875 L 24.875 21.40625 C 26.5625 21.914063 28.367188 20.933594 28.875 19.25 C 29.382813 17.5625 28.402344 15.757813 26.71875 15.25 L 21.03125 13.5 L 17.25 7.25 L 17.03125 6.90625 L 16.65625 6.78125 L 14 6.0625 L 12.53125 5.6875 L 12.75 7.1875 L 13.28125 11.09375 L 9.03125 9.78125 L 7.40625 5.59375 L 7.21875 5.125 L 6.75 4.96875 L 4.625 4.34375 Z M 5.28125 6.625 L 5.71875 6.75 L 7.3125 10.9375 L 7.46875 11.40625 L 7.9375 11.53125 L 26.125 17.15625 C 26.777344 17.351563 27.132813 18.007813 26.9375 18.65625 C 26.742188 19.308594 26.085938 19.664063 25.4375 19.46875 L 18.6875 17.4375 L 18.34375 17.34375 L 18.03125 17.46875 L 8.09375 21.625 L 7.34375 21.3125 L 12.96875 17.4375 L 14.6875 16.25 L 12.6875 15.65625 L 5.03125 13.34375 Z M 14.90625 8.40625 L 15.71875 8.625 L 18.15625 12.59375 L 15.34375 11.75 Z M 20.5 21 C 19.671875 21 19 21.671875 19 22.5 C 19 23.328125 19.671875 24 20.5 24 C 21.328125 24 22 23.328125 22 22.5 C 22 21.671875 21.328125 21 20.5 21 Z M 3 26 L 3 28 L 29 28 L 29 26 Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="fw_normal fs_lg">Antigua and Barbuda</div>
+                  </div>
+                </div>
+                <div>
+                  <p class="fs_sm fw_normal">January 24, 2025</p>
+                  <p class="fs_sm fw_normal">$16,800</p>
+                </div>
+              </div>
+              <div>
+                <img
+                  class="w_100 brs_10"
+                  src="./assets/png/mountain.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="flight_card relative">
+              <div
+                class="absolute text_white d_flex align_center flight_card_content"
+              >
+                <div>
+                  <div class="mb_1">Embraer Praetor 600</div>
+                  <div class="d_flex gap_4">
+                    <div class="fw_normal fs_lg">Montreal</div>
+                    <div>
+                      <svg
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="flight_card_icon"
+                      >
+                        <path
+                          d="M 3.40625 3.96875 L 3.34375 5.25 L 3 14.03125 L 2.96875 14.8125 L 3.71875 15.03125 L 10.125 16.96875 L 4.6875 20.75 L 3.15625 21.8125 L 4.875 22.5 L 7.71875 23.625 L 8.09375 23.78125 L 8.46875 23.625 L 18.46875 19.46875 L 24.875 21.40625 C 26.5625 21.914063 28.367188 20.933594 28.875 19.25 C 29.382813 17.5625 28.402344 15.757813 26.71875 15.25 L 21.03125 13.5 L 17.25 7.25 L 17.03125 6.90625 L 16.65625 6.78125 L 14 6.0625 L 12.53125 5.6875 L 12.75 7.1875 L 13.28125 11.09375 L 9.03125 9.78125 L 7.40625 5.59375 L 7.21875 5.125 L 6.75 4.96875 L 4.625 4.34375 Z M 5.28125 6.625 L 5.71875 6.75 L 7.3125 10.9375 L 7.46875 11.40625 L 7.9375 11.53125 L 26.125 17.15625 C 26.777344 17.351563 27.132813 18.007813 26.9375 18.65625 C 26.742188 19.308594 26.085938 19.664063 25.4375 19.46875 L 18.6875 17.4375 L 18.34375 17.34375 L 18.03125 17.46875 L 8.09375 21.625 L 7.34375 21.3125 L 12.96875 17.4375 L 14.6875 16.25 L 12.6875 15.65625 L 5.03125 13.34375 Z M 14.90625 8.40625 L 15.71875 8.625 L 18.15625 12.59375 L 15.34375 11.75 Z M 20.5 21 C 19.671875 21 19 21.671875 19 22.5 C 19 23.328125 19.671875 24 20.5 24 C 21.328125 24 22 23.328125 22 22.5 C 22 21.671875 21.328125 21 20.5 21 Z M 3 26 L 3 28 L 29 28 L 29 26 Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="fw_normal fs_lg">Antigua and Barbuda</div>
+                  </div>
+                </div>
+                <div>
+                  <p class="fs_sm fw_normal">January 24, 2025</p>
+                  <p class="fs_sm fw_normal">$16,800</p>
+                </div>
+              </div>
+              <div>
+                <img
+                  class="w_100 brs_10"
+                  src="./assets/png/mountain.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="flight_card relative">
+              <div
+                class="absolute text_white d_flex align_center flight_card_content"
+              >
+                <div>
+                  <div class="mb_1">Embraer Praetor 600</div>
+                  <div class="d_flex gap_4">
+                    <div class="fw_normal fs_lg">Montreal</div>
+                    <div>
+                      <svg
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="flight_card_icon"
+                      >
+                        <path
+                          d="M 3.40625 3.96875 L 3.34375 5.25 L 3 14.03125 L 2.96875 14.8125 L 3.71875 15.03125 L 10.125 16.96875 L 4.6875 20.75 L 3.15625 21.8125 L 4.875 22.5 L 7.71875 23.625 L 8.09375 23.78125 L 8.46875 23.625 L 18.46875 19.46875 L 24.875 21.40625 C 26.5625 21.914063 28.367188 20.933594 28.875 19.25 C 29.382813 17.5625 28.402344 15.757813 26.71875 15.25 L 21.03125 13.5 L 17.25 7.25 L 17.03125 6.90625 L 16.65625 6.78125 L 14 6.0625 L 12.53125 5.6875 L 12.75 7.1875 L 13.28125 11.09375 L 9.03125 9.78125 L 7.40625 5.59375 L 7.21875 5.125 L 6.75 4.96875 L 4.625 4.34375 Z M 5.28125 6.625 L 5.71875 6.75 L 7.3125 10.9375 L 7.46875 11.40625 L 7.9375 11.53125 L 26.125 17.15625 C 26.777344 17.351563 27.132813 18.007813 26.9375 18.65625 C 26.742188 19.308594 26.085938 19.664063 25.4375 19.46875 L 18.6875 17.4375 L 18.34375 17.34375 L 18.03125 17.46875 L 8.09375 21.625 L 7.34375 21.3125 L 12.96875 17.4375 L 14.6875 16.25 L 12.6875 15.65625 L 5.03125 13.34375 Z M 14.90625 8.40625 L 15.71875 8.625 L 18.15625 12.59375 L 15.34375 11.75 Z M 20.5 21 C 19.671875 21 19 21.671875 19 22.5 C 19 23.328125 19.671875 24 20.5 24 C 21.328125 24 22 23.328125 22 22.5 C 22 21.671875 21.328125 21 20.5 21 Z M 3 26 L 3 28 L 29 28 L 29 26 Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="fw_normal fs_lg">Antigua and Barbuda</div>
+                  </div>
+                </div>
+                <div>
+                  <p class="fs_sm fw_normal">January 24, 2025</p>
+                  <p class="fs_sm fw_normal">$16,800</p>
+                </div>
+              </div>
+              <div>
+                <img
+                  class="w_100 brs_10"
+                  src="./assets/png/mountain.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="flight_card relative">
+              <div
+                class="absolute text_white d_flex align_center flight_card_content"
+              >
+                <div>
+                  <div class="mb_1">Embraer Praetor 600</div>
+                  <div class="d_flex gap_4">
+                    <div class="fw_normal fs_lg">Montreal</div>
+                    <div>
+                      <svg
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="flight_card_icon"
+                      >
+                        <path
+                          d="M 3.40625 3.96875 L 3.34375 5.25 L 3 14.03125 L 2.96875 14.8125 L 3.71875 15.03125 L 10.125 16.96875 L 4.6875 20.75 L 3.15625 21.8125 L 4.875 22.5 L 7.71875 23.625 L 8.09375 23.78125 L 8.46875 23.625 L 18.46875 19.46875 L 24.875 21.40625 C 26.5625 21.914063 28.367188 20.933594 28.875 19.25 C 29.382813 17.5625 28.402344 15.757813 26.71875 15.25 L 21.03125 13.5 L 17.25 7.25 L 17.03125 6.90625 L 16.65625 6.78125 L 14 6.0625 L 12.53125 5.6875 L 12.75 7.1875 L 13.28125 11.09375 L 9.03125 9.78125 L 7.40625 5.59375 L 7.21875 5.125 L 6.75 4.96875 L 4.625 4.34375 Z M 5.28125 6.625 L 5.71875 6.75 L 7.3125 10.9375 L 7.46875 11.40625 L 7.9375 11.53125 L 26.125 17.15625 C 26.777344 17.351563 27.132813 18.007813 26.9375 18.65625 C 26.742188 19.308594 26.085938 19.664063 25.4375 19.46875 L 18.6875 17.4375 L 18.34375 17.34375 L 18.03125 17.46875 L 8.09375 21.625 L 7.34375 21.3125 L 12.96875 17.4375 L 14.6875 16.25 L 12.6875 15.65625 L 5.03125 13.34375 Z M 14.90625 8.40625 L 15.71875 8.625 L 18.15625 12.59375 L 15.34375 11.75 Z M 20.5 21 C 19.671875 21 19 21.671875 19 22.5 C 19 23.328125 19.671875 24 20.5 24 C 21.328125 24 22 23.328125 22 22.5 C 22 21.671875 21.328125 21 20.5 21 Z M 3 26 L 3 28 L 29 28 L 29 26 Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="fw_normal fs_lg">Antigua and Barbuda</div>
+                  </div>
+                </div>
+                <div>
+                  <p class="fs_sm fw_normal">January 24, 2025</p>
+                  <p class="fs_sm fw_normal">$16,800</p>
+                </div>
+              </div>
+              <div>
+                <img
+                  class="w_100 brs_10"
+                  src="./assets/png/mountain.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="flight_card relative">
+              <div
+                class="absolute text_white d_flex align_center flight_card_content"
+              >
+                <div>
+                  <div class="mb_1">Embraer Praetor 600</div>
+                  <div class="d_flex gap_4">
+                    <div class="fw_normal fs_lg">Montreal</div>
+                    <div>
+                      <svg
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="flight_card_icon"
+                      >
+                        <path
+                          d="M 3.40625 3.96875 L 3.34375 5.25 L 3 14.03125 L 2.96875 14.8125 L 3.71875 15.03125 L 10.125 16.96875 L 4.6875 20.75 L 3.15625 21.8125 L 4.875 22.5 L 7.71875 23.625 L 8.09375 23.78125 L 8.46875 23.625 L 18.46875 19.46875 L 24.875 21.40625 C 26.5625 21.914063 28.367188 20.933594 28.875 19.25 C 29.382813 17.5625 28.402344 15.757813 26.71875 15.25 L 21.03125 13.5 L 17.25 7.25 L 17.03125 6.90625 L 16.65625 6.78125 L 14 6.0625 L 12.53125 5.6875 L 12.75 7.1875 L 13.28125 11.09375 L 9.03125 9.78125 L 7.40625 5.59375 L 7.21875 5.125 L 6.75 4.96875 L 4.625 4.34375 Z M 5.28125 6.625 L 5.71875 6.75 L 7.3125 10.9375 L 7.46875 11.40625 L 7.9375 11.53125 L 26.125 17.15625 C 26.777344 17.351563 27.132813 18.007813 26.9375 18.65625 C 26.742188 19.308594 26.085938 19.664063 25.4375 19.46875 L 18.6875 17.4375 L 18.34375 17.34375 L 18.03125 17.46875 L 8.09375 21.625 L 7.34375 21.3125 L 12.96875 17.4375 L 14.6875 16.25 L 12.6875 15.65625 L 5.03125 13.34375 Z M 14.90625 8.40625 L 15.71875 8.625 L 18.15625 12.59375 L 15.34375 11.75 Z M 20.5 21 C 19.671875 21 19 21.671875 19 22.5 C 19 23.328125 19.671875 24 20.5 24 C 21.328125 24 22 23.328125 22 22.5 C 22 21.671875 21.328125 21 20.5 21 Z M 3 26 L 3 28 L 29 28 L 29 26 Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div class="fw_normal fs_lg">Antigua and Barbuda</div>
+                  </div>
+                </div>
+                <div>
+                  <p class="fs_sm fw_normal">January 24, 2025</p>
+                  <p class="fs_sm fw_normal">$16,800</p>
+                </div>
+              </div>
+              <div>
+                <img
+                  class="w_100 brs_10"
+                  src="./assets/png/mountain.jpg"
+                  alt=""
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="border_line"></div>
+    <!-- global private jet -->
+
+    <div class="p_25 padding_67 d_none">
+      <div class="row align_center justify_space_between">
+        <div class="col_6 max_width_45ch">
+          <h2 class="mt_4 mb_4 fs_xl fw_normal text_uppercase letter_spacing2">
+            experts in global private jet charters
+          </h2>
+          <p class="letter_spacing3 opacity_60 fs_lg fw_normal mb_5">
+            Flying with Amalfi, combines global access with consistent flight
+            quality. Enjoy premium cabins, personalized service, and a plethora
+            of experience from our team.
+          </p>
+          <a class="book_flight_btn" href="#"> book a flight </a>
+        </div>
+        <div class="col_6">
+          <img class="w_100" src="./assets/png/professor.avif" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Reserve card -->
+
+    <div class="relative d_none">
+      <div class="padding_67 w_100 bg_reserve_Card">
+        <div class="narror_container">
+          <div class="max_width_45ch pt_5 pb_5">
+            <p class="fs_sm fw_normal text_white text">
+              Join The Amalfi reserve membership
+            </p>
+            <h1 class="mt_3 mb_3 text_white fw_normal">
+              Reserve Membership for Only $99 USD Per Month
+            </h1>
+            <p class="text_white fs_lg mb_5 fw_normal">
+              Exclusively on the Amalfi Jets App, enjoy a lifestyle concierge
+              team, VIP status at our partners, and more.
+            </p>
+            <a class="discover_btn text_uppercase" href="#">download the app</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Leading industry -->
+
+    <div class="p_25 padding_67 d_none">
+      <div class="row align_center justify_space_between">
+        <div class="col_6">
+          <img class="w_100" src="./assets/png/aeroplane.avif" alt="" />
+        </div>
+        <div class="col_6 max_width_45ch">
+          <p class="letter_spacing3 opacity_60 fs_lg fw_normal mb_5">
+            CURATED. OPTIMIZED. EXCLUSIVE.
+          </p>
+          <h2 class="mt_4 mb_4 fs_xl fw_normal text_uppercase letter_spacing2">
+            Leading the industry
+          </h2>
+          <p class="letter_spacing3 opacity_60 fs_lg fw_normal mb_5">
+            FFlying with Amalfi Jets provides unparalleled access to the highest
+            quality aircraft, leading safety standards, and a newfound one to
+            one, personalized approach.
+          </p>
+          <a class="book_flight_btn" href="#"> book a flight </a>
+        </div>
+      </div>
+    </div>
+    <!-- our programs -->
+    <div class="p_25 padding_67 d_none">
+      <div>
+        <h2 class="fw_normal fs_xl text_align_center mt_3 mb_4">
+          our programs
+        </h2>
+      </div>
+
       <div class="row">
         <div class="col_3">
-          <h4 class="mb_4 fs_lg text_uppercase">Our Program</h4>
-          <ul class="d_flex flex_column gap_10">
-            <li>
-              <a class="fw_normal text_white fs_md text_gray_darker" href="#">On-Demand Charter</a>
-            </li>
-            <li>
-              <a class="fw_normal text_white fs_md text_gray_darker" href="#">Amalfi One Jet Card</a>
-            </li>
-            <li>
-              <a class="fw_normal text_white fs_md text_gray_darker" href="#">Amalfi Enterprise Program</a>
-            </li>
-            <li>
-              <a class="fw_normal text_white fs_md text_gray_darker" href="#">Amalfi Reserve</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col_2">
-          <h4 class="mb_4 fs_lg text_uppercase">Aircraft</h4>
-          <ul class="d_flex flex_column gap_10">
-            <li>
-              <a class="fw_normal text_white fs_md text_gray_darker" href="#">Light Jets</a>
-            </li>
-            <li>
-              <a class="fw_normal text_white fs_md text_gray_darker" href="#">Midsize Jets</a>
-            </li>
-            <li>
-              <a class="fw_normal text_white fs_md text_gray_darker" href="#">Super Midsize Jets</a>
-            </li>
-            <li>
-              <a class="fw_normal text_white fs_md text_gray_darker" href="#">Heavy Jets</a>
-            </li>
-            <li>
-              <a class="fw_normal text_white fs_md text_gray_darker" href="#">Ultra Long Haul Jets</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col_2">
-          <h4 class="mb_4 fs_lg text_uppercase">Why Amalfi</h4>
-          <ul class="d_flex flex_column gap_10">
-            <li>
-              <a class="fw_normal text_white fs_md text_gray_darker" href="#">Why Amalfi</a>
-            </li>
-            <li>
-              <a class="fw_normal text_white fs_md text_gray_darker" href="#">Leadership Team</a>
-            </li>
-            <li>
-              <a class="fw_normal text_white fs_md text_gray_darker" href="#">Safety</a>
-            </li>
-            <li>
-              <a class="fw_normal text_white fs_md text_gray_darker" href="#">Operations</a>
-            </li>
-            <li>
-              <a class="fw_normal text_white fs_md text_gray_darker" href="#">Escapades</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col_2">
-          <h4 class="mb_4 fs_lg text_uppercase">Engage</h4>
-          <ul class="d_flex flex_column gap_10">
-            <li>
-              <a class="fw_normal text_white fs_md text_gray_darker" href="#">Media Center</a>
-            </li>
-            <li>
-              <a class="fw_normal text_white fs_md text_gray_darker" href="#">Amalfi App</a>
-            </li>
-            <li>
-              <a class="fw_normal text_white fs_md text_gray_darker" href="#">Contact Us</a>
-            </li>
-            <li>
-              <a class="fw_normal text_white fs_md text_gray_darker" href="#">Blog</a>
-            </li>
-          </ul>
+          <img class="w_100 h_265" src="./assets/png/amal.avif" alt="" />
+          <h3 class="fw_normal mt_3 fs_sm opacity_60 text_gray">
+            Ad Hoc Charter Flights, Globally
+          </h3>
+          <p class="fw_normal fs_lg letter_spacing3">On-Demand Charter</p>
         </div>
         <div class="col_3">
-          <h4 class="mb_4 fs_lg text_uppercase">Stay Updated</h4>
-          <form>
-            <input class="footer_input text_white" type="email" placeholder="Enter email address" />
-            <div>
-              <input class="submit_btn" type="submit" value="Submit" />
+          <img class="w_100 h_265" src="./assets/png/amalficard.avif" alt="" />
+          <h3 class="fw_normal mt_3 fs_sm opacity_60 text_gray">
+            Flexible & Economically Favorable Jet Card Program
+          </h3>
+          <p class="fw_normal fs_lg letter_spacing3">Amalfi One Jet Card</p>
+        </div>
+        <div class="col_3">
+          <img class="w_100 h_265" src="./assets/png/amalfi aero.avif" alt="" />
+          <h3 class="fw_normal mt_3 fs_sm opacity_60 text_gray">
+            A Flexible Jet Card Program for Companies
+          </h3>
+          <p class="fw_normal fs_lg letter_spacing3">
+            Amalfi Enterprise Program
+          </p>
+        </div>
+        <div class="col_3">
+          <img
+            class="w_100 h_265"
+            src="./assets/png/amalfi island.avif"
+            alt=""
+          />
+          <h3 class="fw_normal mt_3 fs_sm opacity_60 text_gray">
+            A Premier Social Membership on the Amalfi App
+          </h3>
+          <p class="fw_normal fs_lg letter_spacing3">
+            Amalfi Reserve Membership
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+
+    <div class="custom_container d_none">
+      <footer class="padding_67">
+        <div class="row justify_space_between">
+          <div class="col_4">
+            <img width="177" src="./assets/png/footerlogo.png" alt="" />
+          </div>
+
+          <div class="col_7">
+            <div class="row justify_space_between">
+              <div class="col_3">
+                <p class="text_gray_darker fs_xsm fw_normal">Call</p>
+                <p class="fs_lg fw_normal mt_4">+1 (877) 6-AMALFI</p>
+              </div>
+
+              <div class="col_3">
+                <p class="text_gray_darker fs_xsm fw_normal">Email</p>
+                <p class="fs_lg fw_normal mt_4 text_uppercase">
+                  enquiry@amalfijets.com
+                </p>
+              </div>
+              <div class="col_3">
+                <p class="text_gray_darker fs_xsm fw_normal">Social</p>
+                <div class="d_flex gap_10 mt_4">
+                  <img
+                    width="16"
+                    height="18"
+                    class="bg_white"
+                    src="./assets/png/tiktok.svg"
+                    alt=""
+                  />
+                  <img
+                    width="16"
+                    height="18"
+                    class="bg_white"
+                    src="./assets/png/linkedin.svg"
+                    alt=""
+                  />
+                  <img
+                    width="16"
+                    height="18"
+                    class="bg_white"
+                    src="./assets/png/insta.svg"
+                    alt=""
+                  />
+                  <img
+                    width="16"
+                    height="18"
+                    class="bg_white"
+                    src="./assets/png/twitter.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
-          </form>
-        </div>
-      </div>
-
-      <div class="mt_5 pt_3 opacity_75 fw_normal">
-        <div class="text_align_center fs_xsm">
-          &copy; 2020-2024 All rights reserved. Amalfi Jets Inc.
-        </div>
-        <br /><br /><br />
-        <div class="text_align_center fs_xsm">
-          The Amalfi One Jet Card, Amalfi Enterprise Program, and On-Demand
-          Charter Program are programs of Amalfi Jets, an "Air Charter Broker"
-          under DOT Regulations operating under Part 295 Regulations on behalf
-          of our clients. Amalfi Jets does not own or operate any aircraft.
-          All flights are operated by registered Part 135 Operators or the
-          Foreign Equivalent that meet and exceed standards set by the FAA and
-          internal requirements set by Amalfi Jets.
-        </div>
-      </div>
-
-      <div class="d_flex flex_column gap_3">
-        <div class="text_align_center mt_4">
-          <img src="./assets/png/footer imgae.png" alt="" />
-        </div>
-
-        <div class="d_flex gap_3 justify_content_center">
-          <div>
-            <img width="150" height="50" src="./assets/png/apple store.avif" alt="" />
-          </div>
-          <div>
-            <img width="150" height="50" src="./assets/png/play store.avif" alt="" />
           </div>
         </div>
-        <p class="text_align_center text_light_grey mt_5">
-          Amalfi Reserve Subscription Terms
-        </p>
-        <div class="d_flex gap_3 justify_content_center">
-          <p class="fw_normal text_light_grey">Privacy Policy</p>
-          <p class="fw_normal text_light_grey">Terms of Service</p>
-        </div>
-      </div>
-    </footer>
-  </div>
-</body>
 
+        <div class="border_line"></div>
+        <div class="row">
+          <div class="col_3">
+            <h4 class="mb_4 fs_lg text_uppercase">Our Program</h4>
+            <ul class="d_flex flex_column gap_10">
+              <li>
+                <a class="fw_normal text_white fs_md text_gray_darker" href="#"
+                  >On-Demand Charter</a
+                >
+              </li>
+              <li>
+                <a class="fw_normal text_white fs_md text_gray_darker" href="#"
+                  >Amalfi One Jet Card</a
+                >
+              </li>
+              <li>
+                <a class="fw_normal text_white fs_md text_gray_darker" href="#"
+                  >Amalfi Enterprise Program</a
+                >
+              </li>
+              <li>
+                <a class="fw_normal text_white fs_md text_gray_darker" href="#"
+                  >Amalfi Reserve</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col_2">
+            <h4 class="mb_4 fs_lg text_uppercase">Aircraft</h4>
+            <ul class="d_flex flex_column gap_10">
+              <li>
+                <a class="fw_normal text_white fs_md text_gray_darker" href="#"
+                  >Light Jets</a
+                >
+              </li>
+              <li>
+                <a class="fw_normal text_white fs_md text_gray_darker" href="#"
+                  >Midsize Jets</a
+                >
+              </li>
+              <li>
+                <a class="fw_normal text_white fs_md text_gray_darker" href="#"
+                  >Super Midsize Jets</a
+                >
+              </li>
+              <li>
+                <a class="fw_normal text_white fs_md text_gray_darker" href="#"
+                  >Heavy Jets</a
+                >
+              </li>
+              <li>
+                <a class="fw_normal text_white fs_md text_gray_darker" href="#"
+                  >Ultra Long Haul Jets</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col_2">
+            <h4 class="mb_4 fs_lg text_uppercase">Why Amalfi</h4>
+            <ul class="d_flex flex_column gap_10">
+              <li>
+                <a class="fw_normal text_white fs_md text_gray_darker" href="#"
+                  >Why Amalfi</a
+                >
+              </li>
+              <li>
+                <a class="fw_normal text_white fs_md text_gray_darker" href="#"
+                  >Leadership Team</a
+                >
+              </li>
+              <li>
+                <a class="fw_normal text_white fs_md text_gray_darker" href="#"
+                  >Safety</a
+                >
+              </li>
+              <li>
+                <a class="fw_normal text_white fs_md text_gray_darker" href="#"
+                  >Operations</a
+                >
+              </li>
+              <li>
+                <a class="fw_normal text_white fs_md text_gray_darker" href="#"
+                  >Escapades</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col_2">
+            <h4 class="mb_4 fs_lg text_uppercase">Engage</h4>
+            <ul class="d_flex flex_column gap_10">
+              <li>
+                <a class="fw_normal text_white fs_md text_gray_darker" href="#"
+                  >Media Center</a
+                >
+              </li>
+              <li>
+                <a class="fw_normal text_white fs_md text_gray_darker" href="#"
+                  >Amalfi App</a
+                >
+              </li>
+              <li>
+                <a class="fw_normal text_white fs_md text_gray_darker" href="#"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a class="fw_normal text_white fs_md text_gray_darker" href="#"
+                  >Blog</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col_3">
+            <h4 class="mb_4 fs_lg text_uppercase">Stay Updated</h4>
+            <form>
+              <input
+                class="footer_input text_white"
+                type="email"
+                placeholder="Enter email address"
+              />
+              <div>
+                <input class="submit_btn" type="submit" value="Submit" />
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="mt_5 pt_3 opacity_75 fw_normal">
+          <div class="text_align_center fs_xsm">
+            &copy; 2020-2024 All rights reserved. Amalfi Jets Inc.
+          </div>
+          <br /><br /><br />
+          <div class="text_align_center fs_xsm">
+            The Amalfi One Jet Card, Amalfi Enterprise Program, and On-Demand
+            Charter Program are programs of Amalfi Jets, an "Air Charter Broker"
+            under DOT Regulations operating under Part 295 Regulations on behalf
+            of our clients. Amalfi Jets does not own or operate any aircraft.
+            All flights are operated by registered Part 135 Operators or the
+            Foreign Equivalent that meet and exceed standards set by the FAA and
+            internal requirements set by Amalfi Jets.
+          </div>
+        </div>
+
+        <div class="d_flex flex_column gap_3">
+          <div class="text_align_center mt_4">
+            <img src="./assets/png/footer imgae.png" alt="" />
+          </div>
+
+          <div class="d_flex gap_3 justify_content_center">
+            <div>
+              <img
+                width="150"
+                height="50"
+                src="./assets/png/apple store.avif"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                width="150"
+                height="50"
+                src="./assets/png/play store.avif"
+                alt=""
+              />
+            </div>
+          </div>
+          <p class="text_align_center text_light_grey mt_5">
+            Amalfi Reserve Subscription Terms
+          </p>
+          <div class="d_flex gap_3 justify_content_center">
+            <p class="fw_normal text_light_grey">Privacy Policy</p>
+            <p class="fw_normal text_light_grey">Terms of Service</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      document.addEventListener("scroll", () => {
+        const nav = document.querySelector("nav");
+        const scrollPosition = window.scrollY;
+        const maxScroll = 300;
+        const opacity = Math.min(scrollPosition / maxScroll, 1);
+        nav.style.backgroundColor = `rgba(0, 0, 0, ${opacity})`;
+      });
+
+      const hamburgerMenu = document.querySelector(".hamburger_menu");
+      const menuOverlay = document.querySelector(".menu_overlay");
+      const closeMenu = document.querySelector(".close_menu");
+      const slider = document.getElementById("slider");
+      const slides = slider.children;
+      hamburgerMenu.addEventListener("click", (e) => {
+        e.preventDefault();
+        menuOverlay.classList.add("active");
+      });
+
+      closeMenu.addEventListener("click", () => {
+        menuOverlay.classList.remove("active");
+      });
+
+      console.log(slides);
+      let currentIndex = 0;
+
+      function autoSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        const scrollPosition = slides[currentIndex].offsetLeft;
+        slider.scrollTo({
+          left: scrollPosition,
+          behavior: "smooth",
+        });
+      }
+      // setInterval(autoSlide, 3500);
+    </script>
+    <!-- ----------------- jquary.min.js ----------------- -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- ----------------- slick.min.js ----------------- -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(".responsive").slick({
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: false,
+        pauseOnHover: true,
+        cssEase: "linear",
+        infinite: true,
+        speed: 700,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+
+        responsive: [
+          {
+            breakpoint: 1500,
+            settings: {
+              slidesToShow: 3.5,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true,
+            },
+          },
+          {
+            breakpoint: 1300,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true,
+            },
+          },
+          {
+            breakpoint: 1300,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true,
+            },
+          },
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ],
+      });
+    </script>
+  </body>
 </html>

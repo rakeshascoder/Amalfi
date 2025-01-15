@@ -1,0 +1,108 @@
+@media (max-width: 576px) {
+  :root {
+    --fs_xsm: 12px;
+    --fs_sm: 13px;
+    --fs_base: 14px;
+    --fs_md: 15px;
+    --fs_lg: 16px;
+    --fs_xl: 33px;
+    --fs_2xl: 40px;
+  }
+  .py_xsm_10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .border_xsm_bottom {
+    border-bottom: 1px solid #0000001a;
+    width: 100%;
+  }
+  .w_xsm_100 {
+    width: 100%;
+  }
+}
+@media (min-width: 576px) {
+  :root {
+    --fs_xsm: 12px;
+    --fs_sm: 13px;
+    --fs_base: 14px;
+    --fs_md: 15px;
+    --fs_lg: 16px;
+    --fs_xl: 33px;
+    --fs_2xl: 50px;
+  }
+  .py_sm_10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media (min-width: 768px) {
+  :root {
+    --fs_xsm: 12px;
+    --fs_sm: 13px;
+    --fs_base: 14px;
+    --fs_md: 15px;
+    --fs_lg: 16px;
+    --fs_xl: 33px;
+    --fs_2xl: 55px;
+  }
+  .padding_67 {
+    padding: 67px;
+  }
+}
+@media (min-width: 992px) {
+  :root {
+    --fs_xsm: 12px;
+    --fs_sm: 13px;
+    --fs_base: 14px;
+    --fs_md: 15px;
+    --fs_lg: 13px;
+    --fs_xl: 20px;
+    --fs_2xl: 45px;
+  }
+  .d_lg_none {
+    display: none;
+  }
+  .flex_lg_row {
+    flex-direction: row;
+  }
+
+  .d_lg_block {
+    display: block;
+  }
+
+  .py_18 {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  .d_lg_flex {
+    display: flex;
+  }
+  .col_md_6 {
+    width: 50%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+@media (min-width: 1200px) {
+  :root {
+    --fs_xsm: 12px;
+    --fs_sm: 13px;
+    --fs_base: 14px;
+    --fs_md: 15px;
+    --fs_lg: 16px;
+    --fs_xl: 33px;
+    --fs_2xl: 68px;
+  }
+}
+@media (min-width: 1400px) {
+  :root {
+    --fs_xsm: 12px;
+    --fs_sm: 13px;
+    --fs_base: 14px;
+    --fs_md: 15px;
+    --fs_lg: 16px;
+    --fs_xl: 33px;
+    --fs_2xl: 68px;
+  }
+}
