@@ -13,6 +13,8 @@
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .narror_container {
@@ -27,6 +29,7 @@
   --fs_base: 14px;
   --fs_md: 15px;
   --fs_lg: 16px;
+  --fs_xls: 20px;
   --fs_xl: 33px;
   --fs_2xl: 68px;
 }
@@ -46,6 +49,9 @@
 }
 .fs_lg {
   font-size: var(--fs_lg);
+}
+.fs_xls {
+  font-size: var(--fs_xls);
 }
 .fs_xl {
   font-size: var(--fs_xl);
@@ -219,7 +225,9 @@
 .justify_content_center {
   justify-content: center;
 }
-
+.justify_content_end {
+  justify-content: end;
+}
 .vh_100 {
   min-height: 100vh;
 }
@@ -399,13 +407,35 @@
 .pb_5 {
   padding-bottom: 48px;
 }
-
+.py_5 {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.py_2 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.py_3 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.px_4 {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.px_3 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
 .d_none {
   display: none;
 }
 
 .d_inline_block {
   display: inline-block;
+}
+.radius_20 {
+  border-radius: 20px;
 }
 
 /* header image */
@@ -547,7 +577,10 @@
 .text_white {
   color: white;
 }
-.opacity{
+.text_light_white {
+  color: #f5f5f5;
+}
+.opacity {
   opacity: 0.75;
 }
 .brs_10 {
@@ -556,13 +589,31 @@
 .opacity_75 {
   opacity: 75%;
 }
+.opacity_90 {
+  opacity: 90%;
+}
 .gap_10 {
   gap: 10px;
 }
-.bg_black{
+.bg_black {
   background-color: black;
 }
-
+.w_50 {
+  width: 50%;
+}
+.start_0 {
+  left: 0;
+}
+.ms_0 {
+  margin-left: 0;
+}
+.ps_0 {
+  padding-left: 0px;
+}
+.mx_auto {
+  margin-left: auto;
+  margin-right: auto;
+}
 /* ==============================  css for harish starts here ================================= */
 .form_top_bar_main {
   border: 1px solid #0003;
@@ -775,17 +826,26 @@ footer {
 
 /* ==============================  css for harish end here ================================= */
 
-
 /* ----------------------------------------css of amit starts here-------------------------- */
 .whyAmalfi_bg {
   background-image: url(./image/png/whyamalfibg.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+}
+.a_whyAmalfi_bg_saftey {
+  background-image: url(./image/png/safety_bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.max_w_640 {
+.a_max_w_640 {
   max-width: 640px;
+}
+.a_max_w_886 {
+  max-width: 886px;
+}
+.a_max_with_461 {
+  max-width: 461px;
 }
 
 .bg-scrim.gradient-bottom-up {
@@ -798,84 +858,290 @@ footer {
   position: absolute;
   inset: 0%;
 }
-.z_2{
-  z-index: 10;
+.bg-scrim.gradient-bottom-up._1x1 {
+  background-image: linear-gradient(#0000 25%, #000 79%);
 }
-.easy_Booking_bg_1{
+.bg-scrim.gradient-bottom-up.faded {
+  mix-blend-mode: normal;
+  background-image: linear-gradient(#0000, #000000bf);
+}
+.z_2 {
+  z-index: 2;
+}
+.a_easy_Booking_bg_1 {
   background-image: url(./image/png//easyBookingimage1.avif);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  height: 927px;
+  width: 100%;
+}
+.a_easy_Booking_bg_2 {
+  background-image: url(./image/png/easyBookingimage2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 927px;
+  width: 100%;
+}
+.a_easy_Booking_bg_3 {
+  background-image: url(./image/png//easyBookinimage\ 3.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 927px;
+  width: 100%;
+}
+.a_bg_operation {
+  background-image: url(./image/png/easyBookingimage2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 611px;
+  width: 100%;
+}
+.a_bg_safety {
+  background-image: url(./image/png/safety.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 611px;
+  width: 100%;
+}
+.a_bg_escapades {
+  background-image: url(./image/png/escapdes.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 611px;
+  width: 100%;
 }
 
-.h_927{
-  height: 927px;
-}
 /* ----------------------------css of amit end here------------------------- */
 /* ------------responsive ----------------*/
 @media (max-width: 576px) {
   :root {
     --fs_xsm: 12px;
     --fs_sm: 13px;
-    --fs_base: 14px;
+    --fs_base: 12px;
     --fs_md: 15px;
-    --fs_lg: 16px;
-    --fs_xl: 33px;
+    --fs_lg: 15px;
+    --fs_xls: 18px;
+    --fs_xl: 27px;
     --fs_2xl: 41px;
+  }
+  .a_easy_Booking_bg_1 {
+    height: 600px;
+  }
+  .a_easy_Booking_bg_2 {
+    height: 600px;
+  }
+  .a_easy_Booking_bg_3 {
+    height: 600px;
+  }
+  .a_bg_operation {
+    height: 400px;
+  }
+  .a_bg_safety {
+    height: 400px;
+  }
+  .a_bg_escapades {
+    height: 400px;
   }
 }
 @media (min-width: 576px) {
   :root {
     --fs_xsm: 12px;
     --fs_sm: 13px;
-    --fs_base: 14px;
+    --fs_base: 12px;
     --fs_md: 15px;
-    --fs_lg: 16px;
+    --fs_lg: 15px;
+    --fs_xls: 18px;
     --fs_xl: 33px;
     --fs_2xl: 53px;
+  }
+  .a_easy_Booking_bg_1 {
+    height: 700px;
+  }
+  .a_easy_Booking_bg_2 {
+    height: 700px;
+  }
+  .a_easy_Booking_bg_3 {
+    height: 700px;
+  }
+  .a_bg_operation {
+    height: 500px;
+  }
+  .a_bg_safety {
+    height: 500px;
+  }
+  .a_bg_escapades {
+    height: 500px;
   }
 }
 @media (min-width: 768px) {
   :root {
     --fs_xsm: 12px;
     --fs_sm: 13px;
-    --fs_base: 14px;
+    --fs_base: 12px;
     --fs_md: 15px;
-    --fs_lg: 16px;
+    --fs_lg: 15px;
+    --fs_xls: 14px;
     --fs_xl: 33px;
     --fs_2xl: 68px;
+  }
+  .a_easy_Booking_bg_1 {
+    height: 730px;
+  }
+  .a_easy_Booking_bg_2 {
+    height: 730px;
+  }
+  .a_easy_Booking_bg_3 {
+    height: 730px;
+  }
+  .md_col_4 {
+    width: 33.33%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .md_mt_0 {
+    margin-top: 0;
+  }
+  .md_col_6 {
+    width: 50%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .md_ms_0 {
+    margin-left: 0;
+  }
+  .md_ps_0 {
+    padding-left: 0px !important;
+  }
+  .md_col_5 {
+    width: 41.66%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .md_m_0 {
+    margin: 0;
+  }
+  .md_pe_0 {
+    padding-right: 0px !important;
+  }
+  .md_me_0 {
+    margin-right: 0px;
+  }
+  .md_flex_row {
+    flex-direction: row;
+  }
+  .a_bg_operation {
+    height: 425px;
+  }
+  .a_bg_safety {
+    height: 425px;
+  }
+  .a_bg_escapades {
+    height: 425px;
   }
 }
 @media (min-width: 992px) {
   :root {
     --fs_xsm: 12px;
     --fs_sm: 13px;
-    --fs_base: 14px;
+    --fs_base: 12px;
     --fs_md: 15px;
-    --fs_lg: 16px;
+    --fs_lg: 15px;
+    --fs_xls: 18px;
     --fs_xl: 33px;
     --fs_2xl: 68px;
+  }
+  .a_easy_Booking_bg_1 {
+    height: 488px;
+  }
+  .a_easy_Booking_bg_2 {
+    height: 488px;
+  }
+  .a_easy_Booking_bg_3 {
+    height: 488px;
+  }
+  .a_bg_operation {
+    height: 488px;
+  }
+  .a_bg_safety {
+    height: 488px;
+  }
+  .a_bg_escapades {
+    height: 488px;
   }
 }
 @media (min-width: 1200px) {
   :root {
     --fs_xsm: 12px;
     --fs_sm: 13px;
-    --fs_base: 14px;
+    --fs_base: 12px;
     --fs_md: 15px;
-    --fs_lg: 16px;
+    --fs_lg: 15px;
+    --fs_xls: 18px;
     --fs_xl: 33px;
     --fs_2xl: 68px;
   }
+  .a_easy_Booking_bg_1 {
+    height: 611px;
+  }
+  .a_easy_Booking_bg_2 {
+    height: 611px;
+  }
+  .a_easy_Booking_bg_3 {
+    height: 611px;
+  }
+  .xl_py_3 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .xl_px_4 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .xl_py_5 {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .a_bg_operation {
+    height: 611px;
+  }
+  .a_bg_safety {
+    height: 611px;
+  }
+  .a_bg_escapades {
+    height: 611px;
+  }
+  .xl_a_max_w_481 {
+    max-width: 481px;
+  }
+  .xl_col_5 {
+    width: 41.66%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1440px) {
   :root {
     --fs_xsm: 12px;
     --fs_sm: 13px;
     --fs_base: 14px;
     --fs_md: 15px;
     --fs_lg: 16px;
+    --fs_xls: 20px;
     --fs_xl: 33px;
     --fs_2xl: 68px;
+  }
+  .a_easy_Booking_bg_1 {
+    height: 750px;
+  }
+  .a_easy_Booking_bg_2 {
+    height: 750px;
+  }
+  .a_easy_Booking_bg_3 {
+    height: 750px;
+  }
+  .col_2xl_4{
+    width: 33.33%;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 }
