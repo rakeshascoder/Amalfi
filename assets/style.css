@@ -35,27 +35,21 @@
 .fs_xsm {
   font-size: var(--fs_xsm);
 }
-
 .fs_sm {
   font-size: var(--fs_sm);
 }
-
 .fs_base {
   font-size: var(--fs_base);
 }
-
 .fs_md {
   font-size: var(--fs_md);
 }
-
 .fs_lg {
   font-size: var(--fs_lg);
 }
-
 .fs_xl {
   font-size: var(--fs_xl);
 }
-
 .fs_2xl {
   font-size: var(--fs_2xl);
 }
@@ -144,27 +138,21 @@
   margin-left: -12px;
   margin-right: -12px;
 }
-
 .gap_24 {
   gap: 24px;
 }
-
 .m-1 {
   margin: 4px;
 }
-
 .m-2 {
   margin: 8px;
 }
-
 .m-3 {
   margin: 16px;
 }
-
 .m-4 {
   margin: 24px;
 }
-
 .m-5 {
   margin: 48px;
 }
@@ -172,19 +160,15 @@
 .p-1 {
   padding: 4px;
 }
-
 .p-2 {
   padding: 8px;
 }
-
 .p-3 {
   padding: 16px;
 }
-
 .p-4 {
   padding: 24px;
 }
-
 .p-5 {
   padding: 48px;
 }
@@ -204,7 +188,6 @@
 .w_100 {
   width: 100%;
 }
-
 .h_100 {
   height: 100%;
 }
@@ -430,19 +413,15 @@
 .letter_spacing_08 {
   letter-spacing: 0.8px;
 }
-
 .text_white {
   color: white;
 }
-
 .top_50 {
   top: 50%;
 }
-
 .left_50 {
   left: 50%;
 }
-
 .translate_50_50 {
   transform: translate(-50%, -50%);
 }
@@ -451,7 +430,6 @@
   padding-left: 12px;
   padding-right: 12px;
 }
-
 .py_18 {
   padding-top: 18px;
   padding-bottom: 18px;
@@ -461,38 +439,22 @@
   text-transform: uppercase;
 }
 
-.explore_btn {
-  background-color: white;
-  border-radius: 12px;
-}
-
 .text_black {
   color: black;
 }
-
 .h_100vh {
   height: 100vh;
 }
-
 .object_fit {
   object-fit: cover;
-}
-
-.slider-container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
 }
 
 .gap_40 {
   gap: 40px;
 }
-
 .h_50 {
   height: 50px;
 }
-
 .z_1 {
   z-index: 1;
 }
@@ -500,9 +462,15 @@
 .w_67 {
   width: 67px;
 }
-
 .h_67 {
   height: 67px;
+}
+.sticky {
+  position: sticky;
+}
+
+.top_0 {
+  top: 0;
 }
 
 .px_15 {
@@ -526,7 +494,6 @@
 .border_none {
   border-style: none;
 }
-
 .outline_none {
   outline: none;
 }
@@ -534,7 +501,69 @@
 .mt_32 {
   margin-top: 32px;
 }
+.gap_3 {
+  gap: 16px;
+}
+.mb_32 {
+  margin-bottom: 32px;
+}
 
+.mb_41 {
+  margin-bottom: 41px;
+}
+
+.line_height_20 {
+  line-height: 20px;
+}
+
+.line_height_25 {
+  line-height: 25px;
+}
+
+.max_width_45ch {
+  max-width: 45ch;
+}
+
+.gap_4 {
+  gap: 4px;
+}
+.max_width_60ch {
+  max-width: 60ch;
+}
+.letter_spacing2 {
+  letter-spacing: 0.02em;
+}
+
+.letter_spacing3 {
+  letter-spacing: 0.3px;
+  line-height: 1.618;
+}
+.opacity_60 {
+  opacity: 0.6;
+}
+.h_full {
+  height: 100%;
+}
+.text_white {
+  color: white;
+}
+.opacity{
+  opacity: 0.75;
+}
+.brs_10 {
+  border-radius: 10px;
+}
+.opacity_75 {
+  opacity: 75%;
+}
+.gap_10 {
+  gap: 10px;
+}
+.bg_black{
+  background-color: black;
+}
+
+/* ==============================  css for harish starts here ================================= */
 .form_top_bar_main {
   border: 1px solid #0003;
   border-radius: 5px;
@@ -542,6 +571,11 @@
   align-items: center;
   width: 100%;
   display: flex;
+}
+
+.explore_btn {
+  background-color: white;
+  border-radius: 12px;
 }
 
 .form_icon {
@@ -563,6 +597,13 @@
   outline: none;
   color: black;
   border-color: #88888d;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .minus_btn {
@@ -587,31 +628,10 @@
   padding: 0;
   font-size: 1rem;
 }
-
 .search_btn {
   background-color: black;
   padding: 15px 20px;
   border-radius: 10px;
-}
-
-.gap_3 {
-  gap: 16px;
-}
-
-.mb_32 {
-  margin-bottom: 32px;
-}
-
-.mb_41 {
-  margin-bottom: 41px;
-}
-
-.line_height_20 {
-  line-height: 20px;
-}
-
-.line_height_25 {
-  line-height: 25px;
 }
 
 .flight_btn {
@@ -622,7 +642,6 @@
   display: inline-block;
   border-radius: 16px;
 }
-
 .overline {
   letter-spacing: 0.128em;
   text-transform: uppercase;
@@ -643,10 +662,6 @@
   background-color: #00000080;
 }
 
-.max_width_45ch {
-  max-width: 45ch;
-}
-
 .discover_btn {
   background-color: white;
   color: black;
@@ -657,44 +672,15 @@
   display: inline-block;
 }
 
-.max_width_60ch {
-  max-width: 60ch;
-}
-
-.letter_spacing2 {
-  letter-spacing: 0.02em;
-}
-
-.letter_spacing3 {
-  letter-spacing: 0.3px;
-  line-height: 1.618;
-}
-
-.opacity_60 {
-  opacity: 0.6;
-}
-
-.opacity_75 {
-  opacity: 75%;
-}
-
 .flight_card {
   width: 340px;
   margin-right: 28.9px;
-}
-
-.brs_10 {
-  border-radius: 10px;
 }
 
 .flight_card_icon {
   height: 15px;
   width: 15px;
   color: white;
-}
-
-.gap_4 {
-  gap: 4px;
 }
 
 .flight_card_content {
@@ -713,10 +699,6 @@
   box-shadow: 0 6px 20px #0003;
 }
 
-.gap_10 {
-  gap: 10px;
-}
-
 .book_flight_btn {
   background-color: black;
   color: white;
@@ -733,13 +715,11 @@
   object-fit: cover;
   background-color: black;
 }
-
 .h_265 {
   height: 265px;
   object-fit: cover;
   border-radius: 10px;
 }
-
 footer {
   background-color: #000;
   color: #fff;
@@ -748,12 +728,10 @@ footer {
 .text_light_grey {
   color: #88888d;
 }
-
 .text_gray_darker {
   color: #f5f5f5;
   opacity: 80%;
 }
-
 .footer_input {
   background: transparent;
   outline: none;
@@ -774,7 +752,6 @@ footer {
   border-radius: 10px;
   margin-top: 10px;
 }
-
 .border_line {
   background-color: #c6c6c7;
   opacity: 0.2;
@@ -1308,6 +1285,49 @@ header {
   
 
 
+}
+
+/* ==============================  css for harish end here ================================= */
+
+
+/* ----------------------------------------css of amit starts here-------------------------- */
+.whyAmalfi_bg {
+  background-image: url(./image/png/whyamalfibg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.max_w_640 {
+  max-width: 640px;
+}
+
+.bg-scrim.gradient-bottom-up {
+  background-color: #0003;
+  background-image: linear-gradient(#0000, #000000c2 75%, #000);
+}
+.bg-scrim {
+  z-index: 1;
+  background-color: #00000080;
+  position: absolute;
+  inset: 0%;
+}
+.z_2{
+  z-index: 10;
+}
+.easy_Booking_bg_1{
+  background-image: url(./image/png//easyBookingimage1.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.h_927{
+  height: 927px;
+}
+/* ----------------------------css of amit end here------------------------- */
+/* ------------responsive ----------------*/
+@media (max-width: 576px) {
   :root {
     --fs_xsm: 12px;
     --fs_sm: 13px;
@@ -1323,6 +1343,9 @@ header {
 
 }
 @media (min-width:768px) {
+
+}
+@media (min-width: 576px) {
   :root {
     --fs_xsm: 12px;
     --fs_sm: 13px;
@@ -1350,6 +1373,9 @@ header {
 
 
 @media (min-width:992px) {
+  
+}
+@media (min-width: 768px) {
   :root {
     --fs_xsm: 12px;
     --fs_sm: 13px;
@@ -1393,6 +1419,32 @@ header {
   }
 }
 @media (min-width:1400px) {
+   
+  }
+
+@media (min-width: 992px) {
+  :root {
+    --fs_xsm: 12px;
+    --fs_sm: 13px;
+    --fs_base: 14px;
+    --fs_md: 15px;
+    --fs_lg: 16px;
+    --fs_xl: 33px;
+    --fs_2xl: 68px;
+  }
+}
+@media (min-width: 1200px) {
+  :root {
+    --fs_xsm: 12px;
+    --fs_sm: 13px;
+    --fs_base: 14px;
+    --fs_md: 15px;
+    --fs_lg: 16px;
+    --fs_xl: 33px;
+    --fs_2xl: 68px;
+  }
+}
+@media (min-width: 1400px) {
   :root {
     --fs_xsm: 12px;
     --fs_sm: 13px;
