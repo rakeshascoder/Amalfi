@@ -7,6 +7,7 @@
   text-decoration: none;
   box-sizing: border-box;
   font-family: "Figtree", serif;
+  font-weight: 400;
 }
 
 .custom_container {
@@ -30,6 +31,7 @@
   --fs_md: 15px;
   --fs_lg: 16px;
   --fs_xls: 20px;
+  --fs_xll:24px;
   --fs_xl: 33px;
   --fs_2xl: 68px;
 }
@@ -40,6 +42,9 @@
 }
 .fs_sm {
   font-size: var(--fs_sm);
+}
+.fs_xll{
+  font-size: var(--fs_xll);
 }
 .fs_base {
   font-size: var(--fs_base);
@@ -414,6 +419,10 @@
 .py_2 {
   padding-top: 8px;
   padding-bottom: 8px;
+}
+.py_4{
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .py_3 {
   padding-top: 16px;
@@ -832,6 +841,11 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.a_whyAmalfi_bg_operation{
+  background-image: url(./image/png/bg_airoplane.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .a_whyAmalfi_bg_saftey {
   background-image: url(./image/png/safety_bg.jpeg);
   background-repeat: no-repeat;
@@ -909,6 +923,60 @@ footer {
   background-size: cover;
   height: 611px;
   width: 100%;
+}
+.a_accordian_div{
+  border: 1px solid #88888d;
+  border-radius: 5px;
+}
+.a_test_gray{
+  color: #0009;
+}
+
+.a_answer {
+  max-height: 0; 
+  margin-top: 0;
+  overflow: hidden; 
+  opacity: 0; 
+  transition: max-height 0.4s ease-in-out, margin-top 0.4s ease-in-out, opacity 0.2s ease-in-out;} 
+
+.a_accordian_div.a_active .a_answer {
+  max-height: 500px; 
+  margin-top: 16px; 
+  opacity: 1; 
+}
+
+.a_question {
+  cursor: pointer;
+}
+
+
+
+.a_arrow {
+  transition: transform 0.4s ease-in-out;
+}
+
+.a_accordian_div.a_active .a_arrow {
+  transform: rotate(180deg);
+}
+.a_hr_line_div {
+  background-color: #c6c6c7;
+  height: 1px;
+  margin-top: 2.618em;
+  margin-bottom: 2.618em;
+}
+.a_next_flight_bg{
+  background-image: url(./image/png/nextflightbg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.a_bg_light_black{
+  background-color: #1a1a1a;
+}
+.a_radius_10{
+  border-radius: 10px;
+}
+.a_max_w_550{
+  max-width: 550px;
 }
 
 /* ----------------------------css of amit end here------------------------- */
