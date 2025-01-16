@@ -219,9 +219,16 @@
 .d_flex {
   display: flex;
 }
+.px_10 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
 .flex_column {
   flex-direction: column;
+}
+button {
+  border: none;
 }
 
 .flex_column_reverse {
@@ -672,6 +679,16 @@
 nav {
   background-color: rgba(0, 0, 0, 0);
   transition: background-color 0.3s ease-in-out;
+}
+
+.arrow_btn {
+  background-color: black;
+  border-radius: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px 10px 25px;
+  transition: color 0.5s, background-color 0.5s;
+  display: flex;
 }
 
 .explore_btn {
@@ -1378,7 +1395,6 @@ footer {
   background: rgba(0, 0, 0, 0.5);
   z-index: 1;
   opacity: 30%;
-
 }
 
 .content {
@@ -1455,7 +1471,6 @@ footer {
   object-fit: cover;
 }
 
-
 .hero_overlay {
   background-color: #0003;
   background-image: linear-gradient(#0000, #000000c2 75%, #000);
@@ -1472,8 +1487,8 @@ footer {
   line-height: 30px;
 }
 
-
-@media (max-width:576px) {}
+@media (max-width: 576px) {
+}
 
 .menu_overlay {
   position: fixed;
