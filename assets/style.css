@@ -55,13 +55,6 @@
 .fs_lg {
   font-size: var(--fs_lg);
 }
-<<<<<<< HEAD
-
-=======
-.fs_xls {
-  font-size: var(--fs_xls);
-}
->>>>>>> 11315c8e28e8249ab723deb7d6d3075eb78ecb57
 .fs_xl {
   font-size: var(--fs_xl);
 }
@@ -432,7 +425,6 @@
 .pb_5 {
   padding-bottom: 48px;
 }
-<<<<<<< HEAD
 
 .p_3 {
   padding: 16px;
@@ -442,28 +434,6 @@
   flex-wrap: wrap;
 }
 
-=======
-.py_5 {
-  padding-top: 48px;
-  padding-bottom: 48px;
-}
-.py_2 {
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-.py_3 {
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-.px_4 {
-  padding-left: 24px;
-  padding-right: 24px;
-}
-.px_3 {
-  padding-left: 16px;
-  padding-right: 16px;
-}
->>>>>>> 11315c8e28e8249ab723deb7d6d3075eb78ecb57
 .d_none {
   display: none;
 }
@@ -643,13 +613,9 @@
 .text_white {
   color: white;
 }
-<<<<<<< HEAD
-
-=======
 .text_light_white {
   color: #f5f5f5;
 }
->>>>>>> 11315c8e28e8249ab723deb7d6d3075eb78ecb57
 .opacity {
   opacity: 0.75;
 }
@@ -661,7 +627,6 @@
 .opacity_75 {
   opacity: 75%;
 }
-<<<<<<< HEAD
 
 .gap_10 {
   gap: 10px;
@@ -675,14 +640,6 @@
   background-color: white;
 }
 
-=======
-.opacity_90 {
-  opacity: 90%;
-}
-.gap_10 {
-  gap: 10px;
-}
->>>>>>> 11315c8e28e8249ab723deb7d6d3075eb78ecb57
 .bg_black {
   background-color: black;
 }
