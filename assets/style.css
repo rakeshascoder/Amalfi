@@ -14,6 +14,8 @@
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .narror_container {
@@ -28,6 +30,7 @@
   --fs_base: 14px;
   --fs_md: 15px;
   --fs_lg: 16px;
+  --fs_xls: 20px;
   --fs_xl: 33px;
   --fs_2xl: 68px;
 }
@@ -52,7 +55,13 @@
 .fs_lg {
   font-size: var(--fs_lg);
 }
+<<<<<<< HEAD
 
+=======
+.fs_xls {
+  font-size: var(--fs_xls);
+}
+>>>>>>> 11315c8e28e8249ab723deb7d6d3075eb78ecb57
 .fs_xl {
   font-size: var(--fs_xl);
 }
@@ -241,7 +250,9 @@
 .justify_content_center {
   justify-content: center;
 }
-
+.justify_content_end {
+  justify-content: end;
+}
 .vh_100 {
   min-height: 100vh;
 }
@@ -421,6 +432,7 @@
 .pb_5 {
   padding-bottom: 48px;
 }
+<<<<<<< HEAD
 
 .p_3 {
   padding: 16px;
@@ -430,6 +442,28 @@
   flex-wrap: wrap;
 }
 
+=======
+.py_5 {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.py_2 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.py_3 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.px_4 {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.px_3 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+>>>>>>> 11315c8e28e8249ab723deb7d6d3075eb78ecb57
 .d_none {
   display: none;
 }
@@ -440,6 +474,9 @@
 
 .d_inline_block {
   display: inline-block;
+}
+.radius_20 {
+  border-radius: 20px;
 }
 
 .letter_spacing_08 {
@@ -606,7 +643,13 @@
 .text_white {
   color: white;
 }
+<<<<<<< HEAD
 
+=======
+.text_light_white {
+  color: #f5f5f5;
+}
+>>>>>>> 11315c8e28e8249ab723deb7d6d3075eb78ecb57
 .opacity {
   opacity: 0.75;
 }
@@ -618,6 +661,7 @@
 .opacity_75 {
   opacity: 75%;
 }
+<<<<<<< HEAD
 
 .gap_10 {
   gap: 10px;
@@ -631,10 +675,33 @@
   background-color: white;
 }
 
+=======
+.opacity_90 {
+  opacity: 90%;
+}
+.gap_10 {
+  gap: 10px;
+}
+>>>>>>> 11315c8e28e8249ab723deb7d6d3075eb78ecb57
 .bg_black {
   background-color: black;
 }
-
+.w_50 {
+  width: 50%;
+}
+.start_0 {
+  left: 0;
+}
+.ms_0 {
+  margin-left: 0;
+}
+.ps_0 {
+  padding-left: 0px;
+}
+.mx_auto {
+  margin-left: auto;
+  margin-right: auto;
+}
 /* ==============================  css for harish starts here ================================= */
 .form_top_bar_main {
   border: 1px solid #0003;
@@ -1569,17 +1636,26 @@ footer {
 
 /* ==============================  css for harish end here ================================= */
 
-
 /* ----------------------------------------css of amit starts here-------------------------- */
 .whyAmalfi_bg {
   background-image: url(./image/png/whyamalfibg.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+}
+.a_whyAmalfi_bg_saftey {
+  background-image: url(./image/png/safety_bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.max_w_640 {
+.a_max_w_640 {
   max-width: 640px;
+}
+.a_max_w_886 {
+  max-width: 886px;
+}
+.a_max_with_461 {
+  max-width: 461px;
 }
 
 .bg-scrim.gradient-bottom-up {
@@ -1602,7 +1678,43 @@ footer {
   background-image: url(./image/png//easyBookingimage1.avif);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  height: 927px;
+  width: 100%;
+}
+.a_easy_Booking_bg_2 {
+  background-image: url(./image/png/easyBookingimage2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 927px;
+  width: 100%;
+}
+.a_easy_Booking_bg_3 {
+  background-image: url(./image/png//easyBookinimage\ 3.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 927px;
+  width: 100%;
+}
+.a_bg_operation {
+  background-image: url(./image/png/easyBookingimage2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 611px;
+  width: 100%;
+}
+.a_bg_safety {
+  background-image: url(./image/png/safety.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 611px;
+  width: 100%;
+}
+.a_bg_escapades {
+  background-image: url(./image/png/escapdes.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 611px;
+  width: 100%;
 }
 
 .h_927 {
