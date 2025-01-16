@@ -1,3 +1,161 @@
+.whyAmalfi_bg {
+  background-image: url(./image/png/whyamalfibg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.a_whyAmalfi_bg_operation{
+  background-image: url(./image/png/bg_airoplane.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.a_whyAmalfi_bg_saftey {
+  background-image: url(./image/png/safety_bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.a_max_w_640 {
+  max-width: 640px;
+}
+.a_max_w_886 {
+  max-width: 886px;
+}
+.a_max_with_461 {
+  max-width: 461px;
+}
+
+.bg-scrim.gradient-bottom-up {
+  background-color: #0003;
+  background-image: linear-gradient(#0000, #000000c2 75%, #000);
+}
+.bg-scrim {
+  z-index: 1;
+  background-color: #00000080;
+  position: absolute;
+  inset: 0%;
+}
+.bg-scrim.gradient-bottom-up._1x1 {
+  background-image: linear-gradient(#0000 25%, #000 79%);
+}
+.bg-scrim.gradient-bottom-up.faded {
+  mix-blend-mode: normal;
+  background-image: linear-gradient(#0000, #000000bf);
+}
+.z_2 {
+  z-index: 2;
+}
+.a_easy_Booking_bg_1 {
+  background-image: url(./image/png//easyBookingimage1.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 927px;
+  width: 100%;
+}
+.a_easy_Booking_bg_2 {
+  background-image: url(./image/png/easyBookingimage2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 927px;
+  width: 100%;
+}
+.a_easy_Booking_bg_3 {
+  background-image: url(./image/png//easyBookinimage\ 3.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 927px;
+  width: 100%;
+}
+.a_bg_operation {
+  background-image: url(./image/png/easyBookingimage2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 611px;
+  width: 100%;
+}
+.a_bg_safety {
+  background-image: url(./image/png/safety.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 611px;
+  width: 100%;
+}
+.a_bg_escapades {
+  background-image: url(./image/png/escapdes.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 611px;
+  width: 100%;
+}
+.a_accordian_div{
+  border: 1px solid #88888d;
+  border-radius: 5px;
+}
+.a_test_gray{
+  color: #0009;
+}
+
+.a_answer {
+  max-height: 0; 
+  margin-top: 0;
+  overflow: hidden; 
+  opacity: 0; 
+  transition: max-height 0.4s ease-in-out, margin-top 0.4s ease-in-out, opacity 0.2s ease-in-out;} 
+
+.a_accordian_div.a_active .a_answer {
+  max-height: 500px; 
+  margin-top: 16px; 
+  opacity: 1; 
+}
+
+.a_question {
+  cursor: pointer;
+}
+
+
+
+.a_arrow {
+  transition: transform 0.4s ease-in-out;
+}
+
+.a_accordian_div.a_active .a_arrow {
+  transform: rotate(180deg);
+}
+.a_hr_line_div {
+  background-color: #c6c6c7;
+  height: 1px;
+  margin-top: 2.618em;
+  margin-bottom: 2.618em;
+}
+.a_next_flight_bg{
+  background-image: url(./image/png/nextflightbg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.a_bg_light_black{
+  background-color: #1a1a1a;
+}
+.a_radius_10{
+  border-radius: 10px;
+}
+.a_max_w_550{
+  max-width: 550px;
+}
+.a_line_height_25{
+  line-height: 25px;
+}
+.a_z_n_1{
+  z-index: -1;
+}
+.a_right_0{
+  right: 0;
+}
+.a_overflow_hidden{
+  overflow: hidden;
+}
+.a_max_with_545{
+  max-width: 545px;
+}
+/* -------------------responsive------------------ */
 @media (max-width: 576px) {
   :root {
     --fs_xsm: 12px;
@@ -8,6 +166,7 @@
     --fs_xls: 18px;
     --fs_xll: 24px;
     --fs_xl: 27px;
+    --fs_xxl:42px;
     --fs_2xl: 41px;
   }
   .a_easy_Booking_bg_1 {
@@ -37,9 +196,9 @@
     --fs_md: 15px;
     --fs_lg: 15px;
     --fs_xls: 18px;
-
     --fs_xll: 24px;
     --fs_xl: 33px;
+    --fs_xxl:42px;
     --fs_2xl: 53px;
   }
   .a_easy_Booking_bg_1 {
@@ -60,12 +219,15 @@
   .a_bg_escapades {
     height: 500px;
   }
-  .a_sm_min_h_400 {
-    min-height: 400px;
+  .a_sm_min_h_475 {
+    min-height: 475px;
   }
   .sm_py_5 {
     padding-top: 48px;
     padding-bottom: 48px;
+  }
+  .sm_d_block{
+    display: block;
   }
 }
 @media (min-width: 768px) {
@@ -76,9 +238,9 @@
     --fs_md: 15px;
     --fs_lg: 15px;
     --fs_xls: 14px;
-
     --fs_xll: 24px;
     --fs_xl: 33px;
+    --fs_xxl:42px;
     --fs_2xl: 68px;
   }
   .a_easy_Booking_bg_1 {
@@ -135,6 +297,18 @@
   .a_bg_escapades {
     height: 425px;
   }
+  .md_py_5{
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .md_py_3{
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .md_px_4{
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
 @media (min-width: 992px) {
   :root {
@@ -144,9 +318,9 @@
     --fs_md: 15px;
     --fs_lg: 15px;
     --fs_xls: 18px;
-
     --fs_xll: 24px;
     --fs_xl: 33px;
+    --fs_xxl:42px;
     --fs_2xl: 68px;
   }
   .a_easy_Booking_bg_1 {
@@ -167,6 +341,9 @@
   .a_bg_escapades {
     height: 488px;
   }
+  .a_lg_absolute{
+    position: absolute;
+  }
 }
 @media (min-width: 1200px) {
   :root {
@@ -176,9 +353,9 @@
     --fs_md: 15px;
     --fs_lg: 15px;
     --fs_xls: 18px;
-
     --fs_xll: 24px;
     --fs_xl: 33px;
+    --fs_xxl:42px;
     --fs_2xl: 68px;
   }
   .a_easy_Booking_bg_1 {
@@ -223,6 +400,12 @@
     margin-top: 48px;
     margin-bottom: 48px;
   }
+  .xl_a_max_w_550{
+    max-width: 550px;
+  }
+  .xl_min_h_590{
+    min-height: 590px;
+  }
 }
 @media (min-width: 1440px) {
   :root {
@@ -233,8 +416,8 @@
     --fs_lg: 16px;
     --fs_xls: 20px;
     --fs_xl: 33px;
-
     --fs_xll: 24px;
+    --fs_xxl:42px;
     --fs_2xl: 68px;
   }
   .a_easy_Booking_bg_1 {
