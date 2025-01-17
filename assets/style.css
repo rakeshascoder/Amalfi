@@ -15,9 +15,8 @@
   margin-left: auto;
   margin-right: auto;
   padding-left: 12px !important;
-  padding-left: 12px !important;
+  padding-right: 12px !important;
 }
-
 
 :root {
   --fs_xsm: 12px;
@@ -28,14 +27,14 @@
   --fs_xls: 20px;
   --fs_xl: 33px;
   --fs_2xl: 68px;
-  --fs_3xl:64px;
+  --fs_3xl: 64px;
 }
 
 /* font-size */
 .fs_xsm {
   font-size: var(--fs_xsm);
 }
-.fs_3xl{
+.fs_3xl {
   font-size: var(--fs_3xl);
 }
 .fs_sm {
@@ -224,6 +223,9 @@
 
 .flex_column {
   flex-direction: column;
+}
+.flex_row_reverse {
+  flex-direction: row-reverse;
 }
 button {
   border: none;
@@ -453,9 +455,15 @@ button {
 .radius_20 {
   border-radius: 20px;
 }
+.text_start{
+  text-align: start;
+}
 
 .letter_spacing_08 {
   letter-spacing: 0.8px;
+}
+.overflow_hidden{
+  overflow: hidden;
 }
 
 .text_white {
@@ -512,7 +520,7 @@ button {
 }
 
 .z_1 {
-  z-index: 1;
+  z-index: 2;
 }
 
 .w_67 {
@@ -624,7 +632,6 @@ button {
   height: 100%;
 }
 
-
 .text_light_white {
   color: #f5f5f5;
 }
@@ -671,16 +678,15 @@ button {
 /* ==============================  css for harish starts here ================================= */
 .innernav_item {
   display: block;
-  position: fixed;
-  height: 100vh;
   top: 0;
   left: calc(70vw - 35vw);
-  width: 25vw;
+  width: 100%;
   padding: 16px;
   background-color: #0c0f0f;
   transition: all 0.3s ease-in-out;
   backdrop-filter: brightness(69%);
   color: white;
+  overflow-y: scroll;
 }
 .innernav_item.hidden {
   display: none;
@@ -688,52 +694,15 @@ button {
 
 .navaircraft_item {
   display: block;
-  position: fixed;
-  height: 100vh;
   top: 0;
   left: calc(70vw - 35vw);
-  width: 25vw;
+  width: 100%;
   padding: 16px;
   background-color: #0c0f0f;
   transition: all 0.3s ease-in-out;
   backdrop-filter: brightness(69%);
   color: white;
-}.navaircraft_item {
-  display: block;
-  position: fixed;
-  height: 100vh;
-  top: 0;
-  left: calc(70vw - 35vw);
-  width: 25vw;
-  padding: 16px;
-  background-color: #0c0f0f;
-  transition: all 0.3s ease-in-out;
-  backdrop-filter: brightness(69%);
-  color: white;
-}.navaircraft_item {
-  display: block;
-  position: fixed;
-  height: 100vh;
-  top: 0;
-  left: calc(70vw - 35vw);
-  width: 25vw;
-  padding: 16px;
-  background-color: #0c0f0f;
-  transition: all 0.3s ease-in-out;
-  backdrop-filter: brightness(69%);
-  color: white;
-}.navaircraft_item {
-  display: block;
-  position: fixed;
-  height: 100vh;
-  top: 0;
-  left: calc(70vw - 35vw);
-  width: 25vw;
-  padding: 16px;
-  background-color: #0c0f0f;
-  transition: all 0.3s ease-in-out;
-  backdrop-filter: brightness(69%);
-  color: white;
+  overflow-y: scroll;;
 }
 .navaircraft_item.hidden {
   display: none;
@@ -741,16 +710,15 @@ button {
 
 .navwhyamalficard_item {
   display: block;
-  position: fixed;
-  height: 100vh;
   top: 0;
   left: calc(70vw - 35vw);
-  width: 25vw;
+  width: 100%;
   padding: 16px;
   background-color: #0c0f0f;
   transition: all 0.3s ease-in-out;
   backdrop-filter: brightness(69%);
   color: white;
+  overflow-y: scroll;
 }
 .navwhyamalficard_item.hidden {
   display: none;
@@ -758,16 +726,15 @@ button {
 
 .navmedia_item {
   display: block;
-  position: fixed;
-  height: 100vh;
   top: 0;
   left: calc(70vw - 35vw);
-  width: 25vw;
+  width: 100%;
   padding: 16px;
   background-color: #0c0f0f;
   transition: all 0.3s ease-in-out;
   backdrop-filter: brightness(69%);
   color: white;
+  overflow-y: scroll;
 }
 .navmedia_item.hidden {
   display: none;
@@ -781,7 +748,7 @@ button {
 }
 
 .image_set {
-  aspect-ratio: 2.39;
+  aspect-ratio: 4.39;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 1px 3px #00000085;
@@ -1027,7 +994,6 @@ footer {
   margin-top: 67px;
 }
 
-
 .bg_img {
   position: relative;
   background: url("./image/png/jets1.jpeg") no-repeat center center/cover;
@@ -1166,6 +1132,7 @@ footer {
   overflow: hidden;
   transition: width 0.3s ease-in-out;
   z-index: 999;
+  overflow-y: scroll;
 }
 
 .menu_content {
@@ -1173,7 +1140,7 @@ footer {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  margin-top: 80px;
+  margin-top: 20px;
 }
 
 .menu_content .contact_btn {
@@ -1186,13 +1153,15 @@ footer {
 }
 
 .close_menu {
-  position: absolute;
+  position: sticky;
   top: 10px;
   left: 10px;
   background: none;
   color: #fff;
   font-size: 1.5rem;
   border: none;
+  backdrop-filter: saturate(180%) blur(20px);
+  background-color: #000c;
   cursor: pointer;
 }
 
@@ -1302,6 +1271,11 @@ footer {
   padding: 8px;
   border: 1px solid #afaeae;
   border-radius: 5px;
+}
+.search_btn {
+  background-color: black;
+  padding: 15px 20px;
+  border-radius: 10px;
 }
 
 /* ===================== form css end here ============================ */
