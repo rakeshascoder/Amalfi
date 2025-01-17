@@ -1358,6 +1358,13 @@ footer {
   border-radius: 10px;
 }
 
+.hover_jets_link{
+  transition: .8s;
+}
+.hover_jets_link:hover {
+  opacity: 0.5;
+}
+
 /* ===================== form css end here ============================ */
 
 /* ==============================  css for harish end here ================================= */
