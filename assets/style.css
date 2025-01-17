@@ -27,7 +27,9 @@
   --fs_xls: 20px;
   --fs_xl: 33px;
   --fs_2xl: 68px;
-  --fs_3xl: 64px;
+  --fs_3xl:64px;
+  --fs_xxl:24px;
+  --fs_xll:42px
 }
 
 /* font-size */
@@ -40,7 +42,12 @@
 .fs_sm {
   font-size: var(--fs_sm);
 }
-
+.fs_xxl{
+  font-size: var(--fs_xxl);
+}
+.fs_xxl{
+  font-size: var(--fs_xll);
+}
 .fs_base {
   font-size: var(--fs_base);
 }
@@ -436,7 +443,38 @@ button {
 .p_3 {
   padding: 16px;
 }
-
+.py_5{
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.py_4{
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.py_3{
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.py_2{
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.px_5{
+  padding-left: 48px;
+  padding-right: 48px;
+}
+.px_4{
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.px_3{
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.px_2{
+  padding-left: 8px;
+  padding-right: 8px;
+}
 .flex_wrap {
   flex-wrap: wrap;
 }
