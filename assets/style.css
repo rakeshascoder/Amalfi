@@ -7,7 +7,6 @@
   text-decoration: none;
   box-sizing: border-box;
   font-family: "Figtree", serif;
-  font-weight: 400;
   scroll-behavior: smooth;
 }
 
@@ -32,9 +31,7 @@
   --fs_md: 15px;
   --fs_lg: 16px;
   --fs_xls: 20px;
-  --fs_xll:24px;
   --fs_xl: 33px;
-  --fs_xxl:42px;
   --fs_2xl: 68px;
 }
 
@@ -45,12 +42,6 @@
 
 .fs_sm {
   font-size: var(--fs_sm);
-}
-.fs_xll{
-  font-size: var(--fs_xll);
-}
-.fs_xxl{
-  font-size: var(--fs_xxl);
 }
 
 .fs_base {
@@ -445,29 +436,9 @@ button {
 .p_3 {
   padding: 16px;
 }
-.py_5{
-  padding-top: 48px;
-  padding-bottom: 48px;
-}
-.py_2 {
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-.py_4{
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-.py_3 {
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-.px_4 {
-  padding-left: 24px;
-  padding-right: 24px;
-}
-.px_3 {
-  padding-left: 16px;
-  padding-right: 16px;
+
+.flex_wrap {
+  flex-wrap: wrap;
 }
 
 .d_none {
@@ -739,6 +710,41 @@ button {
 .navaircraft_item.hidden {
   display: none;
 }
+
+.navwhyamalficard_item {
+  display: block;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: calc(70vw - 35vw);
+  width: 25vw;
+  padding: 16px;
+  background-color: #0c0f0f;
+  transition: all 0.3s ease-in-out;
+  backdrop-filter: brightness(69%);
+  color: white;
+}
+.navwhyamalficard_item.hidden {
+  display: none;
+}
+
+.navmedia_item {
+  display: block;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: calc(70vw - 35vw);
+  width: 25vw;
+  padding: 16px;
+  background-color: #0c0f0f;
+  transition: all 0.3s ease-in-out;
+  backdrop-filter: brightness(69%);
+  color: white;
+}
+.navmedia_item.hidden {
+  display: none;
+}
+
 .bg_overlay {
   background-color: black;
   opacity: 0.6;

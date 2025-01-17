@@ -186,6 +186,12 @@
   .navaircraft_item {
     left: calc(70vw - 50vw);
   }
+  .navwhyamalficard_item {
+    left: calc(70vw - 50vw);
+  }
+  .navmedia_item {
+    left: calc(70vw - 50vw);
+  }
 }
 @media (min-width: 1200px) {
   :root {
