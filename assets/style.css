@@ -589,6 +589,15 @@ button {
   margin-bottom: 24px;
 }
 
+.mx_2 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.h_50vh {
+  height: 50vh;
+}
+
 .border_none {
   border-style: none;
 }
@@ -695,6 +704,7 @@ button {
   margin-left: auto;
   margin-right: auto;
 }
+
 /* ==============================  css for harish starts here ================================= */
 .form_top_bar_main {
   border: 1px solid #0003;
@@ -706,7 +716,7 @@ button {
 }
 
 nav {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #000c;
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -825,6 +835,10 @@ nav {
   padding-left: 12px;
   padding-right: 12px;
 }
+.nav_blur {
+  backdrop-filter: saturate(180%) blur(20px);
+  background-color: #000c;
+}
 
 .flight_card {
   width: 340px;
@@ -835,6 +849,7 @@ nav {
   width: 15px;
   color: white;
 }
+
 
 .flight_card_content {
   margin: 0px 16px 16px 16px;
