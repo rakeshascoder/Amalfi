@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.a_whyAmalfi_bg_operation{
+.a_whyAmalfi_bg_operation {
   background-image: url(./image/png/bg_airoplane.avif);
   background-repeat: no-repeat;
   background-size: cover;
@@ -20,13 +20,13 @@
 .a_max_w_886 {
   max-width: 886px;
 }
-.a_max_w_735{
+.a_max_w_735 {
   max-width: 735px;
 }
 .a_max_with_461 {
   max-width: 461px;
 }
-.a_max_w_820{
+.a_max_w_820 {
   max-width: 820px;
 }
 .bg-scrim.gradient-bottom-up {
@@ -91,32 +91,32 @@
   height: 611px;
   width: 100%;
 }
-.a_accordian_div{
+.a_accordian_div {
   border: 1px solid #88888d;
   border-radius: 5px;
 }
-.a_test_gray{
+.a_test_gray {
   color: #0009;
 }
 
 .a_answer {
-  max-height: 0; 
+  max-height: 0;
   margin-top: 0;
-  overflow: hidden; 
-  opacity: 0; 
-  transition: max-height 0.4s ease-in-out, margin-top 0.4s ease-in-out, opacity 0.2s ease-in-out;} 
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease-in-out, margin-top 0.4s ease-in-out,
+    opacity 0.2s ease-in-out;
+}
 
 .a_accordian_div.a_active .a_answer {
-  max-height: 500px; 
-  margin-top: 16px; 
-  opacity: 1; 
+  max-height: 500px;
+  margin-top: 16px;
+  opacity: 1;
 }
 
 .a_question {
   cursor: pointer;
 }
-
-
 
 .a_arrow {
   transition: transform 0.4s ease-in-out;
@@ -131,34 +131,34 @@
   margin-top: 2.618em;
   margin-bottom: 2.618em;
 }
-.a_next_flight_bg{
+.a_next_flight_bg {
   background-image: url(./image/png/nextflightbg.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-.a_bg_light_black{
+.a_bg_light_black {
   background-color: #1a1a1a;
 }
-.a_radius_10{
+.a_radius_10 {
   border-radius: 10px;
 }
-.a_max_w_550{
+.a_max_w_550 {
   max-width: 550px;
 }
-.a_line_height_25{
+.a_line_height_25 {
   line-height: 25px;
 }
-.a_z_n_1{
+.a_z_n_1 {
   z-index: -1;
 }
-.a_right_0{
+.a_right_0 {
   right: 0;
 }
-.a_overflow_hidden{
+.a_overflow_hidden {
   overflow: hidden;
 }
-.a_max_with_545{
+.a_max_with_545 {
   max-width: 545px;
 }
 .a_narror_container {
@@ -166,25 +166,25 @@
   margin-left: auto;
   margin-right: auto;
 }
-.a_outline_none{
+.a_outline_none {
   outline: none;
 }
-.a_hover_bg_gray{
+.a_hover_bg_gray {
   transition: all 400ms;
 }
-.a_hover_bg_gray:hover{
+.a_hover_bg_gray:hover {
   background-color: #3333334e;
 }
-.a_bg_transparent{
+.a_bg_transparent {
   background: transparent;
 }
-.a_placeholder::placeholder{
+.a_placeholder::placeholder {
   color: black;
 }
-.a_max_h_700{
+.a_max_h_700 {
   max-height: 700px;
 }
-.a_fw_700{
+.a_fw_700 {
   font-weight: 700;
 }
 .a_form_top_bar_main {
@@ -196,7 +196,26 @@
   padding: 16px 20px;
   border-radius: 10px;
 }
-
+.a_line_h_24 {
+  line-height: 24px;
+}
+.a_max_w_1200 {
+  max-width: 1200px;
+}
+.a_line_height_28 {
+  line-height: 28px;
+}
+.a_card_hover {
+  transition: all 400ms;
+  cursor: pointer;
+}
+.a_card_hover:hover {
+  background: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Example shadow */
+}
+.a_min_h_202 {
+  min-height: 202px;
+}
 /* -------------------responsive------------------ */
 @media (max-width: 576px) {
   :root {
@@ -206,11 +225,11 @@
     --fs_md: 15px;
     --fs_lg: 15px;
     --fs_xls: 18px;
-    --fs_xll: 24px;
+    --fs_xll: 20px;
     --fs_xl: 27px;
-    --fs_xxl:42px;
+    --fs_xxl: 42px;
     --fs_2xl: 41px;
-  --fs_3xl:64px;
+    --fs_3xl: 32px;
   }
   .a_easy_Booking_bg_1 {
     height: 600px;
@@ -233,10 +252,10 @@
   .a_form_top_bar_main {
     flex-direction: column;
   }
-  .a_xs_border_b{
+  .a_xs_border_b {
     border-bottom: 1px solid #0003;
   }
-  .xs_justify_content_center{
+  .xs_justify_content_center {
     justify-content: center;
   }
 }
@@ -248,11 +267,11 @@
     --fs_md: 15px;
     --fs_lg: 15px;
     --fs_xls: 18px;
-    --fs_xll: 24px;
+    --fs_xll: 20px;
     --fs_xl: 33px;
-    --fs_xxl:42px;
+    --fs_xxl: 42px;
     --fs_2xl: 53px;
-    --fs_3xl:64px;
+    --fs_3xl: 32px;
   }
   .a_easy_Booking_bg_1 {
     height: 700px;
@@ -279,13 +298,16 @@
     padding-top: 48px;
     padding-bottom: 48px;
   }
-  .sm_d_block{
+  .sm_d_block {
     display: block;
   }
-  .sm_col_6{
+  .sm_col_6 {
     width: 50%;
     padding-left: 12px;
     padding-right: 12px;
+  }
+  .sm_mt_0{
+    margin-top: 0;
   }
 }
 @media (min-width: 768px) {
@@ -298,9 +320,9 @@
     --fs_xls: 14px;
     --fs_xll: 24px;
     --fs_xl: 33px;
-    --fs_xxl:42px;
+    --fs_xxl: 42px;
     --fs_2xl: 68px;
-    --fs_3xl:64px;
+    --fs_3xl: 64px;
   }
   .a_easy_Booking_bg_1 {
     height: 730px;
@@ -356,15 +378,15 @@
   .a_bg_escapades {
     height: 425px;
   }
-  .md_py_5{
+  .md_py_5 {
     padding-top: 48px;
     padding-bottom: 48px;
   }
-  .md_py_3{
+  .md_py_3 {
     padding-top: 16px;
     padding-bottom: 16px;
   }
-  .md_px_4{
+  .md_px_4 {
     padding-left: 24px;
     padding-right: 24px;
   }
@@ -379,9 +401,9 @@
     --fs_xls: 18px;
     --fs_xll: 24px;
     --fs_xl: 33px;
-    --fs_xxl:42px;
+    --fs_xxl: 42px;
     --fs_2xl: 68px;
-    --fs_3xl:64px;
+    --fs_3xl: 64px;
   }
   .a_easy_Booking_bg_1 {
     height: 488px;
@@ -401,28 +423,39 @@
   .a_bg_escapades {
     height: 488px;
   }
-  .a_lg_absolute{
+  .a_lg_absolute {
     position: absolute;
   }
-  .lg_w_20{
+  .lg_w_20 {
     width: 20%;
     padding-left: 4px;
     padding-right: 4px;
   }
-  .lg_d_block{
+  .lg_d_block {
     display: block;
   }
-  .lg_w_89{
+  .lg_w_89 {
     width: 89%;
   }
-  .lg_justify_between{
+  .lg_justify_between {
     justify-content: space-between;
   }
-  .lg_w_11{
+  .lg_w_11 {
     width: 11%;
   }
-  .lg_flex_d_row{
+  .lg_flex_d_row {
     flex-direction: row;
+  }
+  .lg_mt_4 {
+    margin-top: 24px;
+  }
+  .lg_mt_0{
+    margin-top: 0px;
+  }
+  .lg_col_3{
+    width: 25%;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 }
 @media (min-width: 1200px) {
@@ -435,9 +468,9 @@
     --fs_xls: 18px;
     --fs_xll: 24px;
     --fs_xl: 33px;
-    --fs_xxl:42px;
+    --fs_xxl: 42px;
     --fs_2xl: 68px;
-    --fs_3xl:64px;
+    --fs_3xl: 64px;
   }
   .a_easy_Booking_bg_1 {
     height: 611px;
@@ -481,10 +514,10 @@
     margin-top: 48px;
     margin-bottom: 48px;
   }
-  .xl_a_max_w_550{
+  .xl_a_max_w_550 {
     max-width: 550px;
   }
-  .xl_min_h_590{
+  .xl_min_h_590 {
     min-height: 590px;
   }
 }
@@ -498,9 +531,9 @@
     --fs_xls: 20px;
     --fs_xl: 33px;
     --fs_xll: 24px;
-    --fs_xxl:42px;
+    --fs_xxl: 42px;
     --fs_2xl: 68px;
-    --fs_3xl:64px;
+    --fs_3xl: 64px;
   }
   .a_easy_Booking_bg_1 {
     height: 750px;
