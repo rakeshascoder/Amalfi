@@ -1,96 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/style.css">
-    <link rel="stylesheet" href="./assets/responsive.css">
-</head>
-<body>
-    <header>
-<div class="narror_container">
 
-    <div class="padding_67">
-        <div class="narror_container">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="./assets/responsive.css">
+  <link rel="stylesheet" href="/assets/AmiStyle.css">
+</head>
+
+<body>
+  <header class="pt_5">
+    <div class="custom_container">
+      <div class="">
+        <div class="a_narror_container py_5">
           <div class="d_flex flex_column gap_24">
-            <h2 class="fs_xl fw_normal">Request a character code</h2>
-            <p class="fw_normal fs_lg text_gray">
-                To request a quote for an upcoming flight, please fill out the request form below and a member of our team will contact you shortly.</strong>
+            <h2 class="fs_xl fw_normal text_black">Request a character code</h2>
+            <p class="fw_normal fs_lg text_black">
+              To request a quote for an upcoming flight, please fill out the request form below and a member of our team
+              will contact you shortly.</strong>
             </p>
           </div>
           <!-- round trip here -->
           <div class="mb_2 mt_32">
-           
-              <select class="text_uppercase border_none" name="one_way_or_roundtrip" id="type-field">
+
+            <div class="a_hover_bg_gray radius_20 px_3 d_inline_block">
+              <select class="text_uppercase border_none py_2 a_outline_none  a_bg_transparent " name="one_way_or_roundtrip" id="type-field">
                 <option value="Round Trip">Round Trip</option>
-                <option value="One-way">Round Trip</option>
+                <option value="One-way">ONE WAY</option>
               </select>
-           
+            </div>
           </div>
           <!-- form -->
-          <div class="d_flex align_center gap_3 mb_32">
-            <div class="form_top_bar_main">
-              <div class="relative">
-                <input class="form_field" type="text" placeholder="From" required />
-                <svg width="100%" height="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
-                  class="form_icon">
-                  <path
-                    d="M 25.71875 4.78125 C 25.332031 4.816406 24.957031 4.929688 24.59375 5.125 L 19.875 7.625 L 13.5 6.0625 L 13.125 5.96875 L 12.75 6.15625 L 10.59375 7.40625 L 9.3125 8.15625 L 10.5 9.0625 L 13.21875 11.125 L 9.8125 12.9375 L 6.15625 11.28125 L 5.71875 11.09375 L 5.28125 11.3125 L 3.53125 12.25 L 2.375 12.875 L 3.25 13.8125 L 8.65625 19.625 L 9.15625 20.21875 L 9.84375 19.84375 L 15 17.09375 L 13.96875 22.78125 L 13.625 24.59375 L 15.34375 23.875 L 17.90625 22.78125 L 18.28125 22.625 L 18.4375 22.25 L 22.15625 13.21875 L 27.40625 10.40625 C 28.851563 9.628906 29.433594 7.789063 28.65625 6.34375 C 28.269531 5.621094 27.609375 5.128906 26.875 4.90625 C 26.507813 4.796875 26.105469 4.746094 25.71875 4.78125 Z M 25.90625 6.78125 C 26.03125 6.773438 26.160156 6.777344 26.28125 6.8125 C 26.523438 6.886719 26.742188 7.035156 26.875 7.28125 C 27.140625 7.777344 26.964844 8.359375 26.46875 8.625 L 20.875 11.65625 L 20.5625 11.8125 L 20.4375 12.15625 L 16.71875 21.09375 L 16.28125 21.28125 L 17.34375 15.375 L 17.71875 13.34375 L 15.90625 14.3125 L 9.59375 17.71875 L 5.625 13.40625 L 5.78125 13.3125 L 9.4375 14.9375 L 9.90625 15.15625 L 10.3125 14.90625 L 25.53125 6.875 C 25.65625 6.808594 25.78125 6.789063 25.90625 6.78125 Z M 13.375 8.09375 L 17.21875 9.03125 L 15.15625 10.09375 L 12.90625 8.375 Z M 3 26 L 3 28 L 29 28 L 29 26 Z"
-                    fill="currentColor"></path>
-                </svg>
-              </div>
-              <div class="relative">
-                <input class="form_field" type="text" placeholder="To" required />
-                <svg width="100%" height="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
-                  class="form_icon">
-                  <path
-                    d="M 3.40625 3.96875 L 3.34375 5.25 L 3 14.03125 L 2.96875 14.8125 L 3.71875 15.03125 L 10.125 16.96875 L 4.6875 20.75 L 3.15625 21.8125 L 4.875 22.5 L 7.71875 23.625 L 8.09375 23.78125 L 8.46875 23.625 L 18.46875 19.46875 L 24.875 21.40625 C 26.5625 21.914063 28.367188 20.933594 28.875 19.25 C 29.382813 17.5625 28.402344 15.757813 26.71875 15.25 L 21.03125 13.5 L 17.25 7.25 L 17.03125 6.90625 L 16.65625 6.78125 L 14 6.0625 L 12.53125 5.6875 L 12.75 7.1875 L 13.28125 11.09375 L 9.03125 9.78125 L 7.40625 5.59375 L 7.21875 5.125 L 6.75 4.96875 L 4.625 4.34375 Z M 5.28125 6.625 L 5.71875 6.75 L 7.3125 10.9375 L 7.46875 11.40625 L 7.9375 11.53125 L 26.125 17.15625 C 26.777344 17.351563 27.132813 18.007813 26.9375 18.65625 C 26.742188 19.308594 26.085938 19.664063 25.4375 19.46875 L 18.6875 17.4375 L 18.34375 17.34375 L 18.03125 17.46875 L 8.09375 21.625 L 7.34375 21.3125 L 12.96875 17.4375 L 14.6875 16.25 L 12.6875 15.65625 L 5.03125 13.34375 Z M 14.90625 8.40625 L 15.71875 8.625 L 18.15625 12.59375 L 15.34375 11.75 Z M 20.5 21 C 19.671875 21 19 21.671875 19 22.5 C 19 23.328125 19.671875 24 20.5 24 C 21.328125 24 22 23.328125 22 22.5 C 22 21.671875 21.328125 21 20.5 21 Z M 3 26 L 3 28 L 29 28 L 29 26 Z"
-                    fill="currentColor"></path>
-                </svg>
-              </div>
-              <div class="relative">
-                <input class="form_field" type="text" placeholder="Depart" required />
-                <svg width="100%" height="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
-                  class="form_icon">
-                  <path
-                    d="M 9 4 L 9 5 L 5 5 L 5 27 L 27 27 L 27 5 L 23 5 L 23 4 L 21 4 L 21 5 L 11 5 L 11 4 Z M 7 7 L 9 7 L 9 8 L 11 8 L 11 7 L 21 7 L 21 8 L 23 8 L 23 7 L 25 7 L 25 9 L 7 9 Z M 7 11 L 25 11 L 25 25 L 7 25 Z M 13 13 L 13 15 L 15 15 L 15 13 Z M 17 13 L 17 15 L 19 15 L 19 13 Z M 21 13 L 21 15 L 23 15 L 23 13 Z M 9 17 L 9 19 L 11 19 L 11 17 Z M 13 17 L 13 19 L 15 19 L 15 17 Z M 17 17 L 17 19 L 19 19 L 19 17 Z M 21 17 L 21 19 L 23 19 L 23 17 Z M 9 21 L 9 23 L 11 23 L 11 21 Z M 13 21 L 13 23 L 15 23 L 15 21 Z M 17 21 L 17 23 L 19 23 L 19 21 Z"
-                    fill="currentColor"></path>
-                </svg>
-              </div>
-              <div class="relative">
-                <input class="form_field" type="text" placeholder="Return" required />
-                <svg width="100%" height="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
-                  class="form_icon">
-                  <path
-                    d="M 9 4 L 9 5 L 5 5 L 5 27 L 27 27 L 27 5 L 23 5 L 23 4 L 21 4 L 21 5 L 11 5 L 11 4 Z M 7 7 L 9 7 L 9 8 L 11 8 L 11 7 L 21 7 L 21 8 L 23 8 L 23 7 L 25 7 L 25 9 L 7 9 Z M 7 11 L 25 11 L 25 25 L 7 25 Z M 13 13 L 13 15 L 15 15 L 15 13 Z M 17 13 L 17 15 L 19 15 L 19 13 Z M 21 13 L 21 15 L 23 15 L 23 13 Z M 9 17 L 9 19 L 11 19 L 11 17 Z M 13 17 L 13 19 L 15 19 L 15 17 Z M 17 17 L 17 19 L 19 19 L 19 17 Z M 21 17 L 21 19 L 23 19 L 23 17 Z M 9 21 L 9 23 L 11 23 L 11 21 Z M 13 21 L 13 23 L 15 23 L 15 21 Z M 17 21 L 17 23 L 19 23 L 19 21 Z"
-                    fill="currentColor"></path>
-                </svg>
-              </div>
-              <div class="relative">
-                <div class="d_flex me_3">
-                  <a class="minus_btn" href="#">-</a>
-                  <input class="border_none outline_none passenger_input" type="text" placeholder="1" />
-                  <div class="me_3 text_gray">Passenger</div>
-                  <a class="minus_btn" href="#">+</a>
+          <div class="d_flex flex_column lg_flex_d_row align_center lg_justify_between gap_3 mb_32 w_100 ">
+             <div class="lg_w_89 w_100 mx_auto d_flex align_center justify_content_center">
+              <div class="row  align_center w_100 a_form_top_bar_main lg_justify_between ">
+                <div class="relative a_xs_border_b col_12 sm_col_6 lg_w_20">
+                  <input class="form_field a_placeholder ms_1" type="text" placeholder="From" required />
+                  <svg width="100%" height="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="form_icon">
+                    <path
+                      d="M 25.71875 4.78125 C 25.332031 4.816406 24.957031 4.929688 24.59375 5.125 L 19.875 7.625 L 13.5 6.0625 L 13.125 5.96875 L 12.75 6.15625 L 10.59375 7.40625 L 9.3125 8.15625 L 10.5 9.0625 L 13.21875 11.125 L 9.8125 12.9375 L 6.15625 11.28125 L 5.71875 11.09375 L 5.28125 11.3125 L 3.53125 12.25 L 2.375 12.875 L 3.25 13.8125 L 8.65625 19.625 L 9.15625 20.21875 L 9.84375 19.84375 L 15 17.09375 L 13.96875 22.78125 L 13.625 24.59375 L 15.34375 23.875 L 17.90625 22.78125 L 18.28125 22.625 L 18.4375 22.25 L 22.15625 13.21875 L 27.40625 10.40625 C 28.851563 9.628906 29.433594 7.789063 28.65625 6.34375 C 28.269531 5.621094 27.609375 5.128906 26.875 4.90625 C 26.507813 4.796875 26.105469 4.746094 25.71875 4.78125 Z M 25.90625 6.78125 C 26.03125 6.773438 26.160156 6.777344 26.28125 6.8125 C 26.523438 6.886719 26.742188 7.035156 26.875 7.28125 C 27.140625 7.777344 26.964844 8.359375 26.46875 8.625 L 20.875 11.65625 L 20.5625 11.8125 L 20.4375 12.15625 L 16.71875 21.09375 L 16.28125 21.28125 L 17.34375 15.375 L 17.71875 13.34375 L 15.90625 14.3125 L 9.59375 17.71875 L 5.625 13.40625 L 5.78125 13.3125 L 9.4375 14.9375 L 9.90625 15.15625 L 10.3125 14.90625 L 25.53125 6.875 C 25.65625 6.808594 25.78125 6.789063 25.90625 6.78125 Z M 13.375 8.09375 L 17.21875 9.03125 L 15.15625 10.09375 L 12.90625 8.375 Z M 3 26 L 3 28 L 29 28 L 29 26 Z"
+                      fill="currentColor"></path>
+                  </svg>
                 </div>
-              </div>
-            </div>
-            <div class="search_btn">
-              <p class="text_white">Search</p>
+                <div class="relative a_xs_border_b col_12 sm_col_6 lg_w_20">
+                  <input class="form_field a_placeholder" type="text" placeholder="To" required />
+                  <svg width="100%" height="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="form_icon">
+                    <path
+                      d="M 3.40625 3.96875 L 3.34375 5.25 L 3 14.03125 L 2.96875 14.8125 L 3.71875 15.03125 L 10.125 16.96875 L 4.6875 20.75 L 3.15625 21.8125 L 4.875 22.5 L 7.71875 23.625 L 8.09375 23.78125 L 8.46875 23.625 L 18.46875 19.46875 L 24.875 21.40625 C 26.5625 21.914063 28.367188 20.933594 28.875 19.25 C 29.382813 17.5625 28.402344 15.757813 26.71875 15.25 L 21.03125 13.5 L 17.25 7.25 L 17.03125 6.90625 L 16.65625 6.78125 L 14 6.0625 L 12.53125 5.6875 L 12.75 7.1875 L 13.28125 11.09375 L 9.03125 9.78125 L 7.40625 5.59375 L 7.21875 5.125 L 6.75 4.96875 L 4.625 4.34375 Z M 5.28125 6.625 L 5.71875 6.75 L 7.3125 10.9375 L 7.46875 11.40625 L 7.9375 11.53125 L 26.125 17.15625 C 26.777344 17.351563 27.132813 18.007813 26.9375 18.65625 C 26.742188 19.308594 26.085938 19.664063 25.4375 19.46875 L 18.6875 17.4375 L 18.34375 17.34375 L 18.03125 17.46875 L 8.09375 21.625 L 7.34375 21.3125 L 12.96875 17.4375 L 14.6875 16.25 L 12.6875 15.65625 L 5.03125 13.34375 Z M 14.90625 8.40625 L 15.71875 8.625 L 18.15625 12.59375 L 15.34375 11.75 Z M 20.5 21 C 19.671875 21 19 21.671875 19 22.5 C 19 23.328125 19.671875 24 20.5 24 C 21.328125 24 22 23.328125 22 22.5 C 22 21.671875 21.328125 21 20.5 21 Z M 3 26 L 3 28 L 29 28 L 29 26 Z"
+                      fill="currentColor"></path>
+                  </svg>
+                </div>
+                <div class="relative a_xs_border_b col_12 sm_col_6 lg_w_20">
+                  <input class="form_field a_placeholder" type="text" placeholder="Depart" required />
+                  <svg width="100%" height="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="form_icon">
+                    <path
+                      d="M 9 4 L 9 5 L 5 5 L 5 27 L 27 27 L 27 5 L 23 5 L 23 4 L 21 4 L 21 5 L 11 5 L 11 4 Z M 7 7 L 9 7 L 9 8 L 11 8 L 11 7 L 21 7 L 21 8 L 23 8 L 23 7 L 25 7 L 25 9 L 7 9 Z M 7 11 L 25 11 L 25 25 L 7 25 Z M 13 13 L 13 15 L 15 15 L 15 13 Z M 17 13 L 17 15 L 19 15 L 19 13 Z M 21 13 L 21 15 L 23 15 L 23 13 Z M 9 17 L 9 19 L 11 19 L 11 17 Z M 13 17 L 13 19 L 15 19 L 15 17 Z M 17 17 L 17 19 L 19 19 L 19 17 Z M 21 17 L 21 19 L 23 19 L 23 17 Z M 9 21 L 9 23 L 11 23 L 11 21 Z M 13 21 L 13 23 L 15 23 L 15 21 Z M 17 21 L 17 23 L 19 23 L 19 21 Z"
+                      fill="currentColor"></path>
+                  </svg>
+                </div>
+                <div class="relative a_xs_border_b col_12 sm_col_6 lg_w_20">
+                  <input class="form_field a_placeholder" type="text" placeholder="Return" required />
+                  <svg width="100%" height="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="form_icon">
+                    <path
+                      d="M 9 4 L 9 5 L 5 5 L 5 27 L 27 27 L 27 5 L 23 5 L 23 4 L 21 4 L 21 5 L 11 5 L 11 4 Z M 7 7 L 9 7 L 9 8 L 11 8 L 11 7 L 21 7 L 21 8 L 23 8 L 23 7 L 25 7 L 25 9 L 7 9 Z M 7 11 L 25 11 L 25 25 L 7 25 Z M 13 13 L 13 15 L 15 15 L 15 13 Z M 17 13 L 17 15 L 19 15 L 19 13 Z M 21 13 L 21 15 L 23 15 L 23 13 Z M 9 17 L 9 19 L 11 19 L 11 17 Z M 13 17 L 13 19 L 15 19 L 15 17 Z M 17 17 L 17 19 L 19 19 L 19 17 Z M 21 17 L 21 19 L 23 19 L 23 17 Z M 9 21 L 9 23 L 11 23 L 11 21 Z M 13 21 L 13 23 L 15 23 L 15 21 Z M 17 21 L 17 23 L 19 23 L 19 21 Z"
+                      fill="currentColor"></path>
+                  </svg>
+                </div>
+                <div class="relative col_12 sm_col_6 lg_w_20">
+                  <div class="d_flex py_3 xs_justify_content_center align_center">
+                    <a class="minus_btn text_black" href="#">-</a>
+                    <input class="border_none outline_none passenger_input text_black a_placeholder" type="text" placeholder="1" />
+                    <div class="me_3  text_black">Passenger</div>
+                    <a class="minus_btn text_black" href="#">+</a>
+                  </div>
+                </div>
+             </div>
+             </div>
+            <div class=" w_100 d_flex lg_d_block lg_w_11">
+              <a href="#" class="text_white a_search_btn w_100 text_align_center">SEARCH</a>
             </div>
           </div>
         </div>
       </div>
-
-      <p class="fs_md text_light_skin fw_normal text_align_center">December, 11, 2024</p>
-      <p class="fs_3xl text_align_center pt_4 fw_semibold">Amalfi Jets Launches "Holiday Complaint Workshop" Promotion with $2,500 Flight Credit and Free Amalfi Merchandise</p>
-     <div class="mt_5 max_vh_100"><img class="w_100  max_vh_100" src="./assets/image/png/media1.png" alt=""></div>
-
-  <div class="dh_max_w_820  mx_auto pt_5 mt_4 line_height fs_lg  fw_normal">  
-     <p >Agoura Hills, California – Amalfi Jets, a premier private jet charter company, is excited to announce the launch of its Holiday Complaint Workshop promotion, running until December 31, 2024. As the holiday season approaches, Amalfi Jets is offering a unique opportunity for clients to voice their frustrations about other private jet charter companies and receive valuable rewards in return.</p></div>
-</div>
-
-    </header>
+    </div>
+  </header>
+   <main>
+    <section>
+      <div class="custom_container">
+        <p class="fs_md text_light_skin fw_normal text_align_center">December, 11, 2024</p>
+        <p class="fs_3xl text_align_center pt_4 fw_semibold a_narror_container">Amalfi Jets Launches "Holiday Complaint Workshop" Promotion
+          with $2,500 Flight Credit and Free Amalfi Merchandise</p>
+        <div class="mt_5 a_narror_container a_max_h_700 a_overflow_hidden"><img class="w_100 a_max_h_700" src="./assets/image/png/media1.png" alt=""></div>
+  
+        <div class="a_max_w_820 mx_auto pt_5 mt_4 line_height fs_lg  fw_normal">
+          <p class="mb_4">Agoura Hills, California – Amalfi Jets, a premier private jet charter company, is excited to announce the
+            launch of its <i>Holiday Complaint Workshop</i> promotion, running until December 31, 2024. As the holiday season
+            approaches, Amalfi Jets is offering a unique opportunity for clients to voice their frustrations about other
+            private jet charter companies and receive valuable rewards in return.</p>
+          <p class="mb_4">To participate, customers simply need to share a screenshot of a complaint or issue they’ve experienced on a recent trip or membership with another private jet charter company. In return, they’ll receive a $2,500 flight credit for their next flight and $100 credit towards the Amalfi merchandise store. This promotion highlights Amalfi Jets’ commitment to unmatched service and rewarding clients for their feedback, while providing them with the chance to enjoy a premium experience.        </p>
+          <p class="mb_4">“We believe in turning frustrations into something positive,” said Kolin Jones, Founder & CEO of Amalfi Jets. “This holiday season, we’re offering our customers the chance to make their complaints count, while receiving generous flight credit and exclusive Amalfi merchandise. It’s our way of showing appreciation.”</p>
+          <p class="mb_4">Brian Francis, President of Sales at Amalfi Jets, commented, “Customer satisfaction is our top priority. With this promotion, we’re taking feedback seriously and offering clients something in return as a token of our thanks for their participation.”</p>
+          <p class="mb_4">The promotion is available for a limited time, and participants must submit their complaint through Amalfi Jets' designated channels to be eligible for the reward. The $2,500 flight credit can be used toward future travel, and the merchandise package is a special gesture of appreciation from Amalfi.</p>
+          <p class="mb_4">Amalfi Jets continues to raise the bar in private air travel, offering unparalleled service and attention to detail. With access to a global fleet of over +3,500 aircraft based across 170+ countries, and a dedicated team focused on client needs, Amalfi Jets ensures every aspect of the travel experience is handled with care and precision.</p>
+          <p class="mb_4">
+            <strong class="a_fw_700">About Amalfi Jets</strong><br/>
+            Amalfi Jets is a leading private jet charter company known for delivering unmatched service, with a global fleet of aircraft and tailored solutions. Offering exceptional customer care, Amalfi Jets is committed to making each journey seamless and stress-free for every client.
+          </p>
+          <p class="mb_4">For more information on the Holiday Complaint Workshop promotion, or to participate, visit: <a class="text_black" href="https://www.amalfijets.com/">https://www.amalfijets.com/</a></p>
+          <p class="mb_4">To download the Amalfi Jets App on iOS, visit: <a class="text_black" href="https://apps.apple.com/us/app/amalfi-jets/id6474433155">https://apps.apple.com/us/app/amalfi-jets/id6474433155</a></p>
+          <p class="mb_4">
+            To download the Amalfi Jets App from Google Play, visit: <a class="text_black" href="https://play.google.com/store/apps/details?id=com.app.amalfijets&hl=en_US&gl=US&pli=1">https://play.google.com/store/apps/details?id=com.app.amalfijets&hl=en_US&gl=US&pli=1</a>
+          </p>
+          <p class="mb_4">
+            If you have yet to experience flying with Amalfi Jets and wish to learn more, please fill out this form:  <a class="text_black" href="https://www.amalfijets.com/request-a-charter .">https://www.amalfijets.com/request-a-charter .</a>
+          </p>
+          <p>For media inquiries, contact our Marketing Director: <strong class="a_fw_700">Hannah Warling</strong></p>
+          <p>Email: <a class="text_black" href="mailto:hannahw@amalfijets.com">hannahw@amalfijets.com</a></p>
+          <p>Phone: +1 (818) 318-9071</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="custom_container"></div>
+    </section>
+  </main
 </body>
+
 </html>
