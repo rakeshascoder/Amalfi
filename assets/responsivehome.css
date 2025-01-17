@@ -29,6 +29,18 @@
     margin-bottom: 10px;
   }
 }
+
+@media (max-width: 768px) {
+  .menu_overlay.active {
+    width: 100vw !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .mb_lg_20 {
+    margin-bottom: 20px;
+  }
+}
 @media (min-width: 576px) {
   :root {
     --fs_xsm: 12px;
@@ -43,10 +55,20 @@
     padding-top: 10px;
     padding-bottom: 10px;
   }
+
   .col_sm_6 {
     width: 50%;
     padding-left: 12px;
     padding-right: 12px;
+  }
+  .mt_sm_0 {
+    margin-top: 0;
+  }
+  .text_sm_start {
+    text-align: start;
+  }
+  .align_sm_start {
+    align-items: start;
   }
 }
 @media (min-width: 768px) {
@@ -55,8 +77,8 @@
     --fs_sm: 13px;
     --fs_base: 14px;
     --fs_md: 15px;
-    --fs_lg: 16px;
-    --fs_xl: 33px;
+    --fs_lg: 13px;
+    --fs_xl: 16px;
     --fs_2xl: 55px;
   }
   .padding_md_67 {
@@ -65,6 +87,11 @@
   .flex_md_row {
     flex-direction: row;
   }
+  .col_md_3 {
+    width: 25%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
   .col_md_6 {
     width: 50%;
     padding-left: 12px;
@@ -72,6 +99,19 @@
   }
   .max_width_md_45 {
     max-width: 45ch;
+  }
+  .d_md_block {
+    display: block;
+  }
+  .mb_md_5 {
+    margin-bottom: 48px;
+  }
+
+  .mt_md_4 {
+    margin-top: 24px;
+  }
+  .mb_md_4 {
+    margin-bottom: 24px;
   }
 }
 @media (min-width: 992px) {
@@ -87,6 +127,16 @@
   .d_lg_none {
     display: none;
   }
+  .col_lg_2 {
+    width: 16.66%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .col_lg_3 {
+    width: 25%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
   .col_lg_4 {
     width: 33.33%;
     padding-left: 12px;
@@ -97,6 +147,7 @@
     padding-left: 12px;
     padding-right: 12px;
   }
+
   .flex_lg_row {
     flex-direction: row;
   }
@@ -104,10 +155,9 @@
   .d_lg_block {
     display: block;
   }
-  .col_lg_3 {
-    width: 25%;
-    padding-left: 12px;
-    padding-right: 12px;
+  .mx_lg_4 {
+    margin-top: 24px;
+    margin-bottom: 24px;
   }
 
   .py_18 {
@@ -123,6 +173,9 @@
   }
   .justify_lg_start {
     justify-content: start;
+  }
+  .h_lg_100vh {
+    height: 100vh;
   }
 }
 @media (min-width: 1200px) {
