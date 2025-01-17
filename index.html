@@ -54,7 +54,9 @@
               >
             </li>
             <li class="d_flex justify_content_center align_center h_67">
-              <a class="text_uppercase text_white fw_normal fs_xsm" href="#"
+              <a
+                class="text_uppercase text_white fw_normal fs_xsm"
+                href="./assets/whyAmalfi/WhyAmalfi.html"
                 >why amalfi</a
               >
             </li>
@@ -81,8 +83,10 @@
     <!-- overlay -->
     <div class="menu_overlay lg_menu_overlay">
       <div class="menu_content w_100">
-        <button class="close_menu">Close X</button>
-        <div class="d_flex flex_column gap_10">
+        <div>
+          <button class="close_menu">Close X</button>
+        </div>
+        <div class="d_flex flex_column gap_10 mt_5">
           <div id="navprogram">
             <div
               id="programButton"
@@ -96,11 +100,12 @@
               >
               <span class="text_white me_3 icon_arrow">></span>
             </div>
+
             <!-- inner nav -->
-            <div class="innernav_item hidden" id="inner_nav">
+            <div class="innernav_item innernav_md_item hidden" id="inner_nav">
               <div>
                 <div
-                  class="image_set d_flex justify_content_center align_center relative mt_3"
+                  class="image_set image_md_set d_flex justify_content_center align_center relative mt_3"
                 >
                   <img
                     class="object_fit w_100"
@@ -115,7 +120,7 @@
                   </p>
                 </div>
                 <div
-                  class="image_set d_flex justify_content_center align_center relative mt_3"
+                  class="image_set image_md_set d_flex justify_content_center align_center relative mt_3"
                 >
                   <img
                     class="object_fit w_100"
@@ -130,7 +135,7 @@
                   </p>
                 </div>
                 <div
-                  class="image_set d_flex justify_content_center align_center relative mt_3"
+                  class="image_set image_md_set d_flex justify_content_center align_center relative mt_3"
                 >
                   <img
                     class="object_fit w_100"
@@ -145,7 +150,7 @@
                   </p>
                 </div>
                 <div
-                  class="image_set d_flex justify_content_center align_center relative mt_3"
+                  class="image_set image_md_set d_flex justify_content_center align_center relative mt_3"
                 >
                   <img
                     class="object_fit w_100"
@@ -177,67 +182,104 @@
               <span class="text_white me_3 icon_arrow">></span>
             </div>
             <!-- inner nav -->
-            <div class="navaircraft_item hidden" id="nav_aircraft">
-              <div>
-                <div class="mt_3">
-                  <img
-                    class="object_fit w_100"
-                    src="./assets/png/jet.png"
-                    alt=""
-                  />
-                  <p
-                    class="text_uppercase fs_base fw_normal text_white text_align_center mt_3"
-                  >
-                    light jets
-                  </p>
+            <div
+              class="navaircraft_item navaircraft_md_item hidden"
+              id="nav_aircraft"
+            >
+              <div class="row justify_space_between">
+                <div class="mt_3 row flex_row_reverse">
+                  <div class="col_4 col_md_12">
+                    <a href="./jets.html">
+                      <img
+                        class="object_fit w_100"
+                        src="./assets/png/jet.png"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="col_8 col_md_12">
+                    <a href="./jets.html">
+                      <p
+                        class="text_uppercase fs_base fw_normal text_white px_10 text_md_center mt_3"
+                      >
+                        light jets
+                      </p>
+                    </a>
+                  </div>
                 </div>
-                <div class="mt_3">
-                  <img
-                    class="object_fit w_100"
-                    src="./assets/png/jet.png"
-                    alt=""
-                  />
-                  <p
-                    class="text_uppercase fs_base fw_normal text_white text_align_center mt_3"
-                  >
-                    midsize jets
-                  </p>
+                <div class="mt_3 row flex_row_reverse">
+                  <div class="col_4 col_md_12">
+                    <a href="./middlesizejets.html">
+                      <img
+                        class="object_fit w_100"
+                        src="./assets/png/jet.png"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="col_8 col_md_12">
+                    <a href="./middlesizejets.html">
+                      <p
+                        class="text_uppercase fs_base fw_normal text_white px_10 text_md_center mt_3"
+                      >
+                        midsize jets
+                      </p>
+                    </a>
+                  </div>
                 </div>
-                <div class="mt_3">
-                  <img
-                    class="object_fit w_100"
-                    src="./assets/png/jet.png"
-                    alt=""
-                  />
-                  <p
-                    class="text_uppercase fs_base fw_normal text_white text_align_center mt_3"
-                  >
-                    super midsize jets
-                  </p>
+                <div class="mt_3 row flex_row_reverse">
+                  <div class="col_4 col_md_12">
+                    <a href="./supermidzone.html">
+                      <img
+                        class="object_fit w_100"
+                        src="./assets/png/jet.png"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="col_8 col_md_12">
+                    <a href="./supermidzone.html">
+                      <p
+                        class="text_uppercase fs_base fw_normal text_white px_10 text_md_center mt_3"
+                      >
+                        super midsize jets
+                      </p>
+                    </a>
+                  </div>
                 </div>
-                <div class="mt_3">
-                  <img
-                    class="object_fit w_100"
-                    src="./assets/png/jet.png"
-                    alt=""
-                  />
-                  <p
-                    class="text_uppercase fs_base fw_normal text_white text_align_center mt_3"
-                  >
-                    heavy jets
-                  </p>
+                <div class="mt_3 row flex_row_reverse">
+                  <div class="col_4 col_md_12">
+                    <a href="./heavyjets.html">
+                      <img
+                        class="object_fit w_100"
+                        src="./assets/png/jet.png"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="col_8 col_md_12">
+                    <a href="./heavyjets.html">
+                      <p
+                        class="text_uppercase fs_base fw_normal text_white px_10 text_md_center mt_3"
+                      >
+                        heavy jets
+                      </p>
+                    </a>
+                  </div>
                 </div>
-                <div class="mt_3">
-                  <img
-                    class="object_fit w_100"
-                    src="./assets/png/jet.png"
-                    alt=""
-                  />
-                  <p
-                    class="text_uppercase fs_base fw_normal text_white text_align_center mt_3"
-                  >
-                    ultra long haul jets
-                  </p>
+                <div class="mt_3 row flex_row_reverse">
+                  <div class="col_4 col_md_12">
+                    <a href="./Ultra.html">
+                      <img
+                        class="object_fit w_100"
+                        src="./assets/png/jet.png"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="col_8 col_md_12">
+                    <a href="./Ultra.html"></a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -257,32 +299,39 @@
               <span class="text_white me_3 icon_arrow">></span>
             </div>
             <!-- inner nav -->
-            <div class="navwhyamalficard_item hidden" id="navwhyamalficard">
+            <div
+              class="navwhyamalficard_item navwhyamalficard_md_item hidden"
+              id="navwhyamalficard"
+            >
               <div>
                 <div
-                  class="image_set d_flex justify_content_center align_center relative mt_3"
+                  class="image_set image_md_set d_flex justify_content_center align_center relative mt_3"
                 >
                   <img
                     class="object_fit w_100 h_100"
                     src="./assets/png/why amalfi 1.jpeg"
                     alt=""
                   />
-                  <div class="bg_overlay"></div>
+                  <a href="./assets/whyAmalfi/WhyAmalfi.html">
+                    <div class="bg_overlay"></div>
+                  </a>
                   <p
-                    class="text_uppercase fs_base fw_normal absolute text_white text_align_center"
+                    class="text_uppercase fs_base fw_normal text_white absolute text_align_center"
                   >
                     why amalfi
                   </p>
                 </div>
                 <div
-                  class="image_set d_flex justify_content_center align_center relative mt_3"
+                  class="image_set image_md_set d_flex justify_content_center align_center relative mt_3"
                 >
                   <img
                     class="object_fit w_100 h_100"
                     src="./assets/png//safety.avif"
                     alt=""
                   />
-                  <div class="bg_overlay"></div>
+                  <a href="./assets/whyAmalfi/WhyAmalfiSaefty.html"
+                    ><div class="bg_overlay"></div
+                  ></a>
                   <p
                     class="text_uppercase fs_base fw_normal absolute text_white text_align_center"
                   >
@@ -290,14 +339,16 @@
                   </p>
                 </div>
                 <div
-                  class="image_set d_flex justify_content_center align_center relative mt_3"
+                  class="image_set image_md_set d_flex justify_content_center align_center relative mt_3"
                 >
                   <img
                     class="object_fit w_100 h_100"
                     src="./assets/png/operation.avif"
                     alt=""
                   />
-                  <div class="bg_overlay"></div>
+                  <a href="./assets/whyAmalfi/WhyAmalfiOperations.html"
+                    ><div class="bg_overlay"></div
+                  ></a>
                   <p
                     class="text_uppercase fs_base fw_normal absolute text_white text_align_center"
                   >
@@ -305,14 +356,16 @@
                   </p>
                 </div>
                 <div
-                  class="image_set d_flex justify_content_center align_center relative mt_3"
+                  class="image_set image_md_set d_flex justify_content_center align_center relative mt_3"
                 >
                   <img
                     class="object_fit w_100 h_100"
                     src="./assets/png/escape.avif"
                     alt=""
                   />
-                  <div class="bg_overlay"></div>
+                  <a href="./assets/whyAmalfi/WhyAmalfiEscapades.html">
+                    <div class="bg_overlay"></div
+                  ></a>
                   <p
                     class="text_uppercase fs_base fw_normal absolute text_white text_align_center"
                   >
@@ -337,7 +390,10 @@
               <span class="text_white me_3 icon_arrow">></span>
             </div>
             <!-- inner nav -->
-            <div class="navmedia_item hidden" id="navmediacard">
+            <div
+              class="navmedia_item navmedia_md_item hidden"
+              id="navmediacard"
+            >
               <div>
                 <div class="mt_3">
                   <img
@@ -345,10 +401,10 @@
                     src="./assets/png/media 1.png"
                     alt=""
                   />
-                  <div class="d_flex justify_space_between mt_2 gap_3 align_center">
-                    <p
-                      class="text_uppercase fs_base fw_normal text_white"
-                    >
+                  <div
+                    class="d_flex justify_space_between mt_2 gap_3 align_center"
+                  >
+                    <p class="text_uppercase fs_base fw_normal text_white">
                       Amalfi Jets Launches "Holiday Complaint Workshop"
                       Promotion with $2,500 Flight Credit and Free Amalfi
                       Merchandise
@@ -356,6 +412,42 @@
                     <span>></span>
                   </div>
                 </div>
+                <div class="mt_3">
+                  <img
+                    class="object_fit w_100 h_100"
+                    src="./assets/png/media 2.jpg"
+                    alt=""
+                  />
+                  <div
+                    class="d_flex justify_space_between mt_2 gap_3 align_center"
+                  >
+                    <p class="text_uppercase fs_base fw_normal text_white">
+                      Amalfi Jets Launches Exclusive Year-End Tiered Bonus
+                      Promotion for Jet Card Members
+                    </p>
+                    <span>></span>
+                  </div>
+                </div>
+                <div class="mt_3">
+                  <img
+                    class="object_fit w_100 h_100"
+                    src="./assets/png/media 3.jpg"
+                    alt=""
+                  />
+                  <div
+                    class="d_flex justify_space_between mt_2 gap_3 align_center"
+                  >
+                    <p class="text_uppercase fs_base fw_normal text_white">
+                      Amalfi Jets Announces Exclusive Black Friday Promotion:
+                      Join the Amalfi One Jet Card with a Minimum Deposit of
+                      $500K and receive a Bruce Wayne Rolex
+                    </p>
+                    <span>></span>
+                  </div>
+                </div>
+                <button class="discover_btn mt_4 w_100 text_align_center">
+                  view all
+                </button>
               </div>
             </div>
           </div>
@@ -365,7 +457,7 @@
             href="./form.html"
             >Contact Us</a
           >
-          <div>
+          <div class="mb_4">
             <a
               href="#"
               class="ms_3 explore_btn fs_base px_15 py_10 text_uppercase d_inline_block text_black fw_normal"
@@ -373,8 +465,6 @@
             >
           </div>
         </div>
-
-        <!-- inner nav end -->
       </div>
     </div>
     <!-- hero section -->
@@ -482,7 +572,7 @@
         </div>
 
         <!-- form -->
-        <div class="d_flex flex_column flex_lg_row align_center gap_3 mb_32">
+        <div class="d_flex flex_column flex_lg_row align_center gap_3 mb_md_32">
           <div class="form_top_bar_main d_flex flex_wrap">
             <div class="relative border_xsm_bottom">
               <input
@@ -1470,15 +1560,26 @@
       const hamburgerMenu = document.querySelector(".hamburger_menu");
       const menuOverlay = document.querySelector(".menu_overlay");
       const closeMenu = document.querySelector(".close_menu");
+      const innerNav = document.getElementById("inner_nav");
+      const navaircraft = document.getElementById("nav_aircraft");
+      const navwhyamalficard = document.getElementById("navwhyamalficard");
+      const navmedia = document.getElementById("navmediacard");
       const slider = document.getElementById("slider");
       const slides = slider.children;
+
       hamburgerMenu.addEventListener("click", (e) => {
         e.preventDefault();
         menuOverlay.classList.add("active");
+        document.body.classList.add("overflow_hidden");
       });
 
       closeMenu.addEventListener("click", () => {
         menuOverlay.classList.remove("active");
+        innerNav.classList.add("hidden");
+        navaircraft.classList.add("hidden");
+        navwhyamalficard.classList.add("hidden");
+        navmedia.classList.add("hidden");
+        document.body.classList.remove("overflow_hidden");
       });
       // slider
 
@@ -1504,10 +1605,6 @@
 
         // inner nav open
 
-        const innerNav = document.getElementById("inner_nav");
-        const navaircraft = document.getElementById("nav_aircraft");
-        const navwhyamalficard = document.getElementById("navwhyamalficard");
-        const navmedia = document.getElementById("navmediacard");
         // for 1st card
         if (element.id === "programButton") {
           innerNav.classList.toggle("hidden");

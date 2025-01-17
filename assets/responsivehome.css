@@ -97,6 +97,11 @@
     padding-left: 12px;
     padding-right: 12px;
   }
+  .col_md_12 {
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
   .max_width_md_45 {
     max-width: 45ch;
   }
@@ -112,6 +117,35 @@
   }
   .mb_md_4 {
     margin-bottom: 24px;
+  }
+  .innernav_md_item {
+    position: fixed;
+    height: 100vh;
+    width: 25vw;
+  }
+  .navaircraft_md_item {
+    position: fixed;
+    height: 100vh;
+    width: 25vw;
+  }
+  .navwhyamalficard_md_item {
+    position: fixed;
+    height: 100vh;
+    width: 25vw;
+  }
+  .navmedia_md_item {
+    position: fixed;
+    height: 100vh;
+    width: 25vw;
+  }
+  .image_md_set {
+    aspect-ratio: 2.39;
+  }
+  .text_md_center {
+    text-align: center;
+  }
+  .mb_md_32 {
+    margin-bottom: 32px;
   }
 }
 @media (min-width: 992px) {
