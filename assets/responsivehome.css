@@ -177,6 +177,15 @@
   .h_lg_100vh {
     height: 100vh;
   }
+  .lg_menu_overlay.active {
+    min-width: 20vw;
+  }
+  .innernav_item {
+    left: calc(70vw - 50vw);
+  }
+  .navaircraft_item {
+    left: calc(70vw - 50vw);
+  }
 }
 @media (min-width: 1200px) {
   :root {

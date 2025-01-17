@@ -677,6 +677,53 @@ button {
 }
 
 /* ==============================  css for harish starts here ================================= */
+.innernav_item {
+  display: block;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: calc(70vw - 35vw);
+  width: 25vw;
+  padding: 16px;
+  background-color: #0c0f0f;
+  transition: all 0.3s ease-in-out;
+  backdrop-filter: brightness(69%);
+  color: white;
+}
+.innernav_item.hidden {
+  display: none;
+}
+
+.navaircraft_item {
+  display: block;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: calc(70vw - 35vw);
+  width: 25vw;
+  padding: 16px;
+  background-color: #0c0f0f;
+  transition: all 0.3s ease-in-out;
+  backdrop-filter: brightness(69%);
+  color: white;
+}
+.navaircraft_item.hidden {
+  display: none;
+}
+.bg_overlay {
+  background-color: black;
+  opacity: 0.6;
+  position: absolute;
+  inset: 0%;
+}
+
+.image_set {
+  aspect-ratio: 2.39;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px #00000085;
+}
+
 .form_top_bar_main {
   border: 1px solid #0003;
   border-radius: 5px;
@@ -820,7 +867,6 @@ nav {
   width: 15px;
   color: white;
 }
-
 
 .flight_card_content {
   margin: 0px 16px 16px 16px;
@@ -1593,6 +1639,7 @@ footer {
 }
 
 .icon_arrow {
+  display: inline-block;
   transition: transform 0.3s ease;
 }
 

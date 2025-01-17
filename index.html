@@ -78,41 +78,294 @@
       </nav>
     </div>
     <!-- overlay -->
-    <div class="menu_overlay">
+    <div class="menu_overlay lg_menu_overlay">
       <div class="menu_content w_100">
         <button class="close_menu">Close X</button>
         <div class="d_flex flex_column gap_10">
-          <div class="menu_item d_flex align_center" onclick="navopen(this)">
-            <a
-              class="text_uppercase text_white fw_normal fs_xsm p_3 fs_base d_flex w_100"
-              href="/Amalfi/index.html"
-              >program</a
+          <div id="navprogram">
+            <div
+              id="programButton"
+              class="menu_item d_flex align_center"
+              onclick="navopen(this)"
             >
-            <span class="text_white me_3 icon_arrow">></span>
+              <a
+                class="text_uppercase text_white fw_normal fs_xsm p_3 fs_base d_flex w_100"
+                href="#"
+                >program</a
+              >
+              <span class="text_white me_3 icon_arrow">></span>
+            </div>
+            <!-- inner nav -->
+            <div class="innernav_item hidden" id="inner_nav">
+              <div>
+                <div class="image_set d_flex justify_content_center align_center relative mt_3">
+                  <img
+                    class="object_fit w_100"
+                    src="./assets/png/inner aero.jpeg"
+                    alt=""
+                  />
+                  <div class="bg_overlay"></div>
+                  <p
+                    class="text_uppercase fs_base fw_normal absolute text_white text_align_center"
+                  >
+                    On-Demand Character
+                  </p>
+                </div>
+                <div class="image_set d_flex justify_content_center align_center relative mt_3">
+                  <img
+                    class="object_fit w_100"
+                    src="./assets/png/inner 2.avif"
+                    alt=""
+                  />
+                  <div class="bg_overlay"></div>
+                  <p
+                    class="text_uppercase fs_base fw_normal absolute text_white text_align_center"
+                  >
+                    The Amalfi One Jet Card Program
+                  </p>
+                </div>
+                <div class="image_set d_flex justify_content_center align_center relative mt_3">
+                  <img
+                    class="object_fit w_100"
+                    src="./assets/png/inner 3.avif"
+                    alt=""
+                  />
+                  <div class="bg_overlay"></div>
+                  <p
+                    class="text_uppercase fs_base fw_normal absolute text_white text_align_center"
+                  >
+                    Amalfi Enterprise
+                  </p>
+                </div>
+                <div class="image_set d_flex justify_content_center align_center relative mt_3">
+                  <img
+                    class="object_fit w_100"
+                    src="./assets/png/inner 4.avif"
+                    alt=""
+                  />
+                  <div class="bg_overlay"></div>
+                  <p
+                    class="text_uppercase fs_base fw_normal absolute text_white text_align_center"
+                  >
+                    Amalfi Reserve Membership
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="menu_item d_flex align_center" onclick="navopen(this)">
-            <a
-              class="text_uppercase text_white fw_normal fs_xsm p_3 fs_base d_flex w_100"
-              href="#"
-              >aircraft</a
+
+          <div id="navaircraft">
+            <div
+              id="aircraftbutton"
+              class="menu_item d_flex align_center"
+              onclick="navopen(this)"
             >
-            <span class="text_white me_3 icon_arrow">></span>
+              <a
+                class="text_uppercase text_white fw_normal fs_xsm p_3 fs_base d_flex w_100"
+                href="#"
+                >aircraft</a
+              >
+              <span class="text_white me_3 icon_arrow">></span>
+            </div>
+            <!-- inner nav -->
+            <div class="navaircraft_item hidden" id="nav_aircraft">
+              <div>
+                <div class="image_set relative mt_3">
+                  <img
+                    class="object_fit w_100"
+                    src="./assets/png/jet.png"
+                    alt=""
+                  />
+                
+                  <p
+                    class="text_uppercase fs_base fw_normal text_white text_align_center mt_3"
+                  >
+                    On-Demand Character
+                  </p>
+                </div>
+                <div class="image_set relative mt_3">
+                  <img
+                    class="object_fit w_100"
+                    src="./assets/png/inner 2.avif"
+                    alt=""
+                  />
+                
+                  <p
+                    class="text_uppercase fs_base fw_normal text_white text_align_center"
+                  >
+                    The Amalfi One Jet Card Program
+                  </p>
+                </div>
+                <div class="image_set relative mt_3">
+                  <img
+                    class="object_fit w_100"
+                    src="./assets/png/inner 3.avif"
+                    alt=""
+                  />
+                
+                  <p
+                    class="text_uppercase fs_base fw_normal text_white text_align_center"
+                  >
+                    Amalfi Enterprise
+                  </p>
+                </div>
+                <div class="image_set relative mt_3">
+                  <img
+                    class="object_fit w_100"
+                    src="./assets/png/inner 4.avif"
+                    alt=""
+                  />
+                  <div class="bg_overlay"></div>
+                  <p
+                    class="text_uppercase fs_base fw_normal text_white text_align_center"
+                  >
+                    Amalfi Reserve Membership
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="menu_item d_flex align_center" onclick="navopen(this)">
-            <a
-              class="text_uppercase text_white fw_normal fs_xsm p_3 fs_base d_flex w_100"
-              href="#"
-              >why amalfi</a
+          <div id="navwhyamalfi">
+            <div
+              id="whyamalfibutton"
+              class="menu_item d_flex align_center"
+              onclick="navopen(this)"
             >
-            <span class="text_white me_3 icon_arrow">></span>
+              <a
+                class="text_uppercase text_white fw_normal fs_xsm p_3 fs_base d_flex w_100"
+                href="#"
+                >why amalfi</a
+              >
+              <span class="text_white me_3 icon_arrow">></span>
+            </div>
+            <!-- inner nav -->
+            <div class="innernav_item hidden" id="inner_nav">
+              <div>
+                <div class="image_set relative mt_3">
+                  <img
+                    class="object_fit w_100"
+                    src="./assets/png/inner aero.jpeg"
+                    alt=""
+                  />
+                  <div class="bg_overlay"></div>
+                  <p
+                    class="text_uppercase fs_base fw_normal absolute text_white text_align_center"
+                  >
+                    On-Demand Character
+                  </p>
+                </div>
+                <div class="image_set relative mt_3">
+                  <img
+                    class="object_fit w_100"
+                    src="./assets/png/inner 2.avif"
+                    alt=""
+                  />
+                  <div class="bg_overlay"></div>
+                  <p
+                    class="text_uppercase fs_base fw_normal absolute text_white text_align_center"
+                  >
+                    The Amalfi One Jet Card Program
+                  </p>
+                </div>
+                <div class="image_set relative mt_3">
+                  <img
+                    class="object_fit w_100"
+                    src="./assets/png/inner 3.avif"
+                    alt=""
+                  />
+                  <div class="bg_overlay"></div>
+                  <p
+                    class="text_uppercase fs_base fw_normal absolute text_white text_align_center"
+                  >
+                    Amalfi Enterprise
+                  </p>
+                </div>
+                <div class="image_set relative mt_3">
+                  <img
+                    class="object_fit w_100"
+                    src="./assets/png/inner 4.avif"
+                    alt=""
+                  />
+                  <div class="bg_overlay"></div>
+                  <p
+                    class="text_uppercase fs_base fw_normal absolute text_white text_align_center"
+                  >
+                    Amalfi Reserve Membership
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="menu_item d_flex align_center" onclick="navopen(this)">
-            <a
-              class="text_uppercase text_white fw_normal fs_xsm p_3 fs_base d_flex w_100"
-              href="#"
-              >Media</a
+          <div id="navmedia">
+            <div
+              id="Mediabutton"
+              class="menu_item d_flex align_center"
+              onclick="navopen(this)"
             >
-            <span class="text_white me_3 icon_arrow">></span>
+              <a
+                class="text_uppercase text_white fw_normal fs_xsm p_3 fs_base d_flex w_100"
+                href="#"
+                >Media</a
+              >
+              <span class="text_white me_3 icon_arrow">></span>
+            </div>
+            <!-- inner nav -->
+            <div class="innernav_item hidden" id="inner_nav">
+              <div>
+                <div class="image_set relative mt_3">
+                  <img
+                    class="object_fit w_100"
+                    src="./assets/png/inner aero.jpeg"
+                    alt=""
+                  />
+                  <div class="bg_overlay"></div>
+                  <p
+                    class="text_uppercase fs_base fw_normal absolute text_white text_align_center"
+                  >
+                    On-Demand Character
+                  </p>
+                </div>
+                <div class="image_set relative mt_3">
+                  <img
+                    class="object_fit w_100"
+                    src="./assets/png/inner 2.avif"
+                    alt=""
+                  />
+                  <div class="bg_overlay"></div>
+                  <p
+                    class="text_uppercase fs_base fw_normal absolute text_white text_align_center"
+                  >
+                    The Amalfi One Jet Card Program
+                  </p>
+                </div>
+                <div class="image_set relative mt_3">
+                  <img
+                    class="object_fit w_100"
+                    src="./assets/png/inner 3.avif"
+                    alt=""
+                  />
+                  <div class="bg_overlay"></div>
+                  <p
+                    class="text_uppercase fs_base fw_normal absolute text_white text_align_center"
+                  >
+                    Amalfi Enterprise
+                  </p>
+                </div>
+                <div class="image_set relative mt_3">
+                  <img
+                    class="object_fit w_100"
+                    src="./assets/png/inner 4.avif"
+                    alt=""
+                  />
+                  <div class="bg_overlay"></div>
+                  <p
+                    class="text_uppercase fs_base fw_normal absolute text_white text_align_center"
+                  >
+                    Amalfi Reserve Membership
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
           <a
             class="text_uppercase text_white fw_normal fs_xsm p_3 fs_base d_flex w_100"
@@ -127,6 +380,8 @@
             >
           </div>
         </div>
+
+        <!-- inner nav end -->
       </div>
     </div>
     <!-- hero section -->
@@ -1209,6 +1464,7 @@
     </div>
 
     <script>
+      // nav will change opacity
       document.addEventListener("scroll", () => {
         const nav = document.querySelector("nav");
         const scrollPosition = window.scrollY;
@@ -1216,7 +1472,7 @@
         const opacity = Math.min(scrollPosition / maxScroll, 1);
         nav.style.backgroundColor = `rgba(0, 0, 0, ${opacity})`;
       });
-
+      // open nav
       const hamburgerMenu = document.querySelector(".hamburger_menu");
       const menuOverlay = document.querySelector(".menu_overlay");
       const closeMenu = document.querySelector(".close_menu");
@@ -1230,6 +1486,7 @@
       closeMenu.addEventListener("click", () => {
         menuOverlay.classList.remove("active");
       });
+      // slider
 
       let currentIndex = 0;
 
@@ -1243,13 +1500,34 @@
       }
       setInterval(autoSlide, 3500);
 
+      // arrow icon rotate
       function navopen(element) {
-        // Toggle active class for the clicked menu item
-        element.classList.toggle("active");
+        const arrowIcon = element.querySelector(".icon_arrow");
 
-        // Rotate the span
-        const arrow = element.querySelector(".icon_arrow");
-        arrow.classList.toggle("rotated");
+        if (arrowIcon) {
+          arrowIcon.classList.toggle("rotated");
+        }
+
+        // inner nav open
+
+        const innerNav = document.getElementById("inner_nav");
+        const navaircraft = document.getElementById("nav_aircraft");
+
+        if (
+          element.id === "programButton" ||
+          element.id === "whyamalfibutton" ||
+          element.id === "Mediabutton"
+        ) {
+          innerNav.classList.toggle("hidden");
+        } else {
+          innerNav.classList.add("hidden");
+        }
+
+        if (element.id === "aircraftbutton") {
+          navaircraft.classList.toggle("hidden");
+        } else {
+          navaircraft.classList.add("hidden");
+        }
       }
     </script>
     <!-- ----------------- jquary.min.js ----------------- -->
@@ -1277,7 +1555,7 @@
         cssEase: "linear",
         infinite: true,
         speed: 700,
-        slidesToShow: 4,
+        slidesToShow: 3.5,
         slidesToScroll: 1,
 
         responsive: [
