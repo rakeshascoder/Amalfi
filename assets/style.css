@@ -17,6 +17,11 @@
   padding-left: 12px !important;
   padding-right: 12px !important;
 }
+.narror_container {
+  max-width: 1257px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 :root {
   --fs_xsm: 12px;
@@ -29,7 +34,7 @@
   --fs_2xl: 68px;
   --fs_3xl: 64px;
   --fs_xxl: 24px;
-  --fs_xll: 42px
+  --fs_xll: 42px;
 }
 
 /* font-size */
@@ -601,8 +606,8 @@ button {
 }
 
 .px_15 {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 15.264px;
+  padding-right: 15.264px;
 }
 
 .py_10 {
@@ -773,7 +778,6 @@ button {
   -webkit-backdrop-filter: brightness(69%);
   color: white;
   overflow-y: scroll;
-  ;
 }
 
 .navaircraft_item.hidden {
@@ -811,6 +815,10 @@ button {
   color: white;
   overflow-y: scroll;
 }
+.hamburger_hover:hover{
+  opacity: .48;
+  background-color: #ffffff29;
+}
 
 .navmedia_item.hidden {
   display: none;
@@ -839,9 +847,19 @@ button {
   display: flex;
 }
 
+.nav_links_text {
+  white-space: nowrap;
+  letter-spacing: 1.5px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
 nav {
   background-color: #000c;
   transition: background-color 0.3s ease-in-out;
+}
+.letter_spacing_1 {
+  letter-spacing: 1px;
 }
 
 .arrow_btn {
@@ -902,7 +920,10 @@ nav {
   align-items: center;
   justify-content: center;
 }
-
+.close_button_style {
+  background-color: #1f1f23;
+  padding: 1.272rem;
+}
 .passenger_input {
   text-align: center;
   min-width: 30px;
@@ -1218,7 +1239,6 @@ footer {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
 }
 
 .menu_content .contact_btn {
@@ -1240,7 +1260,6 @@ footer {
   border: none;
   backdrop-filter: saturate(180%) blur(20px);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
-  background-color: #000c;
   cursor: pointer;
 }
 
@@ -1358,8 +1377,8 @@ footer {
   border-radius: 10px;
 }
 
-.hover_jets_link{
-  transition: .8s;
+.hover_jets_link {
+  transition: 0.8s;
 }
 .hover_jets_link:hover {
   opacity: 0.5;
