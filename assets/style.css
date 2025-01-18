@@ -815,8 +815,8 @@ button {
   color: white;
   overflow-y: scroll;
 }
-.hamburger_hover:hover{
-  opacity: .48;
+.hamburger_hover:hover {
+  opacity: 0.48;
   background-color: #ffffff29;
 }
 
@@ -860,6 +860,19 @@ nav {
 }
 .letter_spacing_1 {
   letter-spacing: 1px;
+}
+
+.backdrop {
+  backdrop-filter: brightness(46%) blur(20px);
+  z-index: 1;
+  position: fixed;
+  opacity: 0;
+  inset: 0;
+  background-color: #0000;
+}
+
+.opactiy_1{
+  opacity: 1;
 }
 
 .arrow_btn {
