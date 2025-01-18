@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="/assets/style.css">
-  <link rel="stylesheet" href="./assets/responsive.css">
   <link rel="stylesheet" href="/assets/AmiStyle.css">
 </head>
 
@@ -200,9 +199,9 @@
       </div>
     </section>
     <section>
-      <div class="bg_black d_flex align_center justify_content_center p_25">
-        <div class="custom_container mt_5">
-          <div class="card mt_5">
+      <div class="bg_black py_4">
+        <div class="custom_container">
+          <div class="a_card_form mx_auto">
             <div class="text_align_center">
               <h2 class="titlea">Contact Us</h2>
               <p class="mb_3">For more information on flying with Amalfi</p>
@@ -210,60 +209,55 @@
   
             <form>
               <input
-                class="lk-form-field w_100"
+                class="lk-form-field w_100 a_outline_none a_placeholder"
                 type="text"
                 placeholder="First Name"
               />
               <input
-                class="lk-form-field w_100 mt_3"
+                class="lk-form-field w_100 mt_3 a_outline_none a_placeholder"
                 type="text"
                 placeholder="Last Name"
               />
               <input
-                class="lk-form-field w_100 mt_3"
+                class="lk-form-field w_100 mt_3 a_outline_none a_placeholder"
                 type="email"
                 placeholder="Email "
               />
               <input
-                class="lk-form-field w_100 mt_3"
+                class="lk-form-field w_100 mt_3 a_outline_none a_placeholder"
                 type="text"
                 placeholder="Phone Number"
               />
               <input
-                class="lk-form-field w_100 mt_3"
+                class="lk-form-field w_100 mt_3 a_outline_none a_placeholder"
                 type="text"
                 placeholder="Address"
               />
               <input
-                class="lk-form-field w_100 mt_3"
+                class="lk-form-field w_100 mt_3 a_outline_none a_placeholder"
                 type="text"
                 placeholder="ZIP Code"
               />
               <input
-                class="lk-form-field w_100 mt_3"
+                class="lk-form-field w_100 mt_3 a_outline_none a_placeholder"
                 type="text"
                 placeholder="How did you hear about Amalfi Jets?"
               />
               <input
-                class="lk-form-field w_100 mt_3"
+                class="lk-form-field w_100 mt_3 a_outline_none a_placeholder"
                 type="text"
                 placeholder="How are you currently flying?"
               />
               <input
-                class="lk-form-field w_100 mt_3"
+                class="lk-form-field w_100 mt_3 a_outline_none a_placeholder"
                 type="text"
                 placeholder="How often do you fly privately?"
               />
-              <input
-                style="padding-bottom: 25px"
-                class="lk-form-field w_100 mt_3"
-                type="text"
-                placeholder="Additional Request or Comments"
-              />
+              <textarea class="lk-form-field w_100 mt_3 a_outline_none a_placeholder" placeholder="Additional Request or Comments"></textarea>
   
-              <div class="d_flex">
-                <input type="checkbox" name="" id="" />
-                <p class="caption ms_2 pt_3">
+              <div class="d_flex a_align_item_start pt_3">
+                <input class="mt_1" type="checkbox" name="" id="" />
+                <p class="caption ms_2">
                   By submitting this form, you consent to be contacted by Amalfi
                   Jets and its affiliates and to have your personal data
                   processed, stored, and used in accordance with the terms set out
@@ -271,7 +265,22 @@
                   <strong>Terms of Use.</strong>
                 </p>
               </div>
-              <button class="mt_5 book_flight_btn">SUBMIT</button>
+              <div class="lk-form-field w_100 mt_3">
+               <div class=" d_flex align_center justify_space_between">
+                <div class="d_flex align_center">
+                  <input class="" type="checkbox" name="" id="" />
+                  <label class="fs_xsm ms_1">I'm not a robot</label>
+                </div>
+                <div>
+                  <div class="d_flex align_center justify_content_center">
+                    <img width="32px" src="./assets/image/png/captcha.png" alt="captcha image"/>
+                  </div>
+                  <p class="a_fs_10 text_align_center">reCAPTCHA</p>
+                </div>
+               </div>
+               <p class="text_align_end a_fs_10"> <a>Privacy</a> - <a>Terms</a></p>
+              </div>
+              <button class="mt_3 book_flight_btn d_flex w_100 align_center justify_content_center">SUBMIT</button>
             </form>
           </div>
         </div>
