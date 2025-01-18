@@ -102,7 +102,7 @@
           </span>
           <a
             href="#"
-            class="explore_btn d_none d_lg_block fs_xsm px_15 py_10 text_uppercase text_black fw_normal letter_spacing_1"
+            class="explore_btn d_none d_lg_block fs_xsm px_15 py_10 text_uppercase text_black fw_normal letter_spacing_1 charter"
             >request a charter</a
           >
           <a
@@ -505,7 +505,7 @@
               id="navmediacard"
             >
               <div>
-                <a href="./media1.html">
+                <a class="hover_jets_link" href="./media1.html">
                   <div class="mt_3">
                     <img
                       class="object_fit w_100 h_100"
@@ -539,7 +539,7 @@
                     </div>
                   </div>
                 </a>
-                <a href="./media2.html">
+                <a class="hover_jets_link" href="./media2.html">
                   <div class="mt_3">
                     <img
                       class="object_fit w_100 h_100"
@@ -572,7 +572,7 @@
                     </div>
                   </div>
                 </a>
-                <a href="./media3.html">
+                <a class="hover_jets_link" href="./media3.html">
                   <div class="mt_3">
                     <img
                       class="object_fit w_100 h_100"
@@ -642,7 +642,7 @@
             />
             <div class="absolute top_50 left_50 translate_50_50">
               <h1
-                class="letter_spacing_08 fs_2xl text_white fw_normal text_align_center"
+                class="letter_spacing_08 fs_2xl text_white fw_normal text_align_center mb_4"
               >
                 Amalfi enterprise
               </h1>
@@ -665,7 +665,7 @@
             />
             <div class="absolute top_50 left_50 translate_50_50">
               <h1
-                class="letter_spacing_08 fs_2xl text_white fw_normal text_align_center"
+                class="letter_spacing_08 fs_2xl text_white fw_normal text_align_center mb_4"
               >
                 Setting a Standard for Safety
               </h1>
@@ -715,8 +715,8 @@
     <div class="p_25 padding_md_67">
       <div class="narror_container">
         <div class="d_flex flex_column gap_24">
-          <h2 class="fs_xl fw_normal">Book a flight</h2>
-          <p class="fw_normal fs_lg text_gray">
+          <h2 class="fs_xl fw_normal text_uppercase">Book a flight</h2>
+          <p class="fw_normal fs_lg text_gray letter_spacing3">
             Please fill out the form to be connected with our sales team.
             Private jet charter costs are subject to various factors and start
             at <strong>$5,000 per hour.</strong>
@@ -725,7 +725,7 @@
         <!-- round trip here -->
         <div class="mb_2 mt_32">
           <select
-            class="text_uppercase border_none outline_none"
+            class="text_uppercase border_none outline_none cursor_pointer round_trip"
             name="one_way_or_roundtrip"
             id="type-field"
           >
@@ -830,14 +830,27 @@
               </div>
               <div class="relative col_12 sm_col_6 lg_w_20">
                 <div class="d_flex py_3 xs_justify_content_center align_center">
-                  <a class="minus_btn text_black" href="#">-</a>
+                  <button
+                    class="minus_btn text_black cursor_pointer"
+                    onclick="decreaseValue()"
+                  >
+                    -
+                  </button>
                   <input
+                    id="passengerInput"
                     class="border_none outline_none passenger_input text_black a_placeholder"
                     type="text"
                     placeholder="1"
+                    value="1"
+                    readonly
                   />
                   <div class="me_3 text_black">Passenger</div>
-                  <a class="minus_btn text_black" href="#">+</a>
+                  <button
+                    class="minus_btn text_black cursor_pointer"
+                    onclick="increaseValue()"
+                  >
+                    +
+                  </button>
                 </div>
               </div>
             </div>
@@ -1259,7 +1272,7 @@
         </div>
 
         <div class="d_flex justify_content_center gap_40 mt_5">
-          <button class="arrow_btn pre">
+          <button class="arrow_btn pre cursor_pointer">
             <svg
               width="24"
               height="20"
@@ -1273,7 +1286,7 @@
               ></path>
             </svg>
           </button>
-          <button class="arrow_btn next">
+          <button class="arrow_btn next cursor_pointer">
             <svg
               width="24"
               height="20"
@@ -1297,23 +1310,27 @@
       <div
         class="row align_center flex_column_reverse flex_md_row justify_space_between"
       >
-        <div class="col_12 col_md_6 max_width_md_45">
-          <h2
-            class="mt_md_4 mt_2 mb_md_4 mb_2 fs_xl fw_normal text_uppercase letter_spacing2"
-          >
-            experts in global private jet charters
-          </h2>
-          <p class="letter_spacing3 opacity_60 fs_lg fw_normal mb_5">
-            Flying with Amalfi, combines global access with consistent flight
-            quality. Enjoy premium cabins, personalized service, and a plethora
-            of experience from our team.
-          </p>
-          <a
-            class="book_flight_btn text_uppercase w_xsm_100 text_align_center"
-            href="#"
-          >
-            book a flight
-          </a>
+        <div class="col_12 col_md_6 grid_center">
+          <div class="max_width_md_45 grid_center">
+            <h2
+              class="mt_md_4 mt_2 mb_md_4 mb_2 fs_xl fw_normal text_uppercase letter_spacing2"
+            >
+              experts in global private jet charters
+            </h2>
+            <p class="letter_spacing3 opacity_60 fs_lg fw_normal mb_5">
+              Flying with Amalfi, combines global access with consistent flight
+              quality. Enjoy premium cabins, personalized service, and a
+              plethora of experience from our team.
+            </p>
+            <div>
+              <a
+                class="book_flight_btn text_uppercase w_xsm_100 text_align_center"
+                href="#"
+              >
+                book a flight
+              </a>
+            </div>
+          </div>
         </div>
         <div class="col_12 col_md_6">
           <img class="w_100" src="./assets/png/professor.avif" alt="" />
@@ -1349,26 +1366,28 @@
         <div class="col_12 col_md_6">
           <img class="w_100" src="./assets/png/aeroplane.avif" alt="" />
         </div>
-        <div class="col_12 col_md_6 max_width_md_45">
-          <p class="letter_spacing3 opacity_60 fs_lg fw_normal mb_2 mb_md_5">
-            CURATED. OPTIMIZED. EXCLUSIVE.
-          </p>
-          <h2
-            class="mt_md_4 mt_2 mb_md_4 mb_2 fs_xl fw_normal text_uppercase letter_spacing2"
-          >
-            Leading the industry
-          </h2>
-          <p class="letter_spacing3 opacity_60 fs_lg fw_normal mx_2 mx_lg_4">
-            FFlying with Amalfi Jets provides unparalleled access to the highest
-            quality aircraft, leading safety standards, and a newfound one to
-            one, personalized approach.
-          </p>
-          <a
-            class="book_flight_btn d_inline_block text_uppercase w_xsm_100 text_align_center"
-            href="#"
-          >
-            book a flight
-          </a>
+        <div class="col_12 col_md_6 mx_auto grid_center">
+          <div class="max_width_md_45">
+            <p class="letter_spacing3 opacity_60 fs_lg fw_normal mb_2 mb_md_5">
+              CURATED. OPTIMIZED. EXCLUSIVE.
+            </p>
+            <h2
+              class="mt_md_4 mt_2 mb_md_4 mb_2 fs_xl fw_normal text_uppercase letter_spacing2"
+            >
+              Leading the industry
+            </h2>
+            <p class="letter_spacing3 opacity_60 fs_lg fw_normal mx_2 mx_lg_4">
+              FFlying with Amalfi Jets provides unparalleled access to the
+              highest quality aircraft, leading safety standards, and a newfound
+              one to one, personalized approach.
+            </p>
+            <a
+              class="book_flight_btn d_inline_block text_uppercase w_xsm_100 text_align_center"
+              href="#"
+            >
+              book a flight
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -1381,21 +1400,25 @@
       </div>
 
       <div class="row">
-        <div class="col_12 col_sm_6 col_lg_3">
+        <div class="col_12 col_sm_6 col_lg_3 image_hover cursor_pointer">
           <img class="w_100 h_265" src="./assets/png/amal.avif" alt="" />
           <h3 class="fw_normal mt_3 fs_sm opacity_60 text_gray">
             Ad Hoc Charter Flights, Globally
           </h3>
           <p class="fw_normal fs_lg letter_spacing3">On-Demand Charter</p>
         </div>
-        <div class="col_12 col_sm_6 col_lg_3 mt_3 mt_sm_0">
+        <div
+          class="col_12 col_sm_6 col_lg_3 mt_3 mt_sm_0 image_hover cursor_pointer"
+        >
           <img class="w_100 h_265" src="./assets/png/amalficard.avif" alt="" />
           <h3 class="fw_normal mt_3 fs_sm opacity_60 text_gray">
             Flexible & Economically Favorable Jet Card Program
           </h3>
           <p class="fw_normal fs_lg letter_spacing3">Amalfi One Jet Card</p>
         </div>
-        <div class="col_12 col_sm_6 mt_3 mt_lg_0 col_lg_3">
+        <div
+          class="col_12 col_sm_6 mt_3 mt_lg_0 col_lg_3 image_hover cursor_pointer"
+        >
           <img class="w_100 h_265" src="./assets/png/amalfi aero.avif" alt="" />
           <h3 class="fw_normal mt_3 fs_sm opacity_60 text_gray">
             A Flexible Jet Card Program for Companies
@@ -1404,7 +1427,9 @@
             Amalfi Enterprise Program
           </p>
         </div>
-        <div class="col_12 col_sm_6 mt_3 mt_lg_0 col_lg_3">
+        <div
+          class="col_12 col_sm_6 mt_3 mt_lg_0 col_lg_3 image_hover cursor_pointer"
+        >
           <img
             class="w_100 h_265"
             src="./assets/png/amalfi island.avif"
@@ -1446,34 +1471,42 @@
                 <div class="col_12 col_md_3">
                   <p class="text_gray_darker fs_xsm fw_normal">Social</p>
                   <div class="d_flex gap_10 mt_4">
-                    <img
-                      width="16"
-                      height="18"
-                      class="bg_white"
-                      src="./assets/png/tiktok.svg"
-                      alt=""
-                    />
-                    <img
-                      width="16"
-                      height="18"
-                      class="bg_white"
-                      src="./assets/png/linkedin.svg"
-                      alt=""
-                    />
-                    <img
-                      width="16"
-                      height="18"
-                      class="bg_white"
-                      src="./assets/png/insta.svg"
-                      alt=""
-                    />
-                    <img
-                      width="16"
-                      height="18"
-                      class="bg_white"
-                      src="./assets/png/twitter.svg"
-                      alt=""
-                    />
+                    <svg
+                      class="fill_white w_16 h_18"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"
+                      />
+                    </svg>
+                    <svg
+                      class="fill_white w_16 h_18"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+                      />
+                    </svg>
+                    <svg
+                      class="fill_white w_16 h_18"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                      />
+                    </svg>
+                    <svg
+                      class="fill_white w_16 h_18"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+                      />
+                    </svg>
                   </div>
                 </div>
               </div>
@@ -1724,9 +1757,28 @@
       const navaircraft = document.getElementById("nav_aircraft");
       const navwhyamalficard = document.getElementById("navwhyamalficard");
       const navmedia = document.getElementById("navmediacard");
-      const slider = document.getElementById("slider");
       const backdrop = document.getElementById("backdrop");
+      const slider = document.getElementById("slider");
       const slides = slider.children;
+
+      const totalSlides = slides.length;
+      let currentIndex = 0;
+
+      function showSlide(index) {
+        for (let i = 0; i < totalSlides; i++) {
+          slides[i].style.display = "none";
+        }
+
+        slides[index].style.display = "block";
+      }
+
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % totalSlides; // Increment index and wrap around
+        showSlide(currentIndex);
+      }
+
+      showSlide(currentIndex);
+      setInterval(nextSlide, 3500);
       // nav will change opacity
       document.addEventListener("scroll", (e) => {
         const nav = document.querySelector("nav");
@@ -1759,18 +1811,6 @@
       }
 
       // slider
-
-      let currentIndex = 0;
-
-      function autoSlide() {
-        currentIndex = (currentIndex + 1) % slides.length;
-        const scrollPosition = slides[currentIndex].offsetLeft;
-        slider.scrollTo({
-          left: scrollPosition,
-          behavior: "smooth",
-        });
-      }
-      setInterval(autoSlide, 3500);
 
       // arrow icon rotate
       function navopen(element) {
@@ -1808,7 +1848,35 @@
           navmedia.classList.add("hidden");
         }
       }
+
+      function increaseValue() {
+        const input = document.getElementById("passengerInput");
+        let currentValue = parseInt(input.value, 10) || 0;
+        input.value = currentValue + 1;
+      }
+
+      // Function to decrease the value
+      function decreaseValue() {
+        const input = document.getElementById("passengerInput");
+        let currentValue = parseInt(input.value, 10) || 0;
+        if (currentValue > 1) {
+          input.value = currentValue - 1;
+        }
+      }
+
+      document.addEventListener("click", (event) => {
+        // console.log(event.target,"event name here")
+        const isClickInsideMenu =
+          menuOverlay.contains(event.target) ||
+          hamburgerMenu.contains(event.target);
+
+        if (!isClickInsideMenu) {
+          closeMenuFunction();
+        }
+      });
     </script>
+
+    
     <!-- ----------------- jquary.min.js ----------------- -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
