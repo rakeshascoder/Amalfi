@@ -6,7 +6,7 @@
   list-style-type: none;
   text-decoration: none;
   box-sizing: border-box;
-  font-family: "Figtree", serif;
+  font-family: "Figtree", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -28,9 +28,11 @@
   --fs_xsm: 12px;
   --fs_sm: 13px;
   --fs_base: 14px;
+  --fs_btn: 14px;
   --fs_md: 15px;
   --fs_lg: 16px;
   --fs_xls: 20px;
+  --fs_mxl: 25px;
   --fs_xl: 33px;
   --fs_2xl: 68px;
   --fs_3xl: 64px;
@@ -41,6 +43,18 @@
 /* font-size */
 .fs_xsm {
   font-size: var(--fs_xsm);
+}
+
+.fs_btn {
+  font-size: var(--fs_btn);
+}
+
+.fs_xls {
+  font-size: var(--fs_xls);
+}
+
+.fs_mxl {
+  font-size: var(--fs_mxl);
 }
 
 .fs_3xl {
@@ -82,6 +96,10 @@
 /* font-weight */
 .fw_normal {
   font-weight: 400;
+}
+
+.fw_medium {
+  font-weight: 500;
 }
 
 .fw_semibold {
@@ -190,6 +208,10 @@
 
 .m-5 {
   margin: 48px;
+}
+
+.mx_1 {
+  margin-inline: 4px;
 }
 
 .p-1 {
@@ -377,6 +399,7 @@ button {
   margin-bottom: 48px;
 }
 
+
 .ps_1 {
   padding-left: 4px;
 }
@@ -435,6 +458,10 @@ button {
 
 .pt_5 {
   padding-top: 48px;
+}
+
+.px_0 {
+  padding-inline: 0 !important;
 }
 
 .pb_1 {
@@ -527,6 +554,18 @@ button {
 
 .letter_spacing_08 {
   letter-spacing: 0.8px;
+}
+
+.letter_spacing_1_53 {
+  letter-spacing: 1.53px;
+}
+
+.letter_spacing_06 {
+  letter-spacing: 0.96px;
+}
+
+.letter_spacing_3 {
+  letter-spacing: 0.32px;
 }
 
 .overflow_hidden {
@@ -638,6 +677,18 @@ button {
   margin-bottom: 8px;
 }
 
+.my_3 {
+  margin-block: 16px;
+}
+
+.my_4 {
+  margin-block: 24px;
+}
+
+.py_1 {
+  padding-block: 4px;
+}
+
 .h_50vh {
   height: 50vh;
 }
@@ -663,8 +714,21 @@ button {
 }
 
 .line_height_25 {
-  line-height: 25px;
+  line-height: 32px;
 }
+
+.line_height_15 {
+  line-height: 15px;
+}
+
+.line_height_22 {
+  line-height: 22px;
+}
+
+.line_height_20 {
+  line-height: 20.352px;
+}
+
 
 .max_width_45ch {
   max-width: 45ch;
@@ -711,9 +775,13 @@ button {
   border-radius: 10px;
 }
 
-.opacity_75 {
+/* .opacity_75 {
   opacity: 75%;
+} */
+.opacity_75 {
+  opacity: 0.75;
 }
+
 
 .gap_10 {
   gap: 10px;
@@ -1474,8 +1542,50 @@ footer {
 .amalfi_enterprice_bg {
   background-image: url(./image/png/Amalfi\ Enterprise_bg.png);
   background-size: cover;
-  
   background-repeat: no-repeat;
+  background-position: 70%;
+}
+
+.amalfi_enterprice_bg::after {
+  content: "";
+  background-image: linear-gradient(#0000, #000000dc);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  position: absolute;
+  left: 0;
+}
+
+.img_ratio_cover_4_3 {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.img_ratio_cover_2_39 {
+  aspect-ratio: 2.39;
+  object-fit: cover;
+}
+
+.grow_1 {
+  flex-grow: 1;
+}
+
+.align_end {
+  align-items: flex-end;
+}
+
+.entreprise_page_btn {
+  padding: 14px 18px;
+  border-radius: 16px;
+
+}
+
+.enterprise_get_more_info_bg_img {
 
 
+  background-image: linear-gradient(90deg, #000000bf, #0000), url(./image/png/enterprise_get_more_info_bg_img.avif);
+  background-size: cover;
+  min-height: 500px;
+  background-repeat: no-repeat;
+  background-position: 50%;
 }
