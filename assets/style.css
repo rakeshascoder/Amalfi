@@ -41,7 +41,9 @@
 .fs_xsm {
   font-size: var(--fs_xsm);
 }
-
+.fs_xls{
+  font-size: var(--fs_xls);
+}
 .fs_3xl {
   font-size: var(--fs_3xl);
 }
