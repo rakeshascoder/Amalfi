@@ -3,6 +3,12 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.a_demand_bg {
+  background-image: url(./image/png/demandbg.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .a_whyAmalfi_bg_operation {
   background-image: url(./image/png/bg_airoplane.avif);
   background-repeat: no-repeat;
@@ -246,6 +252,18 @@
 .a_w_300{
   max-width: 300px;
 }
+.a_align_end{
+  align-items: end;
+}
+.a_border_p{
+  border-bottom: 1px solid white;
+}
+.a_bg_circle_black{
+  height: 33px;
+  width: 33px;
+  background: black;
+  border-radius: 50%;
+}
 /* -------------------responsive------------------ */
 @media (max-width: 576px) {
   :root {
@@ -342,6 +360,23 @@
   .sm_w_fit_content{
     width: fit-content;
   }
+  .sm_justify_content_end{
+    justify-content: end;
+  }
+  .sm_p_4{
+    padding: 24px;
+  }
+  .sm_text_start{
+    text-align: start;
+  }
+  .sm_pt_0{
+    padding-top: 0;
+  }
+  .sm_col_4{
+    width: 33.33%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
 }
 @media (min-width: 768px) {
   :root {
@@ -423,6 +458,12 @@
     padding-left: 24px;
     padding-right: 24px;
   }
+  .md_p_3{
+    padding: 16px;
+  }
+  .md_p_5{
+    padding: 48px;
+  }
 }
 @media (min-width: 992px) {
   :root {
@@ -490,6 +531,48 @@
     padding-left: 12px;
     padding-right: 12px;
   }
+  .lg_col_7{
+    width: 58.33%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .lg_p_3{
+    padding: 16px;
+  }
+  .lg_p_5{
+    padding: 48px;
+  }
+  .lg_col_4{
+    width: 33.33%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .lg_d_none{
+    display: none;
+  }
+  .lg_col_6{
+    width: 50%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .lg_pt_0{
+    padding-top: 0px;
+  }
+  .lg_ps_5{
+    padding-left: 48px;
+  }
+  .a_lg_min_h_450{
+    min-height: 450px;
+  }
+  .lg_max_w_498{
+    max-width: 498px;
+  }
+  .lg_d_none{
+    display: none;
+  }
+  .lg_w_content{
+    width: fit-content;
+  }
 }
 @media (min-width: 1200px) {
   :root {
@@ -553,6 +636,20 @@
   .xl_min_h_590 {
     min-height: 590px;
   }
+  .xl_col_3{
+    width: 25%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .xl_p_3{
+    padding: 16px;
+  }
+  .xl_p_5{
+    padding: 48px;
+  }
+  .xl_ps_5{
+    padding-left: 48px;
+  }
 }
 @media (min-width: 1440px) {
   :root {
@@ -579,6 +676,23 @@
   }
   .col_2xl_4 {
     width: 33.33%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .xxl_col_6{
+    width: 50%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .xxl_max_w_724{
+    max-width: 724px;
+  }
+  .xxl_px_5{
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+  .xxl_col_5{
+    width: 41.66%;
     padding-left: 12px;
     padding-right: 12px;
   }
