@@ -17,6 +17,7 @@
   padding-left: 12px !important;
   padding-right: 12px !important;
 }
+
 .narror_container {
   max-width: 1257px;
   margin-left: auto;
@@ -819,6 +820,7 @@ button {
   color: white;
   overflow-y: scroll;
 }
+
 .hamburger_hover:hover {
   opacity: 0.48;
   background-color: #ffffff29;
@@ -834,10 +836,14 @@ button {
   position: absolute;
   inset: 0%;
 }
+
 .image_container {
-  min-width: 100%; /* Each slide takes full width */
-  display: flex; /* Ensure content inside is centered */
-  justify-content: center; /* Center content horizontally */
+  min-width: 100%;
+  /* Each slide takes full width */
+  display: flex;
+  /* Ensure content inside is centered */
+  justify-content: center;
+  /* Center content horizontally */
   align-items: center;
 }
 
@@ -852,19 +858,24 @@ button {
   display: grid;
   place-content: center;
 }
+
 .w_16 {
   width: 16px;
 }
+
 .h_18 {
   height: 18px;
 }
+
 .fill_white {
   fill: white;
 }
+
 .image_hover:hover {
   opacity: 70%;
   background-color: white;
 }
+
 .round_trip {
   letter-spacing: 0.128px;
   padding-bottom: 8px;
@@ -872,6 +883,7 @@ button {
   padding-left: 0.75rem;
   padding-right: 1.75rem;
 }
+
 .round_trip:hover {
   border-radius: 50px;
   background-color: #cecece;
@@ -894,6 +906,7 @@ button {
   font-size: 0.8rem;
   font-weight: 500;
 }
+
 .charter:hover {
   background-color: black;
   border-radius: 12px;
@@ -904,12 +917,14 @@ nav {
   background-color: #000c;
   transition: background-color 0.3s ease-in-out;
 }
+
 .letter_spacing_1 {
   letter-spacing: 1px;
 }
 
 .backdrop {
   backdrop-filter: brightness(46%) blur(20px);
+  -webkit-backdrop-filter: brightness(46%) blur(20px);
   z-index: -1;
   position: fixed;
   opacity: 1;
@@ -980,10 +995,12 @@ nav {
   align-items: center;
   justify-content: center;
 }
+
 .close_button_style {
   background-color: #1f1f23;
   padding: 1.272rem;
 }
+
 .passenger_input {
   text-align: center;
   min-width: 30px;
@@ -1441,6 +1458,7 @@ footer {
 .hover_jets_link {
   transition: 0.8s;
 }
+
 .hover_jets_link:hover {
   opacity: 0.5;
 }
@@ -1448,3 +1466,16 @@ footer {
 /* ===================== form css end here ============================ */
 
 /* ==============================  css for harish end here ================================= */
+
+
+/* css for Amalfi_enterprise.html start here  */
+
+
+.amalfi_enterprice_bg {
+  background-image: url(./image/png/Amalfi\ Enterprise_bg.png);
+  background-size: cover;
+  
+  background-repeat: no-repeat;
+
+
+}
