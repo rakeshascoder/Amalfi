@@ -440,6 +440,10 @@ button {
   padding-bottom: 4px;
 }
 
+.-left_100 {
+  left: -100%;
+}
+
 .pb_2 {
   padding-bottom: 8px;
 }
@@ -910,10 +914,12 @@ nav {
 
 .backdrop {
   backdrop-filter: brightness(46%) blur(20px);
-  z-index: -1;
+  z-index: 1;
   position: fixed;
-  opacity: 1;
-  inset: 0;
+  /* left: -100%; */
+  top: 0;
+  width: 100%;
+  height: 100vh;
   background-color: #0000;
 }
 

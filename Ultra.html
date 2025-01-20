@@ -328,10 +328,8 @@
                       />
                     </div>
                     <div class="col_8 col_md_12">
-                      >
                       <p
-                        class="text_uppercase fs_base fw_normal text_white px_10 text_md_center mt_3"
-                      >
+                        class="text_uppercase fs_base fw_normal text_white px_10 text_md_center mt_3">
                         Ultra Long Haul Jets
                       </p>
                     </div>
@@ -604,6 +602,9 @@
         </div>
       </div>
     </div>
+
+    <div id="backdrop" class="backdrop -left_100"></div>
+
     <header class="relative dh_bg_ultra">
       <div class="hero_overlay"></div>
       <div class="overlay"></div>
@@ -1016,7 +1017,7 @@
 
       hamburgerMenu.addEventListener("click", (e) => {
         e.preventDefault();
-
+        backdrop.classList.remove("-left_100");
         menuOverlay.classList.add("active");
         document.body.classList.add("overflow_hidden");
       });
@@ -1025,6 +1026,7 @@
 
       function closeMenuFunction() {
         menuOverlay.classList.remove("active");
+        backdrop.classList.add("-left_100");
         innerNav.classList.add("hidden");
         navaircraft.classList.add("hidden");
         navwhyamalficard.classList.add("hidden");

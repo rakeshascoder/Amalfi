@@ -559,6 +559,7 @@
         </div>
       </div>
     </div>
+    <div id="backdrop" class="backdrop -left_100"></div>
 
     <header>
       <div class="whyAmalfi_bg vh_100">
@@ -1074,7 +1075,7 @@
 
       hamburgerMenu.addEventListener("click", (e) => {
         e.preventDefault();
-
+        backdrop.classList.remove("-left_100");
         menuOverlay.classList.add("active");
         document.body.classList.add("overflow_hidden");
       });
@@ -1083,6 +1084,7 @@
 
       function closeMenuFunction() {
         menuOverlay.classList.remove("active");
+        backdrop.classList.add("-left_100");
         innerNav.classList.add("hidden");
         navaircraft.classList.add("hidden");
         navwhyamalficard.classList.add("hidden");

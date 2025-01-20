@@ -352,7 +352,7 @@
                       />
                     </div>
                     <div class="col_8 col_md_12">
-                      >
+                  
                       <p
                         class="text_uppercase fs_base fw_normal text_white px_10 text_md_center mt_3"
                       >
@@ -628,7 +628,7 @@
         </div>
       </div>
     </div>
-    <div id="backdrop" class="backdrop"></div>
+    <div id="backdrop" class="backdrop -left_100"></div>
 
     <!-- hero section -->
     <div class="slider_container slider_wrapper">
@@ -1792,7 +1792,7 @@
 
       hamburgerMenu.addEventListener("click", (e) => {
         e.preventDefault();
-        backdrop.classList.add("opactiy_1");
+        backdrop.classList.remove("-left_100");
         menuOverlay.classList.add("active");
         document.body.classList.add("overflow_hidden");
       });
@@ -1802,7 +1802,7 @@
 
       function closeMenuFunction() {
         menuOverlay.classList.remove("active");
-        backdrop.classList.remove("opactiy_1");
+        backdrop.classList.add("-left_100");
         innerNav.classList.add("hidden");
         navaircraft.classList.add("hidden");
         navwhyamalficard.classList.add("hidden");
@@ -1876,7 +1876,6 @@
       });
     </script>
 
-    
     <!-- ----------------- jquary.min.js ----------------- -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
