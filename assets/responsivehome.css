@@ -41,6 +41,12 @@
     margin-bottom: 20px;
   }
 }
+
+@media (max-width: 1200px) {
+  .flex_xl_wrap {
+    flex-wrap: wrap;
+  }
+}
 @media (min-width: 576px) {
   :root {
     --fs_xsm: 12px;
@@ -69,6 +75,10 @@
   }
   .align_sm_start {
     align-items: start;
+  }
+  .border_bottom_sm {
+    border-bottom-style: solid;
+    border-bottom-color: #c6c6c7;
   }
 }
 @media (min-width: 768px) {
@@ -158,6 +168,13 @@
     --fs_xl: 20px;
     --fs_2xl: 45px;
   }
+  .border_right_form {
+    border-right-style: solid;
+    border-right-color: #c6c6c7;
+  }
+  .border_bottom_lg_none {
+    border: none;
+  }
   .d_lg_none {
     display: none;
   }
@@ -236,5 +253,8 @@
     --fs_lg: 16px;
     --fs_xl: 33px;
     --fs_2xl: 68px;
+  }
+  .flex_xl_row {
+    flex-direction: row;
   }
 }

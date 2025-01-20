@@ -399,7 +399,6 @@ button {
   margin-bottom: 48px;
 }
 
-
 .ps_1 {
   padding-left: 4px;
 }
@@ -733,7 +732,6 @@ button {
   line-height: 20.352px;
 }
 
-
 .max_width_45ch {
   max-width: 45ch;
 }
@@ -785,7 +783,6 @@ button {
 .opacity_75 {
   opacity: 0.75;
 }
-
 
 .gap_10 {
   gap: 10px;
@@ -909,6 +906,10 @@ button {
   inset: 0%;
 }
 
+.min_height_186 {
+  min-height: 186px;
+}
+
 .image_container {
   min-width: 100%;
   /* Each slide takes full width */
@@ -942,7 +943,7 @@ button {
 .fill_white {
   fill: white;
 }
-.image_hover{
+.image_hover {
   transition: 200ms all ease-in-out;
 }
 .image_hover:hover {
@@ -1099,14 +1100,21 @@ nav {
   font-weight: 400;
   line-height: 1.272;
 }
+.bg_Scrim {
+  z-index: 1;
+  background-color: #00000080;
+  position: absolute;
+  inset: 0%;
+}
 
 .bg_jetCard {
   background-image: url("../assets/png/jetcard.webp");
   display: flex;
   justify-content: center;
   align-items: center;
-  /* position: absolute; */
+  height: 611px;
   width: 100%;
+  z-index: -1;
   background-size: 100% 100%;
   object-fit: cover;
   background-color: #00000080;
@@ -1135,6 +1143,7 @@ nav {
 
 .flight_card {
   width: 340px;
+  min-height: 186px;
 }
 
 .flight_card_icon {
@@ -1225,15 +1234,6 @@ footer {
   margin-bottom: 2.618em;
 }
 
-.border_right {
-  background-color: #767777;
-  opacity: 0.5;
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  width: 1px;
-}
-
 /* font-size */
 
 .fs_medium {
@@ -1263,6 +1263,7 @@ footer {
   align-items: center;
   justify-content: center;
 }
+
 
 .dh_bg_heavyjet {
   position: relative;
@@ -1541,9 +1542,7 @@ footer {
 
 /* ==============================  css for harish end here ================================= */
 
-
 /* css for Amalfi_enterprise.html start here  */
-
 
 .amalfi_enterprice_bg {
   background-image: url(./image/png/Amalfi\ Enterprise_bg.png);
@@ -1583,15 +1582,19 @@ footer {
 .entreprise_page_btn {
   padding: 14px 18px;
   border-radius: 16px;
-
 }
 
 .enterprise_get_more_info_bg_img {
-
-
-  background-image: linear-gradient(90deg, #000000bf, #0000), url(./image/png/enterprise_get_more_info_bg_img.avif);
+  background-image: linear-gradient(90deg, #000000bf, #0000),
+    url(./image/png/enterprise_get_more_info_bg_img.avif);
   background-size: cover;
   min-height: 500px;
   background-repeat: no-repeat;
   background-position: 50%;
 }
+
+.min_h__258 {
+  min-height: 299px;
+}
+
+
