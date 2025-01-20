@@ -482,7 +482,7 @@
               id="navmediacard"
             >
               <div>
-                <a href="/Amalfi/media1.html">
+                <a class="hover_jets_link" href="/Amalfi/media1.html">
                   <div class="mt_3">
                     <img
                       class="object_fit w_100 h_100"
@@ -497,11 +497,26 @@
                         Promotion with $2,500 Flight Credit and Free Amalfi
                         Merchandise
                       </p>
-                      <span>></span>
+                      <span
+                      ><svg
+                        width="9"
+                        height="13"
+                        viewBox="0 0 9 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M8.64216 7.22211L1.72819 13L0 11.5558L6.04988 6.5L0 1.44422L1.72819 0L8.64216 5.77789C8.87128 5.96943 9 6.22917 9 6.5C9 6.77083 8.87128 7.03057 8.64216 7.22211Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
                     </div>
                   </div>
                 </a>
-                <a href="/Amalfi/media2.html">
+                <a class="hover_jets_link" href="/Amalfi/media2.html">
                   <div class="mt_3">
                     <img
                       class="object_fit w_100 h_100"
@@ -515,11 +530,26 @@
                         Amalfi Jets Launches Exclusive Year-End Tiered Bonus
                         Promotion for Jet Card Members
                       </p>
-                      <span>></span>
+                      <span
+                        ><svg
+                          width="9"
+                          height="13"
+                          viewBox="0 0 9 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M8.64216 7.22211L1.72819 13L0 11.5558L6.04988 6.5L0 1.44422L1.72819 0L8.64216 5.77789C8.87128 5.96943 9 6.22917 9 6.5C9 6.77083 8.87128 7.03057 8.64216 7.22211Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </span>
                     </div>
                   </div>
                 </a>
-                <a href="/Amalfi/media3.html">
+                <a class="hover_jets_link" href="/Amalfi/media3.html">
                   <div class="mt_3">
                     <img
                       class="object_fit w_100 h_100"
@@ -534,7 +564,22 @@
                         Join the Amalfi One Jet Card with a Minimum Deposit of
                         $500K and receive a Bruce Wayne Rolex
                       </p>
-                      <span>></span>
+                      <span
+                      ><svg
+                        width="9"
+                        height="13"
+                        viewBox="0 0 9 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M8.64216 7.22211L1.72819 13L0 11.5558L6.04988 6.5L0 1.44422L1.72819 0L8.64216 5.77789C8.87128 5.96943 9 6.22917 9 6.5C9 6.77083 8.87128 7.03057 8.64216 7.22211Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
                     </div>
                   </div>
                 </a>
@@ -1205,6 +1250,23 @@
         if (!isClickInsideMenu) {
           closeMenuFunction();
         }
+      });
+    </script>
+
+
+<!-- ---------accordian script----------------- -->
+    <script>
+      // Select all accordion items
+      const accordionItems = document.querySelectorAll(".a_accordian_div");
+      accordionItems.forEach((item) => {
+        const question = item.querySelector(".a_question");
+        question.addEventListener("click", () => {
+          const isActive = item.classList.contains("a_active");
+          accordionItems.forEach((acc) => acc.classList.remove("a_active"));
+          if (!isActive) {
+            item.classList.add("a_active");
+          }
+        });
       });
     </script>
   </body>
