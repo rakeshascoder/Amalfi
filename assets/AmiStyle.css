@@ -9,6 +9,12 @@
   background-size: cover;
   background-position: center;
 }
+.a_jet_card_bg{
+  background-image: url(./image/png/privatejetcard.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .a_whyAmalfi_bg_operation {
   background-image: url(./image/png/bg_airoplane.avif);
   background-repeat: no-repeat;
