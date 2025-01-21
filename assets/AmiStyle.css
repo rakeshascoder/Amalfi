@@ -337,10 +337,6 @@
   background-position: center;
 }
 
-.a_bg_light_black {
-  background-color: #1a1a1a;
-}
-
 .a_radius_10 {
   border-radius: 10px;
 }
@@ -1198,6 +1194,10 @@
 
   .ps_lg_3 {
     padding-left: 16px;
+  }
+  .lg_px_67{
+    padding-left: 67px;
+    padding-right: 67px;
   }
 }
 

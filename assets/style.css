@@ -58,6 +58,7 @@ p {
 
   /* COLORS */
   --black: #000;
+  --off_black :#1a1a1a;
   --white: #fff;
   --pink-tint: #f8eff7;
   --soft-white: #fffbff;
@@ -220,6 +221,16 @@ footer img {
 
 .bg_light_black {
   background-color: var(--light-black);
+}
+.a_bg_light_black {
+  background-color: var(--off_black);
+}
+/* -----button--------- */
+.border_black_a{
+  border: 1px solid var(--black);
+}
+.a_border_white{
+  border: 1px solid white;
 }
 
 /* font-weight */
