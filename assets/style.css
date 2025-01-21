@@ -42,6 +42,7 @@
   --fs_xl: 33px;
   --fs_2xl: 68px;
   --fs_3xl: 64px;
+  --fs_4xl:68px;
   --fs_xxl: 24px;
   --fs_xll: 42px;
 
@@ -73,7 +74,9 @@
 .fs_xsm {
   font-size: var(--fs_xsm);
 }
-
+.fs_4xl{
+  font-size: var(--fs_4xl);
+}
 .fs_btn {
   font-size: var(--fs_btn);
 }
