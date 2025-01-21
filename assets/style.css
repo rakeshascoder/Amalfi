@@ -1592,3 +1592,16 @@ footer {
 .min_h__258 {
   min-height: 299px;
 }
+
+.arrow_remove {
+  -webkit-appearance: none;
+  outline: none;
+}
+input {
+  outline: none;
+  color: #333;
+}
+
+input::placeholder {
+  color: black;
+}
