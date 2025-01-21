@@ -38,6 +38,17 @@
   --fs_3xl: 64px;
   --fs_xxl: 24px;
   --fs_xll: 42px;
+
+  /* COLORS */
+  --black: #000;
+  --white: #fff;
+  --pink-tint: #f8eff7;
+  --soft-white: #fffbff;
+  --light-gray: #f5f5f5;
+  --dark-gray: #535a5b;
+  --medium-gray: #c6c6c7;
+  --pale-gray: #e2e2e2;
+  --deep-brown: #1f1b16;
 }
 
 /* font-size */
@@ -91,6 +102,36 @@
 
 .fs_2xl {
   font-size: var(--fs_2xl);
+}
+
+/* COLOR */
+
+.black_clr {
+  color: var(--black);
+}
+.white_clr {
+  color: var(--white);
+}
+.pink_tint_clr {
+  color: var(--pink-tint);
+}
+.soft_white_clr {
+  color: var(--soft-white);
+}
+.light_gray_clr {
+  color: var(--light-gray);
+}
+.dark_gray_clr {
+  color: var(--dark-gray);
+}
+.medium_gray_clr {
+  color: var(--medium-gray);
+}
+.pale_gray_clr {
+  color: var(--pale-gray);
+}
+.deep_brown_clr {
+  color: var(--deep-brown);
 }
 
 /* font-weight */
@@ -912,11 +953,8 @@ button {
 
 .image_container {
   min-width: 100%;
-  /* Each slide takes full width */
   display: flex;
-  /* Ensure content inside is centered */
   justify-content: center;
-  /* Center content horizontally */
   align-items: center;
 }
 
@@ -1046,14 +1084,6 @@ nav {
   outline: none;
   color: black;
   border-color: #88888d;
-}
-
-.slider-container {
-  position: relative;
-  width: 100%;
-  scroll-behavior: smooth;
-  height: 100vh;
-  overflow: hidden;
 }
 
 .minus_btn {
@@ -1264,7 +1294,6 @@ footer {
   justify-content: center;
 }
 
-
 .dh_bg_heavyjet {
   position: relative;
   background: url("./image/png/Heavyjet1.jpeg") no-repeat center center/cover;
@@ -1417,6 +1446,14 @@ footer {
 
 .menu_overlay.active {
   min-width: 35vw;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  scroll-behavior: smooth;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .slider_wrapper {
@@ -1596,5 +1633,3 @@ footer {
 .min_h__258 {
   min-height: 299px;
 }
-
-

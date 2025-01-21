@@ -798,11 +798,19 @@
               <div class="relative a_xs_border_b col_12 sm_col_6 lg_w_20">
                 <div class="border_bottom_sm border_bottom_lg_none">
                   <input
+                    id="Departdate"
                     class="form_field a_placeholder border_right_form"
-                    type="text"
+                    type="date"
                     placeholder="Depart"
                     required
+                    style="display: none"
                   />
+                  <div
+                    class="date-display"
+                    onclick="showDatePicker('departDate')"
+                  >
+                    <span>Select Depart Date</span>
+                  </div>
                   <svg
                     width="100%"
                     height="100%"
@@ -818,16 +826,22 @@
                   </svg>
                 </div>
               </div>
-              <div
-                class="relative a_xs_border_b  col_12 sm_col_6 lg_w_20"
-              >
+              <div class="relative a_xs_border_b col_12 sm_col_6 lg_w_20">
                 <div class="border_bottom_sm border_bottom_lg_none">
                   <input
+                    id="returnDate"
                     class="form_field a_placeholder border_right_form"
-                    type="text"
+                    type="date"
                     placeholder="Return"
                     required
+                    style="display: none"
                   />
+                  <div
+                    class="date-display"
+                    onclick="showDatePicker('returnDate')"
+                  >
+                    <span>Select Return Date</span>
+                  </div>
                   <svg
                     width="100%"
                     height="100%"
@@ -1285,7 +1299,7 @@
             <p class="fs_sm fw_normal text_white text">
               Join The Amalfi reserve membership
             </p>
-            <h1 class="mt_3 mb_3 text_white fw_normal">
+            <h1 class="mt_3 mb_3 text_white fw_normal text_uppercase">
               Reserve Membership for Only $99 USD Per Month
             </h1>
             <p class="text_white fs_lg mb_5 fw_normal">
