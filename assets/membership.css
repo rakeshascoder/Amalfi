@@ -1,0 +1,268 @@
+@media (max-width: 576px) {
+  :root {
+    --fs_xsm: 12px;
+    --fs_sm: 13px;
+    --fs_base: 14px;
+    --fs_md: 12px;
+    --fs_lg: 14px;
+    --fs_medium: 18px;
+    --fs_xl: 20px;
+    --fs_2xl: 38px;
+    --fs_3xl: 73px;
+  }
+
+  /* add css */
+  .p_bg_img_Beach {
+    min-height: 60vh;
+  }
+  .p_overlay_Membership {
+    background: none;
+  }
+  .pb_xsm_110 {
+    padding-bottom: 110px;
+  }
+  .text_align_xsm_center {
+    text-align: center;
+  }
+  .justify_content_xsm_center {
+    justify-content: center;
+  }
+  .p_xsm_0 {
+    padding: 0;
+  }
+  .p_overlay_Membership {
+    padding: 30px;
+  }
+  .titlea {
+    font-size: 28px;
+  }
+  .h_xsm_268 {
+    height: 268px;
+  }
+  .flex_xsm_rev {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (min-width: 576px) {
+  :root {
+    --fs_xsm: 12px;
+    --fs_sm: 13px;
+    --fs_base: 14px;
+    --fs_md: 15px;
+    --fs_lg: 14px;
+    --fs_medium: 18px;
+    --fs_xl: 33px;
+    --fs_2xl: 45px;
+    --fs_3xl: 73px;
+  }
+
+  /* add css */
+  .p_overlay_Membership {
+    padding: 30px;
+  }
+  .h_sm_525 {
+    height: 525px;
+  }
+  .flex_sm_rev {
+    flex-direction: column-reverse;
+  }
+  .d_sm_block {
+    display: block !important;
+  }
+  .d_sm_none {
+    display: none !important;
+  }
+  .text_align_sm_center {
+    text-align: center;
+  }
+  .justify_content_sm_center {
+    justify-content: center;
+  }
+  .p_overlay_Membership {
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.087),
+      rgb(0 0 0 / 23%),
+      rgba(0, 0, 0, 0.909)
+    );
+  }
+  .justify_content_sm_end {
+    justify-content: end;
+  }
+  .flex_sm_column {
+    flex-direction: column;
+  }
+  .h_sm_100 {
+    height: 100%;
+  }
+  .d_sm_flex {
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --fs_xsm: 12px;
+    --fs_sm: 13px;
+    --fs_base: 14px;
+    --fs_md: 15px;
+    --fs_lg: 16px;
+    --fs_medium: 18px;
+    --fs_xl: 33px;
+    --fs_2xl: 53px;
+    --fs_3xl: 73px;
+  }
+  /* add css */
+
+  .col_md_6 {
+    width: 50%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .h_md_407 {
+    height: 407px;
+  }
+  .flex_md_row {
+    flex-direction: row;
+  }
+  .p_md_67_25 {
+    padding: 67px 25px;
+  }
+  .text_align_md_center {
+    text-align: center;
+  }
+  .ms_md_3 {
+    margin-left: 16px;
+  }
+  .justify_content_md_center {
+    justify-content: center;
+  }
+}
+@media (min-width: 992px) {
+  :root {
+    --fs_xsm: 12px;
+    --fs_sm: 13px;
+    --fs_base: 14px;
+    --fs_md: 15px;
+    --fs_lg: 16px;
+    --fs_xl: 33px;
+    --fs_2xl: 68px;
+  }
+
+  .dh_lg_col_6 {
+    width: 50%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  /* add css */
+  .mb_lg_0 {
+    margin-bottom: 0;
+  }
+  .col_lg_5 {
+    width: 41.66% !important;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .col_lg_4 {
+    width: 25%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .p_overlay_Membership {
+    padding: 64px;
+  }
+  .p_lg_67 {
+    padding: 67px;
+  }
+  .ps_lg_5 {
+    padding-left: 48px;
+  }
+  .ms_lg_5 {
+    margin-left: 48px;
+  }
+  .w_lg_461 {
+    width: 461px;
+  }
+  .mt_lg_0 {
+    margin-top: 0;
+  }
+  .titlea {
+    font-size: 33px;
+  }
+  .h_lg_465 {
+    height: 465px;
+  }
+  .mt_lg_5 {
+    margin-top: 48px;
+  }
+  .justify_space_lg_between {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --fs_xsm: 12px;
+    --fs_sm: 13px;
+    --fs_base: 14px;
+    --fs_md: 15px;
+    --fs_lg: 16px;
+    --fs_medium: 18px;
+    --fs_xl: 33px;
+    --fs_2xl: 68px;
+    --fs_3xl: 73px;
+  }
+
+  /* add css */
+  .ps_xl_5 {
+    padding-left: 48px;
+  }
+  .ms_xl_5 {
+    margin-left: 48px;
+  }
+}
+
+@media (min-width: 1400px) {
+  :root {
+    --fs_xsm: 12px;
+    --fs_sm: 13px;
+    --fs_base: 14px;
+    --fs_md: 15px;
+    --fs_lg: 16px;
+    --fs_medium: 18px;
+    --fs_xl: 33px;
+    --fs_2xl: 68px;
+    --fs_3xl: 73px;
+  }
+  .col_xxl_7 {
+    width: 58.33%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .h_xxl_800 {
+    height: 800px;
+  }
+  .ms_xxl_5 {
+    margin-left: 48px;
+  }
+}
+@media (min-width: 1600px) {
+  :root {
+    --fs_xsm: 12px;
+    --fs_sm: 13px;
+    --fs_base: 14px;
+    --fs_md: 15px;
+    --fs_lg: 16px;
+    --fs_xls: 20px;
+    --fs_xl: 33px;
+    --fs_2xl: 68px;
+    --fs_3xl: 64px;
+    --fs_xxl: 24px;
+    --fs_xll: 42px;
+  }
+  .lh_3xl_25 {
+    line-height: 25px;
+  }
+}
