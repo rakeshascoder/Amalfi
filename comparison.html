@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="./assets/AmiStyle.css" />
 
   </head>
-  <body style="margin: 0">
+  <bod style="margin: 0">
+  <div class="bg_black">
     <div class="sticky top_0 z_1">
       <button id="theme-toggle" class="theme_btn">Switch Theme</button>
 
@@ -615,7 +616,7 @@
           aircraft comparison
         </h1>
 
-        <div class="d_lg_flex justify_content_center aircraft_bg_mobile">
+        <div class=" justify_content_center aircraft_bg_mobile">
           <div class="overflow_auto">
             <div class="d_flex d_lg_none mobile_active_tabs">
               <div class="active tab white_clr" data-target="tab1">Light</div>
@@ -628,8 +629,7 @@
           <div id="tab1" class="active content">
             <img
               class="aircraft_hero_img mx_auto"
-              width="100"
-              height="100"
+           
               src="./assets/image/png/aircraft-hero-img1.png"
               alt="aircraft"
             />
@@ -657,8 +657,7 @@
           </div>
           <div id="tab2" class="content">
             <img
-              width="100"
-              height="100"
+           
               class="aircraft_hero_img mx_auto"
               src="./assets/image/png/aircraft-hero-img2.png"
               alt="aircraft"
@@ -686,13 +685,12 @@
           </div>
           <div id="tab3" class="content">
             <img
-              width="100"
-              height="100"
+           
               class="aircraft_hero_img mx_auto"
               src="./assets/image/png/aircraft-hero-img3.png"
               alt="aircraft"
             />
-            <div class="d_flex flex_column gap_10 mt_3">
+            <div class="d_flex flex_column gap_10 mt_3 d_lg_none">
               <p
                 style="line-height: 24px"
                 class="fw_normal white_clr text_align_center text_center fs_md"
@@ -715,13 +713,12 @@
           </div>
           <div id="tab4" class="content">
             <img
-              width="100"
-              height="100"
+           
               class="aircraft_hero_img mx_auto"
               src="./assets/image/png/aircraft-hero-img4.png"
               alt="aircraft"
             />
-            <div class="d_flex flex_column gap_10 mt_3">
+            <div class="d_flex flex_column gap_10 mt_3 d_lg_none">
               <p
                 style="line-height: 24px"
                 class="fw_normal white_clr text_align_center text_center fs_md"
@@ -744,13 +741,12 @@
           </div>
           <div id="tab5" class="content">
             <img
-              width="100"
-              height="100"
+           
               class="aircraft_hero_img mx_auto"
               src="./assets/image/png/aircraft-hero-img5.png"
               alt="aircraft"
             />
-            <div class="d_flex flex_column gap_10 mt_3">
+            <div class="d_flex flex_column gap_10 mt_3 d_lg_none">
               <p
                 style="line-height: 24px"
                 class="fw_normal white_clr text_align_center text_center fs_md"
@@ -897,6 +893,7 @@
         </div>
       </div>
     </div>
+  </div>
     <script>
       const tabs = document.querySelectorAll(".tab");
       const contents = document.querySelectorAll(".content");
@@ -1009,5 +1006,5 @@
       });
     </script>
     <script src="/assets/js/theme.js"></script>
-  </body>
+  </bod>
 </html>
