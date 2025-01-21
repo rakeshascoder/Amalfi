@@ -288,7 +288,8 @@
 }
 
 .a_test_gray {
-  color: #0009;
+  color: var(--black);
+  opacity: 0.6;
 }
 
 .mt_n_1 {
@@ -334,10 +335,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-
-.a_bg_light_black {
-  background-color: #1a1a1a;
 }
 
 .a_radius_10 {
@@ -1197,6 +1194,10 @@
 
   .ps_lg_3 {
     padding-left: 16px;
+  }
+  .lg_px_67{
+    padding-left: 67px;
+    padding-right: 67px;
   }
 }
 
