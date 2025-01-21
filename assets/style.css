@@ -58,7 +58,6 @@
   --pale-gray: #e2e2e2;
   --deep-brown: #1f1b16;
   --light-black: #1a1c1c;
-  --logo_bg: rgb(255, 255, 255);
 }
 
 .light_theme {
@@ -66,11 +65,6 @@
   --white: #000;
   --light-black: #f8eff7;
   --light-gray: #2f2f2f;
-  --logo_bg: rgb(0, 0, 0);
-}
-
-.logo_bg {
-  background-color: var(--logo_bg);
 }
 
 /* color that will not change in theme switch  */
@@ -90,7 +84,7 @@
 }
 
 footer img {
-  background-color: var(--logo_bg);
+  background-color: black;
   padding: 10px 20px;
   border-radius: 5px;
 }
