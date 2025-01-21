@@ -42,12 +42,14 @@
   --fs_xl: 33px;
   --fs_2xl: 68px;
   --fs_3xl: 64px;
-  --fs_4xl:68px;
+  --fs_4xl: 68px;
   --fs_xxl: 24px;
   --fs_xll: 42px;
 
+
   /* COLORS */
   --black: #000;
+  --off_black :#1a1a1a;
   --white: #fff;
   --pink-tint: #f8eff7;
   --soft-white: #fffbff;
@@ -57,26 +59,52 @@
   --pale-gray: #e2e2e2;
   --deep-brown: #1f1b16;
   --light-black: #1a1c1c;
+  --logo_bg: rgb(255, 255, 255);
 }
 
-.light_theme{
+.light_theme {
   --black: #fff;
   --white: #000;
   --light-black: #f8eff7;
+  --light-gray: #2f2f2f;
+  --logo_bg: rgb(0, 0, 0);
 }
 
-.theme_btn{
+.logo_bg {
+  background-color: var(--logo_bg);
+}
+
+/* color that will not change in theme switch  */
+.bg_default_black {
+  background-color: black;
+}
+
+
+.clr_default_white {
+  color: white;
+}
+
+
+.theme_btn {
   background-color: var(--black);
   color: var(--white);
+}
+
+footer img {
+  background-color: var(--logo_bg);
+  padding: 10px 20px;
+  border-radius: 5px;
 }
 
 /* font-size */
 .fs_xsm {
   font-size: var(--fs_xsm);
 }
-.fs_4xl{
+
+.fs_4xl {
   font-size: var(--fs_4xl);
 }
+
 .fs_btn {
   font-size: var(--fs_btn);
 }
@@ -130,41 +158,62 @@
 .black_clr {
   color: var(--black);
 }
+
 .white_clr {
   color: var(--white);
 }
+
 .pink_tint_clr {
   color: var(--pink-tint);
 }
+
 .soft_white_clr {
   color: var(--soft-white);
 }
+
 .light_gray_clr {
   color: var(--light-gray);
 }
+
 .dark_gray_clr {
   color: var(--dark-gray);
 }
+
 .medium_gray_clr {
   color: var(--medium-gray);
 }
+
 .pale_gray_clr {
   color: var(--pale-gray);
 }
+
 .deep_brown_clr {
   color: var(--deep-brown);
 }
+
 /* BACKGROUD COLOR */
 .bg_black {
   background-color: var(--black);
 }
+
+
 .bg_white {
   background-color: var(--white);
 }
+
 .bg_light_black {
   background-color: var(--light-black);
 }
-
+.a_bg_light_black {
+  background-color: var(--off_black);
+}
+/* -----button--------- */
+.border_black_a{
+  border: 1px solid var(--black);
+}
+.a_border_white{
+  border: 1px solid white;
+}
 
 /* font-weight */
 .fw_normal {
@@ -649,7 +698,7 @@ button {
 }
 
 .text_white {
-  color: white;
+  color: var(--white);
 }
 
 .top_50 {
@@ -682,7 +731,7 @@ button {
 }
 
 .text_black {
-  color: black;
+  color: var(--black);
 }
 
 .h_100vh {
@@ -839,7 +888,7 @@ button {
 }
 
 .text_light_white {
-  color: #f5f5f5;
+  color: var(--light-gray);
 }
 
 .opacity {
@@ -863,7 +912,7 @@ button {
 
 
 .bg_white {
-  background-color: white;
+  background-color: var(--white);
 }
 
 .cursor_pointer {
@@ -902,7 +951,7 @@ button {
   transition: all 0.3s ease-in-out;
   backdrop-filter: brightness(69%);
   -webkit-backdrop-filter: brightness(69%);
-  color: white;
+  color: var(--white);
   overflow-y: scroll;
 }
 
@@ -920,7 +969,7 @@ button {
   transition: all 0.3s ease-in-out;
   backdrop-filter: brightness(69%);
   -webkit-backdrop-filter: brightness(69%);
-  color: white;
+  color: var(--white);
   overflow-y: scroll;
 }
 
@@ -938,7 +987,7 @@ button {
   transition: all 0.3s ease-in-out;
   backdrop-filter: brightness(69%);
   -webkit-backdrop-filter: brightness(69%);
-  color: white;
+  color: var(--white);
   overflow-y: scroll;
 }
 
@@ -956,7 +1005,7 @@ button {
   transition: all 0.3s ease-in-out;
   backdrop-filter: brightness(69%);
   -webkit-backdrop-filter: brightness(69%);
-  color: white;
+  color: var(--white);
   overflow-y: scroll;
 }
 
@@ -970,7 +1019,7 @@ button {
 }
 
 .bg_overlay {
-  background-color: black;
+  background-color: var(--black);
   opacity: 0.6;
   position: absolute;
   inset: 0%;
@@ -1008,7 +1057,7 @@ button {
 }
 
 .fill_white {
-  fill: white;
+  fill: var(--white);
 }
 
 .image_hover {
@@ -1017,7 +1066,7 @@ button {
 
 .image_hover:hover {
   opacity: 70%;
-  background-color: white;
+  background-color: var(--white);
 }
 
 .round_trip {
@@ -1052,9 +1101,9 @@ button {
 }
 
 .charter:hover {
-  background-color: black;
+  background-color: var(--black);
   border-radius: 12px;
-  color: white;
+  color: var(--white);
 }
 
 nav {
@@ -1074,7 +1123,7 @@ nav {
   top: 0;
   width: 100%;
   height: 100vh;
-  background-color: #0000;
+  background-color: var(--black);
 }
 
 .opactiy_1 {
@@ -1082,7 +1131,7 @@ nav {
 }
 
 .arrow_btn {
-  background-color: black;
+  background-color: var(--black);
   border-radius: 40px;
   justify-content: center;
   align-items: center;
@@ -1092,7 +1141,7 @@ nav {
 }
 
 .explore_btn {
-  background-color: white;
+  background-color: var(--white);
   border-radius: 12px;
 }
 
@@ -1114,12 +1163,12 @@ nav {
   font-size: 1rem;
   border-style: none;
   outline: none;
-  color: black;
+  color: var(--black);
   border-color: #88888d;
 }
 
 .minus_btn {
-  color: black !important;
+  color: var(--black) !important;
   height: 20px;
   width: 20px;
   border: 1px solid #88888d;
@@ -1147,9 +1196,9 @@ nav {
 }
 
 .flight_btn {
-  background-color: black;
+  background-color: var(--black);
   letter-spacing: 1px;
-  color: white;
+  color: var(--white);
   padding: 0.885em 1.272em;
   display: inline-block;
   border-radius: 16px;
@@ -1184,8 +1233,8 @@ nav {
 }
 
 .discover_btn {
-  background-color: white;
-  color: black;
+  background-color: var(--white);
+  color: var(--black);
   border-radius: 1.272em;
   letter-spacing: 1px;
   padding: 0.885em 1.272em;
@@ -1212,7 +1261,7 @@ nav {
 .flight_card_icon {
   height: 15px;
   width: 15px;
-  color: white;
+  color: var(--white);
 }
 
 .flight_card_content {
@@ -1232,8 +1281,8 @@ nav {
 }
 
 .book_flight_btn {
-  background-color: black;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
   border-radius: 10px;
   letter-spacing: 1px;
   padding: 0.885em 1.272em;
@@ -1245,7 +1294,7 @@ nav {
   background-position: right;
   width: 100%;
   object-fit: cover;
-  background-color: black;
+  background-color: var(--black);
 }
 
 .h_265 {
@@ -1255,8 +1304,8 @@ nav {
 }
 
 footer {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--black);
+  color: var(--white);
 }
 
 .text_light_grey {
@@ -1264,7 +1313,7 @@ footer {
 }
 
 .text_gray_darker {
-  color: #f5f5f5;
+  color: var(--light-gray);
   opacity: 80%;
 }
 
@@ -1279,8 +1328,8 @@ footer {
 }
 
 .submit_btn {
-  background-color: white;
-  color: black;
+  background-color: var(--white);
+  color: var(--black);
   padding: 0.885em 1.272em;
   font-weight: 500;
   border: none;
@@ -1311,7 +1360,7 @@ footer {
   position: relative;
   background: url("./image/png/jets1.jpeg") no-repeat center center/cover;
   height: 100vh;
-  color: white;
+  color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1321,7 +1370,7 @@ footer {
   position: relative;
   background: url("./image/png/middle1.jpeg") no-repeat center center/cover;
   height: 100vh;
-  color: white;
+  color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1331,7 +1380,7 @@ footer {
   position: relative;
   background: url("./image/png/Heavyjet1.jpeg") no-repeat center center/cover;
   height: 100vh;
-  color: white;
+  color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1341,7 +1390,7 @@ footer {
   position: relative;
   background: url("./image/png/size1.jpeg") no-repeat center center/cover;
   height: 100vh;
-  color: white;
+  color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1351,7 +1400,7 @@ footer {
   position: relative;
   background: url("./image/png/ultra1.jpeg") no-repeat center center/cover;
   height: 100vh;
-  color: white;
+  color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1441,7 +1490,7 @@ footer {
   left: 0;
   height: 100vh;
   width: 0;
-  background-color: black;
+  background-color: var(--black);
   overflow: hidden;
   transition: width 0.3s ease-in-out;
   z-index: 999;
@@ -1456,7 +1505,7 @@ footer {
 }
 
 .menu_content .contact_btn {
-  background-color: #fff;
+  background-color: var(--white);
   color: #000;
   padding: 10px 20px;
   text-decoration: none;
@@ -1469,7 +1518,7 @@ footer {
   top: 10px;
   left: 10px;
   background: none;
-  color: #fff;
+  color: var(--white);
   font-size: 1.5rem;
   border: none;
   backdrop-filter: saturate(180%) blur(20px);
@@ -1522,7 +1571,7 @@ footer {
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
-  background-color: white;
+  background-color: var(--white);
   opacity: 75%;
   transition: opacity ease 250ms;
 }
@@ -1552,7 +1601,7 @@ footer {
   transform: translateY(-50%);
   width: 200px;
   background: #333;
-  color: #fff;
+  color: var(--white);
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -1568,7 +1617,7 @@ footer {
 
 .card {
   max-width: 750px;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 1.61792em;
   padding: 1.61792em 2.058em 2.058em;
   color: #1f1b16;
@@ -1583,7 +1632,7 @@ footer {
 }
 
 .lk-form-field {
-  background-color: #0000;
+  background-color: var(--black);
   flex: 1;
   margin-bottom: 0;
   font-size: 1em;
@@ -1595,7 +1644,7 @@ footer {
 }
 
 .search_btn {
-  background-color: black;
+  background-color: var(--black);
   padding: 15px 20px;
   border-radius: 10px;
 }
@@ -1675,6 +1724,7 @@ footer {
   border-radius: 12px;
   padding: 12px 10px;
 }
+
 .tab {
   padding: 10px 0;
   border-bottom: 2px solid #cccccc5c;
@@ -1684,6 +1734,7 @@ footer {
   width: 100%;
   cursor: pointer;
 }
+
 .tab.active {
   background-color: transparent !important;
   border-bottom: 2px solid #f8efe7;
@@ -1691,13 +1742,16 @@ footer {
   text-align: center;
   color: var(--white);
 }
+
 .content {
   display: none;
 }
+
 .content.active {
   display: block;
   padding: 20px;
 }
+
 .aircraft_hero {
   background: var(--black);
   height: 80vh;
@@ -1707,6 +1761,7 @@ footer {
   color: var(--white);
   padding: 90px 0 0 0;
 }
+
 .aircraft_hero_img {
   width: 90%;
   height: auto;
@@ -1732,7 +1787,7 @@ footer {
   width: 100%;
   min-height: 100vh;
   background-size: cover;
-  color: white;
+  color: var(--white);
 }
 
 .p_bg_img_laptop {
@@ -1742,7 +1797,7 @@ footer {
   min-height: 70vh;
   background-position: center;
   background-size: cover;
-  color: white;
+  color: var(--white);
 }
 
 .p_overlay_Membership {
@@ -1763,8 +1818,8 @@ footer {
 }
 
 .btn_download {
-  background-color: white;
-  color: black;
+  background-color: var(--white);
+  color: var(--black);
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 500;
@@ -1797,8 +1852,8 @@ footer {
 }
 
 .touch_button {
-  background-color: black;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
   padding: 16px 18px;
   border-radius: 15px;
 }
@@ -1839,6 +1894,7 @@ footer {
 .leter_space_06 {
   letter-spacing: 0.6px;
 }
+
 /* AIRCRAFT-COMPARISON CSS */
 .tabs {
   display: none;
@@ -1847,6 +1903,7 @@ footer {
   border-radius: 12px;
   padding: 12px 10px;
 }
+
 .tab {
   padding: 10px 0;
   border-bottom: 2px solid #cccccc5c;
@@ -1856,6 +1913,7 @@ footer {
   width: 100%;
   cursor: pointer;
 }
+
 .tab.active {
   background-color: transparent !important;
   border-bottom: 2px solid #f8efe7;
@@ -1863,13 +1921,16 @@ footer {
   text-align: center;
   color: var(--white);
 }
+
 .content {
   display: none;
 }
+
 .content.active {
   display: block;
   padding: 20px;
 }
+
 .aircraft_hero {
   background: var(--black);
   height: 80vh;
@@ -1879,6 +1940,7 @@ footer {
   color: var(--white);
   padding: 90px 0 0 0;
 }
+
 .aircraft_hero_img {
   width: 90%;
   height: auto;
@@ -1901,6 +1963,7 @@ footer {
   width: 700px;
   overflow: auto;
 }
+
 .overflow_auto {
   overflow-x: auto;
 }
@@ -1913,15 +1976,18 @@ footer {
     width: auto;
   }
 }
+
 @media (min-width: 992px) {
   .aircraft_bg_mobile {
     background-color: transparent;
     border-radius: 12px;
   }
+
   .aircraft_hero_img {
     width: 90%;
     height: auto;
   }
+
   .tabs {
     display: flex;
     justify-content: space-between;
