@@ -1718,6 +1718,8 @@
       const navwhyamalficard = document.getElementById("navwhyamalficard");
       const navmedia = document.getElementById("navmediacard");
       const backdrop = document.getElementById("backdrop");
+
+      // slider code start here ------------------------------
       const slider = document.getElementById("slider");
       const slides = slider.children;
 
@@ -1739,6 +1741,7 @@
 
       showSlide(currentIndex);
       setInterval(nextSlide, 3500);
+      // slider code end here  ------------------- 
       // nav will change opacity
       document.addEventListener("scroll", (e) => {
         const nav = document.querySelector("nav");
