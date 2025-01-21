@@ -1609,6 +1609,9 @@ footer {
 .icon_arrow.rotated {
   transform: rotate(180deg);
 }
+.slick-dots li button:before {
+  font-size: 14px !important;
+}
 
 .small_overlay {
   position: absolute;
