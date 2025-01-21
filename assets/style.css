@@ -24,6 +24,12 @@
   margin-right: auto;
 }
 
+body{
+  background-color: var(--black);
+  color: var(--white);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 :root {
   --fs_xsm: 12px;
   --fs_sm: 13px;
@@ -49,6 +55,18 @@
   --medium-gray: #c6c6c7;
   --pale-gray: #e2e2e2;
   --deep-brown: #1f1b16;
+  --light-black: #1a1c1c;
+}
+
+.light_theme{
+  --black: #fff;
+  --white: #000;
+  --light-black: #f8eff7;
+}
+
+.theme_btn{
+  background-color: var(--black);
+  color: var(--white);
 }
 
 /* font-size */
@@ -133,6 +151,17 @@
 .deep_brown_clr {
   color: var(--deep-brown);
 }
+/* BACKGROUD COLOR */
+.bg_black {
+  background-color: var(--black);
+}
+.bg_white {
+  background-color: var(--white);
+}
+.bg_light_black {
+  background-color: var(--light-black);
+}
+
 
 /* font-weight */
 .fw_normal {
@@ -829,9 +858,6 @@ button {
   gap: 10px;
 }
 
-.bg_black {
-  background-color: black;
-}
 
 .bg_white {
   background-color: white;
@@ -1632,4 +1658,96 @@ footer {
 
 .min_h__258 {
   min-height: 299px;
+}
+
+/* AIRCRAFT-COMPARISON CSS */
+.tabs {
+  display: none;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  padding: 12px 10px;
+}
+.tab {
+  padding: 10px 0;
+  border-bottom: 2px solid #cccccc5c;
+  transition: background-color 0.3s;
+  color: var(--white);
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+}
+.tab.active {
+  background-color: transparent !important;
+  border-bottom: 2px solid #f8efe7;
+  width: 100%;
+  text-align: center;
+  color: var(--white);
+}
+.content {
+  display: none;
+}
+.content.active {
+  display: block;
+  padding: 20px;
+}
+.aircraft_hero {
+  background: var(--black);
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--white);
+  padding: 90px 0 0 0;
+}
+.aircraft_hero_img {
+  width: 90%;
+  height: auto;
+}
+
+.aircraft_active_tabs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aircraft_bg_mobile {
+  background-color: var(--light-black);
+  border-radius: 12px;
+  width: 100%;
+}
+
+.mobile_active_tabs {
+  width: 700px;
+  overflow: auto;
+}
+.overflow_auto {
+  overflow-x: auto;
+}
+
+
+
+   
+@media (min-width: 768px) {
+  .mobile_active_tabs {
+    width: auto;
+  }
+}
+@media (min-width: 992px) {
+  .aircraft_bg_mobile {
+    background-color: transparent;
+    border-radius: 12px;
+  }
+  .aircraft_hero_img {
+    width: 90%;
+    height: auto;
+  }
+  .tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    padding: 12px 10px;
+  }
 }
