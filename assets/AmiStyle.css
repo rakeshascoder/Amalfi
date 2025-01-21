@@ -23,7 +23,6 @@
   background-size: cover;
 }
 
-
 .a_max_w_640 {
   max-width: 640px;
 }
@@ -332,8 +331,6 @@
   padding-block: 25px;
 }
 
-
-
 .custom_container_r {
   width: calc(100vw - 50px);
   margin: 0 auto;
@@ -441,7 +438,7 @@
   .mt_maintain {
     margin-top: 1.618em;
   }
-  .d_xsm_flex{
+  .d_xsm_flex {
     display: flex;
   }
 }
@@ -460,7 +457,6 @@
     --fs_2xl: 53px;
     --fs_3xl: 32px;
   }
-
 
   .a_easy_Booking_bg_1 {
     height: 700px;
@@ -717,7 +713,6 @@
   .mt_md_0 {
     margin-top: 0;
   }
-
 }
 
 @media (min-width: 992px) {
@@ -782,7 +777,7 @@
   }
 
   .lg_w_11 {
-    width: 11%;
+    width: 17%;
   }
 
   .lg_flex_d_row {
@@ -1056,6 +1051,4 @@
     padding-left: 12px;
     padding-right: 12px;
   }
-
-
 }
