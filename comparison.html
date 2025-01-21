@@ -3,16 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Active Tabs</title>
+    <title>Aircraft Comparison</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/png/favicon.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="./assets/style.css" />
     <link rel="stylesheet" href="./assets/responsivehome.css" />
     <link rel="stylesheet" href="./assets/AmiStyle.css" />
   </head>
   <body style="margin: 0">
     <div class="bg_black">
-      <div class="sticky top_0 z_1">
-        <button id="theme-toggle" class="theme_btn">Switch Theme</button>
-
+      <div class="sticky top_0 z_2">
         <nav class="d_flex absolute z_1 justify_space_between w_100">
           <div class="d_flex align_center gap_40">
             <li
@@ -36,21 +39,21 @@
             <ul class="d_flex gap_40 d_none d_lg_flex">
               <li class="d_flex justify_content_center align_center h_67 w_67">
                 <a
-                  class="text_uppercase white_clr nav_links_text fs_xsm"
+                  class="text_uppercase text_white nav_links_text fs_xsm"
                   href="#"
                   >program</a
                 >
               </li>
               <li class="d_flex justify_content_center align_center h_67 w_67">
                 <a
-                  class="text_uppercase white_clr nav_links_text fs_xsm"
+                  class="text_uppercase text_white nav_links_text fs_xsm"
                   href="./jets.html"
                   >aircraft</a
                 >
               </li>
               <li class="d_flex justify_content_center align_center h_67 w_67">
                 <a
-                  class="text_uppercase white_clr nav_links_text fs_xsm"
+                  class="text_uppercase text_white nav_links_text fs_xsm"
                   href="./assets/whyAmalfi/WhyAmalfi.html"
                   >why amalfi</a
                 >
@@ -59,7 +62,7 @@
           </div>
           <div class="d_flex justify_content_center align_center">
             <a href="./index.html">
-              <img class="h_50" src="./assets/png/logo.png" alt="aircraft" />
+              <img class="h_50" src="./assets/png/logo.png" alt="" />
             </a>
           </div>
           <div class="d_flex align_center gap_3 me_3">
@@ -76,7 +79,7 @@
                   fill="white"
                 />
               </svg>
-              <a class="white_clr nav_links_text mt_1 ms_1" href="#"
+              <a class="text_white nav_links_text mt_1 ms_1" href="#"
                 >+1 (877) 6-AMALFI</a
               >
             </span>
@@ -93,6 +96,7 @@
           </div>
         </nav>
       </div>
+      <!-- overlay -->
       <div class="menu_overlay lg_menu_overlay">
         <div class="menu_content w_100">
           <div class="close_button_style">
@@ -126,11 +130,11 @@
                 onclick="navopen(this)"
               >
                 <a
-                  class="text_uppercase white_clr fw_normal fs_xsm p_3 fs_base d_flex w_100"
+                  class="text_uppercase text_white fw_normal fs_xsm p_3 fs_base d_flex w_100"
                   href="#"
                   >program</a
                 >
-                <span class="white_clr me_3 icon_arrow"
+                <span class="text_white me_3 icon_arrow"
                   ><svg
                     width="9"
                     height="13"
@@ -157,14 +161,16 @@
                     <img
                       class="object_fit w_100"
                       src="./assets/png/inner aero.jpeg"
-                      alt="aircraft"
+                      alt=""
                     />
-                    <div class="bg_overlay"></div>
-                    <p
-                      class="text_uppercase fs_base fw_normal absolute white_clr text_align_center"
-                    >
-                      On-Demand Character
-                    </p>
+                    <a href="./onDemandCharter.html">
+                      <div class="bg_overlay"></div>
+                      <p
+                        class="text_uppercase fs_base top_50 left_50 translate_50_50 fw_normal absolute text_white text_align_center"
+                      >
+                        On-Demand Character
+                      </p>
+                    </a>
                   </div>
                   <div
                     class="image_set image_md_set d_flex justify_content_center align_center relative mt_3"
@@ -174,12 +180,14 @@
                       src="./assets/png/inner 2.avif"
                       alt=""
                     />
-                    <div class="bg_overlay"></div>
-                    <p
-                      class="text_uppercase fs_base fw_normal absolute white_clr text_align_center"
-                    >
-                      The Amalfi One Jet Card Program
-                    </p>
+                    <a href="#">
+                      <div class="bg_overlay"></div>
+                      <p
+                        class="text_uppercase top_50 left_50 translate_50_50 fs_base fw_normal absolute text_white text_align_center"
+                      >
+                        The Amalfi One Jet Card Program
+                      </p>
+                    </a>
                   </div>
                   <div
                     class="image_set image_md_set d_flex justify_content_center align_center relative mt_3"
@@ -189,12 +197,14 @@
                       src="./assets/png/inner 3.avif"
                       alt=""
                     />
-                    <div class="bg_overlay"></div>
-                    <p
-                      class="text_uppercase fs_base fw_normal absolute white_clr text_align_center"
-                    >
-                      Amalfi Enterprise
-                    </p>
+                    <a href="./Amalfi_Enterprise.html">
+                      <div class="bg_overlay"></div>
+                      <p
+                        class="text_uppercase top_50 left_50 translate_50_50 fs_base fw_normal absolute text_white text_align_center"
+                      >
+                        Amalfi Enterprise
+                      </p>
+                    </a>
                   </div>
                   <div
                     class="image_set image_md_set d_flex justify_content_center align_center relative mt_3"
@@ -204,12 +214,14 @@
                       src="./assets/png/inner 4.avif"
                       alt=""
                     />
-                    <div class="bg_overlay"></div>
-                    <p
-                      class="text_uppercase fs_base fw_normal absolute white_clr text_align_center"
-                    >
-                      Amalfi Reserve Membership
-                    </p>
+                    <a href="#">
+                      <div class="bg_overlay"></div>
+                      <p
+                        class="text_uppercase top_50 left_50 translate_50_50 fs_base fw_normal absolute text_white text_align_center"
+                      >
+                        Amalfi Reserve Membership
+                      </p>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -222,11 +234,11 @@
                 onclick="navopen(this)"
               >
                 <a
-                  class="text_uppercase white_clr fw_normal fs_xsm p_3 fs_base d_flex w_100"
+                  class="text_uppercase text_white fw_normal fs_xsm p_3 fs_base d_flex w_100"
                   href="#"
                   >aircraft</a
                 >
-                <span class="white_clr me_3 icon_arrow"
+                <span class="text_white me_3 icon_arrow"
                   ><svg
                     width="9"
                     height="13"
@@ -260,7 +272,7 @@
                       </div>
                       <div class="col_8 col_md_12">
                         <p
-                          class="text_uppercase fs_base fw_normal white_clr px_10 text_md_center mt_3"
+                          class="text_uppercase fs_base fw_normal text_white px_10 text_md_center mt_3"
                         >
                           light jets
                         </p>
@@ -278,7 +290,7 @@
                       </div>
                       <div class="col_8 col_md_12">
                         <p
-                          class="text_uppercase fs_base fw_normal white_clr px_10 text_md_center mt_3"
+                          class="text_uppercase fs_base fw_normal text_white px_10 text_md_center mt_3"
                         >
                           midsize jets
                         </p>
@@ -296,7 +308,7 @@
                       </div>
                       <div class="col_8 col_md_12">
                         <p
-                          class="text_uppercase fs_base fw_normal white_clr px_10 text_md_center mt_3"
+                          class="text_uppercase fs_base fw_normal text_white px_10 text_md_center mt_3"
                         >
                           super midsize jets
                         </p>
@@ -314,7 +326,7 @@
                       </div>
                       <div class="col_8 col_md_12">
                         <p
-                          class="text_uppercase fs_base fw_normal white_clr px_10 text_md_center mt_3"
+                          class="text_uppercase fs_base fw_normal text_white px_10 text_md_center mt_3"
                         >
                           heavy jets
                         </p>
@@ -331,9 +343,8 @@
                         />
                       </div>
                       <div class="col_8 col_md_12">
-                        >
                         <p
-                          class="text_uppercase fs_base fw_normal white_clr px_10 text_md_center mt_3"
+                          class="text_uppercase fs_base fw_normal text_white px_10 text_md_center mt_3"
                         >
                           Ultra Long Haul Jets
                         </p>
@@ -351,11 +362,11 @@
                 onclick="navopen(this)"
               >
                 <a
-                  class="text_uppercase white_clr fw_normal fs_xsm p_3 fs_base d_flex w_100"
+                  class="text_uppercase text_white fw_normal fs_xsm p_3 fs_base d_flex w_100"
                   href="#"
                   >why amalfi</a
                 >
-                <span class="white_clr me_3 icon_arrow"
+                <span class="text_white me_3 icon_arrow"
                   ><svg
                     width="9"
                     height="13"
@@ -389,7 +400,7 @@
                     <a href="./assets/whyAmalfi/WhyAmalfi.html">
                       <div class="bg_overlay"></div>
                       <p
-                        class="text_uppercase top_50 left_50 translate_50_50 fs_base fw_normal white_clr absolute text_align_center"
+                        class="text_uppercase top_50 left_50 translate_50_50 fs_base fw_normal text_white absolute text_align_center"
                       >
                         why amalfi
                       </p>
@@ -406,7 +417,7 @@
                     <a href="./assets/whyAmalfi/WhyAmalfiSaefty.html">
                       <div class="bg_overlay"></div>
                       <p
-                        class="text_uppercase top_50 left_50 translate_50_50 fs_base fw_normal absolute white_clr text_align_center"
+                        class="text_uppercase top_50 left_50 translate_50_50 fs_base fw_normal absolute text_white text_align_center"
                       >
                         safety
                       </p>
@@ -423,7 +434,7 @@
                     <a href="./assets/whyAmalfi/WhyAmalfiOperations.html">
                       <div class="bg_overlay"></div>
                       <p
-                        class="text_uppercase top_50 left_50 translate_50_50 fs_base fw_normal absolute white_clr text_align_center"
+                        class="text_uppercase top_50 left_50 translate_50_50 fs_base fw_normal absolute text_white text_align_center"
                       >
                         operation
                       </p>
@@ -440,7 +451,7 @@
                     <a href="./assets/whyAmalfi/WhyAmalfiEscapades.html">
                       <div class="bg_overlay"></div>
                       <p
-                        class="text_uppercase top_50 left_50 translate_50_50 fs_base fw_normal absolute white_clr text_align_center"
+                        class="text_uppercase top_50 left_50 translate_50_50 fs_base fw_normal absolute text_white text_align_center"
                       >
                         Escapades
                       </p>
@@ -457,11 +468,11 @@
                 onclick="navopen(this)"
               >
                 <a
-                  class="text_uppercase white_clr fw_normal fs_xsm p_3 fs_base d_flex w_100"
+                  class="text_uppercase text_white fw_normal fs_xsm p_3 fs_base d_flex w_100"
                   href="#"
                   >Media</a
                 >
-                <span class="white_clr me_3 icon_arrow"
+                <span class="text_white me_3 icon_arrow"
                   ><svg
                     width="9"
                     height="13"
@@ -494,7 +505,7 @@
                       <div
                         class="d_flex justify_space_between mt_2 gap_3 align_center"
                       >
-                        <p class="text_uppercase fs_base fw_normal white_clr">
+                        <p class="text_uppercase fs_base fw_normal text_white">
                           Amalfi Jets Launches "Holiday Complaint Workshop"
                           Promotion with $2,500 Flight Credit and Free Amalfi
                           Merchandise
@@ -528,7 +539,7 @@
                       <div
                         class="d_flex justify_space_between mt_2 gap_3 align_center"
                       >
-                        <p class="text_uppercase fs_base fw_normal white_clr">
+                        <p class="text_uppercase fs_base fw_normal text_white">
                           Amalfi Jets Launches Exclusive Year-End Tiered Bonus
                           Promotion for Jet Card Members
                         </p>
@@ -561,7 +572,7 @@
                       <div
                         class="d_flex justify_space_between mt_2 gap_3 align_center"
                       >
-                        <p class="text_uppercase fs_base fw_normal white_clr">
+                        <p class="text_uppercase fs_base fw_normal text_white">
                           Amalfi Jets Announces Exclusive Black Friday
                           Promotion: Join the Amalfi One Jet Card with a Minimum
                           Deposit of $500K and receive a Bruce Wayne Rolex
@@ -593,7 +604,7 @@
             </div>
 
             <a
-              class="text_uppercase white_clr fw_normal fs_xsm p_3 fs_base d_flex w_100"
+              class="text_uppercase text_white fw_normal fs_xsm p_3 fs_base d_flex w_100"
               href="./form.html"
               >Contact Us</a
             >
@@ -608,6 +619,8 @@
         </div>
       </div>
 
+      <div id="backdrop" class="backdrop -left_100"></div>
+
       <div class="p_25 padding_md_67">
         <div class="aircraft_hero">
           <h1
@@ -616,7 +629,9 @@
             aircraft comparison
           </h1>
 
-          <div class="justify_content_center aircraft_bg_mobile">
+          <div
+            class="justify_content_center aircraft_bg_mobile relative z_index_1"
+          >
             <div class="overflow_auto">
               <div class="d_flex d_lg_none mobile_active_tabs">
                 <div class="active tab white_clr fs_lg" data-target="tab1">
@@ -634,7 +649,7 @@
                 </div>
               </div>
             </div>
-            <div id="tab1" class="active content">
+            <div id="tab1" class="active content h_300">
               <img
                 class="aircraft_hero_img mx_auto"
                 src="./assets/image/png/aircraft-hero-img1.png"
@@ -642,6 +657,12 @@
               />
 
               <div class="d_flex flex_column gap_10 mt_3 d_lg_none">
+                <h2
+                style="line-height: 24px"
+                class="fw_normal white_clr text_align_center text_uppercase text_center fs_xl mb_3 py_4 letter_spacing2"
+              >
+               light
+              </h2>
                 <p
                   style="line-height: 24px"
                   class="fw_normal white_clr text_align_center text_center fs_md"
@@ -660,6 +681,14 @@
                 >
                   3 Hour Journeys
                 </p>
+                <div>
+                  <a
+                    class="text_align_center explore_btn text_black px_10 py_10 d_inline_block"
+                    href="./Ultra.html"
+                  >
+                    Explore
+                  </a>
+                </div>
               </div>
             </div>
             <div id="tab2" class="content">
@@ -669,6 +698,12 @@
                 alt="aircraft"
               />
               <div class="d_flex flex_column gap_10 mt_3 d_lg_none">
+                <h2
+                style="line-height: 24px"
+                class="fw_normal white_clr text_align_center text_uppercase text_center fs_xl mb_3 py_4 letter_spacing2"
+              >
+                midsize
+              </h2>
                 <p
                   style="line-height: 24px"
                   class="fw_normal white_clr text_align_center text_center fs_md"
@@ -687,6 +722,14 @@
                 >
                   5 Hour Journeys
                 </p>
+                <div>
+                  <a
+                    class="text_align_center explore_btn text_black px_10 py_10 d_inline_block"
+                    href="./Ultra.html"
+                  >
+                    Explore
+                  </a>
+                </div>
               </div>
             </div>
             <div id="tab3" class="content">
@@ -696,6 +739,12 @@
                 alt="aircraft"
               />
               <div class="d_flex flex_column gap_10 mt_3 d_lg_none">
+                <h2
+                  style="line-height: 24px"
+                  class="fw_normal white_clr text_align_center text_uppercase text_center fs_xl mb_3 py_4 letter_spacing2"
+                >
+                  super-midsize
+                </h2>
                 <p
                   style="line-height: 24px"
                   class="fw_normal white_clr text_align_center text_center fs_md"
@@ -714,6 +763,14 @@
                 >
                   7 Hour Journeys
                 </p>
+                <div>
+                  <a
+                    class="text_align_center explore_btn text_black px_10 py_10 d_inline_block"
+                    href="./Ultra.html"
+                  >
+                    Explore
+                  </a>
+                </div>
               </div>
             </div>
             <div id="tab4" class="content">
@@ -723,6 +780,12 @@
                 alt="aircraft"
               />
               <div class="d_flex flex_column gap_10 mt_3 d_lg_none">
+                <h2
+                  style="line-height: 24px"
+                  class="fw_normal white_clr text_align_center text_center text_uppercase fs_xl mb_3 py_4 letter_spacing2"
+                >
+                  Heavy
+                </h2>
                 <p
                   style="line-height: 24px"
                   class="fw_normal white_clr text_align_center text_center fs_md"
@@ -741,6 +804,14 @@
                 >
                   12 Hour Journeys
                 </p>
+                <div>
+                  <a
+                    class="text_align_center explore_btn text_black px_10 py_10 d_inline_block"
+                    href="./Ultra.html"
+                  >
+                    Explore
+                  </a>
+                </div>
               </div>
             </div>
             <div id="tab5" class="content">
@@ -750,6 +821,12 @@
                 alt="aircraft"
               />
               <div class="d_flex flex_column gap_10 mt_3 d_lg_none">
+                <h2
+                  style="line-height: 24px"
+                  class="fw_normal white_clr text_align_center text_center fs_xl mb_3 py_4 letter_spacing2"
+                >
+                  ultra long-haul
+                </h2>
                 <p
                   style="line-height: 24px"
                   class="fw_normal white_clr text_align_center text_center fs_md"
@@ -764,17 +841,21 @@
                 </p>
                 <p
                   style="line-height: 24px"
-                  class="fw_normal white_clr text_align_center text_center fs_md"
+                  class="fw_normal white_clr text_align_center text_center fs_md mb_3"
                 >
                   16 Hour Journeys
                 </p>
+                <div>
+                  <a
+                    class="text_align_center explore_btn text_black px_10 py_10 d_inline_block"
+                    href="./Ultra.html"
+                  >
+                    Explore
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-
-          <!-- <div id="tab1" class="content active">Content for Tab 1</div>
-      <div class="content">Content for Tab 2</div>
-      <div id="tab3" class="content">Content for Tab 3</div> -->
         </div>
 
         <div class="tabs d_none d_lg_flex bg_light_black">
@@ -802,10 +883,16 @@
               >
                 3 Hour Journeys
               </p>
+              <a
+                class="text_align_center explore_btn text_black px_10 py_10 d_inline_block"
+                href="./jets.html"
+              >
+                Explore
+              </a>
             </div>
           </div>
           <div class="aircraft_active_tabs">
-            <div class="tab white_clr fs_lg" data-target="tab2 ">Midsize</div>
+            <div class="tab white_clr fs_lg" data-target="tab2">Midsize</div>
             <div class="d_flex flex_column gap_10 mt_3">
               <p
                 style="line-height: 24px"
@@ -825,6 +912,12 @@
               >
                 5 Hour Journeys
               </p>
+              <a
+                class="text_align_center explore_btn text_black px_10 py_10 d_inline_block"
+                href="./middlesizejets.html"
+              >
+                Explore
+              </a>
             </div>
           </div>
           <div class="aircraft_active_tabs">
@@ -850,6 +943,12 @@
               >
                 7 Hour Journeys
               </p>
+              <a
+                class="text_align_center explore_btn text_black px_10 py_10 d_inline_block"
+                href="./supermidzone.html"
+              >
+                Explore
+              </a>
             </div>
           </div>
           <div class="aircraft_active_tabs">
@@ -873,6 +972,12 @@
               >
                 12 Hour Journeys
               </p>
+              <a
+                class="text_align_center explore_btn text_black px_10 py_10 d_inline_block"
+                href="./heavyjets.html"
+              >
+                Explore
+              </a>
             </div>
           </div>
           <div class="aircraft_active_tabs">
@@ -898,99 +1003,432 @@
               >
                 16 Hour Journeys
               </p>
+              <a
+                class="text_align_center explore_btn text_black px_10 py_10 d_inline_block"
+                href="./Ultra.html"
+              >
+                Explore
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- form -->
-
-    <div class="bg_black d_flex align_center justify_content_center p_25 padding_md_67">
-      <div class="custom_container">
-        <div class="card">
-          <div class="text_align_center">
-            <h2 class="titlea">Contact Us</h2>
-            <p class="mb_3">For more information on flying with Amalfi</p>
-          </div>
-
-          <form>
-            <input
-              class="lk-form-field w_100"
-              type="text"
-              placeholder="First Name"
-            />
-            <input
-              class="lk-form-field w_100 mt_3"
-              type="text"
-              placeholder="Last Name"
-            />
-            <input
-              class="lk-form-field w_100 mt_3"
-              type="email"
-              placeholder="Email "
-            />
-            <input
-              class="lk-form-field w_100 mt_3"
-              type="text"
-              placeholder="Phone Number"
-            />
-            <input
-              class="lk-form-field w_100 mt_3"
-              type="text"
-              placeholder="Address"
-            />
-            <input
-              class="lk-form-field w_100 mt_3"
-              type="text"
-              placeholder="ZIP Code"
-            />
-            <select class="lk-form-field w_100 mt_3 arrow_remove">
-              <option value="">How did you hear about Amalfi Jets?</option>
-              <option value="social_media">Online Search</option>
-              <option value="social_media">Social Media</option>
-              <option value="friends_family">Recommendation</option>
-              <option value="friends_family">News Article</option>
-              <option value="friends_family">Recommendation</option>
-              <option value="other">Other</option>
-            </select>
-            <select class="lk-form-field w_100 mt_3 arrow_remove">
-              <option value="" selected>How are you currently flying?</option>
-              <option value="commercial">Charter</option>
-              <option value="private_charter">Jet Card</option>
-              <option value="private_charter">Member ship</option>
-              <option value="private_charter">Commercial Airlines</option>
-              <option value="own_plane">Own Plane</option>
-              <option value="other">Combination</option>
-            </select>
-
-            <select class="lk-form-field w_100 mt_3 arrow_remove">
-              <option value="" selected>How often do you fly privately?</option>
-              <option value="weekly">I am new to flying privately</option>
-              <option value="weekly">1-3 Flight Per Year</option>
-              <option value="monthly">3-5 Flight Per Year</option>
-              <option value="occasionally">5-10 Flight Per Year</option>
-              <option value="rarely">10+ Flights Per Year</option>
-            </select>
-            <input
-              style="padding-bottom: 25px"
-              class="lk-form-field w_100 mt_3"
-              type="text"
-              placeholder="Additional Request or Comments"
-            />
-
-            <div class="d_flex align_center">
-              <input type="checkbox" name="" id="" />
-              <p class="caption ms_2 pt_3">
-                By submitting this form, you consent to be contacted by Amalfi
-                Jets and its affiliates and to have your personal data
-                processed, stored, and used in accordance with the terms set out
-                in our <strong>Privacy Policy</strong> and
-                <strong>Terms of Use.</strong>
-              </p>
+      <!-- form -->
+      <div class="bg_black d_flex align_center justify_content_center p_25">
+        <div class="custom_container">
+          <div class="card">
+            <div class="text_align_center">
+              <h2 class="titlea">Contact Us</h2>
+              <p class="mb_3">For more information on flying with Amalfi</p>
             </div>
-            <button class="mt_5 book_flight_btn">SUBMIT</button>
-          </form>
+
+            <form>
+              <input
+                class="lk-form-field w_100"
+                type="text"
+                placeholder="First Name"
+              />
+              <input
+                class="lk-form-field w_100 mt_3"
+                type="text"
+                placeholder="Last Name"
+              />
+              <input
+                class="lk-form-field w_100 mt_3"
+                type="email"
+                placeholder="Email "
+              />
+              <input
+                class="lk-form-field w_100 mt_3"
+                type="text"
+                placeholder="Phone Number"
+              />
+              <input
+                class="lk-form-field w_100 mt_3"
+                type="text"
+                placeholder="Address"
+              />
+              <input
+                class="lk-form-field w_100 mt_3"
+                type="text"
+                placeholder="ZIP Code"
+              />
+              <select class="lk-form-field w_100 mt_3 arrow_remove">
+                <option value="">How did you hear about Amalfi Jets?</option>
+                <option value="social_media">Online Search</option>
+                <option value="social_media">Social Media</option>
+                <option value="friends_family">Recommendation</option>
+                <option value="friends_family">News Article</option>
+                <option value="friends_family">Recommendation</option>
+                <option value="other">Other</option>
+              </select>
+              <select class="lk-form-field w_100 mt_3 arrow_remove">
+                <option value="" selected>How are you currently flying?</option>
+                <option value="commercial">Charter</option>
+                <option value="private_charter">Jet Card</option>
+                <option value="private_charter">Member ship</option>
+                <option value="private_charter">Commercial Airlines</option>
+                <option value="own_plane">Own Plane</option>
+                <option value="other">Combination</option>
+              </select>
+
+              <select class="lk-form-field w_100 mt_3 arrow_remove">
+                <option value="" selected>
+                  How often do you fly privately?
+                </option>
+                <option value="weekly">I am new to flying privately</option>
+                <option value="weekly">1-3 Flight Per Year</option>
+                <option value="monthly">3-5 Flight Per Year</option>
+                <option value="occasionally">5-10 Flight Per Year</option>
+                <option value="rarely">10+ Flights Per Year</option>
+              </select>
+              <input
+                style="padding-bottom: 25px"
+                class="lk-form-field w_100 mt_3"
+                type="text"
+                placeholder="Additional Request or Comments"
+              />
+
+              <div class="d_flex align_center">
+                <input type="checkbox" name="" id="" />
+                <p class="caption ms_2 pt_3">
+                  By submitting this form, you consent to be contacted by Amalfi
+                  Jets and its affiliates and to have your personal data
+                  processed, stored, and used in accordance with the terms set
+                  out in our <strong>Privacy Policy</strong> and
+                  <strong>Terms of Use.</strong>
+                </p>
+              </div>
+              <button class="mt_5 book_flight_btn">SUBMIT</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+
+      <div class="bg_black">
+        <div class="custom_container">
+          <footer class="p_25 padding_md_67">
+            <div class="row justify_space_between">
+              <div class="col_12 col_lg_4">
+                <img width="177" src="./assets/png/footerlogo.png" alt="" />
+              </div>
+
+              <div class="col_12 col_lg_7 mt_3 mt_lg_0">
+                <div class="row justify_space_between">
+                  <div class="col_12 col_md_3">
+                    <p class="text_gray_darker fs_xsm fw_normal">Call</p>
+                    <a
+                      href="tel:+1234567890"
+                      class="fs_lg fw_normal mt_4 d_inline_block text_white"
+                      >+1 (877) 6-AMALFI</a
+                    >
+                  </div>
+
+                  <div class="col_12 col_md_3">
+                    <p class="text_gray_darker fs_xsm fw_normal">Email</p>
+                    <a
+                      href="mailto:example@example.com"
+                      class="fs_lg fw_normal mt_4 d_inline_block text_white text_uppercase"
+                    >
+                      enquiry@amalfijets.com
+                    </a>
+                  </div>
+                  <div class="col_12 col_md_3">
+                    <p class="text_gray_darker fs_xsm fw_normal">Social</p>
+                    <div class="d_flex gap_10 mt_4">
+                      <a href="https://www.tiktok.com/about">
+                        <svg
+                          class="fill_white w_16 h_18"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 448 512"
+                        >
+                          <path
+                            d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"
+                          />
+                        </svg>
+                      </a>
+                      <a href="https://www.linkedin.com/">
+                        <svg
+                          class="fill_white w_16 h_18"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 448 512"
+                        >
+                          <path
+                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+                          />
+                        </svg>
+                      </a>
+                      <a href="https://www.instagram.com/">
+                        <svg
+                          class="fill_white w_16 h_18"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 448 512"
+                        >
+                          <path
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                          />
+                        </svg>
+                      </a>
+                      <a href="https://x.com/?lang=en&mx=2">
+                        <svg
+                          class="fill_white w_16 h_18"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 512 512"
+                        >
+                          <path
+                            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="border_line"></div>
+            <div
+              class="row justify_space_between justify_content_center justify_lg_start"
+            >
+              <div class="col_12 col_sm_6 col_lg_3">
+                <h4
+                  class="mb_4 fs_lg text_uppercase text_align_center text_sm_start"
+                >
+                  Our Program
+                </h4>
+                <ul
+                  class="d_flex flex_column gap_10 align_center align_sm_start"
+                >
+                  <li class="mb_1">
+                    <a
+                      class="fw_normal text_white fs_md text_gray_darker"
+                      href="./onDemandCharter.html"
+                      >On-Demand Charter</a
+                    >
+                  </li>
+                  <li class="mb_1">
+                    <a
+                      class="fw_normal text_white fs_md text_gray_darker"
+                      href="#"
+                      >Amalfi One Jet Card</a
+                    >
+                  </li>
+                  <li class="mb_1">
+                    <a
+                      class="fw_normal text_white fs_md text_gray_darker"
+                      href="./Amalfi_Enterprise.html"
+                      >Amalfi Enterprise Program</a
+                    >
+                  </li>
+                  <li class="mb_1">
+                    <a
+                      class="fw_normal text_white fs_md text_gray_darker"
+                      href="#"
+                      >Amalfi Reserve</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col_12 mt_xsm_24 col_sm_6 col_lg_2">
+                <h4
+                  class="mb_4 fs_lg text_uppercase text_align_center text_sm_start"
+                >
+                  Aircraft
+                </h4>
+                <ul
+                  class="d_flex flex_column gap_10 align_center align_sm_start"
+                >
+                  <li class="mb_1">
+                    <a
+                      class="fw_normal text_white fs_md text_gray_darker"
+                      href="./jets.html"
+                      >Light Jets</a
+                    >
+                  </li>
+                  <li class="mb_1">
+                    <a
+                      class="fw_normal text_white fs_md text_gray_darker"
+                      href="./middlesizejets.html"
+                      >Midsize Jets</a
+                    >
+                  </li>
+                  <li class="mb_1">
+                    <a
+                      class="fw_normal text_white fs_md text_gray_darker"
+                      href="./supermidzone.html"
+                      >Super Midsize Jets</a
+                    >
+                  </li>
+                  <li class="mb_1">
+                    <a
+                      class="fw_normal text_white fs_md text_gray_darker"
+                      href="./heavyjets.html"
+                      >Heavy Jets</a
+                    >
+                  </li>
+                  <li class="mb_1">
+                    <a
+                      class="fw_normal text_white fs_md text_gray_darker"
+                      href="./Ultra.html"
+                      >Ultra Long Haul Jets</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col_12 mt_xsm_24 col_sm_6 mt_4 mt_lg_0 col_lg_2">
+                <h4
+                  class="mb_4 fs_lg text_uppercase text_align_center text_sm_start"
+                >
+                  Why Amalfi
+                </h4>
+                <ul
+                  class="d_flex flex_column gap_10 align_center align_sm_start"
+                >
+                  <li class="mb_1">
+                    <a
+                      class="fw_normal text_white fs_md text_gray_darker"
+                      href="./assets/whyAmalfi/WhyAmalfi.html"
+                      >Why Amalfi</a
+                    >
+                  </li>
+                  <li class="mb_1">
+                    <a
+                      class="fw_normal text_white fs_md text_gray_darker"
+                      href="#"
+                      >Leadership Team</a
+                    >
+                  </li>
+                  <li class="mb_1">
+                    <a
+                      class="fw_normal text_white fs_md text_gray_darker"
+                      href="./assets/whyAmalfi/WhyAmalfiSaefty.html"
+                      >Safety</a
+                    >
+                  </li>
+                  <li class="mb_1">
+                    <a
+                      class="fw_normal text_white fs_md text_gray_darker"
+                      href="./assets/whyAmalfi/WhyAmalfiOperations.html"
+                      >Operations</a
+                    >
+                  </li>
+                  <li class="mb_1">
+                    <a
+                      class="fw_normal text_white fs_md text_gray_darker"
+                      href="./assets/whyAmalfi/WhyAmalfiEscapades.html"
+                      >Escapades</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col_12 mt_xsm_24 col_sm_6 mt_4 mt_lg_0 col_lg_2">
+                <h4
+                  class="mb_4 fs_lg text_uppercase text_align_center text_sm_start"
+                >
+                  Engage
+                </h4>
+                <ul
+                  class="d_flex flex_column gap_10 align_center align_sm_start"
+                >
+                  <li class="mb_1">
+                    <a
+                      class="fw_normal text_white fs_md text_gray_darker"
+                      href="#"
+                      >Media Center</a
+                    >
+                  </li>
+                  <li class="mb_1">
+                    <a
+                      class="fw_normal text_white fs_md text_gray_darker"
+                      href="#"
+                      >Amalfi App</a
+                    >
+                  </li>
+                  <li class="mb_1">
+                    <a
+                      class="fw_normal text_white fs_md text_gray_darker"
+                      href="#"
+                      >Contact Us</a
+                    >
+                  </li>
+                  <li class="mb_1">
+                    <a
+                      class="fw_normal text_white fs_md text_gray_darker"
+                      href="#"
+                      >Blog</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col_12 mt_xsm_24 col_sm_6 mt_3 mt_lg_0 col_lg_3">
+                <h4
+                  class="mb_4 fs_lg text_uppercase text_align_center text_sm_start"
+                >
+                  Stay Updated
+                </h4>
+                <form>
+                  <input
+                    class="footer_input text_white"
+                    type="email"
+                    placeholder="Enter email address"
+                  />
+                  <div>
+                    <input class="submit_btn" type="submit" value="Submit" />
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="mt_5 mt_xsm_10 pt_3 opacity_75 fw_normal">
+              <div class="text_align_center fs_xsm">
+                &copy; 2020-2024 All rights reserved. Amalfi Jets Inc.
+              </div>
+
+              <div class="text_align_center fs_xsm mt_4 mt_xsm_10">
+                The Amalfi One Jet Card, Amalfi Enterprise Program, and
+                On-Demand Charter Program are programs of Amalfi Jets, an "Air
+                Charter Broker" under DOT Regulations operating under Part 295
+                Regulations on behalf of our clients. Amalfi Jets does not own
+                or operate any aircraft. All flights are operated by registered
+                Part 135 Operators or the Foreign Equivalent that meet and
+                exceed standards set by the FAA and internal requirements set by
+                Amalfi Jets.
+              </div>
+            </div>
+
+            <div class="d_flex flex_column gap_3">
+              <div class="text_align_center mt_4">
+                <img src="./assets/png/footer imgae.png" alt="" />
+              </div>
+
+              <div class="d_flex gap_3 justify_content_center">
+                <div>
+                  <img
+                    width="150"
+                    height="50"
+                    src="./assets/png/apple store.avif"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    width="150"
+                    height="50"
+                    src="./assets/png/play store.avif"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <p class="text_align_center text_light_grey mt_5 mt_xsm_10">
+                Amalfi Reserve Subscription Terms
+              </p>
+              <div class="d_flex gap_3 justify_content_center">
+                <p class="fw_normal text_light_grey">Privacy Policy</p>
+                <p class="fw_normal text_light_grey">Terms of Service</p>
+              </div>
+            </div>
+          </footer>
         </div>
       </div>
     </div>

@@ -58,13 +58,13 @@
   --light-black: #1a1c1c;
 }
 
-.light_theme{
+.light_theme {
   --black: #fff;
   --white: #000;
   --light-black: #f8eff7;
 }
 
-.theme_btn{
+.theme_btn {
   background-color: var(--black);
   color: var(--white);
 }
@@ -161,7 +161,6 @@
 .bg_light_black {
   background-color: var(--light-black);
 }
-
 
 /* font-weight */
 .fw_normal {
@@ -638,7 +637,11 @@ button {
 }
 
 .letter_spacing_3 {
-  letter-spacing: 0.32px;
+  letter-spacing: 0.3px;
+}
+
+.letter_spacing_128 {
+  letter-spacing: 0.128em;
 }
 
 .overflow_hidden {
@@ -696,6 +699,9 @@ button {
 
 .h_50 {
   height: 50px;
+}
+.z_index_1 {
+  z-index: 1;
 }
 
 .z_1 {
@@ -826,6 +832,12 @@ button {
   letter-spacing: 0.3px;
   line-height: 1.618;
 }
+.bg_reserve_scrim {
+  z-index: 1;
+  background-color: #00000080;
+  position: absolute;
+  inset: 0%;
+}
 
 .opacity_60 {
   opacity: 0.6;
@@ -857,7 +869,6 @@ button {
 .gap_10 {
   gap: 10px;
 }
-
 
 .bg_white {
   background-color: white;
@@ -1088,6 +1099,18 @@ nav {
   display: flex;
 }
 
+input::placeholder {
+  color: black;
+}
+.arrow_remove {
+  -webkit-appearance: none;
+  outline: none;
+}
+input {
+  outline: none;
+  color: #333;
+}
+
 .explore_btn {
   background-color: white;
   border-radius: 12px;
@@ -1141,6 +1164,9 @@ nav {
   max-width: 30px;
   padding: 0;
   font-size: 1rem;
+}
+.padding_custom {
+  padding: 0.786164em 1em 1em;
 }
 
 .flight_btn {
@@ -1714,7 +1740,8 @@ footer {
 
 .p_bg_img_Membership {
   position: relative;
-  background-image: linear-gradient(#0000, #000000db), url("./image/png/headerimage.jpeg");
+  background-image: linear-gradient(#0000, #000000db),
+    url("./image/png/headerimage.jpeg");
   background-repeat: no-repeat;
   width: 100%;
   min-height: 100vh;
@@ -1756,7 +1783,6 @@ footer {
   padding: 64px;
   display: flex;
   align-items: end;
-
 }
 
 .btn_download {
@@ -1822,7 +1848,7 @@ footer {
 }
 
 .op_75 {
-  opacity: .75;
+  opacity: 0.75;
 }
 
 .lh_20 {
@@ -1869,7 +1895,7 @@ footer {
 }
 .aircraft_hero {
   background: var(--black);
-  height: 80vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1892,6 +1918,7 @@ footer {
   background-color: var(--light-black);
   border-radius: 12px;
   width: 100%;
+  margin-bottom: 40px;
 }
 
 .mobile_active_tabs {
@@ -1901,9 +1928,6 @@ footer {
 .overflow_auto {
   overflow-x: auto;
 }
-
-
-
 
 @media (min-width: 768px) {
   .mobile_active_tabs {
