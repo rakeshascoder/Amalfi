@@ -9,3 +9,5 @@ themeToggleBtn.addEventListener('click', () => {
     ? 'Switch to Light Theme'
     : 'Switch to Dark Theme';
 });
+
+

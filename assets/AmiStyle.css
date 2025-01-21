@@ -288,7 +288,8 @@
 }
 
 .a_test_gray {
-  color: #0009;
+  color: var(--black);
+  opacity: 0.6;
 }
 
 .mt_n_1 {
@@ -404,7 +405,7 @@
 
 .a_form_top_bar_main {
   border: 1px solid #0003;
-  border-radius: 5px;
+  border-radius: 0.786164em;
 }
 
 .a_search_btn {
@@ -1047,7 +1048,7 @@
   }
 
   .lg_w_89 {
-    width: 89%;
+    width: 100%;
   }
 
   .lg_justify_between {
