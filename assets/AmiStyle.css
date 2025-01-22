@@ -122,6 +122,12 @@
   /* Dots color */
   opacity: 0.6;
 }
+.swiper-pagination-bullet {
+  background-color: var(--black) !important;
+}
+.swiper-pagination-bullet-active {
+  background: var(--black) !important;
+}
 
 .swiper-button-next,
 .swiper-button-prev {
@@ -129,15 +135,12 @@
   z-index: 20 !important;
 }
 
-.swiper-pagination-bullet-active {
-  background: black !important;
-}
 
 .bottom_0 {
   bottom: 0;
 }
 
-.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
@@ -226,7 +229,6 @@
 }
 
 .bg-scrim.gradient-ltr {
-  background-color: var(--black);
   background-image: linear-gradient(90deg, #000, #0000);
 }
 
@@ -389,6 +391,7 @@
 
 .a_placeholder::placeholder {
   color: var(--black);
+  background-color: var(--white);
 }
 
 .a_max_h_700 {
@@ -400,7 +403,7 @@
 }
 
 .a_form_top_bar_main {
-  border: 1px solid #0003;
+  border: 1px solid var(--black);
   border-radius: 0.786164em;
 }
 
@@ -497,12 +500,13 @@
 .a_bg_circle_black {
   height: 33px;
   width: 33px;
-  background: black;
+  background: var(--black);
   border-radius: 50%;
 }
 
 .a_bg_light_blue {
-  background: #f0f3f4;
+  background: var(--white);
+  color: var(--black);
 }
 
 /* rk css start here  */
@@ -522,7 +526,6 @@
   width: calc(100vw - 50px);
   margin: 0 auto;
 }
-
 
 .a_border_r_b {
   border-bottom: 1px dashed #c6c6c7;
@@ -964,7 +967,6 @@
   .md_mt_0 {
     margin-top: 0 !important;
   }
-
 
   .custom_container_r {
     width: calc(100vw - 66px);
