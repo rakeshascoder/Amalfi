@@ -510,6 +510,10 @@
   padding-bottom: 53px;
 }
 
+.flight_quote_border {
+  border: 1px solid var();
+}
+
 .py_every_section {
   padding-block: 25px;
 }
@@ -1166,6 +1170,9 @@
   .py_every_section {
     padding-block: 73px;
   }
+  .mr_auto{
+    margin-left: auto !important;
+  }
 
   .custom_container_r {
     width: calc(100vw - 8.465em);
@@ -1195,7 +1202,8 @@
   .ps_lg_3 {
     padding-left: 16px;
   }
-  .lg_px_67{
+
+  .lg_px_67 {
     padding-left: 67px;
     padding-right: 67px;
   }

@@ -58,7 +58,7 @@ p {
 
   /* COLORS */
   --black: #000;
-  --off_black :#1a1a1a;
+  --off_black: #1a1a1a;
   --white: #fff;
   --pink-tint: #f8eff7;
   --soft-white: #fffbff;
@@ -70,6 +70,7 @@ p {
   --deep-brown: #1f1b16;
   --light-black: #1a1c1c;
   --met_color: #afaeae;
+  --brdr_color: #c6c5d0;
 
 }
 
@@ -80,15 +81,18 @@ p {
   --light-gray: #2f2f2f;
   --met_color: rgba(0, 0, 0, 0.823);
   --set-gray: rgba(145, 144, 144, 0.616);
+  --brdr_color: #232326;
 }
 
- .svg {
+.svg {
   display: none;
 }
- .svg.active {
+
+.svg.active {
   display: inline;
 }
- #light-icon.active {
+
+#light-icon.active {
   display: inline;
 }
 
@@ -112,6 +116,12 @@ footer img {
   background-color: black;
   padding: 10px 20px;
   border-radius: 5px;
+}
+
+
+.flight_quote_border {
+  border: 1px solid var(--brdr_color);
+  border-radius: 4px;
 }
 
 /* font-size */
@@ -147,7 +157,7 @@ footer img {
   font-size: var(--fs_xxl);
 }
 
-.fs_xxl {
+.fs_xll {
   font-size: var(--fs_xll);
 }
 
@@ -222,14 +232,17 @@ footer img {
 .bg_light_black {
   background-color: var(--light-black);
 }
+
 .a_bg_light_black {
   background-color: var(--off_black);
 }
+
 /* -----button--------- */
-.border_black_a{
+.border_black_a {
   border: 1px solid var(--black);
 }
-.a_border_white{
+
+.a_border_white {
   border: 1px solid white;
 }
 
@@ -707,6 +720,10 @@ button {
   letter-spacing: 0.96px;
 }
 
+.letter_spacing_6em {
+  letter-spacing: 0.06em;
+}
+
 .letter_spacing_3 {
   letter-spacing: 0.3px;
 }
@@ -820,8 +837,8 @@ button {
 }
 
 .mx_4 {
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 .mx_2 {
@@ -879,6 +896,14 @@ button {
 
 .line_height_20 {
   line-height: 20.352px;
+}
+
+.line_height_1_16 {
+  line-height: 1.168;
+}
+
+.line_height_1_61 {
+  line-height: 1.618;
 }
 
 .max_width_45ch {
@@ -1646,6 +1671,7 @@ footer {
 .icon_arrow.rotated {
   transform: rotate(180deg);
 }
+
 .slick-dots li button:before {
   font-size: 14px !important;
 }
@@ -1722,6 +1748,12 @@ footer {
   background-image: url(./image/png/Amalfi\ Enterprise_bg.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: 70%;
+}
+
+.bg_image {
+  background: linear-gradient(#00000080, #00000080), url('./image/png/program_page_header_bg.avif'), no-repeat;
+  background-size: cover;
   background-position: 70%;
 }
 
