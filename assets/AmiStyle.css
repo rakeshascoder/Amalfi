@@ -523,6 +523,7 @@
   margin: 0 auto;
 }
 
+
 .a_border_r_b {
   border-bottom: 1px dashed #c6c6c7;
   border-right: 1px dashed #c6c6c7;
@@ -992,6 +993,10 @@
   .mt_md_0 {
     margin-top: 0;
   }
+
+  .d_md_flex {
+    display: flex;
+  }
 }
 
 @media (min-width: 992px) {
@@ -1170,7 +1175,8 @@
   .py_every_section {
     padding-block: 73px;
   }
-  .mr_auto{
+
+  .mr_auto {
     margin-left: auto !important;
   }
 
@@ -1206,6 +1212,12 @@
   .lg_px_67 {
     padding-left: 67px;
     padding-right: 67px;
+  }
+
+  .col_lg_4 {
+    width: 33.33%;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 }
 
@@ -1309,6 +1321,10 @@
     width: 33.33%;
     padding-left: 12px;
     padding-right: 12px;
+  }
+
+  .mx_xl_4 {
+    margin-top: 24px;
   }
 }
 
