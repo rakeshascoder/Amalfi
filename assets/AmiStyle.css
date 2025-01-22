@@ -511,6 +511,10 @@
   padding-bottom: 53px;
 }
 
+.flight_quote_border {
+  border: 1px solid var();
+}
+
 .py_every_section {
   padding-block: 25px;
 }
@@ -519,6 +523,7 @@
   width: calc(100vw - 50px);
   margin: 0 auto;
 }
+
 
 .a_border_r_b {
   border-bottom: 1px dashed #c6c6c7;
@@ -989,6 +994,10 @@
   .mt_md_0 {
     margin-top: 0;
   }
+
+  .d_md_flex {
+    display: flex;
+  }
 }
 
 @media (min-width: 992px) {
@@ -1168,6 +1177,10 @@
     padding-block: 73px;
   }
 
+  .mr_auto {
+    margin-left: auto !important;
+  }
+
   .custom_container_r {
     width: calc(100vw - 8.465em);
     margin: 0 auto;
@@ -1196,9 +1209,16 @@
   .ps_lg_3 {
     padding-left: 16px;
   }
-  .lg_px_67{
+
+  .lg_px_67 {
     padding-left: 67px;
     padding-right: 67px;
+  }
+
+  .col_lg_4 {
+    width: 33.33%;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 }
 
@@ -1302,6 +1322,10 @@
     width: 33.33%;
     padding-left: 12px;
     padding-right: 12px;
+  }
+
+  .mx_xl_4 {
+    margin-top: 24px;
   }
 }
 
