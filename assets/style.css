@@ -24,11 +24,20 @@
   margin-right: auto;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  color: var(--black);
+}
+
 /* body{
   background-color: var(--black);
   color: var(--white);
-  transition: background-color 0.3s ease, color 0.3s ease;
-} */
+  /* transition: background-color 0.3s ease, color 0.3s ease; */
+/* } */
 
 :root {
   --fs_xsm: 12px;
@@ -42,37 +51,76 @@
   --fs_xl: 33px;
   --fs_2xl: 68px;
   --fs_3xl: 64px;
+  --fs_4xl: 68px;
   --fs_xxl: 24px;
   --fs_xll: 42px;
 
+
   /* COLORS */
   --black: #000;
+  --off_black :#1a1a1a;
   --white: #fff;
   --pink-tint: #f8eff7;
   --soft-white: #fffbff;
   --light-gray: #f5f5f5;
   --dark-gray: #535a5b;
   --medium-gray: #c6c6c7;
+  --set-gray: #cecece;
   --pale-gray: #e2e2e2;
   --deep-brown: #1f1b16;
   --light-black: #1a1c1c;
+  --met_color: #afaeae;
+
 }
 
-.light_theme{
+.light_theme {
   --black: #fff;
   --white: #000;
   --light-black: #f8eff7;
   --light-gray: #2f2f2f;
+  --met_color: rgba(0, 0, 0, 0.823);
+  --set-gray: rgba(145, 144, 144, 0.616);
 }
 
-.theme_btn{
+ /* .svg {
+  display: none;
+}
+ .svg.active {
+  display: inline;
+}
+ #light-icon.active {
+  display: inline;
+} */
+
+/* color that will not change in theme switch  */
+.bg_default_black {
+  background-color: black;
+}
+
+
+.clr_default_white {
+  color: white;
+}
+
+
+.theme_btn {
   background-color: var(--black);
   color: var(--white);
+}
+
+footer img {
+  background-color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
 }
 
 /* font-size */
 .fs_xsm {
   font-size: var(--fs_xsm);
+}
+
+.fs_4xl {
+  font-size: var(--fs_4xl);
 }
 
 .fs_btn {
@@ -128,30 +176,39 @@
 .black_clr {
   color: var(--black);
 }
+
 .white_clr {
   color: var(--white);
 }
+
 .pink_tint_clr {
   color: var(--pink-tint);
 }
+
 .soft_white_clr {
   color: var(--soft-white);
 }
+
 .light_gray_clr {
   color: var(--light-gray);
 }
+
 .dark_gray_clr {
   color: var(--dark-gray);
 }
+
 .medium_gray_clr {
   color: var(--medium-gray);
 }
+
 .pale_gray_clr {
   color: var(--pale-gray);
 }
+
 .deep_brown_clr {
   color: var(--deep-brown);
 }
+
 /* BACKGROUD COLOR */
 .bg_black {
   background-color: var(--black);
@@ -159,10 +216,25 @@
 .bg_white {
   background-color: var(--white);
 }
+
 .bg_light_black {
   background-color: var(--light-black);
 }
+.a_bg_light_black {
+  background-color: var(--off_black);
+}
+/* -----button--------- */
 
+.theme_button{
+  background: transparent;
+}
+
+.border_black_a{
+  border: 1px solid var(--black);
+}
+.a_border_white{
+  border: 1px solid white;
+}
 
 /* font-weight */
 .fw_normal {
@@ -639,7 +711,11 @@ button {
 }
 
 .letter_spacing_3 {
-  letter-spacing: 0.32px;
+  letter-spacing: 0.3px;
+}
+
+.letter_spacing_128 {
+  letter-spacing: 0.128em;
 }
 
 .overflow_hidden {
@@ -647,7 +723,7 @@ button {
 }
 
 .text_white {
-  color: white;
+  color: var(--white);
 }
 
 .top_50 {
@@ -680,7 +756,7 @@ button {
 }
 
 .text_black {
-  color: black;
+  color: var(--black);
 }
 
 .h_100vh {
@@ -697,6 +773,10 @@ button {
 
 .h_50 {
   height: 50px;
+}
+
+.z_index_1 {
+  z-index: 1;
 }
 
 .z_1 {
@@ -734,7 +814,8 @@ button {
 }
 
 .text_gray {
-  color: #0009;
+  color: var(--black);
+  opacity: 0.6;
 }
 
 .text_light_skin {
@@ -828,6 +909,13 @@ button {
   line-height: 1.618;
 }
 
+.bg_reserve_scrim {
+  z-index: 1;
+  background-color: #00000080;
+  position: absolute;
+  inset: 0%;
+}
+
 .opacity_60 {
   opacity: 0.6;
 }
@@ -837,7 +925,7 @@ button {
 }
 
 .text_light_white {
-  color: #f5f5f5;
+  color: var(--light-gray);
 }
 
 .opacity {
@@ -859,9 +947,8 @@ button {
   gap: 10px;
 }
 
-
 .bg_white {
-  background-color: white;
+  background-color: var(--white);
 }
 
 .cursor_pointer {
@@ -900,7 +987,7 @@ button {
   transition: all 0.3s ease-in-out;
   backdrop-filter: brightness(69%);
   -webkit-backdrop-filter: brightness(69%);
-  color: white;
+  color: var(--white);
   overflow-y: scroll;
 }
 
@@ -918,7 +1005,7 @@ button {
   transition: all 0.3s ease-in-out;
   backdrop-filter: brightness(69%);
   -webkit-backdrop-filter: brightness(69%);
-  color: white;
+  color: var(--white);
   overflow-y: scroll;
 }
 
@@ -936,7 +1023,7 @@ button {
   transition: all 0.3s ease-in-out;
   backdrop-filter: brightness(69%);
   -webkit-backdrop-filter: brightness(69%);
-  color: white;
+  color: var(--white);
   overflow-y: scroll;
 }
 
@@ -954,7 +1041,7 @@ button {
   transition: all 0.3s ease-in-out;
   backdrop-filter: brightness(69%);
   -webkit-backdrop-filter: brightness(69%);
-  color: white;
+  color: var(--white);
   overflow-y: scroll;
 }
 
@@ -968,7 +1055,7 @@ button {
 }
 
 .bg_overlay {
-  background-color: black;
+  background-color: var(--black);
   opacity: 0.6;
   position: absolute;
   inset: 0%;
@@ -1006,14 +1093,16 @@ button {
 }
 
 .fill_white {
-  fill: white;
+  fill: var(--white);
 }
+
 .image_hover {
   transition: 200ms all ease-in-out;
 }
+
 .image_hover:hover {
   opacity: 70%;
-  background-color: white;
+  background-color: var(--white);
 }
 
 .round_trip {
@@ -1022,11 +1111,13 @@ button {
   padding-top: 8px;
   padding-left: 0.75rem;
   padding-right: 1.75rem;
+  color: var(--black);
+  background-color: var(--white);
 }
 
 .round_trip:hover {
   border-radius: 50px;
-  background-color: #cecece;
+  background-color: var(--set-gray);
 
   transition: background-color 0.2s;
 }
@@ -1048,13 +1139,13 @@ button {
 }
 
 .charter:hover {
-  background-color: black;
+  background-color: var(--black);
   border-radius: 12px;
-  color: white;
+  color: var(--white);
 }
 
 nav {
-  background-color: #000c;
+  background-color: var(--black);
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -1064,12 +1155,12 @@ nav {
 
 .backdrop {
   backdrop-filter: brightness(46%) blur(20px);
+  -webkit-backdrop-filter: brightness(46%) blur(20px);
   z-index: 1;
   position: fixed;
   top: 0;
   width: 100%;
   height: 100vh;
-  background-color: #0000;
 }
 
 .opactiy_1 {
@@ -1077,7 +1168,7 @@ nav {
 }
 
 .arrow_btn {
-  background-color: black;
+  background-color: var(--black);
   border-radius: 40px;
   justify-content: center;
   align-items: center;
@@ -1086,8 +1177,29 @@ nav {
   display: flex;
 }
 
+.theme_icon path{
+fill: var(--black);
+}
+.arrow_icon path{
+fill: var(--white);
+}
+
+input::placeholder {
+  color: black;
+}
+
+.arrow_remove {
+  -webkit-appearance: none;
+  outline: none;
+}
+
+input {
+  outline: none;
+  color: #333;
+}
+
 .explore_btn {
-  background-color: white;
+  background-color: var(--white);
   border-radius: 12px;
 }
 
@@ -1109,12 +1221,12 @@ nav {
   font-size: 1rem;
   border-style: none;
   outline: none;
-  color: black;
+  color: var(--black);
   border-color: #88888d;
 }
 
 .minus_btn {
-  color: black !important;
+  color: var(--black) !important;
   height: 20px;
   width: 20px;
   border: 1px solid #88888d;
@@ -1141,10 +1253,14 @@ nav {
   font-size: 1rem;
 }
 
+.padding_custom {
+  padding: 0.786164em 1em 1em;
+}
+
 .flight_btn {
-  background-color: black;
+  background-color: var(--black);
   letter-spacing: 1px;
-  color: white;
+  color: var(--white);
   padding: 0.885em 1.272em;
   display: inline-block;
   border-radius: 16px;
@@ -1157,6 +1273,7 @@ nav {
   font-weight: 400;
   line-height: 1.272;
 }
+
 .bg_Scrim {
   z-index: 1;
   background-color: #00000080;
@@ -1178,8 +1295,8 @@ nav {
 }
 
 .discover_btn {
-  background-color: white;
-  color: black;
+  background-color: var(--white);
+  color: var(--black);
   border-radius: 1.272em;
   letter-spacing: 1px;
   padding: 0.885em 1.272em;
@@ -1206,7 +1323,7 @@ nav {
 .flight_card_icon {
   height: 15px;
   width: 15px;
-  color: white;
+  color: var(--white);
 }
 
 .flight_card_content {
@@ -1226,8 +1343,8 @@ nav {
 }
 
 .book_flight_btn {
-  background-color: black;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
   border-radius: 10px;
   letter-spacing: 1px;
   padding: 0.885em 1.272em;
@@ -1239,7 +1356,7 @@ nav {
   background-position: right;
   width: 100%;
   object-fit: cover;
-  background-color: black;
+  background-color: var(--black);
 }
 
 .h_265 {
@@ -1249,8 +1366,8 @@ nav {
 }
 
 footer {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--black);
+  color: var(--white);
 }
 
 .text_light_grey {
@@ -1258,7 +1375,7 @@ footer {
 }
 
 .text_gray_darker {
-  color: #f5f5f5;
+  color: var(--light-gray);
   opacity: 80%;
 }
 
@@ -1273,8 +1390,8 @@ footer {
 }
 
 .submit_btn {
-  background-color: white;
-  color: black;
+  background-color: var(--white);
+  color: var(--black);
   padding: 0.885em 1.272em;
   font-weight: 500;
   border: none;
@@ -1305,7 +1422,7 @@ footer {
   position: relative;
   background: url("./image/png/jets1.jpeg") no-repeat center center/cover;
   height: 100vh;
-  color: white;
+  color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1315,7 +1432,7 @@ footer {
   position: relative;
   background: url("./image/png/middle1.jpeg") no-repeat center center/cover;
   height: 100vh;
-  color: white;
+  color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1325,7 +1442,7 @@ footer {
   position: relative;
   background: url("./image/png/Heavyjet1.jpeg") no-repeat center center/cover;
   height: 100vh;
-  color: white;
+  color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1335,7 +1452,7 @@ footer {
   position: relative;
   background: url("./image/png/size1.jpeg") no-repeat center center/cover;
   height: 100vh;
-  color: white;
+  color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1345,7 +1462,7 @@ footer {
   position: relative;
   background: url("./image/png/ultra1.jpeg") no-repeat center center/cover;
   height: 100vh;
-  color: white;
+  color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1435,7 +1552,7 @@ footer {
   left: 0;
   height: 100vh;
   width: 0;
-  background-color: black;
+  background-color: var(--black);
   overflow: hidden;
   transition: width 0.3s ease-in-out;
   z-index: 999;
@@ -1450,7 +1567,7 @@ footer {
 }
 
 .menu_content .contact_btn {
-  background-color: #fff;
+  background-color: var(--white);
   color: #000;
   padding: 10px 20px;
   text-decoration: none;
@@ -1463,7 +1580,7 @@ footer {
   top: 10px;
   left: 10px;
   background: none;
-  color: #fff;
+  color: var(--white);
   font-size: 1.5rem;
   border: none;
   backdrop-filter: saturate(180%) blur(20px);
@@ -1516,7 +1633,7 @@ footer {
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
-  background-color: white;
+  background-color: var(--white);
   opacity: 75%;
   transition: opacity ease 250ms;
 }
@@ -1538,6 +1655,9 @@ footer {
 .icon_arrow.rotated {
   transform: rotate(180deg);
 }
+.slick-dots li button:before {
+  font-size: 14px !important;
+}
 
 .small_overlay {
   position: absolute;
@@ -1546,7 +1666,7 @@ footer {
   transform: translateY(-50%);
   width: 200px;
   background: #333;
-  color: #fff;
+  color: var(--white);
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -1562,7 +1682,7 @@ footer {
 
 .card {
   max-width: 750px;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 1.61792em;
   padding: 1.61792em 2.058em 2.058em;
   color: #1f1b16;
@@ -1577,19 +1697,18 @@ footer {
 }
 
 .lk-form-field {
-  background-color: #0000;
   flex: 1;
   margin-bottom: 0;
   font-size: 1em;
   line-height: 1.618;
   transition: all 0.2s;
   padding: 8px;
-  border: 1px solid #afaeae;
+  border: 1px solid var(--met_color);
   border-radius: 5px;
 }
 
 .search_btn {
-  background-color: black;
+  background-color: var(--black);
   padding: 15px 20px;
   border-radius: 10px;
 }
@@ -1669,6 +1788,7 @@ footer {
   border-radius: 12px;
   padding: 12px 10px;
 }
+
 .tab {
   padding: 10px 0;
   border-bottom: 2px solid #cccccc5c;
@@ -1678,20 +1798,24 @@ footer {
   width: 100%;
   cursor: pointer;
 }
+
 .tab.active {
   background-color: transparent !important;
-  border-bottom: 2px solid #f8efe7;
+  border-bottom: 2px solid var(--pink-tint);
   width: 100%;
   text-align: center;
   color: var(--white);
 }
+
 .content {
   display: none;
 }
+
 .content.active {
   display: block;
   padding: 20px;
 }
+
 .aircraft_hero {
   background: var(--black);
   height: 80vh;
@@ -1701,6 +1825,186 @@ footer {
   color: var(--white);
   padding: 90px 0 0 0;
 }
+
+.aircraft_hero_img {
+  width: 90%;
+  height: auto;
+}
+
+/* puran css for reservemembers  */
+/* puran css start here */
+
+.p_bg_img_Membership {
+  position: relative;
+  background-image: linear-gradient(#0000, #000000db),
+    url("./image/png/headerimage.jpeg");
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  padding: 64px;
+}
+
+.p_bg_img_Beach {
+  background-image: url("./image/png/beachimg.avif");
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  color: var(--white);
+}
+
+.p_bg_img_laptop {
+  background-image: url("./image/png/amalfilaptop.webp");
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 70vh;
+  background-position: center;
+  background-size: cover;
+  color: var(--white);
+}
+
+.p_overlay_Membership {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.087),
+      rgb(0 0 0 / 23%),
+      rgba(252, 12, 12, 0.909)); */
+  background: linear-gradient(#0000, #000000c2 75%, #000);
+  padding: 64px;
+  display: flex;
+  align-items: end;
+}
+
+.btn_download {
+  background-color: var(--white);
+  color: var(--black);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 14px 25px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.p_overlay_content {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: #00000080;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.m_0 {
+  margin: 0;
+}
+
+.p_67 {
+  padding: 67px;
+}
+
+.touch_button {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 16px 18px;
+  border-radius: 15px;
+}
+
+.w_500 {
+  max-width: 500px;
+}
+
+.line_height {
+  line-height: 1.272;
+}
+
+.flex_wrap_wrap {
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.lh_25 {
+  line-height: 25px;
+}
+
+.align_center {
+  align-items: center;
+}
+
+.op_75 {
+  opacity: 0.75;
+}
+
+.lh_20 {
+  line-height: 20px;
+}
+
+.ls_05 {
+  letter-spacing: 0.5px;
+}
+
+.leter_space_06 {
+  letter-spacing: 0.6px;
+}
+
+/* AIRCRAFT-COMPARISON CSS */
+.tabs {
+  display: none;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  padding: 12px 10px;
+}
+
+.tab {
+  padding: 10px 0;
+  border-bottom: 2px solid #cccccc5c;
+  transition: background-color 0.3s;
+  color: var(--white);
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.tab.active {
+  background-color: transparent !important;
+  border-bottom: 2px solid var(--pink-tint);
+  width: 100%;
+  text-align: center;
+  color: var(--white);
+}
+
+.content {
+  display: none;
+}
+
+.content.active {
+  display: block;
+  padding: 20px;
+}
+
+.aircraft_hero {
+  background: var(--black);
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--white);
+  padding: 90px 0 0 0;
+}
+
 .aircraft_hero_img {
   width: 90%;
   height: auto;
@@ -1717,33 +2021,35 @@ footer {
   background-color: var(--light-black);
   border-radius: 12px;
   width: 100%;
+  margin-bottom: 40px;
 }
 
 .mobile_active_tabs {
   width: 700px;
   overflow: auto;
 }
+
 .overflow_auto {
   overflow-x: auto;
 }
 
-
-
-   
 @media (min-width: 768px) {
   .mobile_active_tabs {
     width: auto;
   }
 }
+
 @media (min-width: 992px) {
   .aircraft_bg_mobile {
     background-color: transparent;
     border-radius: 12px;
   }
+
   .aircraft_hero_img {
     width: 90%;
     height: auto;
   }
+
   .tabs {
     display: flex;
     justify-content: space-between;
