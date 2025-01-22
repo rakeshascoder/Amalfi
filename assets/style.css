@@ -55,10 +55,9 @@ p {
   --fs_xxl: 24px;
   --fs_xll: 42px;
 
-
   /* COLORS */
   --black: #000;
-  --off_black :#1a1a1a;
+  --off_black: #1a1a1a;
   --white: #fff;
   --pink-tint: #f8eff7;
   --soft-white: #fffbff;
@@ -70,7 +69,6 @@ p {
   --deep-brown: #1f1b16;
   --light-black: #1a1c1c;
   --met_color: #afaeae;
-
 }
 
 .light_theme {
@@ -82,7 +80,7 @@ p {
   --set-gray: rgba(145, 144, 144, 0.616);
 }
 
- .svg {
+/* .svg {
   display: none;
 }
  .svg.active {
@@ -90,18 +88,16 @@ p {
 }
  #light-icon.active {
   display: inline;
-}
+} */
 
 /* color that will not change in theme switch  */
 .bg_default_black {
   background-color: black;
 }
 
-
 .clr_default_white {
   color: white;
 }
-
 
 .theme_btn {
   background-color: var(--black);
@@ -213,8 +209,6 @@ footer img {
 .bg_black {
   background-color: var(--black);
 }
-
-
 .bg_white {
   background-color: var(--white);
 }
@@ -226,10 +220,15 @@ footer img {
   background-color: var(--off_black);
 }
 /* -----button--------- */
-.border_black_a{
+
+.theme_button {
+  background: transparent;
+}
+
+.border_black_a {
   border: 1px solid var(--black);
 }
-.a_border_white{
+.a_border_white {
   border: 1px solid white;
 }
 
@@ -1142,7 +1141,7 @@ button {
 }
 
 nav {
-  background-color: #000c;
+  background-color: black;
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -1174,6 +1173,13 @@ nav {
   display: flex;
 }
 
+.theme_icon path {
+  fill: var(--black);
+}
+.arrow_icon path {
+  fill: var(--white);
+}
+
 input::placeholder {
   color: black;
 }
@@ -1190,6 +1196,7 @@ input {
 
 .explore_btn {
   background-color: var(--white);
+  color: var(--black);
   border-radius: 12px;
 }
 
@@ -1217,6 +1224,7 @@ input {
 
 .minus_btn {
   color: var(--black) !important;
+  background-color: var(--white);
   height: 20px;
   width: 20px;
   border: 1px solid #88888d;
@@ -1236,6 +1244,8 @@ input {
 }
 
 .passenger_input {
+  background-color: var(--white);
+  color: var(--black);
   text-align: center;
   min-width: 30px;
   max-width: 30px;
@@ -1285,8 +1295,8 @@ input {
 }
 
 .discover_btn {
-  background-color: var(--white);
-  color: var(--black);
+  background-color: white;
+  color: black;
   border-radius: 1.272em;
   letter-spacing: 1px;
   padding: 0.885em 1.272em;
@@ -1313,7 +1323,6 @@ input {
 .flight_card_icon {
   height: 15px;
   width: 15px;
-  color: var(--white);
 }
 
 .flight_card_content {
@@ -1346,7 +1355,7 @@ input {
   background-position: right;
   width: 100%;
   object-fit: cover;
-  background-color: var(--black);
+  background-color: black;
 }
 
 .h_265 {
@@ -1647,6 +1656,7 @@ footer {
 }
 .slick-dots li button:before {
   font-size: 14px !important;
+  color: var(--black) !important;
 }
 
 .small_overlay {
@@ -2048,3 +2058,6 @@ footer {
     padding: 12px 10px;
   }
 }
+
+/* done
+ */

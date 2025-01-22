@@ -389,6 +389,7 @@
 
 .a_placeholder::placeholder {
   color: var(--black);
+  background-color: var(--white);
 }
 
 .a_max_h_700 {
@@ -400,7 +401,7 @@
 }
 
 .a_form_top_bar_main {
-  border: 1px solid #0003;
+  border: 1px solid var(--black);
   border-radius: 0.786164em;
 }
 
