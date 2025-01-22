@@ -71,6 +71,8 @@ p {
   --light-black: #1a1c1c;
   --met_color: #afaeae;
   --brdr_color: #c6c5d0;
+  --bg_light_surface: #f0f3f4;
+  --clr_dark_surface: #1a1c1c;
 
 }
 
@@ -82,10 +84,21 @@ p {
   --met_color: rgba(0, 0, 0, 0.823);
   --set-gray: rgba(145, 144, 144, 0.616);
   --brdr_color: #232326;
+  /* these below two color need to change accroding to theme */
+  /* --bg_light_surface: #f0f3f4;
+  --clr_dark_surface: #1a1c1c; */
 }
 
 .svg {
   display: none;
+}
+
+.bg_light_surface {
+  background-color: var(--bg_light_surface);
+}
+
+.clr_dark_surface {
+  color: var(--clr_dark_surface);
 }
 
 .svg.active {
@@ -367,7 +380,9 @@ footer img {
 .m-5 {
   margin: 48px;
 }
-
+.mx_0{
+  margin-inline: 0;
+}
 .mx_1 {
   margin-inline: 4px;
 }
@@ -898,6 +913,7 @@ button {
 .line_height_22 {
   line-height: 22px;
 }
+
 .line_height_25 {
   line-height: 25px;
 }
@@ -1786,6 +1802,7 @@ footer {
 .img_ratio_cover_2_39 {
   aspect-ratio: 2.39;
   object-fit: cover;
+  width: 100%;
 }
 
 .grow_1 {
