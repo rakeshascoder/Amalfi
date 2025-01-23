@@ -1136,6 +1136,10 @@ button {
   fill: var(--white);
 }
 
+.fill_black{
+  fill: var(--black) !important;
+}
+
 .svgfill {
   fill: white;
 }
