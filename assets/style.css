@@ -1225,7 +1225,7 @@ nav {
 }
 
 .theme_icon path {
-  fill: var(--black);
+  fill: var(--white);
 }
 .arrow_icon path {
   fill: var(--white);
