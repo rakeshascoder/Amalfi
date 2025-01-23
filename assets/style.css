@@ -2125,3 +2125,37 @@ footer {
 
 /* done
  */
+ /* --------------------calender css------------------------- */
+ .calendar {
+  display: none;
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1000;
+}
+.calendar table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.calendar th, .calendar td {
+  border: 1px solid #ccc;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+.calendar th {
+  background: #f0f0f0;
+}
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.prev-btn, .next-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
