@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./assets/style.css" />
   <link rel="stylesheet" href="./assets/responsive.css" />
   <link rel="stylesheet" href="./assets/responsivehome.css">
+  <script defer src="./assets/js/theme.js"></script>
 </head>
 
 <body>
@@ -17,45 +18,26 @@
     <div class="sticky top_0 z_1">
       <nav class="d_flex absolute z_1 justify_space_between w_100">
         <div class="d_flex align_center gap_40">
-          <li
-            class="h_67 w_67 d_flex justify_content_center align_center hamburger_menu hamburger_hover"
-          >
+          <li class="h_67 w_67 d_flex justify_content_center align_center hamburger_menu hamburger_hover">
             <a href="#">
-              <svg
-                width="26"
-                height="26"
-                viewBox="0 0 26 26"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+              <svg class="fill_white" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M3.25 19.5V17.3333H22.75V19.5H3.25ZM3.25 14.0833V11.9167H22.75V14.0833H3.25ZM3.25 8.66667V6.5H22.75V8.66667H3.25Z"
-                  fill="white"
-                />
+                  fill="white" />
               </svg>
             </a>
           </li>
+          </ul>
           <ul class="d_flex gap_40 d_none d_lg_flex">
             <li class="d_flex justify_content_center align_center h_67 w_67">
-              <a
-                class="text_uppercase text_white nav_links_text fs_xsm"
-                href="#"
-                >program</a
-              >
+              <a class="text_uppercase clr_default_white nav_links_text fs_xsm" href="./program.html">program</a>
             </li>
             <li class="d_flex justify_content_center align_center h_67 w_67">
-              <a
-                class="text_uppercase text_white nav_links_text fs_xsm"
-                href="./comparison.html"
-                >aircraft</a
-              >
+              <a class="text_uppercase clr_default_white nav_links_text fs_xsm" href="./comparison.html">aircraft</a>
             </li>
             <li class="d_flex justify_content_center align_center h_67 w_67">
-              <a
-                class="text_uppercase text_white nav_links_text fs_xsm"
-                href="./assets/whyAmalfi/WhyAmalfi.html"
-                >why amalfi</a
-              >
+              <a class="text_uppercase clr_default_white nav_links_text fs_xsm" href="./WhyAmalfi.html">why
+                amalfi</a>
             </li>
           </ul>
         </div>
@@ -65,33 +47,26 @@
           </a>
         </div>
         <div class="d_flex align_center gap_3 me_3">
-          <span class="d_flex align_center d_none d_lg_flex"
-            ><svg
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+          <button id="theme-toggle" class="theme_button cursor_pointer">
+            <svg class="them e_icon" id="light-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path fill="white"
+                d="M12 16q-1.671 0-2.835-1.164Q8 13.67 8 12t1.165-2.835T12 8t2.836 1.165T16 12t-1.164 2.836T12 16m-7-3.5H1.5v-1H5zm17.5 0H19v-1h3.5zM11.5 5V1.5h1V5zm0 17.5V19h1v3.5zM6.746 7.404l-2.16-2.098l.695-.745l2.111 2.135zM18.72 19.439l-2.117-2.141l.652-.702l2.16 2.098zM16.596 6.745l2.098-2.16l.745.695l-2.135 2.111zM4.562 18.72l2.14-2.117l.664.652l-2.08 2.179z" />
+            </svg>
+          </button>
+  
+          <span class="d_flex align_center d_none d_lg_flex"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M4.46771 0.0675598C5.00757 0.128927 5.437 0.570768 5.51062 1.1108L6.45537 5.12419C6.59034 5.68877 6.30814 6.27789 5.78055 6.52336L5.05665 6.85474C5.59651 8.26618 6.78665 9.23577 6.78665 9.23577C6.78665 9.23577 7.76822 10.4263 9.16694 10.9663L9.49822 10.2422C9.61776 9.98556 9.82231 9.77816 10.0772 9.65513C10.3321 9.53211 10.6217 9.50103 10.8969 9.56715L14.9091 10.5122C15.4489 10.5858 15.8907 11.0154 15.952 11.5554C16.0747 12.5619 16.0379 14.1329 14.9091 14.9674C14.9091 14.9674 9.81723 18.5513 3.63338 12.3655C-2.55047 6.1797 1.03224 1.08625 1.03224 1.08625C1.87883 -0.0429007 3.44934 -0.0674473 4.44317 0.0430131L4.46771 0.0675598Z"
-                fill="white"
-              />
+                fill="white" />
             </svg>
-            <a class="text_white nav_links_text mt_1 ms_1" href="#"
-              >+1 (877) 6-AMALFI</a
-            >
+            <a class="clr_default_white nav_links_text mt_1 ms_1" href="#">+1 (877) 6-AMALFI</a>
           </span>
-          <a
-            href="#"
-            class="explore_btn d_none d_lg_block fs_xsm px_15 py_10 text_uppercase text_black fw_normal letter_spacing_1 charter"
-            >request a charter</a
-          >
-          <a
-            href="#"
-            class="explore_btn d_block d_lg_none fs_xsm px_15 py_10 text_uppercase d_inline_block text_black fw_normal letter_spacing_1"
-            >fly</a
-          >
+          <a href="#"
+            class="explore_btn d_none d_lg_block fs_xsm px_15 py_10 text_uppercase text_black fw_normal letter_spacing_1 charter">request
+            a charter</a>
+          <a href="#"
+            class="explore_btn d_block d_lg_none fs_xsm px_15 py_10 text_uppercase d_inline_block text_black fw_normal letter_spacing_1">fly</a>
         </div>
       </nav>
     </div>
@@ -99,32 +74,22 @@
     <div class="menu_overlay lg_menu_overlay">
       <div class="menu_content w_100">
         <div class="close_button_style">
-          <button class="close_menu d_flex align_center gap_10">
-            <svg
-              width="26"
-              height="26"
-              viewBox="0 0 26 26"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+          <button class="close_menu clr_default_white d_flex align_center gap_10">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M3.25 19.5V17.3333H19.5V19.5H3.25ZM3.25 14.0833V11.9167H14.9861V14.0833H3.25ZM3.25 8.66667V6.5H19.5V8.66667H3.25Z"
-                fill="white"
-              />
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fill="white" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M17.747 13.4688L22.3433 17.9944L23.4922 16.8632L19.4703 12.9032L23.4922 8.94321L22.3433 7.81201L17.747 12.3376C17.5947 12.4876 17.5091 12.6911 17.5091 12.9032C17.5091 13.1153 17.5947 13.3188 17.747 13.4688Z"
-                fill="white"
-              />
+                fill="white" />
             </svg>
             <span>close</span>
           </button>
         </div>
-        <div class="d_flex flex_column gap_10 mt_5">
+        <div class="d_flex flex_column gap_10 mt_3">
           <div id="navprogram">
             <div id="programButton" class="menu_item d_flex align_center" onclick="navopen(this)">
-              <a class="text_uppercase text_white fw_normal fs_xsm p_3 fs_base d_flex w_100" href="#">program</a>
+              <a class="text_uppercase clr_default_white fw_normal fs_xsm p_3 fs_base d_flex w_100" href="#">program</a>
               <span class="text_white me_3 icon_arrow"><svg width="9" height="13" viewBox="0 0 9 13" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -142,7 +107,7 @@
                   <a href="./onDemandCharter.html">
                     <div class="bg_overlay"></div>
                     <p
-                      class="text_uppercase fs_base top_50 left_50 translate_50_50 fw_normal absolute text_white text_align_center">
+                      class="text_uppercase fs_base top_50 left_50 translate_50_50 fw_normal absolute clr_default_white text_align_center">
                       On-Demand Character
                     </p>
                   </a>
@@ -152,7 +117,7 @@
                   <a href="./theAmalfiOneJetCard.html">
                     <div class="bg_overlay"></div>
                     <p
-                      class="text_uppercase top_50 left_50 translate_50_50 fs_base fw_normal absolute text_white text_align_center">
+                      class="text_uppercase top_50 left_50 translate_50_50 fs_base fw_normal absolute clr_default_white text_align_center">
                       The Amalfi One Jet Card Program
                     </p>
                   </a>
@@ -162,7 +127,7 @@
                   <a href="./Amalfi_Enterprise.html">
                     <div class="bg_overlay"></div>
                     <p
-                      class="text_uppercase top_50 left_50 translate_50_50 fs_base fw_normal absolute text_white text_align_center">
+                      class="text_uppercase top_50 left_50 translate_50_50 fs_base fw_normal absolute clr_default_white text_align_center">
                       Amalfi Enterprise
                     </p>
                   </a>
@@ -172,7 +137,7 @@
                   <a href="./ReserveMembership.html">
                     <div class="bg_overlay"></div>
                     <p
-                      class="text_uppercase top_50 left_50 translate_50_50 fs_base fw_normal absolute text_white text_align_center">
+                      class="text_uppercase top_50 left_50 translate_50_50 fs_base fw_normal absolute clr_default_white text_align_center">
                       Amalfi Reserve Membership
                     </p>
                   </a>
@@ -180,54 +145,28 @@
               </div>
             </div>
           </div>
-
+  
           <div id="navaircraft">
-            <div
-              id="aircraftbutton"
-              class="menu_item d_flex align_center"
-              onclick="navopen(this)"
-            >
-              <a
-                class="text_uppercase text_white fw_normal fs_xsm p_3 fs_base d_flex w_100"
-                href="#"
-                >aircraft</a
-              >
-              <span class="text_white me_3 icon_arrow"
-                ><svg
-                  width="9"
-                  height="13"
-                  viewBox="0 0 9 13"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+            <div id="aircraftbutton" class="menu_item d_flex align_center" onclick="navopen(this)">
+              <a class="text_uppercase clr_default_white fw_normal fs_xsm p_3 fs_base d_flex w_100" href="#">aircraft</a>
+              <span class="text_white me_3 icon_arrow"><svg width="9" height="13" viewBox="0 0 9 13" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M8.64216 7.22211L1.72819 13L0 11.5558L6.04988 6.5L0 1.44422L1.72819 0L8.64216 5.77789C8.87128 5.96943 9 6.22917 9 6.5C9 6.77083 8.87128 7.03057 8.64216 7.22211Z"
-                    fill="white"
-                  />
+                    fill="white" />
                 </svg>
               </span>
             </div>
             <!-- inner nav -->
-            <div
-              class="navaircraft_item navaircraft_md_item hidden"
-              id="nav_aircraft"
-            >
+            <div class="navaircraft_item navaircraft_md_item hidden" id="nav_aircraft">
               <div class="row justify_space_between w_100">
                 <a class="hover_jets_link" href="./jets.html">
                   <div class="mt_3 row flex_row_reverse align_center">
                     <div class="col_4 col_md_12">
-                      <img
-                        class="object_fit w_100"
-                        src="./assets/png/jet.png"
-                        alt=""
-                      />
+                      <img class="object_fit w_100" src="./assets/png/jet.png" alt="" />
                     </div>
                     <div class="col_8 col_md_12">
-                      <p
-                        class="text_uppercase fs_base fw_normal text_white px_10 text_md_center mt_3"
-                      >
+                      <p class="text_uppercase fs_base fw_normal clr_default_white px_10 text_md_center mt_3">
                         light jets
                       </p>
                     </div>
@@ -236,16 +175,10 @@
                 <a class="hover_jets_link" href="./middlesizejets.html">
                   <div class="mt_3 row flex_row_reverse align_center">
                     <div class="col_4 col_md_12">
-                      <img
-                        class="object_fit w_100"
-                        src="./assets/png/jet.png"
-                        alt=""
-                      />
+                      <img class="object_fit w_100" src="./assets/png/jet.png" alt="" />
                     </div>
                     <div class="col_8 col_md_12">
-                      <p
-                        class="text_uppercase fs_base fw_normal text_white px_10 text_md_center mt_3"
-                      >
+                      <p class="text_uppercase fs_base fw_normal clr_default_white px_10 text_md_center mt_3">
                         midsize jets
                       </p>
                     </div>
@@ -254,16 +187,10 @@
                 <a class="hover_jets_link" href="./supermidzone.html">
                   <div class="mt_3 row flex_row_reverse align_center">
                     <div class="col_4 col_md_12">
-                      <img
-                        class="object_fit w_100"
-                        src="./assets/png/jet.png"
-                        alt=""
-                      />
+                      <img class="object_fit w_100" src="./assets/png/jet.png" alt="" />
                     </div>
                     <div class="col_8 col_md_12">
-                      <p
-                        class="text_uppercase fs_base fw_normal text_white px_10 text_md_center mt_3"
-                      >
+                      <p class="text_uppercase fs_base fw_normal clr_default_white px_10 text_md_center mt_3">
                         super midsize jets
                       </p>
                     </div>
@@ -272,16 +199,10 @@
                 <a class="hover_jets_link" href="./heavyjets.html">
                   <div class="mt_3 row flex_row_reverse align_center">
                     <div class="col_4 col_md_12">
-                      <img
-                        class="object_fit w_100"
-                        src="./assets/png/jet.png"
-                        alt=""
-                      />
+                      <img class="object_fit w_100" src="./assets/png/jet.png" alt="" />
                     </div>
                     <div class="col_8 col_md_12">
-                      <p
-                        class="text_uppercase fs_base fw_normal text_white px_10 text_md_center mt_3"
-                      >
+                      <p class="text_uppercase fs_base fw_normal clr_default_white px_10 text_md_center mt_3">
                         heavy jets
                       </p>
                     </div>
@@ -290,16 +211,10 @@
                 <a class="hover_jets_link" href="./Ultra.html">
                   <div class="mt_3 row flex_row_reverse align_center">
                     <div class="col_4 col_md_12">
-                      <img
-                        class="object_fit w_100"
-                        src="./assets/png/jet.png"
-                        alt=""
-                      />
+                      <img class="object_fit w_100" src="./assets/png/jet.png" alt="" />
                     </div>
                     <div class="col_8 col_md_12">
-                      <p
-                        class="text_uppercase fs_base fw_normal text_white px_10 text_md_center mt_3"
-                      >
+                      <p class="text_uppercase fs_base fw_normal clr_default_white px_10 text_md_center mt_3">
                         Ultra Long Haul Jets
                       </p>
                     </div>
@@ -308,10 +223,10 @@
               </div>
             </div>
           </div>
-
+  
           <div id="navwhyamalfi">
             <div id="whyamalfibutton" class="menu_item d_flex align_center" onclick="navopen(this)">
-              <a class="text_uppercase text_white fw_normal fs_xsm p_3 fs_base d_flex w_100" href="#">why amalfi</a>
+              <a class="text_uppercase clr_default_white fw_normal fs_xsm p_3 fs_base d_flex w_100" href="#">why amalfi</a>
               <span class="text_white me_3 icon_arrow"><svg width="9" height="13" viewBox="0 0 9 13" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -328,7 +243,7 @@
                   <a href="./WhyAmalfi.html">
                     <div class="bg_overlay"></div>
                     <p
-                      class="text_uppercase top_50 left_50 translate_50_50 fs_base fw_normal text_white absolute text_align_center">
+                      class="text_uppercase top_50 left_50 translate_50_50 fs_base fw_normal clr_default_white absolute text_align_center">
                       why amalfi
                     </p>
                   </a>
@@ -338,7 +253,7 @@
                   <a href="./WhyAmalfiSaefty.html">
                     <div class="bg_overlay"></div>
                     <p
-                      class="text_uppercase top_50 left_50 translate_50_50 fs_base fw_normal absolute text_white text_align_center">
+                      class="text_uppercase top_50 left_50 translate_50_50 fs_base fw_normal absolute clr_default_white text_align_center">
                       safety
                     </p>
                   </a>
@@ -348,7 +263,7 @@
                   <a href="./WhyAmalfiOperations.html">
                     <div class="bg_overlay"></div>
                     <p
-                      class="text_uppercase top_50 left_50 translate_50_50 fs_base fw_normal absolute text_white text_align_center">
+                      class="text_uppercase top_50 left_50 translate_50_50 fs_base fw_normal absolute clr_default_white text_align_center">
                       operation
                     </p>
                   </a>
@@ -358,7 +273,7 @@
                   <a href="./WhyAmalfiEscapades.html">
                     <div class="bg_overlay"></div>
                     <p
-                      class="text_uppercase top_50 left_50 translate_50_50 fs_base fw_normal absolute text_white text_align_center">
+                      class="text_uppercase top_50 left_50 translate_50_50 fs_base fw_normal absolute clr_default_white text_align_center">
                       Escapades
                     </p>
                   </a>
@@ -366,70 +281,34 @@
               </div>
             </div>
           </div>
-
+  
           <div id="navmedia">
-            <div
-              id="Mediabutton"
-              class="menu_item d_flex align_center"
-              onclick="navopen(this)"
-            >
-              <a
-                class="text_uppercase text_white fw_normal fs_xsm p_3 fs_base d_flex w_100"
-                href="#"
-                >Media</a
-              >
-              <span class="text_white me_3 icon_arrow"
-                ><svg
-                  width="9"
-                  height="13"
-                  viewBox="0 0 9 13"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+            <div id="Mediabutton" class="menu_item d_flex align_center" onclick="navopen(this)">
+              <a class="text_uppercase clr_default_white  fw_normal fs_xsm p_3 fs_base d_flex w_100" href="#">Media</a>
+              <span class="text_white me_3 icon_arrow"><svg width="9" height="13" viewBox="0 0 9 13" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M8.64216 7.22211L1.72819 13L0 11.5558L6.04988 6.5L0 1.44422L1.72819 0L8.64216 5.77789C8.87128 5.96943 9 6.22917 9 6.5C9 6.77083 8.87128 7.03057 8.64216 7.22211Z"
-                    fill="white"
-                  />
+                    fill="white" />
                 </svg>
               </span>
             </div>
             <!-- inner nav -->
-            <div
-              class="navmedia_item navmedia_md_item hidden"
-              id="navmediacard"
-            >
+            <div class="navmedia_item navmedia_md_item hidden" id="navmediacard">
               <div>
                 <a class="hover_jets_link" href="./media1.html">
                   <div class="mt_3">
-                    <img
-                      class="object_fit w_100 h_100"
-                      src="./assets/png/media 1.png"
-                      alt=""
-                    />
-                    <div
-                      class="d_flex justify_space_between mt_2 gap_3 align_center"
-                    >
-                      <p class="text_uppercase fs_base fw_normal text_white">
+                    <img class="object_fit w_100 h_100" src="./assets/png/media 1.png" alt="" />
+                    <div class="d_flex justify_space_between mt_2 gap_3 align_center">
+                      <p class="text_uppercase fs_base fw_normal clr_default_white">
                         Amalfi Jets Launches "Holiday Complaint Workshop"
                         Promotion with $2,500 Flight Credit and Free Amalfi
                         Merchandise
                       </p>
-                      <span
-                        ><svg
-                          width="9"
-                          height="13"
-                          viewBox="0 0 9 13"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
+                      <span><svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M8.64216 7.22211L1.72819 13L0 11.5558L6.04988 6.5L0 1.44422L1.72819 0L8.64216 5.77789C8.87128 5.96943 9 6.22917 9 6.5C9 6.77083 8.87128 7.03057 8.64216 7.22211Z"
-                            fill="white"
-                          />
+                            fill="white" />
                         </svg>
                       </span>
                     </div>
@@ -437,32 +316,16 @@
                 </a>
                 <a class="hover_jets_link" href="./media2.html">
                   <div class="mt_3">
-                    <img
-                      class="object_fit w_100 h_100"
-                      src="./assets/png/media 2.jpg"
-                      alt=""
-                    />
-                    <div
-                      class="d_flex justify_space_between mt_2 gap_3 align_center"
-                    >
-                      <p class="text_uppercase fs_base fw_normal text_white">
+                    <img class="object_fit w_100 h_100" src="./assets/png/media 2.jpg" alt="" />
+                    <div class="d_flex justify_space_between mt_2 gap_3 align_center">
+                      <p class="text_uppercase fs_base fw_normal clr_default_white">
                         Amalfi Jets Launches Exclusive Year-End Tiered Bonus
                         Promotion for Jet Card Members
                       </p>
-                      <span
-                        ><svg
-                          width="9"
-                          height="13"
-                          viewBox="0 0 9 13"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
+                      <span><svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M8.64216 7.22211L1.72819 13L0 11.5558L6.04988 6.5L0 1.44422L1.72819 0L8.64216 5.77789C8.87128 5.96943 9 6.22917 9 6.5C9 6.77083 8.87128 7.03057 8.64216 7.22211Z"
-                            fill="white"
-                          />
+                            fill="white" />
                         </svg>
                       </span>
                     </div>
@@ -470,33 +333,17 @@
                 </a>
                 <a class="hover_jets_link" href="./media3.html">
                   <div class="mt_3">
-                    <img
-                      class="object_fit w_100 h_100"
-                      src="./assets/png/media 3.jpg"
-                      alt=""
-                    />
-                    <div
-                      class="d_flex justify_space_between mt_2 gap_3 align_center"
-                    >
-                      <p class="text_uppercase fs_base fw_normal text_white">
+                    <img class="object_fit w_100 h_100" src="./assets/png/media 3.jpg" alt="" />
+                    <div class="d_flex justify_space_between mt_2 gap_3 align_center">
+                      <p class="text_uppercase fs_base fw_normal clr_default_white">
                         Amalfi Jets Announces Exclusive Black Friday Promotion:
                         Join the Amalfi One Jet Card with a Minimum Deposit of
                         $500K and receive a Bruce Wayne Rolex
                       </p>
-                      <span
-                        ><svg
-                          width="9"
-                          height="13"
-                          viewBox="0 0 9 13"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
+                      <span><svg width="9" height="13" viewBox="0 0 9 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M8.64216 7.22211L1.72819 13L0 11.5558L6.04988 6.5L0 1.44422L1.72819 0L8.64216 5.77789C8.87128 5.96943 9 6.22917 9 6.5C9 6.77083 8.87128 7.03057 8.64216 7.22211Z"
-                            fill="white"
-                          />
+                            fill="white" />
                         </svg>
                       </span>
                     </div>
@@ -508,18 +355,12 @@
               </div>
             </div>
           </div>
-
-          <a
-            class="text_uppercase text_white fw_normal fs_xsm p_3 fs_base d_flex w_100"
-            href="./form.html"
-            >Contact Us</a
-          >
+  
+          <a class="text_uppercase clr_default_white fw_normal fs_xsm p_3 fs_base d_flex w_100" href="./form.html">Contact Us</a>
           <div class="mb_4">
-            <a
-              href="#"
-              class="ms_3 explore_btn fs_base px_15 py_10 text_uppercase d_inline_block text_black fw_normal"
-              >request a charter</a
-            >
+            <a href="#"
+              class="ms_3 explore_btn fs_base px_15 py_10 text_uppercase d_inline_block text_black fw_normal">request a
+              charter</a>
           </div>
         </div>
       </div>
@@ -559,7 +400,7 @@
         </div>
       </div>
     </header>
-    <main class="bg_black">
+    <main class="bg_default_black">
       <div class="custom_container overflow_hidden">
         <div class="row w_90 mx_auto justify_space_between flex_row_reverse dh_xl_flex_row">
           <div class="col_5 pt_35">
@@ -567,36 +408,36 @@
           </div>
           <div class="col_12 dh_lg_col_6">
             <img class="w_100" src="./assets/image/png/size2.jpeg" alt="" />
-            <p class="text_white mt_5 fs_xl mb_4">SPECIFICATIONS</p>
+            <p class="clr_default_white mt_5 fs_xl mb_4">SPECIFICATIONS</p>
             <div class="dh_sm_d_flex align_center py_16 border_bottom dh_xsm_flex_column">
-              <p class="text_white fs_lg w_256">PASSANGER CAPACITY</p>
+              <p class="clr_default_white fs_lg w_256">PASSANGER CAPACITY</p>
 
-              <p class="text_white fs_lg pt_3 dh_sm_pt_0">UP TO 6 PASSANGERS</p>
+              <p class="clr_default_white fs_lg pt_3 dh_sm_pt_0">UP TO 6 PASSANGERS</p>
             </div>
             <div class="dh_sm_d_flex align_center py_16 border_bottom dh_xsm_flex_column">
-              <p class="text_white fs_lg w_256">ENDURANCE</p>
+              <p class="clr_default_white fs_lg w_256">ENDURANCE</p>
 
-              <p class="text_white fs_lg pt_3 dh_sm_pt_0">4HRS</p>
+              <p class="clr_default_white fs_lg pt_3 dh_sm_pt_0">4HRS</p>
             </div>
             <div class="dh_sm_d_flex align_center py_16 border_bottom dh_xsm_flex_column">
-              <p class="text_white fs_lg w_256">MAXIMUM OPERATING RANGE</p>
+              <p class="clr_default_white fs_lg w_256">MAXIMUM OPERATING RANGE</p>
 
-              <p class="text_white fs_lg pt_3 dh_sm_pt_0">1600NM</p>
+              <p class="clr_default_white fs_lg pt_3 dh_sm_pt_0">1600NM</p>
             </div>
             <div class="dh_sm_d_flex align_center py_16 border_bottom dh_xsm_flex_column">
-              <p class="text_white fs_lg w_256">BAGGAGE CAPACITY</p>
+              <p class="clr_default_white fs_lg w_256">BAGGAGE CAPACITY</p>
 
-              <p class="text_white fs_lg pt_3 dh_sm_pt_0">86FT</p>
+              <p class="clr_default_white fs_lg pt_3 dh_sm_pt_0">86FT</p>
             </div>
             <div class="dh_sm_d_flex align_center py_16 border_bottom dh_xsm_flex_column">
-              <p class="text_white fs_lg w_256">SPEED</p>
+              <p class="clr_default_white fs_lg w_256">SPEED</p>
 
-              <p class="text_white fs_lg pt_3 dh_sm_pt_0">450 NOTES</p>
+              <p class="clr_default_white fs_lg pt_3 dh_sm_pt_0">450 NOTES</p>
             </div>
             <div class="dh_sm_d_flex align_center py_16 dh_xsm_flex_column">
-              <p class="text_white fs_lg w_256">CRUSING ALTUTUE</p>
+              <p class="clr_default_white fs_lg w_256">CRUSING ALTUTUE</p>
 
-              <p class="text_white fs_lg pt_3 dh_sm_pt_0">45000 FT</p>
+              <p class="clr_default_white fs_lg pt_3 dh_sm_pt_0">45000 FT</p>
             </div>
 
             <button class="fs_base py_3 px_4 radius_20px mt_4 xsm_w_100">
@@ -607,278 +448,172 @@
       </div>
     </main>
 
-    <div class="bg_black">
-      <div class="custom_container">
-        <footer class="p_25 padding_md_67">
+    <div class="bg_default_black">
+      <div class="custom_container ">
+        <footer class="p_25 padding_md_67 bg_default_black">
+          <!-- logo and contact info -->
           <div class="row justify_space_between">
             <div class="col_12 col_lg_4">
               <img width="177" src="./assets/png/footerlogo.png" alt="" />
             </div>
-
+    
             <div class="col_12 col_lg_7 mt_3 mt_lg_0">
               <div class="row justify_space_between">
                 <div class="col_12 col_md_3">
-                  <p class="text_gray_darker fs_xsm fw_normal">Call</p>
-                  <a
-                    href="tel:+1234567890"
-                    class="fs_lg fw_normal mt_4 d_inline_block text_white"
-                    >+1 (877) 6-AMALFI</a
-                  >
+                  <p class="clr_default_white fs_xsm fw_normal">Call</p>
+                  <a href="tel:+1234567890" class="fs_lg fw_normal mt_4 d_inline_block clr_default_white">+1 (877) 6-AMALFI</a>
                 </div>
-
+    
                 <div class="col_12 col_md_3">
-                  <p class="text_gray_darker fs_xsm fw_normal">Email</p>
-                  <a
-                    href="mailto:example@example.com"
-                    class="fs_lg fw_normal mt_4 d_inline_block text_white text_uppercase"
-                  >
+                  <p class="clr_default_white fs_xsm fw_normal">Email</p>
+                  <a href="mailto:example@example.com"
+                    class="fs_lg fw_normal mt_4 d_inline_block clr_default_white text_uppercase">
                     enquiry@amalfijets.com
                   </a>
                 </div>
                 <div class="col_12 col_md_3">
-                  <p class="text_gray_darker fs_xsm fw_normal">Social</p>
+                  <p class="clr_default_white fs_xsm fw_normal">Social</p>
                   <div class="d_flex gap_10 mt_4">
                     <a href="https://www.tiktok.com/about">
-                      <svg
-                        class="fill_white w_16 h_18"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 448 512"
-                      >
+                      <svg class="svgfill w_16 h_18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                         <path
-                          d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"
-                        />
+                          d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
                       </svg>
                     </a>
                     <a href="https://www.linkedin.com/">
-                      <svg
-                        class="fill_white w_16 h_18"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 448 512"
-                      >
+                      <svg class="svgfill w_16 h_18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                         <path
-                          d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
-                        />
+                          d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
                       </svg>
                     </a>
                     <a href="https://www.instagram.com/">
-                      <svg
-                        class="fill_white w_16 h_18"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 448 512"
-                      >
+                      <svg class="svgfill w_16 h_18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                         <path
-                          d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-                        />
+                          d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
                       </svg>
                     </a>
                     <a href="https://x.com/?lang=en&mx=2">
-                      <svg
-                        class="fill_white w_16 h_18"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 512 512"
-                      >
+                      <svg class="svgfill w_16 h_18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path
-                          d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
-                        />
+                          d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
                       </svg>
                     </a>
                   </div>
+    
                 </div>
               </div>
             </div>
           </div>
-
+          <!-- border line -->
           <div class="border_line"></div>
-          <div
-            class="row justify_space_between justify_content_center justify_lg_start"
-          >
-          <div class="col_12 col_sm_6 col_lg_3">
-            <h4
-              class="mb_4 fs_lg text_uppercase text_align_center text_sm_start"
-            >
-              Our Program
-            </h4>
-            <ul class="d_flex flex_column gap_10 align_center align_sm_start">
-              <li class="mb_1">
-                <a
-                  class="fw_normal text_white fs_md text_gray_darker"
-                  href="./onDemandCharter.html"
-                  >On-Demand Charter</a
-                >
-              </li>
-              <li class="mb_1">
-                <a
-                  class="fw_normal text_white fs_md text_gray_darker"
-                  href="#"
-                  >Amalfi One Jet Card</a
-                >
-              </li>
-              <li class="mb_1">
-                <a
-                  class="fw_normal text_white fs_md text_gray_darker"
-                  href="./Amalfi_Enterprise.html"
-                  >Amalfi Enterprise Program</a
-                >
-              </li>
-              <li class="mb_1">
-                <a
-                  class="fw_normal text_white fs_md text_gray_darker"
-                  href="#"
-                  >Amalfi Reserve</a
-                >
-              </li>
-            </ul>
-          </div>
+          <!-- footer links -->
+          <div class="row justify_space_between justify_content_center justify_lg_start">
+            <div class="col_12 col_sm_6 col_lg_3">
+              <h4 class="mb_4 fs_lg clr_default_white text_uppercase text_align_center text_sm_start">
+                Our Program
+              </h4>
+              <ul class="d_flex flex_column gap_10 align_center align_sm_start">
+                <li class="mb_1">
+                  <a class="fw_normal fs_md clr_default_white" href="./onDemandCharter.html">On-Demand
+                    Charter</a>
+                </li>
+                <li class="mb_1">
+                  <a class="fw_normal fs_md clr_default_white" href="#">Amalfi One Jet Card</a>
+                </li>
+                <li class="mb_1">
+                  <a class="fw_normal fs_md clr_default_white" href="./Amalfi_Enterprise.html">Amalfi Enterprise
+                    Program</a>
+                </li>
+                <li class="mb_1">
+                  <a class="fw_normal fs_md clr_default_white" href="#">Amalfi Reserve</a>
+                </li>
+              </ul>
+            </div>
             <div class="col_12 mt_xsm_24 col_sm_6 col_lg_2">
-              <h4
-                class="mb_4 fs_lg text_uppercase text_align_center text_sm_start"
-              >
+              <h4 class="mb_4 clr_default_white fs_lg text_uppercase text_align_center text_sm_start">
                 Aircraft
               </h4>
               <ul class="d_flex flex_column gap_10 align_center align_sm_start">
                 <li class="mb_1">
-                  <a
-                    class="fw_normal text_white fs_md text_gray_darker"
-                    href="./jets.html"
-                    >Light Jets</a
-                  >
+                  <a class="fw_normal clr_default_white fs_md" href="./jets.html">Light Jets</a>
                 </li>
                 <li class="mb_1">
-                  <a
-                    class="fw_normal text_white fs_md text_gray_darker"
-                    href="./middlesizejets.html"
-                    >Midsize Jets</a
-                  >
+                  <a class="fw_normal clr_default_white fs_md" href="./middlesizejets.html">Midsize Jets</a>
                 </li>
                 <li class="mb_1">
-                  <a
-                    class="fw_normal text_white fs_md text_gray_darker"
-                    href="./supermidzone.html"
-                    >Super Midsize Jets</a
-                  >
+                  <a class="fw_normal clr_default_white fs_md" href="./supermidzone.html">Super Midsize Jets</a>
                 </li>
                 <li class="mb_1">
-                  <a
-                    class="fw_normal text_white fs_md text_gray_darker"
-                    href="./heavyjets.html"
-                    >Heavy Jets</a
-                  >
+                  <a class="fw_normal clr_default_white fs_md" href="./heavyjets.html">Heavy Jets</a>
                 </li>
                 <li class="mb_1">
-                  <a
-                    class="fw_normal text_white fs_md text_gray_darker"
-                    href="./Ultra.html"
-                    >Ultra Long Haul Jets</a
-                  >
+                  <a class="fw_normal clr_default_white fs_md" href="./Ultra.html">Ultra Long Haul Jets</a>
                 </li>
               </ul>
             </div>
             <div class="col_12 mt_xsm_24 col_sm_6 mt_4 mt_lg_0 col_lg_2">
-              <h4
-                class="mb_4 fs_lg text_uppercase text_align_center text_sm_start"
-              >
+              <h4 class="mb_4 clr_default_white fs_lg text_uppercase text_align_center text_sm_start">
                 Why Amalfi
               </h4>
               <ul class="d_flex flex_column gap_10 align_center align_sm_start">
                 <li class="mb_1">
-                  <a
-                    class="fw_normal text_white fs_md text_gray_darker"
-                    href="./assets/whyAmalfi/WhyAmalfi.html"
-                    >Why Amalfi</a
-                  >
+                  <a class="fw_normal  fs_md clr_default_white" href="./assets/whyAmalfi/WhyAmalfi.html">Why Amalfi</a>
                 </li>
                 <li class="mb_1">
-                  <a
-                    class="fw_normal text_white fs_md text_gray_darker"
-                    href="#"
-                    >Leadership Team</a
-                  >
+                  <a class="fw_normal  fs_md clr_default_white" href="#">Leadership Team</a>
                 </li>
                 <li class="mb_1">
-                  <a
-                    class="fw_normal text_white fs_md text_gray_darker"
-                    href="./assets/whyAmalfi/WhyAmalfiSaefty.html"
-                    >Safety</a
-                  >
+                  <a class="fw_normal  fs_md clr_default_white" href="./assets/whyAmalfi/WhyAmalfiSaefty.html">Safety</a>
                 </li>
                 <li class="mb_1">
-                  <a
-                    class="fw_normal text_white fs_md text_gray_darker"
-                    href="./assets/whyAmalfi/WhyAmalfiOperations.html"
-                    >Operations</a
-                  >
+                  <a class="fw_normal  fs_md clr_default_white"
+                    href="./assets/whyAmalfi/WhyAmalfiOperations.html">Operations</a>
                 </li>
                 <li class="mb_1">
-                  <a
-                    class="fw_normal text_white fs_md text_gray_darker"
-                    href="./assets/whyAmalfi/WhyAmalfiEscapades.html"
-                    >Escapades</a
-                  >
+                  <a class="fw_normal  fs_md clr_default_white"
+                    href="./assets/whyAmalfi/WhyAmalfiEscapades.html">Escapades</a>
                 </li>
               </ul>
             </div>
             <div class="col_12 mt_xsm_24 col_sm_6 mt_4 mt_lg_0 col_lg_2">
-              <h4
-                class="mb_4 fs_lg text_uppercase text_align_center text_sm_start"
-              >
+              <h4 class="mb_4 fs_lg clr_default_white text_uppercase text_align_center text_sm_start">
                 Engage
               </h4>
               <ul class="d_flex flex_column gap_10 align_center align_sm_start">
                 <li class="mb_1">
-                  <a
-                    class="fw_normal text_white fs_md text_gray_darker"
-                    href="#"
-                    >Media Center</a
-                  >
+                  <a class="fw_normal fs_md clr_default_white" href="#">Media Center</a>
                 </li>
                 <li class="mb_1">
-                  <a
-                    class="fw_normal text_white fs_md text_gray_darker"
-                    href="#"
-                    >Amalfi App</a
-                  >
+                  <a class="fw_normal fs_md clr_default_white" href="#">Amalfi App</a>
                 </li>
                 <li class="mb_1">
-                  <a
-                    class="fw_normal text_white fs_md text_gray_darker"
-                    href="#"
-                    >Contact Us</a
-                  >
+                  <a class="fw_normal fs_md clr_default_white" href="#">Contact Us</a>
                 </li>
                 <li class="mb_1">
-                  <a
-                    class="fw_normal text_white fs_md text_gray_darker"
-                    href="#"
-                    >Blog</a
-                  >
+                  <a class="fw_normal fs_md clr_default_white" href="#">Blog</a>
                 </li>
               </ul>
             </div>
             <div class="col_12 mt_xsm_24 col_sm_6 mt_3 mt_lg_0 col_lg_3">
-              <h4
-                class="mb_4 fs_lg text_uppercase text_align_center text_sm_start"
-              >
+              <h4 class="mb_4 clr_default_white fs_lg text_uppercase text_align_center text_sm_start">
                 Stay Updated
               </h4>
               <form>
-                <input
-                  class="footer_input text_white"
-                  type="email"
-                  placeholder="Enter email address"
-                />
+                <input class="footer_input text_white" type="email" placeholder="Enter email address" />
                 <div>
                   <input class="submit_btn" type="submit" value="Submit" />
                 </div>
               </form>
             </div>
           </div>
-
+    
+          <!-- copyrights -->
           <div class="mt_5 mt_xsm_10 pt_3 opacity_75 fw_normal">
-            <div class="text_align_center fs_xsm">
+            <div class="text_align_center fs_xsm clr_default_white">
               &copy; 2020-2024 All rights reserved. Amalfi Jets Inc.
             </div>
-
-            <div class="text_align_center fs_xsm mt_4 mt_xsm_10">
+    
+            <div class="text_align_center fs_xsm mt_4 mt_xsm_10 clr_default_white">
               The Amalfi One Jet Card, Amalfi Enterprise Program, and On-Demand
               Charter Program are programs of Amalfi Jets, an "Air Charter
               Broker" under DOT Regulations operating under Part 295 Regulations
@@ -888,28 +623,18 @@
               set by the FAA and internal requirements set by Amalfi Jets.
             </div>
           </div>
-
+    
           <div class="d_flex flex_column gap_3">
             <div class="text_align_center mt_4">
               <img src="./assets/png/footer imgae.png" alt="" />
             </div>
-
+    
             <div class="d_flex gap_3 justify_content_center">
               <div>
-                <img
-                  width="150"
-                  height="50"
-                  src="./assets/png/apple store.avif"
-                  alt=""
-                />
+                <img width="150" height="50" src="./assets/png/apple store.avif" alt="" />
               </div>
               <div>
-                <img
-                  width="150"
-                  height="50"
-                  src="./assets/png/play store.avif"
-                  alt=""
-                />
+                <img width="150" height="50" src="./assets/png/play store.avif" alt="" />
               </div>
             </div>
             <p class="text_align_center text_light_grey mt_5 mt_xsm_10">
@@ -955,7 +680,14 @@
         document.body.classList.remove("overflow_hidden");
       }
 
-      // slider
+           // nav will change opacity
+    document.addEventListener("scroll", (e) => {
+      const nav = document.querySelector("nav");
+      const scrollPosition = window.scrollY;
+      const maxScroll = 300;
+      const opacity = Math.min(scrollPosition / maxScroll, 1);
+      nav.style.backgroundColor = `rgba(0, 0, 0, ${opacity})`;
+    });
 
       // arrow icon rotate
       function navopen(element) {
