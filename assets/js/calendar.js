@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
         currentInput = input;
         calendarElement.style.display = 'block';
         calendarElement.style.left = input.getBoundingClientRect().left + 'px';
-        calendarElement.style.top = (input.getBoundingClientRect().bottom + window.scrollY) + 'px';
+        calendarElement.style.top = (input.getBoundingClientRect().bottom + window.scrollY + 5) + 'px'; // Added 5px for spacing
         renderCalendar(currentDate);
     }
 

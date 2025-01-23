@@ -582,7 +582,7 @@
     --fs_xll: 20px;
     --fs_xl: 27px;
     --fs_xxl: 42px;
-    --fs_2xl: 41px;
+    --fs_2xl: 41px !important;
     --fs_3xl: 32px;
     --fs_4xl: 32px !important;
   }
@@ -713,7 +713,7 @@
   }
 
   .sm_col_6 {
-    width: 50%;
+    width: 50% !important;
     padding-left: 12px;
     padding-right: 12px;
   }
@@ -1036,7 +1036,7 @@
   }
 
   .lg_w_20 {
-    width: 20%;
+    width: 16% !important;
     padding-left: 4px;
     padding-right: 4px;
   }
@@ -1115,7 +1115,7 @@
   }
 
   .lg_pt_0 {
-    padding-top: 0px;
+    padding-top: 0px !important;
   }
 
   .lg_ps_5 {
