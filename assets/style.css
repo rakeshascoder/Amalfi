@@ -1787,7 +1787,9 @@ footer {
 .hover_jets_link:hover {
   opacity: 0.5;
 }
-
+.z_3{
+  z-index: 3;
+}
 /* ===================== form css end here ============================ */
 
 /* ==============================  css for harish end here ================================= */
@@ -2162,7 +2164,7 @@ footer {
 .calendar th,
 .calendar td {
   border: 1px solid #ccc;
-  padding: 5px;
+  padding: 4px;
   text-align: center;
   cursor: pointer;
 }
