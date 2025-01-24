@@ -135,7 +135,6 @@
   z-index: 20 !important;
 }
 
-
 .bottom_0 {
   bottom: 0;
 }
@@ -508,7 +507,12 @@
   background: var(--white);
   color: var(--black);
 }
-
+.a_max_w_140 {
+  max-width: 140px;
+}
+.a_h_50 {
+  height: 50px;
+}
 /* rk css start here  */
 .pb_hero_section {
   padding-bottom: 53px;
@@ -547,7 +551,16 @@
 .a_target_blank {
   height: 100% !important;
 }
-
+.a_line_h_40{
+  line-height: 40px;
+}
+.gradient-scrim {
+  z-index: 1;
+  background-image: linear-gradient(#0000 75%, #fff);
+  display: block;
+  inset: 0%;
+  position: absolute;
+}
 /* rk css root  */
 :root {
   --fs_xsm: 12px;
@@ -562,10 +575,7 @@
 
   --fs_2xl: 68px;
   --fs_3xl: 64px;
- 
 }
-
-
 
 /* -------------------responsive------------------ */
 @media (max-width: 576px) {
@@ -629,7 +639,9 @@
   .swiper-rtl .swiper-button-next {
     left: var(--swiper-navigation-sides-offset, 10%) !important;
   }
-
+  .a_position_mobile{
+    top: 70%;
+  }
   /* rk css here  */
   .mb_xsm_40prcnt {
     margin-bottom: 75%;
@@ -671,7 +683,12 @@
     --fs_3xl: 32px;
     --fs_4xl: 42px !important;
   }
-
+  .a_position_mobile{
+    top: 65%;
+  }
+  .a_sm_max_w_170{
+    max-width: 170px;
+  }
   .a_easy_Booking_bg_1 {
     height: 700px;
   }
@@ -714,7 +731,9 @@
     padding-left: 12px;
     padding-right: 12px;
   }
-
+.sm_col_8{
+  width: 66.66%;
+}
   .sm_mt_0 {
     margin-top: 0;
   }
@@ -1003,7 +1022,9 @@
     --fs_2xl: 68px;
     --fs_3xl: 64px;
   }
-
+.lg_align_start{
+  align-items: flex-start;
+}
   .a_easy_Booking_bg_1 {
     height: 488px;
   }
@@ -1073,7 +1094,7 @@
   }
 
   .lg_col_7 {
-    width: 58.33%;
+    width: 58.33% !important;
     padding-left: 12px;
     padding-right: 12px;
   }
@@ -1081,7 +1102,9 @@
   .lg_p_3 {
     padding: 16px;
   }
-
+  .gradient-scrim {
+  display: none;
+  }
   .lg_p_5 {
     padding: 48px !important;
   }
@@ -1152,7 +1175,22 @@
   .swiper-rtl .swiper-button-next {
     left: var(--swiper-navigation-sides-offset, 37%) !important;
   }
-
+  .lg_text_start{
+    text-align: start;
+  }
+  .lg_align_item_start{
+    align-items: flex-start;
+  }
+  .lg_justify_center{
+    justify-content: center;
+  }
+  .lg_justify_start{
+    justify-content: flex-start;
+  }
+  .a_position_mobile {
+    top: 19%;
+    right: -7%;
+}
   /* rk css start here  */
   .lg_to_xxl_w_150 {
     width: 150px;
@@ -1252,7 +1290,15 @@
     padding-top: 48px;
     padding-bottom: 48px;
   }
-
+.xl_col_4{
+  width: 33.33% !important;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.a_position_mobile {
+  top: 19%;
+  right: 5%;
+}
   .a_bg_operation {
     height: 611px;
   }
@@ -1268,9 +1314,13 @@
   .xl_a_max_w_481 {
     max-width: 481px;
   }
-
+.xl_col_7{
+  width: 58.88% !important;
+  padding-left: 12px;
+  padding-right: 12px;
+}
   .xl_col_5 {
-    width: 41.66%;
+    width: 41.66% !important;
     padding-left: 12px;
     padding-right: 12px;
   }
@@ -1293,7 +1343,9 @@
     padding-left: 12px;
     padding-right: 12px;
   }
-
+.xl_col_4{
+  width: 33.33% !important  ;
+}
   .xl_p_3 {
     padding: 16px;
   }
@@ -1356,6 +1408,9 @@
     padding-left: 12px;
     padding-right: 12px;
   }
+  .xxl_col_5{
+    width: 43.66% !important;
+  }
 
   .xxl_max_w_724 {
     max-width: 724px;
@@ -1371,7 +1426,7 @@
     padding-left: 12px;
     padding-right: 12px;
   }
-  .px_4_special_case{
+  .px_4_special_case {
     padding-inline: 24px !important;
   }
 }
