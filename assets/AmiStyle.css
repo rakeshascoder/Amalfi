@@ -551,8 +551,15 @@
 .a_target_blank {
   height: 100% !important;
 }
-.a_line_h_35{
-  line-height: 35px;
+.a_line_h_40{
+  line-height: 40px;
+}
+.gradient-scrim {
+  z-index: 1;
+  background-image: linear-gradient(#0000 75%, #fff);
+  display: block;
+  inset: 0%;
+  position: absolute;
 }
 /* rk css root  */
 :root {
@@ -724,7 +731,9 @@
     padding-left: 12px;
     padding-right: 12px;
   }
-
+.sm_col_8{
+  width: 66.66%;
+}
   .sm_mt_0 {
     margin-top: 0;
   }
@@ -1013,7 +1022,9 @@
     --fs_2xl: 68px;
     --fs_3xl: 64px;
   }
-
+.lg_align_start{
+  align-items: flex-start;
+}
   .a_easy_Booking_bg_1 {
     height: 488px;
   }
@@ -1091,7 +1102,9 @@
   .lg_p_3 {
     padding: 16px;
   }
-
+  .gradient-scrim {
+  display: none;
+  }
   .lg_p_5 {
     padding: 48px !important;
   }
@@ -1307,7 +1320,7 @@
   padding-right: 12px;
 }
   .xl_col_5 {
-    width: 41.66%;
+    width: 41.66% !important;
     padding-left: 12px;
     padding-right: 12px;
   }
@@ -1330,7 +1343,9 @@
     padding-left: 12px;
     padding-right: 12px;
   }
-
+.xl_col_4{
+  width: 33.33% !important  ;
+}
   .xl_p_3 {
     padding: 16px;
   }

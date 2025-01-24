@@ -70,6 +70,7 @@ p {
   --brdr_color: #c6c5d0;
   --bg_light_surface: #f0f3f4;
   --clr_dark_surface: #1a1c1c;
+  --clr_blue_icon: white;
   --clr_low: #f5f5f5;
 }
 
@@ -81,6 +82,7 @@ p {
   --met_color: #afaeae;
   --set-gray: rgba(145, 144, 144, 0.616);
   --brdr_color: #232326;
+  --clr_blue_icon:black;
   /* these below two color need to change accroding to theme */
   /* --bg_light_surface: #f0f3f4;
   --clr_dark_surface: #1a1c1c; */
@@ -1238,7 +1240,7 @@ nav {
 }
 
 .theme_icon path {
-  fill: var(--white);
+  fill: var(--clr_blue_icon);
 }
 
 .arrow_icon path {
@@ -2160,7 +2162,6 @@ footer {
   border-collapse: collapse;
   width: 100%;
 }
-
 .calendar th,
 .calendar td {
   border: 1px solid #ccc;
@@ -2179,7 +2180,6 @@ footer {
   align-items: center;
   margin-bottom: 10px;
 }
-
 .prev-btn,
 .next-btn {
   background: none;
@@ -2188,6 +2188,9 @@ footer {
   cursor: pointer;
 }
 
+.hidden {
+  display: none;
+}
 .jet_app_header_bg{
   background-image:linear-gradient(#3636368a, #131313), url(./image/png/jet_app_page_header_bg.png);
   background-repeat: no-repeat;
