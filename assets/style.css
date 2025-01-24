@@ -71,6 +71,7 @@ p {
   --bg_light_surface: #f0f3f4;
   --clr_dark_surface: #1a1c1c;
   --clr_blue_icon: white;
+  --clr_low: #f5f5f5;
 }
 
 .light_theme {
@@ -116,6 +117,7 @@ p {
   color: white;
 }
 
+
 .clr_default_lightgrey {
   color: #f5f5f5;
 }
@@ -123,6 +125,10 @@ p {
 .theme_btn {
   background-color: var(--black);
   color: var(--white);
+}
+
+.clr_low {
+  color: var(--clr_low);
 }
 
 footer img {
@@ -235,6 +241,7 @@ footer img {
 .bg_black {
   background-color: var(--black);
 }
+
 .bg_white {
   background-color: var(--white);
 }
@@ -256,6 +263,7 @@ footer img {
 .border_black_a {
   border: 1px solid var(--black);
 }
+
 .a_border_white {
   border: 1px solid white;
 }
@@ -376,9 +384,11 @@ footer img {
 .m-5 {
   margin: 48px;
 }
+
 .mx_0 {
   margin-inline: 0;
 }
+
 .mx_1 {
   margin-inline: 4px;
 }
@@ -905,6 +915,9 @@ button {
 .line_height_15 {
   line-height: 15px;
 }
+.line_height_129 {
+  line-height:1.129;
+}
 
 .line_height_22 {
   line-height: 22px;
@@ -1229,6 +1242,7 @@ nav {
 .theme_icon path {
   fill: var(--clr_blue_icon);
 }
+
 .arrow_icon path {
   fill: var(--white);
 }
@@ -1775,7 +1789,9 @@ footer {
 .hover_jets_link:hover {
   opacity: 0.5;
 }
-
+.z_3{
+  z-index: 3;
+}
 /* ===================== form css end here ============================ */
 
 /* ==============================  css for harish end here ================================= */
@@ -1988,6 +2004,7 @@ footer {
   padding: 16px 18px;
   border-radius: 15px;
 }
+
 .black_bg {
   background-color: black !important;
 }
@@ -2140,6 +2157,7 @@ footer {
   padding: 10px;
   z-index: 1000;
 }
+
 .calendar table {
   border-collapse: collapse;
   width: 100%;
@@ -2147,13 +2165,15 @@ footer {
 .calendar th,
 .calendar td {
   border: 1px solid #ccc;
-  padding: 5px;
+  padding: 4px;
   text-align: center;
   cursor: pointer;
 }
+
 .calendar th {
   background: #f0f0f0;
 }
+
 .calendar-header {
   display: flex;
   justify-content: space-between;
@@ -2170,4 +2190,7 @@ footer {
 
 .hidden {
   display: none;
+}
+.jet_app_header_bg{
+  background-image:linear-gradient(#3636368a, #131313), url(./image/png/jet_app_page_header_bg.png);
 }
