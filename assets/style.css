@@ -70,6 +70,7 @@ p {
   --brdr_color: #c6c5d0;
   --bg_light_surface: #f0f3f4;
   --clr_dark_surface: #1a1c1c;
+  --clr_blue_icon: white;
 }
 
 .light_theme {
@@ -80,6 +81,7 @@ p {
   --met_color: #afaeae;
   --set-gray: rgba(145, 144, 144, 0.616);
   --brdr_color: #232326;
+  --clr_blue_icon:black;
   /* these below two color need to change accroding to theme */
   /* --bg_light_surface: #f0f3f4;
   --clr_dark_surface: #1a1c1c; */
@@ -1136,7 +1138,7 @@ button {
   fill: var(--white);
 }
 
-.fill_black{
+.fill_black {
   fill: var(--black) !important;
 }
 
@@ -1225,7 +1227,7 @@ nav {
 }
 
 .theme_icon path {
-  fill: var(--white);
+  fill: var(--clr_blue_icon);
 }
 .arrow_icon path {
   fill: var(--white);
@@ -2051,7 +2053,7 @@ footer {
   border-bottom: 2px solid var(--pink-tint);
   width: 100%;
   text-align: center;
-  color:white !important;
+  color: white !important;
 }
 
 .content {
@@ -2129,8 +2131,8 @@ footer {
 
 /* done
  */
- /* --------------------calender css------------------------- */
- .calendar {
+/* --------------------calender css------------------------- */
+.calendar {
   display: none;
   position: absolute;
   background: white;
@@ -2142,7 +2144,8 @@ footer {
   border-collapse: collapse;
   width: 100%;
 }
-.calendar th, .calendar td {
+.calendar th,
+.calendar td {
   border: 1px solid #ccc;
   padding: 5px;
   text-align: center;
@@ -2157,9 +2160,14 @@ footer {
   align-items: center;
   margin-bottom: 10px;
 }
-.prev-btn, .next-btn {
+.prev-btn,
+.next-btn {
   background: none;
   border: none;
   font-size: 16px;
   cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }
