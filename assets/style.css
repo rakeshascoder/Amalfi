@@ -257,7 +257,7 @@ footer img {
 /* -----button--------- */
 
 .theme_button {
-  background: transparent;
+  background: transparent !important;
 }
 
 .border_black_a {
