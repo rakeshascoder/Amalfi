@@ -70,6 +70,7 @@ p {
   --brdr_color: #c6c5d0;
   --bg_light_surface: #f0f3f4;
   --clr_dark_surface: #1a1c1c;
+  --clr_low: #f5f5f5;
 }
 
 .light_theme {
@@ -114,6 +115,7 @@ p {
   color: white;
 }
 
+
 .clr_default_lightgrey {
   color: #f5f5f5;
 }
@@ -121,6 +123,10 @@ p {
 .theme_btn {
   background-color: var(--black);
   color: var(--white);
+}
+
+.clr_low {
+  color: var(--clr_low);
 }
 
 footer img {
@@ -233,6 +239,7 @@ footer img {
 .bg_black {
   background-color: var(--black);
 }
+
 .bg_white {
   background-color: var(--white);
 }
@@ -254,6 +261,7 @@ footer img {
 .border_black_a {
   border: 1px solid var(--black);
 }
+
 .a_border_white {
   border: 1px solid white;
 }
@@ -374,9 +382,11 @@ footer img {
 .m-5 {
   margin: 48px;
 }
+
 .mx_0 {
   margin-inline: 0;
 }
+
 .mx_1 {
   margin-inline: 4px;
 }
@@ -903,6 +913,9 @@ button {
 .line_height_15 {
   line-height: 15px;
 }
+.line_height_129 {
+  line-height:1.129;
+}
 
 .line_height_22 {
   line-height: 22px;
@@ -1136,7 +1149,7 @@ button {
   fill: var(--white);
 }
 
-.fill_black{
+.fill_black {
   fill: var(--black) !important;
 }
 
@@ -1227,6 +1240,7 @@ nav {
 .theme_icon path {
   fill: var(--white);
 }
+
 .arrow_icon path {
   fill: var(--white);
 }
@@ -1986,6 +2000,7 @@ footer {
   padding: 16px 18px;
   border-radius: 15px;
 }
+
 .black_bg {
   background-color: black !important;
 }
@@ -2051,7 +2066,7 @@ footer {
   border-bottom: 2px solid var(--pink-tint);
   width: 100%;
   text-align: center;
-  color:white !important;
+  color: white !important;
 }
 
 .content {
@@ -2129,8 +2144,8 @@ footer {
 
 /* done
  */
- /* --------------------calender css------------------------- */
- .calendar {
+/* --------------------calender css------------------------- */
+.calendar {
   display: none;
   position: absolute;
   background: white;
@@ -2138,28 +2153,39 @@ footer {
   padding: 10px;
   z-index: 1000;
 }
+
 .calendar table {
   border-collapse: collapse;
   width: 100%;
 }
-.calendar th, .calendar td {
+
+.calendar th,
+.calendar td {
   border: 1px solid #ccc;
   padding: 5px;
   text-align: center;
   cursor: pointer;
 }
+
 .calendar th {
   background: #f0f0f0;
 }
+
 .calendar-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
 }
-.prev-btn, .next-btn {
+
+.prev-btn,
+.next-btn {
   background: none;
   border: none;
   font-size: 16px;
   cursor: pointer;
+}
+
+.jet_app_header_bg{
+  background-image:linear-gradient(#3636368a, #131313), url(./image/png/jet_app_page_header_bg.png);
 }
