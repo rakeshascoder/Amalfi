@@ -6,7 +6,7 @@
     --fs_md: 15px;
     --fs_lg: 13px;
     --fs_xl: 25px;
-    --fs_2xl: 40px; 
+    --fs_2xl: 36px !important; 
   }
   .py_xsm_10 {
     padding-top: 10px;

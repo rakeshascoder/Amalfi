@@ -2190,4 +2190,6 @@ footer {
 
 .jet_app_header_bg{
   background-image:linear-gradient(#3636368a, #131313), url(./image/png/jet_app_page_header_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
