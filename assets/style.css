@@ -1880,6 +1880,7 @@ footer {
   text-align: center;
   width: 100%;
   cursor: pointer;
+  opacity: 0.6;
 }
 
 .tab.active {
@@ -1888,10 +1889,7 @@ footer {
   width: 100%;
   text-align: center;
   color: var(--white);
-}
-
-.content {
-  display: none;
+  opacity: 1;
 }
 
 .content.active {
