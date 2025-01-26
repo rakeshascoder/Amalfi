@@ -1255,7 +1255,10 @@
     padding-left: 12px;
     padding-right: 12px;
   }
-
+.lg_px_0{
+  padding-left: 0;
+  padding-right: 0;
+}
   .mt_maintain {
     margin-top: 4.235em;
   }
