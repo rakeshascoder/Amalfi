@@ -998,7 +998,9 @@
   .md_mt_0 {
     margin-top: 0 !important;
   }
-
+.md_pt_5{
+  padding-top: 48px;
+}
   .custom_container_r {
     width: calc(100vw - 66px);
     margin: 0 auto;

@@ -2344,9 +2344,12 @@ footer {
   max-width: 1280px;
 }
 
-.list_disc {
+.list_disc li{
   list-style-type: disc !important;
   margin-left: 20px;
+  font-family: "Montserrat", sans-serif !important;
+  color: white;
+
   /* Optional for spacing */
 }
 
