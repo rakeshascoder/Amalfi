@@ -1139,6 +1139,10 @@
     padding-bottom: 0 !important;
   }
 
+  .py_lg_13 {
+    padding-block: 13px;
+  }
+
   .lg_col_4 {
     width: 33.33%;
     padding-left: 12px;
@@ -1230,10 +1234,12 @@
   .py_every_section {
     padding-block: 73px;
   }
-  .pt_lg_5{
+
+  .pt_lg_5 {
     padding-top: 48px;
   }
-  .mt_lg_5{
+
+  .mt_lg_5 {
     margin-top: 48px;
   }
 
@@ -1257,10 +1263,12 @@
     padding-left: 12px;
     padding-right: 12px;
   }
-.lg_px_0{
-  padding-left: 0;
-  padding-right: 0;
-}
+
+  .lg_px_0 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .mt_maintain {
     margin-top: 4.235em;
   }

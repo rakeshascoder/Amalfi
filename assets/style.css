@@ -862,6 +862,11 @@ button {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+.py_13 {
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
 
 .p_25 {
   padding: 25px;
@@ -1469,6 +1474,9 @@ footer {
   width: 100%;
   border-radius: 5px;
 }
+.footer_input::placeholder{
+  color: rgba(255, 255, 255, 0.524) !important;
+} 
 
 .submit_btn {
   background-color: white;
