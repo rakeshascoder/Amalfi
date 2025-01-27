@@ -1189,6 +1189,7 @@ button {
   padding-left: 0.75rem;
   padding-right: 1.75rem;
   color: var(--black);
+  border-radius: 50px;
   background-color: var(--white);
 }
 
