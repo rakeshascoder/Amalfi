@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
+
+
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +11,10 @@
   box-sizing: border-box;
   font-family: "Figtree", sans-serif;
   scroll-behavior: smooth;
+}
+
+body.ff_montserrat {
+  font-family: "Montserrat", sans-serif !important;
 }
 
 .custom_container {
@@ -21,6 +27,10 @@
   max-width: 1257px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.ff_montserrat {
+  font-family: "Montserrat", serif !important;
 }
 
 h1,
@@ -2232,6 +2242,7 @@ footer {
   line-height: 1.2;
   font-family: Montserrat, sans-serif;
 }
+
 .blog_page .blog p {
   font-size: 16px;
   color: var(--black);
@@ -2239,21 +2250,26 @@ footer {
   padding-top: 8px;
   font-family: Montserrat, sans-serif;
 }
+
 .blog_page .blog img {
   max-height: 304px;
   width: 100%;
 }
+
 .blog_page .blog .row {
   transition: all 400ms;
   cursor: pointer;
 }
+
 .blog_page .blog .row:hover {
   background: var(--white);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .mb_n_1 {
   margin-bottom: -4px;
 }
+
 .blog_page .form p {
   font-size: 16px;
   color: var(--black);
@@ -2261,12 +2277,14 @@ footer {
   padding-top: 8px;
   font-family: Montserrat, sans-serif;
 }
+
 .blog_page .form h2 {
   color: var(--black);
   font-size: var(--fs_xl);
   font-weight: 500;
   line-height: 1.2;
 }
+
 .blog_page .form h6 {
   color: var(--black);
   font-size: var(--fs_xsm);
@@ -2277,9 +2295,11 @@ footer {
   font-style: italic;
   font-family: Montserrat, sans-serif;
 }
+
 .form_boder {
   border: 1px solid var(--brdr_color);
 }
+
 .blog_page .input_blog {
   width: 100%;
   padding: 8px;
@@ -2289,24 +2309,39 @@ footer {
   font-size: 16px;
   background-color: var(--white);
 }
-.blog_page .input_blog::placeholder{
+
+.blog_page .input_blog::placeholder {
   color: var(--black);
   font-size: 16px;
 }
-.reCaptcha_box{
+
+.reCaptcha_box {
   border: 1px solid var(--brdr_color);
   padding: 4px;
   max-width: 300px;
   background-color: var(--white);
 }
-.h_w_28{
+
+.h_w_28 {
   height: 28px;
   width: 28px;
 }
-.w_10{
+
+.w_10 {
   width: 10%;
 }
+
 /* ---------terms and services css------------ */
-.max_w_1280{
+.max_w_1280 {
   max-width: 1280px;
+}
+
+.list_disc {
+  list-style-type: disc !important;
+  margin-left: 20px;
+  /* Optional for spacing */
+}
+
+.list_disc li::marker { 
+  color: white !important;
 }
