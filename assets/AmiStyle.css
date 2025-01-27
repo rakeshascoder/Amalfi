@@ -433,6 +433,7 @@
 .a_card_hover {
   transition: all 400ms;
   cursor: pointer;
+  height: 100%;
 }
 
 .a_card_hover:hover {
