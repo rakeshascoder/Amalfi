@@ -1169,7 +1169,9 @@
   .lg_pt_0 {
     padding-top: 0px !important;
   }
-
+.align_lg_center{
+  align-items: center;
+}
   .lg_ps_5 {
     padding-left: 48px;
   }
