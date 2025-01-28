@@ -726,7 +726,7 @@ button {
 }
 
 .d_none {
-  display: none;
+  display: none !important;
 }
 
 .d_block {
@@ -2382,4 +2382,10 @@ footer {
 }
 .max_w_460 {
   max-width: 460px;
+}
+.gap_30 {
+  gap: 30px;
+}
+.white_space {
+  white-space: nowrap;
 }

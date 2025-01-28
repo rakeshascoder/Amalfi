@@ -122,7 +122,10 @@
     max-width: 45ch;
   }
   .d_md_block {
-    display: block;
+    display: block !important;
+  }
+  .d_md_flex {
+    display: flex !important;
   }
   .mb_md_5 {
     margin-bottom: 48px;
@@ -217,7 +220,7 @@
   }
 
   .d_lg_block {
-    display: block;
+    display: block !important;
   }
   .mx_lg_4 {
     margin-top: 24px;
@@ -230,7 +233,7 @@
   }
 
   .d_lg_flex {
-    display: flex;
+    display: flex !important;
   }
   .mt_lg_0 {
     margin-top: 0;
@@ -259,6 +262,12 @@
   .padding_lg_30_67 {
     padding: 30px 67px;
   }
+  .d_lg_none {
+    display: none !important;
+  }
+  .gap_lg_40 {
+    gap: 40px;
+  }
 }
 @media (min-width: 1200px) {
   :root {
@@ -282,6 +291,9 @@
 @media (min-width: 1400px) {
   .pe_xxl_5 {
     padding-right: 48px;
+  }
+  .px_xxl_60 {
+    padding: 0px 0px 0px 60px;
   }
 }
 @media (min-width: 1600px) {
