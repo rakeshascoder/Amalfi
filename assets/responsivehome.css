@@ -197,9 +197,12 @@
     padding-right: 12px;
   }
   .col_lg_3 {
-    width: 25%;
+    width: 25% !important;
     padding-left: 12px;
     padding-right: 12px;
+  }
+  .flex_lg_column{
+    flex-direction: column;
   }
   .col_lg_4 {
     width: 33.33%;
