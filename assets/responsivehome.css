@@ -274,6 +274,24 @@
   .gap_lg_40 {
     gap: 40px;
   }
+  .dropdown button {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+}
+@media (min-width: 1100px) {
+  :root {
+    --fs_xsm: 12px;
+    --fs_sm: 13px;
+    --fs_base: 14px;
+    --fs_md: 15px;
+    --fs_lg: 16px;
+    --fs_xl: 33px;
+    --fs_2xl: 68px;
+  }
+  .d_xll_block {
+    display: block !important;
+  }
 }
 @media (min-width: 1200px) {
   :root {
@@ -309,7 +327,7 @@
   }
   .language-button {
     gap: 8px;
-    padding: 12px;
+    padding: 13px;
     margin: 10px;
   }
   .language-menu {
