@@ -2389,3 +2389,6 @@ footer {
 .white_space {
   white-space: nowrap;
 }
+.px_9 {
+  padding: 0 9px;
+}
