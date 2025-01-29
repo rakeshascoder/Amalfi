@@ -316,6 +316,9 @@
   .px_xl_15 {
     padding: 13px 15px;
   }
+  .d_xl_block {
+    display: block !important;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -325,13 +328,13 @@
   .px_xxl_60 {
     padding: 0px 0px 0px 60px;
   }
-  .d_xxl_block {
+  .d_xl_block {
     display: block !important;
   }
   .language-button {
     gap: 8px;
-    padding: 13px;
-    margin: 10px;
+    padding: 5px 8px;
+    margin: 5px;
   }
   .language-menu {
     left: 18px;

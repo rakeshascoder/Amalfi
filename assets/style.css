@@ -2425,7 +2425,7 @@ footer {
 
 .dropdown-content {
   position: absolute;
-  top: 200%;
+  top: 100%;
   left: 0;
   width: 260px;
   background: white;
@@ -2441,6 +2441,10 @@ footer {
   color: black;
   text-decoration: none;
   transition: background 0.3s;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .dropdown-content a:hover {
