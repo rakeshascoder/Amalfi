@@ -13,3 +13,4 @@ darkThemeBtn.addEventListener("click", () => {
   darkThemeBtn.classList.add("hidden");
   lightThemeBtn.classList.remove("hidden");
 });
+
