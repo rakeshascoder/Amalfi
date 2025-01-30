@@ -851,7 +851,7 @@ button {
 }
 
 .top_0 {
-  top: 0;
+  top: 0 !important;
 }
 
 .px_15 {
@@ -2512,8 +2512,16 @@ footer {
   margin-right: 8px;
 }
 
-
 #google_translate_element,
-      .skiptranslate {
-        display: none;
-      }
+.skiptranslate {
+  display: none;
+}
+.goog-te-banner-frame {
+  display: none !important;
+}
+
+#google_translate_element {
+  min-height: auto !important;
+  position: static !important;
+  margin-top: 0 !important;
+}

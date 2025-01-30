@@ -115,31 +115,14 @@
             a charter</a>
           <a href="#"
             class="explore_btn d_block d_lg_none fs_xsm px_12 py_10 text_uppercase d_inline_block text_black fw_normal letter_spacing_1">fly</a>
+          <select id="language" style="border: none; padding: 10px 5px; border-radius: 10px; outline: none;"
+            onchange="translatePage()">
+            <option value="">Select</option>
+            <option value="en">English</option>
+            <option value="de">German</option>
+          </select>
 
-          <div class="language-dropdown d_none d_sm_block d_md_none d_xl_block">
-            <button class="language-button" id="languageButton">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg" alt="Spanish Flag">
-              <svg viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd"
-                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                  clip-rule="evenodd" />
-              </svg>
-            </button>
-            <div class="language-menu" id="languageMenu">
-              <div class="language-menu-item">
-                <img src="https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg" alt="French Flag">
-              </div>
-              <div class="language-menu-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg" alt="Spanish Flag">
-              </div>
-              <div class="language-menu-item">
-                <img src="https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg" alt="French Flag">
-              </div>
-              <div class="language-menu-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg" alt="Spanish Flag">
-              </div>
-            </div>
-          </div>
+          <div id="google_translate_element"></div>
         </div>
       </nav>
 
@@ -720,6 +703,10 @@
 
     </footer>
 
+
+    <script src="./assets/js/Changelanguage.js"></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
     <script>
       const hamburgerMenu = document.querySelector(".hamburger_menu");
       const menuOverlay = document.querySelector(".menu_overlay");
