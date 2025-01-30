@@ -668,14 +668,14 @@
                   Charter</a>
               </li>
               <li class="mb_1">
-                <a class="fw_normal fs_md black_clr" href="#">Amalfi One Jet Card</a>
+                <a class="fw_normal fs_md black_clr" href="./theAmalfiOneJetCard.html">Amalfi One Jet Card</a>
               </li>
               <li class="mb_1">
                 <a class="fw_normal fs_md black_clr white_space" href="./Amalfi_Enterprise.html">Amalfi Enterprise
                   Program</a>
               </li>
               <li class="mb_1">
-                <a class="fw_normal fs_md black_clr" href="#">Amalfi Reserve</a>
+                <a class="fw_normal fs_md black_clr" href="./ReserveMembership.html">Amalfi Reserve</a>
               </li>
             </ul>
           </div>
@@ -855,108 +855,108 @@
   </script>
   <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
   </script>
+  <script>
+    const hamburgerMenu = document.querySelector(".hamburger_menu");
+    const menuOverlay = document.querySelector(".menu_overlay");
+    const closeMenu = document.querySelector(".close_menu");
+    const innerNav = document.getElementById("inner_nav");
+    const navaircraft = document.getElementById("nav_aircraft");
+    const navwhyamalficard = document.getElementById("navwhyamalficard");
+    const navmedia = document.getElementById("navmediacard");
+    const backdrop = document.getElementById("backdrop");
 
-  const hamburgerMenu = document.querySelector(".hamburger_menu");
-  const menuOverlay = document.querySelector(".menu_overlay");
-  const closeMenu = document.querySelector(".close_menu");
-  const innerNav = document.getElementById("inner_nav");
-  const navaircraft = document.getElementById("nav_aircraft");
-  const navwhyamalficard = document.getElementById("navwhyamalficard");
-  const navmedia = document.getElementById("navmediacard");
-  const backdrop = document.getElementById("backdrop");
+    // open nav
 
-  // open nav
+    hamburgerMenu.addEventListener("click", (e) => {
+      e.preventDefault();
+      backdrop.classList.remove("-left_100");
+      menuOverlay.classList.add("active");
+      document.body.classList.add("overflow_hidden");
+    });
 
-  hamburgerMenu.addEventListener("click", (e) => {
-  e.preventDefault();
-  backdrop.classList.remove("-left_100");
-  menuOverlay.classList.add("active");
-  document.body.classList.add("overflow_hidden");
-  });
+    closeMenu.addEventListener("click", closeMenuFunction);
+    backdrop.addEventListener("click", closeMenuFunction);
 
-  closeMenu.addEventListener("click", closeMenuFunction);
-  backdrop.addEventListener("click", closeMenuFunction);
+    function closeMenuFunction() {
+      menuOverlay.classList.remove("active");
+      backdrop.classList.add("-left_100");
+      innerNav.classList.add("hidden");
+      navaircraft.classList.add("hidden");
+      navwhyamalficard.classList.add("hidden");
+      navmedia.classList.add("hidden");
+      document.body.classList.remove("overflow_hidden");
+    }
 
-  function closeMenuFunction() {
-  menuOverlay.classList.remove("active");
-  backdrop.classList.add("-left_100");
-  innerNav.classList.add("hidden");
-  navaircraft.classList.add("hidden");
-  navwhyamalficard.classList.add("hidden");
-  navmedia.classList.add("hidden");
-  document.body.classList.remove("overflow_hidden");
-  }
+    document.addEventListener("scroll", (e) => {
+      const nav = document.querySelector("nav");
+      const scrollPosition = window.scrollY;
+      const maxScroll = 300;
+      const opacity = Math.min(scrollPosition / maxScroll, 1);
+      nav.style.backgroundColor = `rgba(0, 0, 0, ${opacity})`;
+    });
 
-  document.addEventListener("scroll", (e) => {
-  const nav = document.querySelector("nav");
-  const scrollPosition = window.scrollY;
-  const maxScroll = 300;
-  const opacity = Math.min(scrollPosition / maxScroll, 1);
-  nav.style.backgroundColor = `rgba(0, 0, 0, ${opacity})`;
-  });
+    // arrow icon rotate
+    function navopen(element) {
+      const arrowIcon = element.querySelector(".icon_arrow");
 
-  // arrow icon rotate
-  function navopen(element) {
-  const arrowIcon = element.querySelector(".icon_arrow");
+      if (arrowIcon) {
+        arrowIcon.classList.toggle("rotated");
+      }
 
-  if (arrowIcon) {
-  arrowIcon.classList.toggle("rotated");
-  }
+      // inner nav open
 
-  // inner nav open
+      // for 1st card
+      if (element.id === "programButton") {
+        innerNav.classList.toggle("hidden");
+      } else {
+        innerNav.classList.add("hidden");
+      }
+      // for 2nd card
+      if (element.id === "aircraftbutton") {
+        navaircraft.classList.toggle("hidden");
+      } else {
+        navaircraft.classList.add("hidden");
+      }
+      // for 3rd card
+      if (element.id === "whyamalfibutton") {
+        navwhyamalficard.classList.toggle("hidden");
+      } else {
+        navwhyamalficard.classList.add("hidden");
+      }
+      // for 4th card
 
-  // for 1st card
-  if (element.id === "programButton") {
-  innerNav.classList.toggle("hidden");
-  } else {
-  innerNav.classList.add("hidden");
-  }
-  // for 2nd card
-  if (element.id === "aircraftbutton") {
-  navaircraft.classList.toggle("hidden");
-  } else {
-  navaircraft.classList.add("hidden");
-  }
-  // for 3rd card
-  if (element.id === "whyamalfibutton") {
-  navwhyamalficard.classList.toggle("hidden");
-  } else {
-  navwhyamalficard.classList.add("hidden");
-  }
-  // for 4th card
+      if (element.id === "Mediabutton") {
+        navmedia.classList.toggle("hidden");
+      } else {
+        navmedia.classList.add("hidden");
+      }
+    }
 
-  if (element.id === "Mediabutton") {
-  navmedia.classList.toggle("hidden");
-  } else {
-  navmedia.classList.add("hidden");
-  }
-  }
+    function increaseValue() {
+      const input = document.getElementById("passengerInput");
+      let currentValue = parseInt(input.value, 10) || 0;
+      input.value = currentValue + 1;
+    }
 
-  function increaseValue() {
-  const input = document.getElementById("passengerInput");
-  let currentValue = parseInt(input.value, 10) || 0;
-  input.value = currentValue + 1;
-  }
+    // Function to decrease the value
+    function decreaseValue() {
+      const input = document.getElementById("passengerInput");
+      let currentValue = parseInt(input.value, 10) || 0;
+      if (currentValue > 1) {
+        input.value = currentValue - 1;
+      }
+    }
 
-  // Function to decrease the value
-  function decreaseValue() {
-  const input = document.getElementById("passengerInput");
-  let currentValue = parseInt(input.value, 10) || 0;
-  if (currentValue > 1) {
-  input.value = currentValue - 1;
-  }
-  }
+    document.addEventListener("click", (event) => {
+      // console.log(event.target,"event name here")
+      const isClickInsideMenu =
+        menuOverlay.contains(event.target) ||
+        hamburgerMenu.contains(event.target);
 
-  document.addEventListener("click", (event) => {
-  // console.log(event.target,"event name here")
-  const isClickInsideMenu =
-  menuOverlay.contains(event.target) ||
-  hamburgerMenu.contains(event.target);
-
-  if (!isClickInsideMenu) {
-  closeMenuFunction();
-  }
-  });
+      if (!isClickInsideMenu) {
+        closeMenuFunction();
+      }
+    });
   </script>
   <script src="./assets/js/theme.js"></script>
 

@@ -1839,7 +1839,7 @@ footer {
   background-position: 70%;
 }
 
-.amalfi_enterprice_bg::after {
+/* .amalfi_enterprice_bg::after {
   content: "";
   background-image: linear-gradient(#0000, #000000dc);
   height: 100%;
@@ -1847,7 +1847,7 @@ footer {
   top: 0;
   position: absolute;
   left: 0;
-}
+} */
 
 .img_ratio_cover_4_3 {
   aspect-ratio: 4 / 3;
