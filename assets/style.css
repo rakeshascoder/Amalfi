@@ -213,7 +213,7 @@ footer img {
 /* COLOR */
 
 .black_clr {
-  color: var(--black);
+  color: var(--black) !important;
 }
 
 .white_clr {
