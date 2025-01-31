@@ -16,7 +16,7 @@
   <div class="sticky top_0 z_99">
     <nav class="d_flex absolute z_1 justify_space_between w_100">
       <div class="d_flex align_center gap_lg_40">
-        <li class="h_67 w_67 d_flex justify_content_center align_center hamburger_menu d_lg_none hamburger_hover">
+        <li class="h_67 w_50 px_2 d_flex justify_content_center align_center hamburger_menu d_lg_none hamburger_hover">
           <a href="#">
             <svg class="fill_white" width="26" height="26" viewBox="0 0 26 26" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -27,9 +27,9 @@
           </a>
         </li>
         </ul>
-        <div class="d_flex justify_content_center align_center px_10 px_xxl_60">
+        <div class="d_flex justify_content_center align_center px_ 10 px_xxl_60">
           <a href="./index.html">
-            <img class="h_50" src="./assets/png/logo.png" alt="" />
+            <img width="100" class="h_50" src="./assets/png/logo.png" alt="" />
           </a>
         </div>
       </div>
@@ -113,18 +113,16 @@
         <a href="#"
           class="explore_btn d_block d_lg_none fs_xsm px_12 py_10 text_uppercase d_inline_block text_black fw_normal letter_spacing_1">fly</a>
 
-        <select id="language" style="border: none; padding: 10px 5px; border-radius: 10px; outline: none;"
+        <select id="language" style="border: none; padding: 7px 2px; border-radius: 10px; outline: none;"
           onchange="translatePage()">
-          <option value="">Select</option>
-          <option value="en">English</option>
-          <option value="de">German</option>
+          <option value="">LN</option>
+          <option value="en">Eng</option>
+          <option value="de">Ger</option>
         </select>
 
         <div id="google_translate_element"></div>
       </div>
     </nav>
-
-
   </div>
   <!-- overlay -->
   <div class="menu_overlay lg_menu_overlay">
@@ -419,30 +417,6 @@
           <a href="./RequestaFlight.html"
             class="ms_3 explore_btn fs_base px_15 py_10 text_uppercase d_inline_block text_black fw_normal">request a
             charter</a>
-          <div class="language-dropdown">
-            <button class="language-button" id="languageButton">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg" alt="Spanish Flag">
-              <svg viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd"
-                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                  clip-rule="evenodd" />
-              </svg>
-            </button>
-            <div class="language-menu" id="languageMenu">
-              <div class="language-menu-item">
-                <img src="https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg" alt="French Flag">
-              </div>
-              <div class="language-menu-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg" alt="Spanish Flag">
-              </div>
-              <div class="language-menu-item">
-                <img src="https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg" alt="French Flag">
-              </div>
-              <div class="language-menu-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg" alt="Spanish Flag">
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -534,13 +508,14 @@
   <footer class="bg_white">
     <div class="custom_container">
       <div class="p_25 padding_md_67 ">
-        <div class="d_flex align_center  flex_column justify_sm_space_between  flex_sm_row">
+        <div class="d_flex align_center flex_column justify_sm_space_between  flex_sm_row">
           <div class="black_bg px_15 py_1 brs_10">
             <img width="177" src="./assets/png/footerlogo.png" alt="" />
           </div>
-          <div class="pe_xxl_5 me_xl_5 pt_3 ms_4 ">
-            <h5 class="fw_medium fs_base max_w_215 black_clr">Mirai Flights is an elite private jet service.</h5>
-            <div class="d_flex gap_24 mt_4">
+          <div class="pe_xxl_5 me_xl_5 pt_3 ms_md_4 ">
+            <h5 class="fw_medium fs_base max_w_215 black_clr text_align_center text_sm_start">Mirai Flights is an elite
+              private jet service.</h5>
+            <div class="d_flex gap_24 mt_4 justify_content_center justify_content_md_start">
               <a href="https://www.tiktok.com/about">
                 <svg class=" w_16 h_18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                   <path class="fill_black"
@@ -643,7 +618,7 @@
             <h4 class="mb_4 fs_lg black_clr text_uppercase text_align_center text_sm_start">
               Engage
             </h4>
-            <ul class="d_flex flex_column flex_md_row flex_lg_column  gap_10 align_center align_sm_start">
+            <ul class="d_flex flex_column  flex_lg_column  gap_10 align_center align_sm_start">
               <li class="mb_1">
                 <a class="fw_normal fs_md black_clr" href="./media-center.html">Media Center</a>
               </li>
@@ -672,7 +647,7 @@
             properly licensed third-party air carries.</p>
         </div>
         <div>
-          <div class="d_flex gap_3 mt_4 flex_wrap  mt_md_0">
+          <div class="d_flex gap_3 mt_4   mt_md_0">
             <a href="https://apps.apple.com/us/app/amalfi-jets/id6474433155" target="_blank" rel="noopener"><img
                 width="150" height="45" src="./assets/png/apple store.avif" alt="apple store" /></a>
             <a href="https://play.google.com/store/apps/details?id=com.app.amalfijets&pli=1" target="_blank"

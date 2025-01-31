@@ -2525,3 +2525,6 @@ footer {
   position: static !important;
   margin-top: 0 !important;
 }
+.gap_2 {
+  gap: 8px;
+}

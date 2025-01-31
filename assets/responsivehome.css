@@ -6,7 +6,7 @@
     --fs_md: 15px;
     --fs_lg: 13px;
     --fs_xl: 25px;
-    --fs_2xl: 36px !important;
+    --fs_2xl: 25px !important;
   }
   .py_xsm_10 {
     padding-top: 10px;
@@ -179,6 +179,12 @@
   .d_md_none {
     display: none !important;
   }
+  .ms_md_4 {
+    margin-left: 24px;
+  }
+  .justify_content_md_start{
+    justify-content: start;
+  }
 }
 @media (min-width: 992px) {
   :root {
@@ -210,7 +216,7 @@
     padding-left: 12px;
     padding-right: 12px;
   }
-  .flex_lg_column{
+  .flex_lg_column {
     flex-direction: column;
   }
   .col_lg_4 {
@@ -235,7 +241,9 @@
     margin-top: 24px;
     margin-bottom: 24px;
   }
-
+  .gap_lg_3 {
+    gap: 16px;
+  }
   .py_18 {
     padding-top: 18px;
     padding-bottom: 18px;
